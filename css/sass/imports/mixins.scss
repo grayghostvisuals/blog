@@ -1,0 +1,43 @@
+// Great for prefix preferences
+//http://peter.sh/experiments/vendor-prefixed-css-property-overview/
+
+// ============================= css3 columns mixin
+
+@mixin css3Columns($count,$gap,$rule) {
+  // Webkit 
+  -webkit-column-count: $count;
+  -webkit-column-gap: $gap;
+  -webkit-column-rule: $rule;
+     // Mozilla
+     -moz-column-count: $count;
+     -moz-column-gap: $gap;
+     -moz-column-rule: $rule;
+       // Opera
+       -o-column-count: $count;
+       -o-column-gap: $gap;
+       -o-column-rule: $rule;
+          // Spec
+          column-count: $count;
+          column-gap: $gap;
+          column-gap: $rule;
+}
+
+
+// ============================= css letterpress text shadow mixin
+
+@mixin letterPress() {
+  text-shadow: 0 -1px 0 rgba(0,0,0,.9),
+               0px 1px 0px rgba(255,255,255,.5);
+}
+
+
+// ============================= css gradient mixin
+// http://gradients.glrzad.com/
+
+@mixin cssGradient($startlocation, $colorstart,$colorstartloc, $colormid,$colormidloc, $colorend,$colorendloc) {
+  background: -webkit-linear-gradient($startlocation, $colorstart $colorstartloc, $colormid $colormidloc, $colorend $colorendloc);
+  background:    -moz-linear-gradient($startlocation, $colorstart $colorstartloc, $colormid $colormidloc, $colorend $colorendloc);
+  background:     -ms-linear-gradient($startlocation, $colorstart $colorstartloc, $colormid $colormidloc, $colorend $colorendloc);
+  background:      -o-linear-gradient($startlocation, $colorstart $colorstartloc, $colormid $colormidloc, $colorend $colorendloc);
+  background:         linear-gradient($startlocation, $colorstart $colorstartloc, $colormid $colormidloc, $colorend $colorendloc);
+}
