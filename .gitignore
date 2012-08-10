@@ -1,0 +1,8 @@
+# OS or Editor folders
+.DS_Store
+
+# Hidden Files
+.htaccess
+
+# Ignore sass-cache directory
+.sass-cache
