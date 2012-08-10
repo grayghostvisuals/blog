@@ -24,19 +24,19 @@
   </footer>
 </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery.min.js"><\/script>')</script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/minified/script-min.js?v1.8.9"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery.min.js"><\/script>')</script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/minified/script-min.js?v1.9.0"></script>
 
-  <script>
-  var _gaq=[['_setAccount','UA-27240293-1'],['_trackPageview'],['_trackPageLoadTime']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-  s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+<script>
+var _gaq=[['_setAccount','UA-27240293-1'],['_trackPageview'],['_trackPageLoadTime']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 
-  <script src="<?php echo get_template_directory_uri(); ?>/webfonts/minified/ss-icons-min.js"></script>
-  <script src="http://get.gridsetapp.com/1046/overlay/"></script>
-  <?php wp_footer(); ?>
+<script src="<?php echo get_template_directory_uri(); ?>/webfonts/minified/ss-icons-min.js"></script>
+<script src="http://get.gridsetapp.com/1046/overlay/"></script>
+<?php wp_footer(); ?>
 </body>
 </html>
