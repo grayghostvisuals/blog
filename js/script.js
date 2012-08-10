@@ -1,10 +1,14 @@
 $(document).ready(function () {
+
     $('#rss').click(function () {
         var position = $(this).css('top') === '0px' ? '-2.75em' : '0';
         $(this).animate({
             top: position
         }, 500);
     });
+
+    // FitVid.js
+    $('.flex-video').fitVids();
 
     // evernote's memory button text insertion
     $('.evernoteSiteMemoryLink').append('<span class="evernoteSiteMemoryLinkText">Read Me Later</span>');

@@ -18,23 +18,23 @@
 <title><?php
 // if tag
 if( function_exists( 'is_tag' ) && is_tag() ) :
-  single_tag_title( 'Tag Archive for &quot;' ); echo '&quot; -';
+    single_tag_title( 'Tag Archive for &quot;' ); echo '&quot; -';
 
 // if archives
 elseif( is_archive() ) :
-  esc_attr( wp_title( '' ) ); echo ' '; echo 'Archive -';
+    esc_attr( wp_title( '' ) ); echo ' '; echo 'Archive -';
 
 // if search
 elseif( is_search() ) :
-  echo 'Search for &quot;' . wp_specialchars( $s ) . '&quot; -';
+    echo 'Search for &quot;' . wp_specialchars( $s ) . '&quot; -';
 
 // if !404 and single or page
 elseif( !( is_404() ) && ( is_single() ) || ( is_page() ) ) :
-  esc_attr( wp_title( '' ) ); echo '-';
+    esc_attr( wp_title( '' ) ); echo '-';
 
 // if 404
 elseif( is_404() ) :
-  echo 'Not Found -';
+    echo 'Not Found -';
 endif;
 
 //if home
@@ -69,11 +69,10 @@ endif; ?></title>
 <meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); esc_attr( bloginfo( 'description' ) ) ?>">
 <?php endif; ?>
 
-<!--    Scott Jehl's iOS Orientation Fix
-        see plugins.js for the js
+<!--    I Use Scott Jehl's iOS Orientation Fix
         While SJ rides trains, he fixes things for us
-       https://github.com/scottjehl/iOS-Orientationchange-Fix
--->
+        https://github.com/scottjehl/iOS-Orientationchange-Fix -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- http://t.co/dKP3o1e -->
