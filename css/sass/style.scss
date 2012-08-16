@@ -14,12 +14,12 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 
 
 // ------------------------------------------------------------------------------- */
-// = Imports
+// = $Imports
 // ------------------------------------------------------------------------------- */
 
 //@import "imports/gridset.scss"; // gridset
-@import "webfonts/ss-social.css"; // social icons
-@import "webfonts/ss-standard.css"; // social standard icons
+//@import "webfonts/ss-social.css"; // social icons
+//@import "webfonts/ss-standard.css"; // social standard icons
 @import "imports/vars.scss"; // variables
 @import "imports/mixins.scss"; // mixins
 @import "imports/extends.scss"; // extends
@@ -30,11 +30,11 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 
 
 // ------------------------------------------------------------------------------- */
-// = Typography
+// = $Typography
 // ------------------------------------------------------------------------------- */
 
 
-// = Global Typography
+// = $Global
 // ------------------------------------------------------------------------------- //
 
 html {
@@ -72,7 +72,7 @@ body {
 }
 
 
-// =Definition Lists
+// = $Definition Lists
 // ------------------------------------------------------------------------------- //
 
 dl {
@@ -88,7 +88,7 @@ dl {
 }
 
 
-// =Hs Typography
+// = $Headings Typography
 // ------------------------------------------------------------------------------- //
 
 h1,
@@ -107,7 +107,7 @@ h5 { font-size: 0.875em; } // 14px / 16px = 0.875em
 h6 { font-size: 0.750em; } // 12px / 16px = 0.75em
 
 
-// =Ps Typography
+// = $Paragraphs Typography
 // ------------------------------------------------------------------------------- //
 
 p {
@@ -139,7 +139,7 @@ p {
 //}
 
 
-// =Blockquote Typography
+// = $Blockquote Typography
 // ------------------------------------------------------------------------------- //
 
 [role="main"] blockquote p {
@@ -147,7 +147,7 @@ p {
 }
 
 
-// =Banner Typography
+// = $Banner Typography
 // ------------------------------------------------------------------------------- //
 
 header[role="banner"] {
@@ -170,7 +170,7 @@ header[role="banner"] {
 }
 
 
-// =Hero Quote Typography
+// = $Hero Quote Typography
 // ------------------------------------------------------------------------------- //
 
 #hero-quote {
@@ -194,7 +194,7 @@ header[role="banner"] {
 }
 
 
-// =RSS Ribbon Typography
+// = $RSS Ribbon Typography
 // ------------------------------------------------------------------------------- //
 
 #rss {
@@ -205,7 +205,7 @@ header[role="banner"] {
 }
 
 
-// =Journal Entries Typography
+// = $Journal Entries Typography
 // ------------------------------------------------------------------------------- //
 
 #content article blockquote {
@@ -222,7 +222,7 @@ article h1 {
 }
 
 
-// =Journal Entries Footer Typography
+// = $Journal Entries Footer Typography
 // ------------------------------------------------------------------------------- //
 
 #comments-link {
@@ -263,7 +263,7 @@ article h1 {
 }
 
 
-// =Pagination Typography
+// = $Pagination Typography
 // ------------------------------------------------------------------------------- //
 
 // home page
@@ -272,7 +272,7 @@ article h1 {
 }
 
 
-// =Read More Link Typography
+// = $Read More Link Typography
 // ------------------------------------------------------------------------------- */
 
 .more-link {
@@ -288,7 +288,7 @@ article h1 {
 }
 
 
-// =Input & Forms Typography
+// = $Input & Forms Typography
 // ------------------------------------------------------------------------------- //
 
 label[for="s"] {
@@ -319,7 +319,7 @@ label[for="s"] {
 }
 
 
-// =Search Page Typography
+// = $Search Page Typography
 // ------------------------------------------------------------------------------- */
 
 .search {
@@ -337,7 +337,7 @@ label[for="s"] {
 }
 
 
-// =Footer Typography
+// = $Footer Typography
 // ------------------------------------------------------------------------------- //
 
 footer[role="contentinfo"] {
@@ -350,7 +350,7 @@ footer[role="contentinfo"] {
   }
 }
 
-#socials {
+.socials.footer {
   .ss-icon {
     text-shadow: 0 1px 0px rgba(255,255,255,.25),
                  0 -1px 0px #000;
@@ -363,27 +363,19 @@ footer[role="contentinfo"] {
 
 
 // ------------------------------------------------------------------------------- //
-// =LAYOUT
+// = $LAYOUT
 // ------------------------------------------------------------------------------- //
 
 
-// =Global Layout
+// = $Global Layout
 // ------------------------------------------------------------------------------- //
 
 a {
-  word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 
-// =Evernote Memory Button Layout
-// ------------------------------------------------------------------------------- //
-
-/*evernote clip button*/
-.evernoteSiteMemory {height: 1.5em;}
-.evernoteSiteMemoryLinkText {margin-left: .5em;}
-
-
-// =Lists
+// = $Lists
 // ------------------------------------------------------------------------------- //
 
 ul,
@@ -401,7 +393,7 @@ li {
 }
 
 
-// =Definition Lists
+// = $Definition Lists
 // ------------------------------------------------------------------------------- //
 
 dl {
@@ -411,159 +403,156 @@ dl {
 }
 
 
-// =Branding Header Layout
+// = $Blockquotes
 // ------------------------------------------------------------------------------- //
-
-header[role="banner"] {
-  padding-left: $mobile-gutter;
-  padding-right: $mobile-gutter;
-
-  h1 {
-    width: auto;
-    display: inline-block;
-    margin-top: ($baseline / 2);
-    margin-bottom: 0;
-  }
-
-  h2 {
-    position: absolute;
-    top: 5.25em;
-    right: $desktop-gutter;
-
-    @media only all and (max-width: 55.25em) {
-      position: static;
-    }
-  }
-
-  @media only all and (min-width: 42.25em) and (max-width: 55.1875em) { // 676 / 16px = 42.25em 883px / 16px = 55.1875em
-    padding-left: $tab-gutter;
-    padding-right: $tab-gutter;
-  }
-
-  @media only all and (min-width: 55.25em) {
-    padding-left: $desktop-gutter;
-    padding-right: $desktop-gutter;
-  }
-}
-
-#logo {
-  width: 72px;
-  height: 72px;
-  @media screen and (min-width: 55.25em) {
-    padding-bottom: .75em;
-  }
-}
-
-
-// =RSS Layout
-// ------------------------------------------------------------------------------- //
-
-#rss {
-  position: absolute;
-  top: 0;
-  width: 4.375em;
-  height: 6em;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  a {
-    position: relative;
-    top: 25%;
-    @include letterPress();
-  }
-
-  @media only all and (max-width: 42.25em) {
-    top: -2.75em;
-  }
-
-  @media only all and (min-width: 55.25em) {
-    right: $desktop-gutter;
-  }
-}
-
-
-// =Content
-// ------------------------------------------------------------------------------- //
-
-// content
-#content {
-  article {
-    padding: ($baseline / 2) $mobile-gutter;
-    position: relative;
-    z-index: 1;
-
-    @media only all and (min-width: 42.25em) and (max-width: 55.1875em) { // 676 / 16px = 42.25em 883px / 16px = 55.1875em
-      padding: ($baseline / 2) $tab-gutter;
-    }
-
-    @media only all and (min-width: 55.25em) { // 884px / 16px = 55.25em
-      padding: ($baseline / 2) $desktop-gutter;
-    }
-  }
-}
 
 // general blockquotes
-[role="main"] {
-    blockquote {
+
+blockquote {
     @include box-sizing(border-box);
     border: 1px solid #CCC;
     box-shadow: inset 0 1px 5px rgba(0,0,0,.1);
     margin: 0;
     padding:  .75em 5.35715%;
-  }
 }
 
-// main content sections
-section[role="main"] {
-  article {
+
+// = $Stripe Module
+// ------------------------------------------------------------------------------- //
+
+.stripe {
     @extend .rule;
-  }
+    position: relative;
+    z-index: 1;
 }
+
+
+// = $Evernote Memory Button Layout
+// ------------------------------------------------------------------------------- //
+
+/*evernote clip button*/
+.evernoteSiteMemory {
+    height: 1.5em;
+}
+
+.evernoteSiteMemoryLinkText {
+    margin-left: .5em;
+}
+
+
+// = $Branding Header Layout
+// ------------------------------------------------------------------------------- //
+
+.blog-name {
+    width: auto;
+    display: inline-block;
+    margin-top: ($baseline / 2);
+    margin-bottom: 0;
+}
+
+.tagline {
+    @media only all and (max-width: 55.25em) {
+        //position: static;
+    }
+}
+
+.logo {
+    width: 72px;
+    height: 72px;
+
+    @media screen and (min-width: 55.25em) {
+        padding-bottom: .75em;
+    }
+}
+
+
+// = $RSS Ribbon Layout
+// ------------------------------------------------------------------------------- //
+
+#rss {
+    position: absolute;
+    top: 0;
+    width: 4.375em;
+    height: 6em;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    a {
+        position: relative;
+        top: 25%;
+        @include letterPress();
+    }
+
+    @media only all and (max-width: 42.25em) {
+        top: -2.75em;
+    }
+
+    @media only all and (min-width: 55.25em) {
+        right: 15.10989012%;
+    }
+
+    @media only all and (min-width: 102.5625em) { // 1641px / 16px = 102.5625em
+        right: 23.44958515%;
+    }
+}
+
+
+// = $Entry Module Layout
+// ------------------------------------------------------------------------------- //
+
+.padding {
+    padding: ($baseline / 2) $mobile-gutter;
+
+    @media only all and (min-width: 42.25em) and (max-width: 55.1875em) { // 676 / 16px = 42.25em 883px / 16px = 55.1875em
+      padding: 0;
+    }
+
+    @media only all and (min-width: 55.25em) { // 884px / 16px = 55.25em
+      padding: 0;
+    }
+}
+
+
+// = $Entry Meta Module Layout
+// ------------------------------------------------------------------------------- //
 
 // entry meta info
 .meta {
-  border-radius: 4px;
-  margin-bottom: 1.5em;
-  padding: ($baseline / 2);
-  position: relative;
-  width: 7.3846153872em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+    padding: ($baseline / 2);
+    position: relative;
+    width: 7.3846153872em;
 
-  span {
-    display: block;
-    text-align: center;
-  }
+    span {
+        display: block;
+    }
 
-  .arrow {
-    @include transform(rotate(180deg));
-    border-color: transparent rgba(0,0,0,.05) transparent transparent;
-    border-style: solid;
-    border-width: 2.125em;
-    height:0;
-    width:0;
-    position:absolute;
-    top: 0;
-    right:-4.25em;
-  }
+    .arrow {
+        @include transform(rotate(180deg));
+        border-color: transparent rgba(0,0,0,.05) transparent transparent;
+        border-style: solid;
+        border-width: 2.125em;
+        height:0;
+        width:0;
+        position:absolute;
+        top: 0;
+        right:-4.25em;
+    }
 
-  @media screen and (min-width: 55.25em) { // 884px / 16px = 55.25em
-    float: left;
-    width: 12.994546937436%;
-    max-width: 12.994546937436em;
-    margin-left: -21.491820406154%; // 21.491820406154%
-  }
-}
-
-// = Sidebar Layout
-// ------------------------------------------------------------------------------- //
-
-#sidebar {
-  @extend .rule;
+    //@media screen and (min-width: 55.25em) { // 884px / 16px = 55.25em
+    @media only all and (min-width: 102.5625em) { // 1641px / 16px = 102.5625em
+        float: left;
+        max-width: 12.994546937436em;
+        margin-left: -21.491820406154%; // 21.491820406154%
+        width: 12.994546937436%;
+    }
 }
 
 
-// =Tag Lists
+// = $Tag Lists Module Layout
 // ------------------------------------------------------------------------------- //
 
 .tags,
@@ -583,7 +572,7 @@ section[role="main"] {
 }
 
 
-// =Comments
+// = $Comments Layout
 // ------------------------------------------------------------------------------- //
 
 #comments-count h6 {
@@ -597,7 +586,7 @@ section[role="main"] {
 }
 
 
-// =Single Pages Layout
+// = $Single Pages Layout
 // ------------------------------------------------------------------------------- //
 
 // search and single page
@@ -621,63 +610,67 @@ section[role="main"] {
 }
 
 
-// = Archives/Categories Page Layout
+// = $Archives/Categories Page Layout
 // ------------------------------------------------------------------------------- //
 
-.archive {
-  li.type-post {
-    @extend .rule-sidebar;
-    padding-bottom: 1.5em;
-    &:first-child {
-      @extend .rule;
+.archive,
+.category {
+    .entry-item {
+        @extend .rule;
+        padding-bottom: 1.5em;
     }
-  }
 }
 
 
-// = Search Page Layout
+// = $Search Page Layout
 // ------------------------------------------------------------------------------- //
 
 .search #content {
-  li {
-    @extend .rule-sidebar;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    &:first-child {
-      @extend .rule;
+
+    li {
+        @extend .rule-sidebar;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+
+        &:first-child {
+            @extend .rule;
+        }
     }
-  }
 }
 
 
-// =Input & Forms Layout
+// = $Input & Forms Layout
 // ------------------------------------------------------------------------------- //
 
 #search-form {
-  text-align: left;
-  width: 100%;
-  padding-bottom: $baseline;
-
-  input {
-    @include box-sizing(border-box);
-    //http://trentwalton.com/2010/07/14/css-webkit-appearance
-    //changes the appearance of buttons & controls to resemble a native apple UI
-    -webkit-appearance: none;
-    display: inline-block;
+    text-align: left;
     width: 100%;
-    padding: ($baseline / 2);
-  }
+    padding-bottom: $baseline;
 
-  @media only all and (min-width: 55.25em) {
-    position: absolute;
-    top: $baseline;
-    right: $desktop-gutter;
-    width: 21.491820406154em; //21.491820406154%;
-  }
+    input {
+        @include box-sizing(border-box);
+        //http://trentwalton.com/2010/07/14/css-webkit-appearance
+        //changes the appearance of buttons & controls to resemble a native apple UI
+        -webkit-appearance: none;
+        display: inline-block;
+        width: 100%;
+        padding: ($baseline / 2);
+    }
+
+    @media only all and (min-width: 55.25em) {
+        position: absolute;
+        top: $baseline;
+        right: 15.10989012%;
+        width: 21.491820406154em; //21.491820406154%;
+    }
+
+    @media only all and (min-width: 102.5625em) { // 1641px / 16px = 102.5625em
+        right: 23.44958515%;
+    }
 }
 
 label[for="s"] {
-  display: inline-block;
+    display: inline-block;
 }
 
 input,
@@ -699,7 +692,7 @@ textarea {
 }
 
 
-// =Blog Articles Layout
+// = $Blog Articles Layout
 // ------------------------------------------------------------------------------- //
 
 #article-links {
@@ -713,7 +706,7 @@ textarea {
 }
 
 
-// =Home Page Layout
+// = $Home Page Layout
 // ------------------------------------------------------------------------------- //
 
 .home,
@@ -729,135 +722,136 @@ textarea {
 }
 
 
-// =Hero Quote Layout
+// = $Hero Quote Layout
 // ------------------------------------------------------------------------------- //
 
 #hero-quote {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
 
-  p {
-    border-top: 1px solid #C9C9C9;
-    border-bottom: 1px solid #C9C9C9;
-    box-shadow: inset 0  1px 0px rgba(255,255,255,.9),
-                      0  1px 0px rgba(255,255,255,.9);
-    padding: .75em 0;
-  }
-
-  small {
-    padding-left: .75em;
-    padding-right: .75em;
-    position: absolute;
-    bottom: -.5em;
-    left: 42.5208687%;
-
-    @media only all and (min-width: 55.25em) {
-      bottom: 1.75em;
+    p {
+        border-top: 1px solid #C9C9C9;
+        border-bottom: 1px solid #C9C9C9;
+        box-shadow: inset 0  1px 0px rgba(255,255,255,.9),
+                          0  1px 0px rgba(255,255,255,.9);
+        padding: .75em 0;
     }
+
+    small {
+        padding-left: .75em;
+        padding-right: .75em;
+        position: absolute;
+        bottom: -.5em;
+        left: 42.5208687%;
+
+        @media only all and (min-width: 55.25em) {
+            bottom: 1.75em;
+        }
 
     cite {
-      display: block;
+        display: block;
     }
-  }
+}
 
   @media only all and (min-width: 55.25em) {
     margin-bottom: 0;
+    padding-top: 0;
     padding-bottom: .75em;
-    padding-top: .75em;
   }
 }
 
-// =Read More Button
+
+// = $Read More Button Module
 // ------------------------------------------------------------------------------- //
 
 .more-link {
-  display: block;
-  margin: 0 auto;
-  width: 3em; // 72 / 24px = 3em
+    display: block;
+    margin: 0 auto;
+    width: 3em; // 72 / 24px = 3em
 }
 
 .read-more {
-  border-radius: 5%;
-  box-shadow: 0px 3px 8px #aaa,
-        inset 0px 2px 3px #fff;
-  border: solid 1px transparent;
-  display: block;
-  height: 3em; // 72 / 24px = 3em
-  margin: $baseline auto;
-  position: relative;
-  width: 3em; // 72 / 24px = 3em
-
-  &:after {
     border-radius: 5%;
-    border-top: 2px solid #ddd;
-    box-shadow: inset 0px 8px 48px #ddd;
-    content: "";
+    box-shadow: 0px 3px 8px #aaa,
+        inset 0px 2px 3px #fff;
+    border: solid 1px transparent;
     display: block;
-    position: absolute;
-    top: -.75em; // 18px / 24px = .75em 
-    left: -.75em; // 18px / 24px = .75em
-    bottom: -.75em; // 18px / 24px = .75em
-    right: -.75em; // 18px / 24px = .75em
-    z-index: -1;
-  }
+    height: 3em; // 72 / 24px = 3em
+    margin: $baseline auto;
+    position: relative;
+    width: 3em; // 72 / 24px = 3em
 
-  &:active {
-    box-shadow: none;
-    border: solid 1px #a7a7a7;
-  }
+    &:after {
+        border-radius: 5%;
+        border-top: 2px solid #ddd;
+        box-shadow: inset 0px 8px 48px #ddd;
+        content: "";
+        display: block;
+        position: absolute;
+        top: -.75em; // 18px / 24px = .75em 
+        left: -.75em; // 18px / 24px = .75em
+        bottom: -.75em; // 18px / 24px = .75em
+        right: -.75em; // 18px / 24px = .75em
+        z-index: -1;
+    }
+
+    &:active {
+        box-shadow: none;
+        border: solid 1px #a7a7a7;
+    }
 }
 
 .active {
-  box-shadow: none;
-  border: solid 1px #a7a7a7;
+    box-shadow: none;
+    border: solid 1px #a7a7a7;
 }
 
 
-// =Pagination Layout
+// = $Pagination Layout
 // ------------------------------------------------------------------------------- //
 
 .pagination {
-  display: block;
-  padding: ($baseline / 2) 0 ($baseline * 2);
+    display: block;
+    padding: ($baseline / 2) 0 ($baseline * 2);
 
-  .page-numbers {
-    border: .0875em solid #DDD;
-    box-shadow: 1px 1px 4px rgba(0,0,0,.05);
-    display: inline-block;
-    padding: .5em 1em;
-    position: relative;
+    .page-numbers {
+        border: .0875em solid #DDD;
+        box-shadow: 1px 1px 4px rgba(0,0,0,.05);
+        display: inline-block;
+        padding: .5em 1em;
+        position: relative;
 
-    &:after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 50%;
-      position: absolute;
-      top: 0;
-      left: 0;
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &:hover {
+            border-color: #CCC;
+        }
     }
 
-    &:hover {
-      border-color: #CCC;
+    .page-numbers.current {
+        border-color: #CCC;
     }
-  }
 
-  .page-numbers.current {
-    border-color: #CCC;
-  }
-
-  .next,
-  .prev {
-    width: 5em;
-  }
+    .next,
+    .prev {
+        width: 5em;
+    }
 }
 
 
-// =Comments Layout
+// = $Comments Layout
 // ------------------------------------------------------------------------------- //
 
 .comments {
@@ -909,25 +903,33 @@ textarea {
 }
 
 
-// =Blog Articles Sidebar Layout
+// = $Sidebar Layout
 // ------------------------------------------------------------------------------- //
 
 #sidebar {
-  padding-top: ($baseline / 2);
-  padding-bottom: ($baseline / 2);
-  padding-left: $mobile-gutter;
-  padding-right: $mobile-gutter;
+  @extend .rule;
+}
 
-  article {
-    padding-bottom: $baseline;
-    &:nth-child(1n+1) {
-      @extend .rule-sidebar;
+
+#sidebar {
+    @extend .rule;
+    padding-top: ($baseline / 2);
+    padding-bottom: ($baseline / 2);
+    padding-left: $mobile-gutter;
+    padding-right: $mobile-gutter;
+
+    article {
+        padding-bottom: $baseline;
+
+        &:nth-child(1n+1) {
+            @extend .rule-sidebar;
+        }
+
+        &:nth-child(1n+3) {
+            border:none;
+            box-shadow: none;
+        }
     }
-    &:nth-child(1n+3) {
-      border:none;
-      box-shadow: none;
-    }
-  }
 
   @media screen and (min-width: 55.25em) {
     padding-left: $desktop-gutter;
@@ -974,7 +976,7 @@ textarea {
 }
 
 
-// =Blog Single Page Pagination Layout
+// = $Single Page Pagination Layout
 // ------------------------------------------------------------------------------- //
 
 .single {
@@ -1006,7 +1008,7 @@ textarea {
 }
 
 
-// =Blog Comment Response Layout
+// = $Comment Response Layout
 // ------------------------------------------------------------------------------- //
 
 #respond {
@@ -1016,7 +1018,7 @@ textarea {
 }
 
 
-// =Footer Layout
+// = $Footer Layout
 // ------------------------------------------------------------------------------- //
 
 footer[role="contentinfo"] {
@@ -1029,7 +1031,12 @@ footer[role="contentinfo"] {
   }
 }
 
-#socials {
+
+// = $Footer Socials Module
+// ------------------------------------------------------------------------------- //
+
+.socials.footer {
+
   @media screen and (min-width: 55.25em) {
     position: absolute;
     top: 3em;
@@ -1048,11 +1055,13 @@ footer[role="contentinfo"] {
 }
 
 
-
 // ------------------------------------------------------------------------------- */
-// = Colors
+// = $Color
 // ------------------------------------------------------------------------------- */
 
+
+// = $404 Error Color
+// ------------------------------------------------------------------------------- */
 
 #thumbsdown {
   b {
@@ -1061,7 +1070,7 @@ footer[role="contentinfo"] {
 }
 
 
-// =Global Colors
+// = $Global Color
 // ------------------------------------------------------------------------------- //
 
 body {
@@ -1069,36 +1078,29 @@ body {
   color: rgba(102, 102, 102, 0.76);
 }
 
+blockquote {
+    background: rgba(51, 48, 48, 0.05);
+}
 
-// = Content Colors
+
+// = $Global Content Color
 // ------------------------------------------------------------------------------- //
 
-.m-all,
-.single #content {
-  background: #C9C8C8 url(img/lghtmesh.png) top left repeat;
+#content {
+    background: #C9C8C8 url(img/lghtmesh.png) top left repeat;
 }
 
-#content .m-all {
-  &:nth-child(odd) {
-    article {
-      background: rgba(255,255,255,.5);
-    }
-  }
+.category .stripe:nth-child(odd),
+.home .stripe:nth-child(odd) {
+    background: rgba(255,255,255,.5);
 }
 
-.single #content article,
-.pagination {
-  background: rgba(255,255,255,.5);
-}
-
-[role="main"] {
-  blockquote {
-    background: rgba(51, 48, 48, 0.05);
-  }
+.single .stripe {
+    background: rgba(255,255,255,.5);
 }
 
 
-// = Archives Colors
+// = $Archives Color
 // ------------------------------------------------------------------------------- //
 
 [data-icon="database"] {
@@ -1110,7 +1112,7 @@ body {
 }
 
 
-// = Sidebar Colors
+// = $Sidebar Color
 // ------------------------------------------------------------------------------- //
 
 #sidebar {
@@ -1118,7 +1120,7 @@ body {
 }
 
 
-// = H's Colors
+// = $Global Headings Color
 // ------------------------------------------------------------------------------- //
 
 h1 { color:         $header-color;       }
@@ -1129,7 +1131,7 @@ h5 { color: lighten($header-color, 40%); }
 h6 { color: lighten($header-color, 50%); }
 
 
-// = Code Block Colors
+// = $Code Block Color
 // ------------------------------------------------------------------------------- //
 
 pre,
@@ -1139,7 +1141,7 @@ code {
 }
 
 
-// = Meta Colors
+// = $Entry Meta Color
 // ------------------------------------------------------------------------------- //
 
 .meta {
@@ -1147,7 +1149,7 @@ code {
 }
 
 
-// = Article Footer Colors
+// = $Entry Footer Color
 // ------------------------------------------------------------------------------- //
 
 .tags,
@@ -1164,7 +1166,7 @@ code {
 }
 
 
-// = Lists Colors
+// = $Lists Color
 // ------------------------------------------------------------------------------- //
 
 ul,
@@ -1173,7 +1175,7 @@ ol {
 }
 
 
-// = Definition Lists Colors
+// = $Definition Lists Color
 // ------------------------------------------------------------------------------- //
 
 dl {
@@ -1183,7 +1185,7 @@ dl {
 }
 
 
-// =Banner Colors
+// = $Banner Color
 // ------------------------------------------------------------------------------- //
 
 header[role="banner"] {
@@ -1193,7 +1195,7 @@ header[role="banner"] {
 }
 
 
-// =RSS Ribbon Colors
+// = $RSS Ribbon Color
 // ------------------------------------------------------------------------------- //
 
 .no-svg #rss {
@@ -1207,7 +1209,7 @@ header[role="banner"] {
 }
 
 
-// =Hero Quote Colors
+// = $Hero Quote Color
 // ------------------------------------------------------------------------------- //
 
 #hero-quote {
@@ -1224,7 +1226,7 @@ header[role="banner"] {
 }
 
 
-// =Read More Button Colors
+// = $Read More Button Color
 // ------------------------------------------------------------------------------- //
 
 .read-more {
@@ -1241,41 +1243,42 @@ header[role="banner"] {
 }
 
 
-// =Pagination Colors
+// = $Pagination Color
 // ------------------------------------------------------------------------------- //
 
 .pagination {
+    background: rgba(255,255,255,.5);
 
-  .page-numbers {
-    @include transition($transition-1: .3s all ease-in-out);
-    background-color: #f7f7f7;
-    background-image: -webkit-linear-gradient(top, $pagination_inactive_color1, $pagination_inactive_color2);
-    background-image:    -moz-linear-gradient(top, $pagination_inactive_color1, $pagination_inactive_color2);
-    background-image:     -ms-linear-gradient(top, $pagination_inactive_color1, $pagination_inactive_color2);
-    background-image:      -o-linear-gradient(top, $pagination_inactive_color1, $pagination_inactive_color2);
+    .page-numbers {
+        @include transition($transition-1: .3s all ease-in-out);
+            background-color: #f7f7f7;
+            background-image: -webkit-linear-gradient(top, $pagination_inactive_color1, $pagination_inactive_color2);
+            background-image:    -moz-linear-gradient(top, $pagination_inactive_color1, $pagination_inactive_color2);
+            background-image:     -ms-linear-gradient(top, $pagination_inactive_color1, $pagination_inactive_color2);
+            background-image:      -o-linear-gradient(top, $pagination_inactive_color1, $pagination_inactive_color2);
 
-    &:after {
-      background: rgba(255,255,255,.5);
+        &:after {
+            background: rgba(255,255,255,.5);
+        }
+
+        &:hover {
+            background: #f0f0f0;
+            background-image: -webkit-linear-gradient(top, $pagination_active_color1, $pagination_active_color2);
+            background-image:    -moz-linear-gradient(top, $pagination_active_color1, $pagination_active_color2);
+            background-image:     -ms-linear-gradient(top, $pagination_active_color1, $pagination_active_color2);
+            background-image:      -o-linear-gradient(top, $pagination_active_color1, $pagination_active_color2);
+            color: maroon;
+        }
     }
 
-    &:hover {
-      background: #f0f0f0;
-      background-image: -webkit-linear-gradient(top, $pagination_active_color1, $pagination_active_color2);
-      background-image:    -moz-linear-gradient(top, $pagination_active_color1, $pagination_active_color2);
-      background-image:     -ms-linear-gradient(top, $pagination_active_color1, $pagination_active_color2);
-      background-image:      -o-linear-gradient(top, $pagination_active_color1, $pagination_active_color2);
-      color: maroon;
+    .page-numbers.current {
+        background: #FFF;
+        color: maroon;
     }
-  }
-
-  .page-numbers.current {
-    background: #FFF;
-    color: maroon;
-  }
 }
 
 
-// =Search Form Colors
+// = $Search Form Color
 // ------------------------------------------------------------------------------- //
 
 label[for="s"] {
@@ -1295,7 +1298,7 @@ label[for="s"] {
 }
 
 //search form
-#search-form { 
+#search-form {
   input[name="s"] {
     @include transition($transition-1: .5s all ease-in-out);
     background: rgba(255,255,255,.5);
@@ -1305,7 +1308,7 @@ label[for="s"] {
       background: rgba(255,255,255,.7);
     }
 
-    &:focus, 
+    &:focus,
     &:active {
       background: rgba(255,255,255,.9);
     }
@@ -1313,7 +1316,7 @@ label[for="s"] {
 }
 
 
-// =Form Inputs Colors
+// = $Form Inputs Color
 // ------------------------------------------------------------------------------- //
 
 input,
@@ -1328,7 +1331,7 @@ textarea {
 }
 
 
-// =Blog Articles Colors
+// = $Entry Articles Color
 // ------------------------------------------------------------------------------- //
 
 #article-links {
@@ -1340,15 +1343,13 @@ textarea {
 }
 
 
-// =Blog Single Pagination Colors
+// = $Single Pagination Color
 // ------------------------------------------------------------------------------- //
 
-#single-pagination {
-  background: #FFF;
-}
+//#single-pagination {}
 
 
-// =Comments Colors
+// = $Comments Color
 // ------------------------------------------------------------------------------- //
 
 #commentform #submit {
@@ -1367,7 +1368,7 @@ textarea {
 }
 
 
-// =Footer Colors
+// = $Footer Color
 // ------------------------------------------------------------------------------- //
 
 footer[role="contentinfo"] {
