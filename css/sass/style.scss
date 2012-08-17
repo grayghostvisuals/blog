@@ -17,15 +17,19 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // = $Imports
 // ------------------------------------------------------------------------------- */
 
-//@import "imports/gridset.scss"; // gridset
-//@import "webfonts/ss-social.css"; // social icons
-//@import "webfonts/ss-standard.css"; // social standard icons
-@import "imports/vars.scss"; // variables
-@import "imports/mixins.scss"; // mixins
-@import "imports/extends.scss"; // extends
-@import "compass"; // compass
-@import "imports/resets.scss"; // html5boilerplate resets
-@import "imports/wp-classes.scss"; // Wordpress Classes
+//@import "imports/gridset.scss";   // gridset
+
+@import "webfonts/ss-social.css";   // social icons
+@import "webfonts/ss-standard.css"; // social standard icons
+
+@import "compass";                  // compass
+
+@import "imports/vars.scss";        // variables
+@import "imports/mixins.scss";      // mixins
+@import "imports/extends.scss";     // extends
+
+@import "imports/resets.scss";      // html5boilerplate resets
+@import "imports/wp-classes.scss";  // Wordpress Classes
 
 
 
@@ -34,57 +38,56 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // ------------------------------------------------------------------------------- */
 
 
-// = $Global
+// = $Global Typography
 // ------------------------------------------------------------------------------- //
 
 html {
-  -webkit-tap-highlight-color: transparent; 
+    -webkit-tap-highlight-color: transparent; 
 }
 
 body {
-  @include transition($transition-1: .3s opacity ease-in-out);
-  font: normal 100%/1.5 Georgia, "Times New Roman", Times, serif;
-  text-shadow: 0 1px 1px rgba(255,255,255,.9);
+    @include transition($transition-1: .3s opacity ease-in-out);
+    font: normal 100%/1.5 Georgia, "Times New Roman", Times, serif;
+    text-shadow: 0 1px 1px rgba(255,255,255,.9);
 }
 
 #copyright {
-  text-shadow: none;
+    text-shadow: none;
 }
 
 .wf-loading body {
-  font-family: Georgia, serif;
-  opacity: 0;
+    font-family: Georgia, serif;
+    opacity: 0;
 }
 
 .wf-active body {
-  font-family: "adobe-garamond-pro", serif;
-  opacity: 1;
+    font-family: "adobe-garamond-pro", serif;
+    opacity: 1;
 }
 
 .lt-ie9 .wf-loading body {
-  font-family: Georgia, serif;
-  visibility: hidden;
+    font-family: Georgia, serif;
+    visibility: hidden;
 }
 
 .lt-ie9 .wf-active body {
-  font-family: "adobe-garamond-pro", serif;
-  visibility: visible;
+    font-family: "adobe-garamond-pro", serif;
+    visibility: visible;
 }
 
 
-// = $Definition Lists
+// = $Definition Lists Typography
 // ------------------------------------------------------------------------------- //
 
-dl {
-  dt {
+
+dt {
     font-size: 1.5em;
     font-weight: bold;
-  }
+}
 
-  dd {
+dd {
     font-size: 1em; // 14 / 16
     line-height: 1.5em;
-  }
 }
 
 
@@ -97,53 +100,57 @@ h3,
 h4,
 h5,
 h6 { 
-  font-weight: 400;
+    font-weight: 400;
 }
 
-h2 { font-size: 1.875em; } // 30px / 16px = 1.875em
-h3 { font-size: 1.500em; } // 24px / 16px = 1.5em
-h4 { font-size: 1.125em; } // 18px / 16px = 1.125em
-h5 { font-size: 0.875em; } // 14px / 16px = 0.875em
-h6 { font-size: 0.750em; } // 12px / 16px = 0.75em
+h2 {
+    font-size: 1.875em; // 30px / 16px = 1.875em
+}
+
+h3 {
+    font-size: 1.500em; // 24px / 16px = 1.5em
+}
+
+h4 {
+    font-size: 1.125em; // 18px / 16px = 1.125em
+}
+
+h5 {
+    font-size: 0.875em; // 14px / 16px = 0.875em
+}
+
+h6 {
+    font-size: 0.750em; // 12px / 16px = 0.75em
+}
 
 
 // = $Paragraphs Typography
 // ------------------------------------------------------------------------------- //
 
 p {
-  font-weight: normal;
-  // ala Trent Walton
-  -webkit-hyphens: auto;
-  hyphen: auto;
+    font-weight: normal;
+    // ala Trent Walton
+    -webkit-hyphens: auto;
+    hyphen: auto;
 }
 
-// only paragraphs within
+
 [role="main"] p {
     font-size: 1.125em; // 18px / 16px = 1.125em
     line-height: 1.5em; // 16 * 1.5 = 24px
 
-  @media only all and (min-width: 63.9375em) { // 1023px / 16
-    font-size: 1.75em; //  28px / 16px = 1.75em
-    line-height: 1.5em; // 28px * 1.5em = 42px
-  }
+    @media only all and (min-width: 63.9375em) { // 1023px / 16
+        font-size: 1.75em; //  28px / 16px = 1.75em
+        line-height: 1.5em; // 28px * 1.5em = 42px
+    }
 }
-
-//.single .intro:first-line {
-//  font-size: 2.25em; // 18px / 16px = 1.125em
-//  line-height: 1.5em; // 16 * 1.5 = 24px
-
-//  @media only all and (min-width: 63.9375em) { // 1023px / 16
-//    font-size: 3em; //  28px / 16px = 1.75em
-//    line-height: 1.5em; // 28px * 1.5em = 42px
-//  }
-//}
 
 
 // = $Blockquote Typography
 // ------------------------------------------------------------------------------- //
 
 [role="main"] blockquote p {
-  font-size: 1em;
+    font-size: 1em;
 }
 
 
@@ -151,22 +158,23 @@ p {
 // ------------------------------------------------------------------------------- //
 
 header[role="banner"] {
-  text-align: center;
+    text-align: center;
 
-  h2 {
+    @media only all and (min-width: 55.25em) { // 884px / 16px = 55.25em
+        text-align: left;
+    }
+}
+
+.tagline {
     font-size: 1em; // 16px / 16px = 1em
     font-style: italic;
     font-weight: 400;
+    text-align: center;
 
     @media only all and (min-width: 55.25em) {
-      font-size: 1.165em;
-      text-align: right;
+        font-size: 1.165em;
+        text-align: right;
     }
-  }
-
-  @media only all and (min-width: 55.25em) { // 884px / 16px = 55.25em
-    text-align: left;
-  }
 }
 
 
@@ -174,23 +182,23 @@ header[role="banner"] {
 // ------------------------------------------------------------------------------- //
 
 #hero-quote {
-  text-transform: uppercase;
+    text-transform: uppercase;
 
-  cite {
-    font-size: .5em;
-  }
+    cite {
+        font-size: .5em;
+    }
 
-  @media only all and (min-width: 55.25em) {
-    font-size: 1.75em;
-  }
+    @media only all and (min-width: 55.25em) {
+        font-size: 1.75em;
+    }
 
-  @media only all and (min-width: 55.25em) {
-    font-size: 1.75em;
-  }
+    @media only all and (min-width: 55.25em) {
+        font-size: 1.75em;
+    }
 
-  @media only all and (min-width: 64.0625em) { // 1025px / 16
-    font-size: 2.5em;
-  }
+    @media only all and (min-width: 64.0625em) { // 1025px / 16
+        font-size: 2.5em;
+    }
 }
 
 
@@ -198,10 +206,10 @@ header[role="banner"] {
 // ------------------------------------------------------------------------------- //
 
 #rss {
-  text-align: center;
-  a {
-    font-size: 1.5em;
-  }
+    text-align: center;
+    a {
+        font-size: 1.5em;
+    }
 }
 
 
@@ -209,16 +217,16 @@ header[role="banner"] {
 // ------------------------------------------------------------------------------- //
 
 #content article blockquote {
-  font-family: "adobe-garamond-pro", serif;
-  font-style: italic;
+    font-family: "adobe-garamond-pro", serif;
+    font-style: italic;
 }
 
 // article titles
 article h1 {
-  font-size: 2.25em; // 36px / 16px = 2.25em
-  a {
-    font-weight: 700;
-  }
+    font-size: 2.25em; // 36px / 16px = 2.25em
+    a {
+        font-weight: 700;
+    }
 }
 
 
@@ -226,40 +234,42 @@ article h1 {
 // ------------------------------------------------------------------------------- //
 
 #comments-link {
-  font-style: italic;
-  text-align: center;
+    font-style: italic;
+    text-align: center;
 }
 
 // journal entries footer
 #content article {
-  footer {
-    .tags h6,
-    .cats h6 {
-      text-align: center;
+        footer {
+        .tags h6,
+        .cats h6 {
+            text-align: center;
+        }
     }
-  }
 }
 
 #comments-count {
-  h6 {
-    b {
-      font-size: 1.5em;
-      line-height: 3.5em;
+    h6 {
+        b {
+            font-size: 1.5em;
+            line-height: 3.5em;
+        }
     }
-  }
 }
 
 .tags,
 .cats {
-  h6 {
-    b {
-      font-size: 1.5em;
-      line-height: 3.5em;
+
+    h6 {
+        b {
+            font-size: 1.5em;
+            line-height: 3.5em;
+        }
     }
-  }
-  ul {
-    text-align: center;
-  }
+
+    ul {
+        text-align: center;
+    }
 }
 
 
@@ -268,7 +278,7 @@ article h1 {
 
 // home page
 .pagination {
-  text-align: center;
+    text-align: center;
 }
 
 
@@ -276,15 +286,15 @@ article h1 {
 // ------------------------------------------------------------------------------- */
 
 .more-link {
-  font-size: 1.5em; // 24px / 16px = 1.5em
+    font-size: 1.5em; // 24px / 16px = 1.5em
 }
 
 .read-more {
-  line-height: 3.33333333333333em; // 80 / 24 = 3.33333333333333em
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 0  1px 0px #FFF,
-               0 -1px 0px rgba(0,0,0,.8);
+    line-height: 3.33333333333333em; // 80 / 24 = 3.33333333333333em
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0  1px 0px #FFF,
+                 0 -1px 0px rgba(0,0,0,.8);
 }
 
 
@@ -292,30 +302,30 @@ article h1 {
 // ------------------------------------------------------------------------------- //
 
 label[for="s"] {
-  font-style: italic;
+    font-style: italic;
 }
 
 #search-form input[type="text"],
 #respond label,
 #respond input,
 #respond textarea {
-  font-family: "adobe-garamond-pro", serif; 
-  font-style: italic;
+    font-family: "adobe-garamond-pro", serif; 
+    font-style: italic;
 }
 
 ::-webkit-input-placeholder {
-  font-family: "adobe-garamond-pro", serif;
-  font-style: italic;
+    font-family: "adobe-garamond-pro", serif;
+    font-style: italic;
 }
 
 :-moz-placeholder {
-  font-family: "adobe-garamond-pro", serif;
-  font-style: italic;
+    font-family: "adobe-garamond-pro", serif;
+    font-style: italic;
 }
 
 :placeholder {
-  font-family: "adobe-garamond-pro", serif;
-  font-style: italic;
+    font-family: "adobe-garamond-pro", serif;
+    font-style: italic;
 }
 
 
@@ -323,17 +333,19 @@ label[for="s"] {
 // ------------------------------------------------------------------------------- */
 
 .search {
-  #thumbsdown {
-    text-align: center;
-    .ss-icon {
-      text-align: center;
-    }
 
-    b {
-      font-size: 1.5em;
-      line-height: 3.5em;
+    #thumbsdown {
+        text-align: center;
+
+        .ss-icon {
+            text-align: center;
+        }
+
+        b {
+          font-size: 1.5em;
+          line-height: 3.5em;
+        }
     }
-  }
 }
 
 
@@ -341,24 +353,25 @@ label[for="s"] {
 // ------------------------------------------------------------------------------- //
 
 footer[role="contentinfo"] {
-  text-align: center;
-  small {
-    font-size: 100%;
-  }
-  @media screen and (min-width: 55.25em) {
-    text-align: left;
-  }
+    text-align: center;
+    small {
+        font-size: 100%;
+    }
+    @media screen and (min-width: 55.25em) {
+        text-align: left;
+    }
 }
 
 .socials.footer {
-  .ss-icon {
-    text-shadow: 0 1px 0px rgba(255,255,255,.25),
-                 0 -1px 0px #000;
-  }
 
-  ul {
-    font-size: 1.5em;
-  }
+    .ss-icon {
+        text-shadow: 0 1px 0px rgba(255,255,255,.25),
+                     0 -1px 0px #000;
+    }
+
+    ul {
+        font-size: 1.5em;
+    }
 }
 
 
@@ -380,16 +393,16 @@ a {
 
 ul,
 ol {
-  padding: $baseline;
+    padding: $baseline;
 }
 
 // Reset all headings in ul list
 // mainly for responsive images article
 li {
-  h3 {
-    margin: 0;
-    padding: 0;
-  }
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 
@@ -397,9 +410,9 @@ li {
 // ------------------------------------------------------------------------------- //
 
 dl {
-  dd {
-    margin: ($baseline / 2) 0;
-  }
+    dd {
+        margin: ($baseline / 2) 0;
+    }
 }
 
 
@@ -427,6 +440,14 @@ blockquote {
 }
 
 
+// = $Search Entry Module
+// ------------------------------------------------------------------------------- //
+
+.search .entry-item {
+    position: relative;
+}
+
+
 // = $Evernote Memory Button Layout
 // ------------------------------------------------------------------------------- //
 
@@ -451,9 +472,7 @@ blockquote {
 }
 
 .tagline {
-    @media only all and (max-width: 55.25em) {
-        //position: static;
-    }
+    margin: 0;
 }
 
 .logo {
@@ -499,6 +518,25 @@ blockquote {
 }
 
 
+// = $Socials Header Module
+// ------------------------------------------------------------------------------- //
+
+.socials.header {
+    list-style-type: none;
+    padding: 0;
+
+    text-align: center;
+
+    li {
+        display: inline-block;
+    }
+
+    @media only all and (min-width: 55.25em) {
+        text-align: right;
+    }
+}
+
+
 // = $Entry Module Layout
 // ------------------------------------------------------------------------------- //
 
@@ -506,11 +544,11 @@ blockquote {
     padding: ($baseline / 2) $mobile-gutter;
 
     @media only all and (min-width: 42.25em) and (max-width: 55.1875em) { // 676 / 16px = 42.25em 883px / 16px = 55.1875em
-      padding: 0;
+        padding: 0;
     }
 
     @media only all and (min-width: 55.25em) { // 884px / 16px = 55.25em
-      padding: 0;
+        padding: 0;
     }
 }
 
@@ -557,18 +595,18 @@ blockquote {
 
 .tags,
 .cats {
-  @extend .rule;
+    @extend .rule;
 }
 
 .tags h6,
 .cats h6 {
-  b {
-    @extend .tag-syle;
+    b {
+        @extend .tag-syle;
 
-    &:after {
-      @extend .after-tag-style;
+        &:after {
+            @extend .after-tag-style;
+        }
     }
-  }
 }
 
 
@@ -576,13 +614,13 @@ blockquote {
 // ------------------------------------------------------------------------------- //
 
 #comments-count h6 {
-  b {
-    @extend .tag-syle;
+    b {
+        @extend .tag-syle;
 
-    &:after {
-      @extend .after-tag-style;
+        &:after {
+            @extend .after-tag-style;
+        }
     }
-  }
 }
 
 
@@ -594,19 +632,19 @@ blockquote {
 .single,
 .archive,
 .category {
-  #content {
-    ul {
-      list-style-type: none;
-      padding-left: 0;
+    #content {
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
     }
-  }
 
-  h3 {
-    .ss-icon {
-      display: inline-block;
-      text-align: center;
+    h3 {
+        .ss-icon {
+            display: inline-block;
+            text-align: center;
+        }
     }
-  }
 }
 
 
@@ -626,7 +664,6 @@ blockquote {
 // ------------------------------------------------------------------------------- //
 
 .search #content {
-
     li {
         @extend .rule-sidebar;
         padding-top: 1.5em;
@@ -675,20 +712,20 @@ label[for="s"] {
 
 input,
 textarea {
-  @include transition($transition-1: .5s all ease-in-out);
-  @include box-sizing(border-box);
-  border: 1px solid #ddd;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
-  border-radius: 4px;
-  padding: $baseline;
+    @include transition($transition-1: .5s all ease-in-out);
+    @include box-sizing(border-box);
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+    border-radius: 4px;
+    padding: $baseline;
 
-  &:hover {
-    border: 1px solid #ccc;
-  }
+    &:hover {
+        border: 1px solid #ccc;
+    }
 
-  &:focus {
-    border: 1px solid #ccc;
-  }
+    &:focus {
+        border: 1px solid #ccc;
+    }
 }
 
 
@@ -696,13 +733,13 @@ textarea {
 // ------------------------------------------------------------------------------- //
 
 #article-links {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 
-  b[class="ss-icon"] {
-    display: inline-block;
-    margin-right: .75em;
-  }
+    b[class="ss-icon"] {
+        display: inline-block;
+        margin-right: .75em;
+    }
 }
 
 
@@ -711,14 +748,14 @@ textarea {
 
 .home,
 .single {
-  .meta {
-    @media screen and (min-width: 55.25em) {
-      float: left;
-      max-width: 12.994546937436em;
-      margin-left: -21.491820406154%; // 21.491820406154%
-      width: 12.994546937436%;
+    .meta {
+        @media screen and (min-width: 55.25em) {
+            float: left;
+            max-width: 12.994546937436em;
+            margin-left: -21.491820406154%; // 21.491820406154%
+            width: 12.994546937436%;
+        }
     }
-  }
 }
 
 
@@ -752,16 +789,16 @@ textarea {
             bottom: 1.75em;
         }
 
-    cite {
-        display: block;
+        cite {
+            display: block;
+        }
     }
-}
 
-  @media only all and (min-width: 55.25em) {
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: .75em;
-  }
+    @media only all and (min-width: 55.25em) {
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: .75em;
+    }
 }
 
 
@@ -777,7 +814,7 @@ textarea {
 .read-more {
     border-radius: 5%;
     box-shadow: 0px 3px 8px #aaa,
-        inset 0px 2px 3px #fff;
+          inset 0px 2px 3px #fff;
     border: solid 1px transparent;
     display: block;
     height: 3em; // 72 / 24px = 3em
@@ -854,69 +891,49 @@ textarea {
 // = $Comments Layout
 // ------------------------------------------------------------------------------- //
 
-.comments {
-  padding-left: $mobile-gutter;
-  padding-right: $mobile-gutter;
-  padding-bottom: $baseline;
-
-  @media screen and (min-width: 55.25em) {
-    padding-left: $desktop-gutter;
-    padding-right: $desktop-gutter;
-  }
-
-  @media only all and (min-width: 1800px) { // 1800px / 16px = 112.5em
-    padding-left: 27em;
-    padding-right: 27em;
-  }
-}
+//.comments {}
 
 #comments-count {
-  b {
-    font-size: 1.5em;
-  }
+    b {
+        font-size: 1.5em;
+    }
 }
 
 #comments-link {
-  display: block;
-
-  b {
     display: block;
-  }
+
+    b {
+        display: block;
+    }
 }
 
 #commentform {
-  #submit {
-    border: solid 1px transparent;
-    box-shadow: 0px 3px 8px #aaa, 
-          inset 0px 2px 3px #fff;
-    display: block;
-    line-height: ($baseline * 2);
-    opacity: .75;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
+    #submit {
+        border: solid 1px transparent;
+        box-shadow: 0px 3px 8px #aaa, 
+              inset 0px 2px 3px #fff;
+        display: block;
+        line-height: ($baseline * 2);
+        opacity: .75;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
 
-    &:hover {
-      opacity: 1;
+        &:hover {
+            opacity: 1;
+        }
     }
-  }
 }
 
 
 // = $Sidebar Layout
 // ------------------------------------------------------------------------------- //
 
-#sidebar {
-  @extend .rule;
+.stripe-sidebar {
+    @extend .rule;
 }
 
-
 #sidebar {
-    @extend .rule;
-    padding-top: ($baseline / 2);
-    padding-bottom: ($baseline / 2);
-    padding-left: $mobile-gutter;
-    padding-right: $mobile-gutter;
 
     article {
         padding-bottom: $baseline;
@@ -930,16 +947,6 @@ textarea {
             box-shadow: none;
         }
     }
-
-  @media screen and (min-width: 55.25em) {
-    padding-left: $desktop-gutter;
-    padding-right: $desktop-gutter;
-  }
-
-  @media only all and (min-width: 1800px) { // 1800px / 16px = 112.5em
-    padding-left: 27em;
-    padding-right: 27em;
-  }
 
   ul {
     -webkit-column-count: 4;
@@ -970,9 +977,9 @@ textarea {
 }
 
 .widget ul {
-  list-style-type: none;
-  margin-bottom: 0;
-  padding: 0;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 
@@ -986,25 +993,24 @@ textarea {
 }
 
 #single-pagination {
-  @extend .rule;
-  overflow: auto;
-  position: relative;
+    overflow: auto;
+    position: relative;
 }
 
 #prev,
 #nxt {
-  a {
-    @include box-sizing(border-box);
-    display: inline-block;
-    padding: ($baseline / 2) .25em;
-    text-align: center;
-    width: 12em;
-  }
+    a {
+        @include box-sizing(border-box);
+        display: inline-block;
+        padding: ($baseline / 2) .25em;
+        text-align: center;
+        width: 12em;
+    }
 }
 
 #nxt {
-  position: absolute;
-  right: 0;
+    position: absolute;
+    right: 0;
 }
 
 
@@ -1012,9 +1018,12 @@ textarea {
 // ------------------------------------------------------------------------------- //
 
 #respond {
-  input, textarea {
-    width: 100%;
-  }
+    padding-bottom: 1.5em;
+
+    input,
+    textarea {
+        width: 100%;
+    }
 }
 
 
@@ -1022,13 +1031,13 @@ textarea {
 // ------------------------------------------------------------------------------- //
 
 footer[role="contentinfo"] {
-  @extend .rule;
-  padding: 3em $mobile-gutter;
+    @extend .rule;
+    padding: 3em $mobile-gutter;
 
-  @media screen and (min-width: 55.25em) {
-    padding: 3em $desktop-gutter;
-    position: relative;
-  }
+    @media screen and (min-width: 55.25em) {
+        padding: 3em $desktop-gutter;
+        position: relative;
+    }
 }
 
 
@@ -1037,21 +1046,21 @@ footer[role="contentinfo"] {
 
 .socials.footer {
 
-  @media screen and (min-width: 55.25em) {
-    position: absolute;
-    top: 3em;
-    right: $desktop-gutter;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-      display: inline-block;
+    @media screen and (min-width: 55.25em) {
+        position: absolute;
+        top: 3em;
+        right: $desktop-gutter;
     }
-  }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+        }
+    }
 }
 
 
@@ -1064,9 +1073,9 @@ footer[role="contentinfo"] {
 // ------------------------------------------------------------------------------- */
 
 #thumbsdown {
-  b {
-    color: rgb(200,0,0);
-  }
+    b {
+        color: rgb(200,0,0);
+    }
 }
 
 
@@ -1074,8 +1083,8 @@ footer[role="contentinfo"] {
 // ------------------------------------------------------------------------------- //
 
 body {
-  color: #666;
-  color: rgba(102, 102, 102, 0.76);
+    color: #666;
+    color: rgba(102, 102, 102, 0.76);
 }
 
 blockquote {
@@ -1086,17 +1095,30 @@ blockquote {
 // = $Global Content Color
 // ------------------------------------------------------------------------------- //
 
-#content {
+body {
     background: #C9C8C8 url(img/lghtmesh.png) top left repeat;
 }
 
-.category .stripe:nth-child(odd),
+
+// = $Stripe Module Color
+// ------------------------------------------------------------------------------- //
+
 .home .stripe:nth-child(odd) {
     background: rgba(255,255,255,.5);
 }
 
-.single .stripe {
+.single .stripe,
+.archive .stripe,
+.search .stripe {
     background: rgba(255,255,255,.5);
+}
+
+
+// = $Search Entry Color
+// ------------------------------------------------------------------------------- //
+
+.search .entry-item:nth-child(odd) {
+    //background: white;
 }
 
 
@@ -1104,11 +1126,11 @@ blockquote {
 // ------------------------------------------------------------------------------- //
 
 [data-icon="database"] {
-  color: rgb(200,0,0);
+    color: rgb(200,0,0);
 }
 
 .archive-title {
-  color: darken(#C9C8C8, 15%);
+    color: darken(#C9C8C8, 15%);
 }
 
 
@@ -1116,7 +1138,7 @@ blockquote {
 // ------------------------------------------------------------------------------- //
 
 #sidebar {
-  background: #C9C8C8 url(img/lghtmesh.png) top left repeat;
+    //background: #C9C8C8 url(img/lghtmesh.png) top left repeat;
 }
 
 
@@ -1154,8 +1176,7 @@ code {
 
 .tags,
 .cats,
-#comments-count,
-.search h3 {
+#comments-count {
   b {
     background: rgba(255,255,255,.5);
     color: #333;
@@ -1345,8 +1366,6 @@ textarea {
 
 // = $Single Pagination Color
 // ------------------------------------------------------------------------------- //
-
-//#single-pagination {}
 
 
 // = $Comments Color

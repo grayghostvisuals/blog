@@ -65,7 +65,13 @@
 
 <?php comments_template(); ?>
 
-<section id="sidebar" role="complementary">
-    <?php get_sidebar(); ?>
-</section>
+<!-- sidebar -->
+<div class="stripe-sidebar m-all t-all d-all">
+    <div class="m-all t2-t6 d4-d10">
+        <section class="padding" id="sidebar" role="complementary">
+            <?php get_sidebar(); ?>
+        </section>
+    </div>
+</div>
+
 <?php get_footer(); ?>

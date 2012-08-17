@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 <section id="content" class="clearfix" role="main">
-
-    <!-- begin post loop -->
     <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
     <!-- gridset -->
     <div class="stripe m-all t-all d-all">

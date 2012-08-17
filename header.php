@@ -81,12 +81,12 @@ endif; ?></title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
 <!-- gridset -->
-<link href="http://get.gridsetapp.com/1046/" rel="stylesheet">
+<link href="//get.gridsetapp.com/1046/" rel="stylesheet">
 
 <!-- ss-social -->
-<link href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-social.css" rel="stylesheet">
+<!-- <link href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-social.css" rel="stylesheet"> -->
 <!-- ss-standard -->
-<link href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-standard.css" rel="stylesheet">
+<!-- <link href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-standard.css" rel="stylesheet"> -->
 
 <!-- css stylesheet -->
 <link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.0" rel="stylesheet" media="screen">
@@ -125,6 +125,15 @@ endif; ?></title>
 
             <h2 class="tagline"><?php echo esc_attr( bloginfo( 'description' ) ); ?></h2>
 
+            <ul class="socials header">
+                <li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF611;</a></li>
+                <li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF671;</a></li>
+                <li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF660;</a></li>
+                <li class="website"><a href="//grayghostvisuals.com" class="ss-icon" rel="external">&#x2601;</a></li>
+                <li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF610;</a></li>
+                <li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social-circle" rel="external">&#xF613;</a></li>
+            </ul>
+
             <?php if( ! is_search() && ! is_archive() && ! is_category() && ! is_single() && ! is_404() ) :?>
             <blockquote id="hero-quote">
                 <p><b class="ss-icon ss-quote"></b>The control which designers know in the print medium, and often desire in the web medium, is simply a function of the limitation of the printed page.</p>
@@ -133,33 +142,6 @@ endif; ?></title>
             <?php endif; ?>
 
             <?php get_search_form(); ?>
-
-            <nav role="navigation">
-                <ol>
-                    <?php
-                        $nav_wpflex = array(
-                            'depth'         => 2,
-                            'show_date'     => '',
-                            'date_format'   => get_option( 'date_format' ),
-                            'child_of'      => 0,
-                            'exclude'       => '',
-                            'include'       => '',
-                            'title_li'      => '',
-                            'echo'          => 1,
-                            'authors'       => '',
-                            'sort_column'   => 'menu_order',
-                            'link_before'   => '',
-                            'link_after'    => '',
-                            'walker'        => ''
-                        );
-
-                        if( wp_list_pages( $nav_wpflex ) ) : while ( wp_list_pages( $nav_wpflex ) ) :
-                        wp_list_pages( $nav_wpflex );
-                        endwhile;
-                        endif;
-                    ?>
-                </ol>
-            </nav>
 
             <article id="rss">
                 <a href="<?php bloginfo('rss2_url') ?>"><b class="ss-icon ss-rss"></b><span class="visuallyhidden">Feed</span></a>
