@@ -33,7 +33,6 @@
 
     <div class="m-all t-all d-all">
         <div class="pagination">
-            <div><b class="ss-icon">&#xE672;</b></div>
             <?php
                 global $wp_query;
                 $big = 999999999;

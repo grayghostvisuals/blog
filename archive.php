@@ -18,8 +18,8 @@ rewind_posts();
     <div class="stripe m-all t-all d-all">
         <div class="m-all t2-t6 d4-d10">
         <!-- gridset -->
-            <section>
-                <h1 class="headline">
+            <section class="page-content">
+                <h1 class="headline padding">
                     <b class="ss-icon" data-icon="database">&#xE7A0;</b> <?php if ( is_day() ) : ?> <?php printf( 'Daily Archives: <span class="archive-title">%s</span>', get_the_date() ); ?>
                     <?php elseif ( is_month() ) : ?><?php printf( 'Monthly Archives: <span>%s</span>', get_the_date( 'F Y' ) ); ?>
                     <?php elseif ( is_year() ) : ?><?php printf( 'Yearly Archives: <span>%s</span>', get_the_date( 'Y' ) ); ?>
@@ -27,7 +27,7 @@ rewind_posts();
                     <?php else : ?><?php echo ( 'The Archives' ); ?><?php endif; //end initial if ?>
                 </h1>
 
-                <ul class="list-reset">
+                <ul class="list-reset archive-archives">
                     <?php if( have_posts() ) : while( have_posts() ) : the_post()?>
                     <li class="entry-item" id="post-<?php the_ID(); ?>">
                         <article <?php post_class('padding entry'); ?>>

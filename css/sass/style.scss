@@ -19,9 +19,6 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 
 //@import "imports/gridset.scss";   // gridset
 
-@import "webfonts/ss-social.css";   // social icons
-@import "webfonts/ss-standard.css"; // social standard icons
-
 @import "compass";                  // compass
 
 @import "imports/vars.scss";        // variables
@@ -31,12 +28,13 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 @import "imports/resets.scss";      // html5boilerplate resets
 @import "imports/wp-classes.scss";  // Wordpress Classes
 
+@import "webfonts/ss-social.css";   // social icons
+@import "webfonts/ss-standard.css"; // social standard icons
 
 
 // ------------------------------------------------------------------------------- */
 // = $Typography
 // ------------------------------------------------------------------------------- */
-
 
 // = $Global Typography
 // ------------------------------------------------------------------------------- //
@@ -87,7 +85,7 @@ dt {
 
 dd {
     font-size: 1em; // 14 / 16
-    line-height: 1.5em;
+    line-height: 1.5;
 }
 
 
@@ -137,11 +135,11 @@ p {
 
 [role="main"] p {
     font-size: 1.125em; // 18px / 16px = 1.125em
-    line-height: 1.5em; // 16 * 1.5 = 24px
+    line-height: 1.5;   // 16 * 1.5 = 24px
 
     @media only all and (min-width: 63.9375em) { // 1023px / 16
-        font-size: 1.75em; //  28px / 16px = 1.75em
-        line-height: 1.5em; // 28px * 1.5em = 42px
+        font-size: 1.75em;  //  28px / 16px = 1.75em
+        line-height: 1.5;   // 28px * 1.5em = 42px
     }
 }
 
@@ -207,6 +205,7 @@ header[role="banner"] {
 
 #rss {
     text-align: center;
+
     a {
         font-size: 1.5em;
     }
@@ -238,38 +237,17 @@ article h1 {
     text-align: center;
 }
 
-// journal entries footer
-#content article {
-        footer {
-        .tags h6,
-        .cats h6 {
-            text-align: center;
-        }
+.taxonomy-title {
+    text-align: center;
+
+    b {
+        font-size: 1.5em;
+        line-height: 3.5;
     }
 }
 
-#comments-count {
-    h6 {
-        b {
-            font-size: 1.5em;
-            line-height: 3.5em;
-        }
-    }
-}
-
-.tags,
-.cats {
-
-    h6 {
-        b {
-            font-size: 1.5em;
-            line-height: 3.5em;
-        }
-    }
-
-    ul {
-        text-align: center;
-    }
+.taxonomies-list {
+    text-align: center;
 }
 
 
@@ -290,7 +268,7 @@ article h1 {
 }
 
 .read-more {
-    line-height: 3.33333333333333em; // 80 / 24 = 3.33333333333333em
+    line-height: 3.33333333333333; // 80 / 24 = 3.33333333333333em
     text-align: center;
     text-decoration: none;
     text-shadow: 0  1px 0px #FFF,
@@ -335,16 +313,9 @@ label[for="s"] {
 .search {
 
     #thumbsdown {
+        font-size: 2em;
+        line-height: 3.5;
         text-align: center;
-
-        .ss-icon {
-            text-align: center;
-        }
-
-        b {
-          font-size: 1.5em;
-          line-height: 3.5em;
-        }
     }
 }
 
@@ -378,7 +349,6 @@ footer[role="contentinfo"] {
 // ------------------------------------------------------------------------------- //
 // = $LAYOUT
 // ------------------------------------------------------------------------------- //
-
 
 // = $Global Layout
 // ------------------------------------------------------------------------------- //
@@ -445,6 +415,26 @@ blockquote {
 
 .search .entry-item {
     position: relative;
+}
+
+
+// = $Search Results Error Module
+// ------------------------------------------------------------------------------- //
+
+.search {
+
+    #thumbsdown {
+        background: #dd4b2a;
+        background: rgba(221, 75, 42, 1.0);
+        color: #8f0201;
+        border: .1875em solid #d62600;
+        border-radius: 80%;
+        box-shadow: inset 1px 1px 4px rgba(0,0,0, 0.40),
+                    inset -1px -1px 4px rgba(0,0,0, 0.40);
+        width: 3em;
+        height: 3em;
+        margin: 0 auto;
+    }
 }
 
 
@@ -590,30 +580,20 @@ blockquote {
 }
 
 
-// = $Tag Lists Module Layout
+// = $Entry Taxonomy Module Layout
 // ------------------------------------------------------------------------------- //
 
-.tags,
-.cats {
+.taxonomytags,
+.taxonomycats {
     @extend .rule;
 }
 
-.tags h6,
-.cats h6 {
-    b {
-        @extend .tag-syle;
-
-        &:after {
-            @extend .after-tag-style;
-        }
-    }
+.taxonomies-list {
+    @extend .list-reset;
+    padding-top: 0;
 }
 
-
-// = $Comments Layout
-// ------------------------------------------------------------------------------- //
-
-#comments-count h6 {
+.taxonomy-title {
     b {
         @extend .tag-syle;
 
@@ -627,25 +607,6 @@ blockquote {
 // = $Single Pages Layout
 // ------------------------------------------------------------------------------- //
 
-// search and single page
-.search,
-.single,
-.archive,
-.category {
-    #content {
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-    }
-
-    h3 {
-        .ss-icon {
-            display: inline-block;
-            text-align: center;
-        }
-    }
-}
 
 
 // = $Archives/Categories Page Layout
@@ -657,6 +618,11 @@ blockquote {
         @extend .rule;
         padding-bottom: 1.5em;
     }
+}
+
+.list-reset.category-archives,
+.list-reset.archive-archives {
+    padding: 0;
 }
 
 
@@ -817,10 +783,10 @@ textarea {
           inset 0px 2px 3px #fff;
     border: solid 1px transparent;
     display: block;
-    height: 3em; // 72 / 24px = 3em
+    height: 3em;        // 72 / 24px = 3em
     margin: $baseline auto;
     position: relative;
-    width: 3em; // 72 / 24px = 3em
+    width: 3em;         // 72 / 24px = 3em
 
     &:after {
         border-radius: 5%;
@@ -829,10 +795,10 @@ textarea {
         content: "";
         display: block;
         position: absolute;
-        top: -.75em; // 18px / 24px = .75em 
-        left: -.75em; // 18px / 24px = .75em
+        top: -.75em;    // 18px / 24px = .75em 
+        left: -.75em;   // 18px / 24px = .75em
         bottom: -.75em; // 18px / 24px = .75em
-        right: -.75em; // 18px / 24px = .75em
+        right: -.75em;  // 18px / 24px = .75em
         z-index: -1;
     }
 
@@ -891,8 +857,6 @@ textarea {
 // = $Comments Layout
 // ------------------------------------------------------------------------------- //
 
-//.comments {}
-
 #comments-count {
     b {
         font-size: 1.5em;
@@ -928,10 +892,6 @@ textarea {
 
 // = $Sidebar Layout
 // ------------------------------------------------------------------------------- //
-
-.stripe-sidebar {
-    @extend .rule;
-}
 
 #sidebar {
 
@@ -972,8 +932,8 @@ textarea {
          -moz-column-count: 1;
            -o-column-count: 1;
               column-count: 1;
-    } //end max 42.25em @mq
-  }// end ul
+    }
+  }
 }
 
 .widget ul {
@@ -987,28 +947,37 @@ textarea {
 // ------------------------------------------------------------------------------- //
 
 .single {
-  .meta {
-    width: 7.375em;
-  }
+    .meta {
+        width: 7.375em;
+    }
 }
 
-#single-pagination {
+.single-pagination {
     overflow: auto;
     position: relative;
-}
 
-#prev,
-#nxt {
     a {
         @include box-sizing(border-box);
         display: inline-block;
         padding: ($baseline / 2) .25em;
+        width: auto;
+    }
+
+    [class|="ss"] {
+        border-radius: 80%;
+        border: .75em solid white;
+        box-shadow:  1px  1px 1px 1px rgba(0,0,0, 0.10),
+                    -1px -1px 1px 1px rgba(0,0,0, 0.30);
+        display: inline-block;
+        height: 2.75em;
+        width: 2.75em;
+
+        line-height: 3;
         text-align: center;
-        width: 12em;
     }
 }
 
-#nxt {
+.nxt {
     position: absolute;
     right: 0;
 }
@@ -1045,7 +1014,6 @@ footer[role="contentinfo"] {
 // ------------------------------------------------------------------------------- //
 
 .socials.footer {
-
     @media screen and (min-width: 55.25em) {
         position: absolute;
         top: 3em;
@@ -1056,7 +1024,6 @@ footer[role="contentinfo"] {
         list-style-type: none;
         margin: 0;
         padding: 0;
-
         li {
             display: inline-block;
         }
@@ -1068,57 +1035,17 @@ footer[role="contentinfo"] {
 // = $Color
 // ------------------------------------------------------------------------------- */
 
-
-// = $404 Error Color
-// ------------------------------------------------------------------------------- */
-
-#thumbsdown {
-    b {
-        color: rgb(200,0,0);
-    }
-}
-
-
 // = $Global Color
 // ------------------------------------------------------------------------------- //
 
 body {
+    background: #C9C8C8 url(img/lghtmesh.png) top left repeat;
     color: #666;
     color: rgba(102, 102, 102, 0.76);
 }
 
 blockquote {
     background: rgba(51, 48, 48, 0.05);
-}
-
-
-// = $Global Content Color
-// ------------------------------------------------------------------------------- //
-
-body {
-    background: #C9C8C8 url(img/lghtmesh.png) top left repeat;
-}
-
-
-// = $Stripe Module Color
-// ------------------------------------------------------------------------------- //
-
-.home .stripe:nth-child(odd) {
-    background: rgba(255,255,255,.5);
-}
-
-.single .stripe,
-.archive .stripe,
-.search .stripe {
-    background: rgba(255,255,255,.5);
-}
-
-
-// = $Search Entry Color
-// ------------------------------------------------------------------------------- //
-
-.search .entry-item:nth-child(odd) {
-    //background: white;
 }
 
 
@@ -1134,23 +1061,32 @@ body {
 }
 
 
-// = $Sidebar Color
-// ------------------------------------------------------------------------------- //
-
-#sidebar {
-    //background: #C9C8C8 url(img/lghtmesh.png) top left repeat;
-}
-
-
 // = $Global Headings Color
 // ------------------------------------------------------------------------------- //
 
-h1 { color:         $header-color;       }
-h2 { color: lighten($header-color, 10%); }
-h3 { color: lighten($header-color, 20%); }
-h4 { color: lighten($header-color, 30%); }
-h5 { color: lighten($header-color, 40%); }
-h6 { color: lighten($header-color, 50%); }
+h1 {
+    color: $header-color;
+}
+
+h2 {
+    color: lighten($header-color, 10%);
+}
+
+h3 {
+    color: lighten($header-color, 20%);
+}
+
+h4 {
+    color: lighten($header-color, 30%);
+}
+
+h5 {
+    color: lighten($header-color, 40%);
+}
+
+h6 {
+    color: lighten($header-color, 50%);
+}
 
 
 // = $Code Block Color
@@ -1158,32 +1094,8 @@ h6 { color: lighten($header-color, 50%); }
 
 pre,
 code {
-  background: white;
-  color: purple;
-}
-
-
-// = $Entry Meta Color
-// ------------------------------------------------------------------------------- //
-
-.meta {
-  background: rgba(0,0,0,.05);
-}
-
-
-// = $Entry Footer Color
-// ------------------------------------------------------------------------------- //
-
-.tags,
-.cats,
-#comments-count {
-  b {
-    background: rgba(255,255,255,.5);
-    color: #333;
-    &:after {
-      background: rgba(255,255,255,.5);
-    }
-  }
+    background: white;
+    color: purple;
 }
 
 
@@ -1192,7 +1104,7 @@ code {
 
 ul,
 ol {
-  color: #999;
+    color: #999;
 }
 
 
@@ -1200,9 +1112,88 @@ ol {
 // ------------------------------------------------------------------------------- //
 
 dl {
-  dd {
-    color: #666;
-  }
+    dd {
+        color: #666;
+    }
+}
+
+
+// = $Stripe Module Color
+// ------------------------------------------------------------------------------- //
+
+.home .stripe:nth-child(odd) {
+    background: rgba(255,255,255,.5);
+}
+
+.stripe-sidebar {
+    @extend .rule;
+}
+
+.single .stripe,
+.archive .stripe,
+.search .stripe,
+.error404 .stripe {
+    background: rgba(255,255,255,.5);
+}
+
+
+// = $Entry Meta Color
+// ------------------------------------------------------------------------------- //
+
+.meta {
+    background: rgba(0,0,0,.05);
+}
+
+
+// = $Entry Taxonomy Color
+// ------------------------------------------------------------------------------- //
+
+.taxonomy-title {
+    [class|="ss"] {
+        background: rgba(255,255,255,.5);
+        color: #333;
+
+        &:after {
+            background: rgba(255,255,255,.5);
+        }
+    }
+}
+
+
+// = $Single Page Pagination Color
+// ------------------------------------------------------------------------------- //
+
+.single-pagination {
+
+    [class|="ss"] {
+        background: #c80000;
+        color: #fff;
+
+        .cssgradients & {
+            background: -webkit-radial-gradient(circle, lighten(#e63f00,5%) 0%, lighten(#950000,5%) 80%, lighten(#950000,10%) 100%);
+            background:    -moz-radial-gradient(circle, lighten(#e63f00,5%) 0%, lighten(#950000,5%) 80%, lighten(#950000,10%) 100%);
+            background:      -o-radial-gradient(circle, lighten(#e63f00,5%) 0%, lighten(#950000,5%) 80%, lighten(#950000,10%) 100%);
+            background:         radial-gradient(circle, lighten(#e63f00,5%) 0%, lighten(#950000,5%) 80%, lighten(#950000,10%) 100%);
+
+            &:hover {
+                background: -webkit-radial-gradient(circle, lighten(#e63f00,10%) 0%, lighten(#950000,10%) 80%, lighten(#950000,15%) 100%);
+                background:    -moz-radial-gradient(circle, lighten(#e63f00,10%) 0%, lighten(#950000,10%) 80%, lighten(#950000,15%) 100%);
+                background:      -o-radial-gradient(circle, lighten(#e63f00,10%) 0%, lighten(#950000,10%) 80%, lighten(#950000,15%) 100%);
+                background:         radial-gradient(circle, lighten(#e63f00,10%) 0%, lighten(#950000,10%) 80%, lighten(#950000,15%) 100%);
+            }
+
+            &:active {
+                background: -webkit-radial-gradient(circle, lighten(#e63f00,15%) 0%, lighten(#950000,15%) 80%, lighten(#950000,20%) 100%);
+                background:    -moz-radial-gradient(circle, lighten(#e63f00,15%) 0%, lighten(#950000,15%) 80%, lighten(#950000,20%) 100%);
+                background:      -o-radial-gradient(circle, lighten(#e63f00,15%) 0%, lighten(#950000,15%) 80%, lighten(#950000,20%) 100%);
+                background:         radial-gradient(circle, lighten(#e63f00,15%) 0%, lighten(#950000,15%) 80%, lighten(#950000,20%) 100%);
+            }
+        }
+
+        &:hover {
+            background: darken(#c80000,10%);
+        }
+    }
 }
 
 
@@ -1220,13 +1211,13 @@ header[role="banner"] {
 // ------------------------------------------------------------------------------- //
 
 .no-svg #rss {
-  background: $rss-ribbon;
+    background: $rss-ribbon;
 }
 
 .svg #rss {
-  background: $rss-ribbon;
-  background: url(img/rss-svg-ribbon.svg) top left no-repeat;
-  @include background-size(100%);
+    background: $rss-ribbon;
+    background: url(img/rss-svg-ribbon.svg) top left no-repeat;
+    @include background-size(100%);
 }
 
 
@@ -1234,16 +1225,19 @@ header[role="banner"] {
 // ------------------------------------------------------------------------------- //
 
 #hero-quote {
-  color: #B3B3B3;
-  small {
-    background: #C9C8C8 url(img/lghtmesh.png) top left repeat;
-  }
-  b {
-    color: #DDD;
-  }
-  cite {
-    color: lighten(#444, 20%);
-  }
+    color: #B3B3B3;
+
+    small {
+        background: #C9C8C8 url(img/lghtmesh.png) top left repeat;
+    }
+
+    b {
+        color: #DDD;
+    }
+
+    cite {
+        color: lighten(#444, 20%);
+    }
 }
 
 
@@ -1251,16 +1245,16 @@ header[role="banner"] {
 // ------------------------------------------------------------------------------- //
 
 .read-more {
-  background-color: #f7f7f7;
-  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
-  background-image:    -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
-  background-image:     -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
-  background-image:      -o-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-color: #f7f7f7;
+    background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image:    -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image:     -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image:      -o-linear-gradient(top, #f7f7f7, #e7e7e7);
 
-  &:after {
-    background: #fff;
-    opacity: .7;
-  }
+    &:after {
+        background: #fff;
+        opacity: .7;
+    }
 }
 
 
@@ -1303,37 +1297,37 @@ header[role="banner"] {
 // ------------------------------------------------------------------------------- //
 
 label[for="s"] {
-  color: darken(#C9C8C8,15%);
+    color: darken(#C9C8C8,15%);
 }
 
 ::-webkit-input-placeholder {
-  color: $placeholder-txt-color;
+    color: $placeholder-txt-color;
 }
 
 :-moz-placeholder {
-  color: $placeholder-txt-color;
+    color: $placeholder-txt-color;
 }
 
 :placeholder {
-  color: $placeholder-txt-color;
+    color: $placeholder-txt-color;
 }
 
 //search form
 #search-form {
-  input[name="s"] {
-    @include transition($transition-1: .5s all ease-in-out);
-    background: rgba(255,255,255,.5);
-    color: $placeholder-txt-color;
+    input[name="s"] {
+        @include transition($transition-1: .5s all ease-in-out);
+        background: rgba(255,255,255,.5);
+        color: $placeholder-txt-color;
 
-    &:hover {
-      background: rgba(255,255,255,.7);
-    }
+        &:hover {
+            background: rgba(255,255,255,.7);
+        }
 
-    &:focus,
-    &:active {
-      background: rgba(255,255,255,.9);
+        &:focus,
+        &:active {
+          background: rgba(255,255,255,.9);
+        }
     }
-  }
 }
 
 
@@ -1342,13 +1336,15 @@ label[for="s"] {
 
 input,
 textarea {
-  background: #f5f5f5;
-  &:focus {
-    background: #fff;
-  }
-  &:hover {
-    background: rgba(255,255,255,.4);
-  }
+    background: #f5f5f5;
+
+    &:focus {
+        background: #fff;
+    }
+
+    &:hover {
+        background: rgba(255,255,255,.4);
+    }
 }
 
 
@@ -1356,34 +1352,34 @@ textarea {
 // ------------------------------------------------------------------------------- //
 
 #article-links {
-  li {
-    h3 {
-      color: $base-white;
+    li {
+        h3 {
+            color: $base-white;
+        }
     }
-  }
 }
-
-
-// = $Single Pagination Color
-// ------------------------------------------------------------------------------- //
 
 
 // = $Comments Color
 // ------------------------------------------------------------------------------- //
 
 #commentform #submit {
-  background-color: #f7f7f7;
-  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
-  background-image:    -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
-  background-image:     -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
-  background-image:      -o-linear-gradient(top, #f7f7f7, #e7e7e7);
-  background-image:         linear-gradient(top, #f7f7f7, #e7e7e7);
-  color: #a7a7a7;
+    background-color: #f7f7f7;
+    background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image:    -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image:     -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image:      -o-linear-gradient(top, #f7f7f7, #e7e7e7);
+    background-image:         linear-gradient(top, #f7f7f7, #e7e7e7);
+    color: #a7a7a7;
 
-  &:active {
-    box-shadow: none;
-    border: solid 1px #a7a7a7;
-  }
+    &:active {
+        box-shadow: none;
+        border: solid 1px #a7a7a7;
+    }
+}
+
+.ss-alert {
+    color: #b34532;
 }
 
 
@@ -1391,14 +1387,14 @@ textarea {
 // ------------------------------------------------------------------------------- //
 
 footer[role="contentinfo"] {
-  background: #C9C8C8 url(img/irongrip.png) top left repeat;
-  a {
-    color: #f4f4f4;
-    opacity: .7;
-    &:hover {
-      opacity: .9;
+    background: #C9C8C8 url(img/irongrip.png) top left repeat;
+    a {
+        color: #f4f4f4;
+        opacity: .7;
+        &:hover {
+            opacity: .9;
+        }
     }
-  }
 }
 
 

@@ -4,10 +4,10 @@
         <div class="m-all t2-t6 d4-d10">
         <!-- gridset -->
 
-            <section>
-                <h1 class="headline"><b class="ss-icon" data-icon="database">&#xE7A0;</b> <?php printf( 'Category Archives: %s', single_cat_title( '', false )); ?></h1>
+            <section class="page-content">
+                <h1 class="headline padding"><b class="ss-icon" data-icon="database">&#xE7A0;</b> <?php printf( 'Category Archives: %s', single_cat_title( '', false )); ?></h1>
 
-                <ul class="list-reset">
+                <ul class="list-reset category-archives">
                     <?php if( have_posts() ) : while( have_posts() ) : the_post()?>
                     <li class="entry-item" id="post-<?php the_ID(); ?>">
                         <article <?php post_class('padding entry'); ?>>
@@ -39,7 +39,7 @@
 <!-- sidebar -->
 <div class="stripe-sidebar m-all t-all d-all">
     <div class="m-all t2-t6 d4-d10">
-        <section id="sidebar" role="complementary">
+        <section class="padding" id="sidebar" role="complementary">
             <?php get_sidebar(); ?>
         </section>
     </div>

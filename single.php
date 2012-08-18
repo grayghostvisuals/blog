@@ -24,23 +24,24 @@
                     'after'  => '</div>'
                 )); ?>
 
-                <footer>
+                <footer class="entry-footer">
                     <div id="comments-count">
-                        <a href="<?php comments_link(); ?>" id="comments-link" ><h6><b class="ss-icon">&#x1F3A4;</b></h6> <span id="comments-number"><?php comments_number( '0', '1', '%' ); ?></span> Comments</a>
+                        <h6 class="taxonomy-title"><b class="ss-icon">&#x1F3A4;</b></h6>
+                        <a href="<?php comments_link(); ?>" id="comments-link"><span id="comments-number"><?php comments_number( '0', '1', '%' ); ?></span> Comments</a>
                     </div>
 
                     <ul id="taxonomies">
-                        <li class="tags">
-                            <h6><b class="ss-icon">&#xE100;</b>Tagged</h6>
-                            <ul>
-                                <li><?php the_tags( '</li><li>' ); ?></li>
+                        <li class="taxonomytags">
+                            <h6 class="taxonomy-title"><b class="ss-icon">&#xE100;</b>Tagged</h6>
+                            <ul class="taxonomies-list">
+                                <li class="taxonomies-item"><?php the_tags( '</li><li>' ); ?></li>
                             </ul>
                         </li>
 
-                        <li class="cats">
-                            <h6><b class="ss-icon">&#x1F4E5;</b>Filed as</h6>
-                            <ul>
-                                <li><?php the_category( '</li><li>' ) ?></li>
+                        <li class="taxonomycats">
+                            <h6 class="taxonomy-title"><b class="ss-icon">&#x1F4E5;</b>Filed as</h6>
+                            <ul class="taxonomies-list">
+                                <li class="taxonomies-item"><?php the_category( '</li><li>' ) ?></li>
                             </ul>
                         </li>
                     </ul>
@@ -48,9 +49,13 @@
             </article>
 
             <div class="m-all t-all d-all">
-                <div id="single-pagination">
-                    <span id="prev"><?php previous_post_link( '%link', '&larr; Previous Category Post', TRUE ); ?></span>
-                    <span id="nxt"><?php next_post_link( '%link', 'Next Category Post &rarr;', TRUE ); ?></span>
+                <div class="single-pagination">
+                    <span class="prev">
+                        <?php previous_post_link( '%link', '<span class="ss-icon ss-navigateleft"></span> <span class="visuallyhidden">Previous Category Post</span>', TRUE ); ?>
+                    </span>
+                    <span class="nxt">
+                        <?php next_post_link( '%link', '<span class="visuallyhidden">Next Category Post</span> <span class="ss-icon ss-navigateright"></span>', TRUE ); ?>
+                    </span>
                 </div>
             </div>
         <!-- gridset -->

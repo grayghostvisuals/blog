@@ -81,7 +81,11 @@ endif; ?></title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
 <!-- gridset -->
-<link href="//get.gridsetapp.com/1046/" rel="stylesheet">
+<link href="//get.gridsetapp.com/1046" rel="stylesheet">
+<!-- Gridset CSS -->
+<!-- <link rel="stylesheet" href="./css/gridset.raw.css" /> -->
+<!-- Uncomment next line to use gzipped css when on your server. This will drastically reduce file size and download time. -->
+<!-- <link rel="stylesheet" href="./css/gridset.raw.css" /> -->
 
 <!-- ss-social -->
 <!-- <link href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-social.css" rel="stylesheet"> -->

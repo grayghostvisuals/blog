@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section id="content" class="clearfix" role="main">
-    <div class="m-all t-all d-all">
+    <div class="stripe m-all t-all d-all">
         <div class="m-all t2-t6 d4-d10">
             <section>
                 <h2><b class="ss-icon ss-alert"></b> Holy Error 404! - Page Not Found</h2>
