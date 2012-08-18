@@ -9,7 +9,7 @@
                     <h1 class="headline"><b class="ss-icon" data-icon="database">&#xE7A0;</b> Search Results</h1>
                 </header>
 
-                <ul class="list-reset">
+                <ul class="list-reset archive-archives">
                     <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
                     <li class="entry-item" id="post-<?php the_ID(); ?>">
                         <article <?php post_class('padding entry'); ?>>
@@ -33,7 +33,6 @@
 
     <div class="m-all t-all d-all">
         <div class="pagination">
-            <div><b class="ss-icon">&#xE672;</b></div>
             <?php
                 global $wp_query;
                 $big = 999999999;
