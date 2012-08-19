@@ -82,7 +82,7 @@ endif; ?></title>
 
 <!-- Gridset Modern Browser Local CSS -->
 <!--[if gte IE 9]><!-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.1">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.2">
 <!--<![endif]-->
 
 <!-- Gridset lt-IE 9 CSS -->
@@ -91,11 +91,11 @@ endif; ?></title>
 <![endif]-->
 
 <!-- Modern Browsers CSS -->
-<!--[if gt IE 8]><!--><link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.1" rel="stylesheet" media="all"><!--<![endif]-->
+<!--[if gt IE 8]><!--><link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.2" rel="stylesheet" media="all"><!--<![endif]-->
 
 <!-- lt-IE 9 CSS -->
 <!--[if lt IE 9]>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.1" type="text/css" media="all">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.2" type="text/css" media="all">
 <![endif]-->
 
 <!-- pingback url -->
