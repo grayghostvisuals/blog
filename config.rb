@@ -5,13 +5,13 @@ require "/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass.rb";
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "/"
+css_dir = "css"
 sass_dir = "css/sass"
 images_dir = "img"
 javascripts_dir = "js"
 
-output_style = :expanded
-environment = :development
+output_style = :compressed
+environment = :production
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true

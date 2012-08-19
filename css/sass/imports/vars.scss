@@ -1,15 +1,15 @@
 //======================================== font size and line height
 
 $font-size: 1rem;
-$baseline: 1.5rem;
-$line-height: 1.5rem;
+$baseline: 1.5em;
+$line-height: 1.5;
 
 
 //======================================== layout variables
 
 $mobile-gutter: 5.35715%;
 $tab-gutter: 9.34065934857143%;
-$desktop-gutter: 16.2431836717949%;
+$desktop-gutter: 16.2431836717949%; // 884 * 16.2431836717949% = 143.589743658667px
 
 
 //======================================== placeholders
@@ -18,30 +18,30 @@ $desktop-gutter: 16.2431836717949%;
 $placeholder-txt-color:darken(#DDD,5%);
 
 //selection
-$selection-bgcolor:#444;
-$selection-txtcolor:#FFF;
+$selection-bgcolor: #c80000;
+$selection-txtcolor: #FFF;
 
 //======================================== anchors
 
 $anchor-color: rgb(200,0,0);
-$anchor-hover-color:rgb(255,0,0);
+$anchor-hover-color: rgb(255,0,0);
 
 
 //======================================== base colors
 
 $base-white: #FFF;
-$site-bgcolor:#FFF;
-$site-txtcolor:#FFF;
+$site-bgcolor: #FFF;
+$site-txtcolor: #FFF;
 
 
 //======================================== headers
 
-$header-color:#000;
+$header-color: #000;
 
 
 //======================================== rss ribbon
 
-$rss-ribbon:#FFF;
+$rss-ribbon: #aa422f;
 
 
 //======================================== pagination gradient

@@ -1,5 +1,6 @@
 <!doctype html>
-<html class="no-js" <?php language_attributes(); ?>>
+<!--[if IE 8]>         <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 <script type="text/javascript">
   (function() {
@@ -41,7 +42,7 @@ endif;
 if( is_home() ):
   esc_attr( bloginfo( 'name' ) ); echo '-'; esc_attr( bloginfo( 'description' ) ); echo '-'; esc_attr( wp_title() );
 else :
-  esc_attr( bloginfo( 'name' ) );
+  esc_attr( bloginfo( 'name' ) ); echo 'Exploring Front-end Web Design';
 endif;
 
 // if pages is greater than 1
@@ -72,7 +73,6 @@ endif; ?></title>
 <!--    I Use Scott Jehl's iOS Orientation Fix
         While SJ rides trains, he fixes things for us
         https://github.com/scottjehl/iOS-Orientationchange-Fix -->
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- http://t.co/dKP3o1e -->
@@ -80,16 +80,31 @@ endif; ?></title>
 <meta name="MobileOptimized" content="320">
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<!-- gridset -->
-<link href="http://get.gridsetapp.com/1046/" rel="stylesheet" />
-<!-- base css -->
-<link rel="stylesheet" media="screen" href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.0">
+<!-- Gridset Modern Browser Local CSS -->
+<!--[if gte IE 9]><!-->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.1">
+<!--<![endif]-->
+
+<!-- Gridset lt-IE 9 CSS -->
+<!--[if (lt IE 9) | (IEMobile)]>
+    <link href="//get.gridsetapp.com/1046" rel="stylesheet">
+<![endif]-->
+
+<!-- Modern Browsers CSS -->
+<!--[if gt IE 8]><!--><link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.1" rel="stylesheet" media="all"><!--<![endif]-->
+
+<!-- lt-IE 9 CSS -->
+<!--[if lt IE 9]>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.1" type="text/css" media="all">
+<![endif]-->
 
 <!-- pingback url -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
 <!-- RSS Feed -->
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo( 'rss2_url' ); ?>">
 
+<!-- Modernizr -->
 <script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr.js"></script>
 
 <?php if ( is_singular() ) { wp_enqueue_script( 'comment-reply' ); } ?>
@@ -104,52 +119,47 @@ endif; ?></title>
 <body <?php body_class(); ?> id="<?php the_title(); ?>">
 <?php endif; ?>
 
-<div class="m-all">
-<header role="banner">
-    <h1>
-        <a href="<?php echo home_url();  ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/blogbadge@2x.png" id="logo">
-            <span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( 'name' ) ); ?></span>
-        </a>
-    </h1>
+<div class="m-all t-all d-all">
+    <div class="t2-t6 d4-d10">
+    <!-- gridset -->
+        <header class="padding" role="banner">
+            <h1 class="blog-name">
+                <a href="<?php echo home_url();  ?>" class="blog-uri">
+                    <!--[if gt IE 8]><!-->
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/blogbadge.png" alt="gray ghost visuals press icon leading you home" class="logo">
+                        <span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( 'name' ) ); ?></span>
+                    <!--<![endif]-->
 
-    <h2><?php echo esc_attr( bloginfo( 'description' ) ); ?></h2>
+                    <!--[if lt IE 9]>
+                        <span class="ie-logo"><?php esc_attr( bloginfo( 'name' ) ); ?></span>
+                    <![endif]-->
+                </a>
+            </h1>
 
-    <?php if( ! is_search() && ! is_archive() && ! is_category() && ! is_single() && ! is_404() ) :?>
-    <blockquote id="hero-quote">
-        <p><b class="ss-icon ss-quote"></b>The control which designers know in the print medium, and often desire in the web medium, is simply a function of the limitation of the printed page.</p>
-        <small><cite>John Allsopp</cite></small>
-    </blockquote>
-    <?php endif; ?>
+            <h2 class="tagline"><?php echo esc_attr( bloginfo( 'description' ) ); ?></h2>
 
-    <?php get_search_form(); ?>
+            <ul class="socials header">
+                <li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF611;</a></li>
+                <li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF671;</a></li>
+                <li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF660;</a></li>
+                <li class="website"><a href="//grayghostvisuals.com" class="ss-icon" rel="external">&#x2601;</a></li>
+                <li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF610;</a></li>
+                <li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social-circle" rel="external">&#xF613;</a></li>
+            </ul>
 
-    <nav role="navigation">
-        <ol>
-        <?php
-            $nav_wpflex = array(
-                'depth'         => 2,
-                'show_date'     => '',
-                'date_format'   => get_option( 'date_format' ),
-                'child_of'      => 0,
-                'exclude'       => '',
-                'include'       => '',
-                'title_li'      => '',
-                'echo'          => 1,
-                'authors'       => '',
-                'sort_column'   => 'menu_order',
-                'link_before'   => '',
-                'link_after'    => '',
-                'walker'        => ''
-                );
+            <?php if( ! is_search() && ! is_archive() && ! is_category() && ! is_single() && ! is_404() ) :?>
+            <blockquote id="hero-quote">
+                <p><b class="ss-icon ss-quote"></b>The control which designers know in the print medium, and often desire in the web medium, is simply a function of the limitation of the printed page.</p>
+                <small><cite>John Allsopp</cite></small>
+            </blockquote>
+            <?php endif; ?>
 
-            if( wp_list_pages( $nav_wpflex ) ) : while ( wp_list_pages( $nav_wpflex ) ) :
-            wp_list_pages( $nav_wpflex );
-            endwhile;
-            endif;
-        ?>
-        </ol>
-    </nav><?php //endif; ?>
-    <article id="rss"><a href="<?php bloginfo('rss2_url') ?>"><b class="ss-icon ss-rss"></b><span class="visuallyhidden">Feed</span></a></article>
-</header>
+            <?php get_search_form(); ?>
+
+            <article id="rss">
+                <a href="<?php bloginfo('rss2_url') ?>"><b class="ss-icon ss-rss"></b><span class="visuallyhidden">Feed</span></a>
+            </article>
+        </header>
+    <!-- gridset -->
+    </div>
 </div>
