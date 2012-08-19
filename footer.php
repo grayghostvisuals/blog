@@ -37,8 +37,7 @@ s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 <!-- Symbolset -->
-<script src="<?php echo get_template_directory_uri(); ?>/webfonts/ss-social.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/webfonts/ss-standard.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/webfonts/minified/ss-min.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>
