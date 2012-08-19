@@ -82,22 +82,20 @@ endif; ?></title>
 
 <!-- Gridset Modern Browser Local CSS -->
 <!--[if gte IE 9]><!-->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.1">
 <!--<![endif]-->
-<!-- Uncomment next line to use gzipped css when on your server. This will drastically reduce file size and download time. -->
-<!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css"> -->
 
 <!-- Gridset lt-IE 9 CSS -->
 <!--[if (lt IE 9) | (IEMobile)]>
-<link href="//get.gridsetapp.com/1046" rel="stylesheet">
+    <link href="//get.gridsetapp.com/1046" rel="stylesheet">
 <![endif]-->
 
 <!-- Modern Browsers CSS -->
-<!--[if gt IE 8]><!--><link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.0" rel="stylesheet" media="all"><!--<![endif]-->
+<!--[if gt IE 8]><!--><link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.1" rel="stylesheet" media="all"><!--<![endif]-->
 
 <!-- lt-IE 9 CSS -->
 <!--[if lt IE 9]>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.0" type="text/css" media="all">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.1" type="text/css" media="all">
 <![endif]-->
 
 <!-- pingback url -->

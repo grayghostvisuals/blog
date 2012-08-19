@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /*!
 Theme Name: Gray Ghost Visuals Press
 Theme URI: http://blog.grayghostvisuals.com
@@ -8,7 +6,7 @@ Description: Exploring Front-end Web Development and Design using Wordpress, WP-
 Author: Gray Ghost Visuals Press
 Author URI: http://blog.grayghostvisuals.com
 
-Version: 1.9.0
+Version: 1.9.1
 Tags: full-width-template, flexible-width, microformats, sticky-post, front-page-post-form, sticky-post, threaded-comments, post-formats, light
 
 Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
@@ -28,8 +26,8 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 @import "imports/resets.scss";         // html5boilerplate resets
 @import "imports/wp-classes.scss";     // Wordpress Classes
 
-@import "../webfonts/ss-social.css";   // social icons
-@import "../webfonts/ss-standard.css"; // social standard icons
+@import "webfonts/ss-social.scss";   // social icons
+@import "webfonts/ss-standard.scss"; // social standard icons
 
 
 // ------------------------------------------------------------------------------- */
