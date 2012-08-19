@@ -26,8 +26,8 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 @import "imports/resets.scss";         // html5boilerplate resets
 @import "imports/wp-classes.scss";     // Wordpress Classes
 
-@import "webfonts/ss-social.scss";   // social icons
-@import "webfonts/ss-standard.scss"; // social standard icons
+@import "webfonts/ss-social.css";   // social icons
+@import "webfonts/ss-standard.css"; // social standard icons
 
 
 // ------------------------------------------------------------------------------- */
@@ -1115,7 +1115,7 @@ header[role="banner"] {
     }
 
     .svg & {
-        background: $rss-ribbon url(img/rss-svg-ribbon.svg) top left no-repeat;
+        background: url(img/rss-svg-ribbon.svg) top left no-repeat;
         @include background-size(100%);
     }
 
