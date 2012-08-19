@@ -6,7 +6,7 @@ Description: Exploring Front-end Web Development and Design using Wordpress, WP-
 Author: Gray Ghost Visuals Press
 Author URI: http://blog.grayghostvisuals.com
 
-Version: 1.9.1
+Version: 1.9.2
 Tags: full-width-template, flexible-width, microformats, sticky-post, front-page-post-form, sticky-post, threaded-comments, post-formats, light
 
 Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
@@ -26,8 +26,8 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 @import "imports/resets.scss";         // html5boilerplate resets
 @import "imports/wp-classes.scss";     // Wordpress Classes
 
-@import "../webfonts/ss-social.css";   // social icons
-@import "../webfonts/ss-standard.css"; // social standard icons
+@import "webfonts/ss-social.css";   // social icons
+@import "webfonts/ss-standard.css"; // social standard icons
 
 
 // ------------------------------------------------------------------------------- */
@@ -834,9 +834,6 @@ textarea {
 // = $Sidebar Layout
 // ------------------------------------------------------------------------------- //
 
-// = $Sidebar Layout
-// ------------------------------------------------------------------------------- //
-
 #sidebar {
 
     article {
@@ -885,7 +882,6 @@ textarea {
     margin-bottom: 0;
     padding: 0;
 }
-
 
 
 // = $Single Page Pagination Layout
@@ -1122,7 +1118,7 @@ header[role="banner"] {
     }
 
     .svg & {
-        background: $rss-ribbon url(img/rss-svg-ribbon.svg) top left no-repeat;
+        background: url(img/rss-svg-ribbon.svg) top left no-repeat;
         @include background-size(100%);
     }
 
