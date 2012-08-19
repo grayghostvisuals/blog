@@ -23,10 +23,12 @@
     </footer>
 </div>
 
+<!-- jQuery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery.min.js"><\/script>')</script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/minified/script-min.js?v1.9.0"></script>
 
+<!-- Google Analytics -->
 <script>
 var _gaq=[ /*['_setAccount','UA-27240293-1']*/,['_trackPageview'],['_trackPageLoadTime'],['_setSiteSpeedSampleRate', 100]];
 (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -34,12 +36,11 @@ g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js
 s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
-<!-- symbolset social -->
+<!-- Symbolset -->
 <script src="<?php echo get_template_directory_uri(); ?>/webfonts/ss-social.js"></script>
-<!-- symbolset standard -->
 <script src="<?php echo get_template_directory_uri(); ?>/webfonts/ss-standard.js"></script>
 
-<!-- gridset overlay -->
+<!-- Gridset Overlay -->
 <script src="<?php echo get_template_directory_uri(); ?>/js/gridset-overlay.js"></script>
 <?php wp_footer(); ?>
 </body>

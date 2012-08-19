@@ -1,5 +1,6 @@
 <!doctype html>
-<html class="no-js" <?php language_attributes(); ?>>
+<!--[if IE 8]>         <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 <script type="text/javascript">
   (function() {
@@ -10,7 +11,6 @@
     var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/( |^)wf-loading( |$)/g,"");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script");tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(a&&a!="complete"&&a!="loaded")return;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
   })();
 </script>
-
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="readability-verification" content="9uWKYX94r5bNc7pVTAg7Y24SxGgHWHqfMjVU9Lq3">
@@ -80,21 +80,25 @@ endif; ?></title>
 <meta name="MobileOptimized" content="320">
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<!-- gridset -->
-<!-- <link href="//get.gridsetapp.com/1046" rel="stylesheet"> -->
-
-<!-- Gridset CSS -->
+<!-- Gridset Modern Browser Local CSS -->
+<!--[if gte IE 9]><!-->
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css">
+<!--<![endif]-->
 <!-- Uncomment next line to use gzipped css when on your server. This will drastically reduce file size and download time. -->
-<!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.css"> -->
+<!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css"> -->
 
-<!-- ss-social -->
-<!-- <link href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-social.css" rel="stylesheet"> -->
-<!-- ss-standard -->
-<!-- <link href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-standard.css" rel="stylesheet"> -->
+<!-- Gridset lt-IE 9 CSS -->
+<!--[if (lt IE 9) | (IEMobile)]>
+<link href="//get.gridsetapp.com/1046" rel="stylesheet">
+<![endif]-->
 
-<!-- css stylesheet -->
-<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.0" rel="stylesheet" media="all">
+<!-- Modern Browsers CSS -->
+<!--[if gt IE 8]><!--><link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.0" rel="stylesheet" media="all"><!--<![endif]-->
+
+<!-- lt-IE 9 CSS -->
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.0" type="text/css" media="all">
+<![endif]-->
 
 <!-- pingback url -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -122,9 +126,15 @@ endif; ?></title>
     <!-- gridset -->
         <header class="padding" role="banner">
             <h1 class="blog-name">
-                <a href="<?php echo home_url();  ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/blogbadge.png" class="logo">
-                    <span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( 'name' ) ); ?></span>
+                <a href="<?php echo home_url();  ?>" class="blog-uri">
+                    <!--[if gt IE 8]><!-->
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/blogbadge.png" alt="gray ghost visuals press icon leading you home" class="logo">
+                        <span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( 'name' ) ); ?></span>
+                    <!--<![endif]-->
+
+                    <!--[if lt IE 9]>
+                        <span class="ie-logo"><?php esc_attr( bloginfo( 'name' ) ); ?></span>
+                    <![endif]-->
                 </a>
             </h1>
 

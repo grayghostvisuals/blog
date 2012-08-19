@@ -8,5 +8,6 @@
             <b class="ss-icon">&#x1F4C5;</b> <time datetime="%3$s" pubdate><a href="<?php the_permalink(); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></time>
         </span>
     </small>
-    <div class="arrow"></div>
+
+    <!--[if gt IE 8]><!--><div class="arrow"></div><!--<![endif]-->
 </div>

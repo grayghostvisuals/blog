@@ -43,3 +43,18 @@
     list-style-type: none;
     margin: 0;
 }
+
+
+//======================================== padding
+
+.padding {
+    padding: ($baseline / 2) $mobile-gutter;
+
+    @media only all and (min-width: 42.25em) and (max-width: 55.1875em) { // 676 / 16px = 42.25em 883px / 16px = 55.1875em
+        padding: 0;
+    }
+
+    @media only all and (min-width: 55.25em) { // 884px / 16px = 55.25em
+        padding: 0;
+    }
+}
