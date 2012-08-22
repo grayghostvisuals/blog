@@ -82,12 +82,12 @@ endif; ?></title>
 
 <!-- Gridset Modern Browser Local CSS -->
 <!--[if gte IE 9]><!-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.3">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css">
 <!--<![endif]-->
 
 <!-- Gridset lt-IE 9 CSS -->
 <!--[if (lt IE 9) | (IEMobile)]>
-    <link href="//get.gridsetapp.com/1046" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.raw.css">
 <![endif]-->
 
 <!-- Modern Browsers CSS -->
