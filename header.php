@@ -80,27 +80,24 @@ endif; ?></title>
 <meta name="MobileOptimized" content="320">
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<!-- Gridet Server -->
-<!--<link href="https://get.gridsetapp.com/1046/" rel="stylesheet">-->
-
 <!-- Gridset Modern Browser Local CSS -->
 <!--[if gte IE 9]><!-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.css?v1.9.3">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.css?v1.9.4">
 <!--<![endif]-->
 
 <!-- Gridset lt-IE 9 CSS -->
 <!--[if (lt IE 9) | (IEMobile)]>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.css?v1.9.3">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.css?v1.9.4">
 <![endif]-->
 
 <!-- Modern Browsers CSS -->
 <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.3" media="all">
+    <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.4" media="all">
 <!--<![endif]-->
 
 <!-- lt-IE 9 CSS -->
 <!--[if lt IE 9]>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.3" media="all">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.4" media="all">
 <![endif]-->
 
 <!-- pingback url -->
