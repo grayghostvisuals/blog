@@ -82,26 +82,25 @@ endif; ?></title>
 
 <!-- Gridset Modern Browser Local CSS -->
 <!--[if gte IE 9]><!-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.css?v1.9.4">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css">
 <!--<![endif]-->
 
 <!-- Gridset lt-IE 9 CSS -->
 <!--[if (lt IE 9) | (IEMobile)]>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.css?v1.9.4">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.raw.css">
 <![endif]-->
 
 <!-- Modern Browsers CSS -->
-<!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.4" media="all">
-<!--<![endif]-->
+<!--[if gt IE 8]><!--><link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.3" rel="stylesheet" media="all"><!--<![endif]-->
 
 <!-- lt-IE 9 CSS -->
 <!--[if lt IE 9]>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.4" media="all">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.3" type="text/css" media="all">
 <![endif]-->
 
 <!-- pingback url -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
 <!-- RSS Feed -->
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo( 'rss2_url' ); ?>">
 
