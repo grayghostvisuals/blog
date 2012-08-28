@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/3.4.1" created="2012-07-14 02:49" -->
+<!-- generator="WordPress/3.4.1" created="2012-08-28 01:02" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -28,8 +28,8 @@
 <channel>
 	<title>Gray Ghost Visuals Press</title>
 	<link>http://blog.grayghostvisuals.com</link>
-	<description>Exploring front-end web development &#38; design</description>
-	<pubDate>Sat, 14 Jul 2012 02:49:12 +0000</pubDate>
+	<description>Exploring front–end web development &#38; design</description>
+	<pubDate>Tue, 28 Aug 2012 01:02:42 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://blog.grayghostvisuals.com</wp:base_site_url>
@@ -39,11 +39,14 @@
 	<wp:author><wp:author_id>2</wp:author_id><wp:author_login>grayghostvisuals</wp:author_login><wp:author_email>grayghost@grayghostvisuals.com</wp:author_email><wp:author_display_name><![CDATA[Gray Ghost Visuals]]></wp:author_display_name><wp:author_first_name><![CDATA[Gray Ghost]]></wp:author_first_name><wp:author_last_name><![CDATA[Visuals]]></wp:author_last_name></wp:author>
 
 	<wp:category><wp:term_id>227</wp:term_id><wp:category_nicename>accessibility</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[accessibility]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>245</wp:term_id><wp:category_nicename>bug-reporting</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[bug reporting]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>24</wp:term_id><wp:category_nicename>css</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[css]]></wp:cat_name></wp:category>
-	<wp:category><wp:term_id>228</wp:term_id><wp:category_nicename>freelance</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[freelance]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>228</wp:term_id><wp:category_nicename>design-ethics</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[design ethics]]></wp:cat_name><wp:category_description><![CDATA[entries discussing the ethics of the design profession. ]]></wp:category_description></wp:category>
+	<wp:category><wp:term_id>244</wp:term_id><wp:category_nicename>emulators</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[emulators]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>1</wp:term_id><wp:category_nicename>html</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[html]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>26</wp:term_id><wp:category_nicename>jquery</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[jquery]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>181</wp:term_id><wp:category_nicename>modernizr</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[modernizr]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>261</wp:term_id><wp:category_nicename>open-source</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[open source]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>128</wp:term_id><wp:category_nicename>retina</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[retina]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>116</wp:term_id><wp:category_nicename>sass</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[sass]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>214</wp:term_id><wp:category_nicename>webetiquette</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[web etiquette]]></wp:cat_name></wp:category>
@@ -67,6 +70,7 @@
 	<wp:tag><wp:term_id>91</wp:term_id><wp:tag_slug>box-flex</wp:tag_slug><wp:tag_name><![CDATA[box-flex]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>29</wp:term_id><wp:tag_slug>box-model</wp:tag_slug><wp:tag_name><![CDATA[box-model]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>223</wp:term_id><wp:tag_slug>browser-thread-loading</wp:tag_slug><wp:tag_name><![CDATA[browser thread loading]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>246</wp:term_id><wp:tag_slug>bug-filing</wp:tag_slug><wp:tag_name><![CDATA[bug filing]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>78</wp:term_id><wp:tag_slug>cache-manifest</wp:tag_slug><wp:tag_name><![CDATA[cache manifest]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>81</wp:term_id><wp:tag_slug>caching</wp:tag_slug><wp:tag_name><![CDATA[caching]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>129</wp:term_id><wp:tag_slug>chattels</wp:tag_slug><wp:tag_name><![CDATA[chattels]]></wp:tag_name></wp:tag>
@@ -95,6 +99,7 @@
 	<wp:tag><wp:term_id>238</wp:term_id><wp:tag_slug>css-transform</wp:tag_slug><wp:tag_name><![CDATA[css transform]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>21</wp:term_id><wp:tag_slug>css3</wp:tag_slug><wp:tag_name><![CDATA[css3]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>90</wp:term_id><wp:tag_slug>css3-module</wp:tag_slug><wp:tag_name><![CDATA[CSS3 module]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>264</wp:term_id><wp:tag_slug>custom-twitter-widget</wp:tag_slug><wp:tag_name><![CDATA[Custom Twitter Widget]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>133</wp:term_id><wp:tag_slug>depo</wp:tag_slug><wp:tag_name><![CDATA[depo]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>236</wp:term_id><wp:tag_slug>design-pro-academy</wp:tag_slug><wp:tag_name><![CDATA[design pro academy]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>235</wp:term_id><wp:tag_slug>design-professionalism</wp:tag_slug><wp:tag_name><![CDATA[design professionalism]]></wp:tag_name></wp:tag>
@@ -109,6 +114,8 @@
 	<wp:tag><wp:term_id>107</wp:term_id><wp:tag_slug>dynamic-imagery</wp:tag_slug><wp:tag_name><![CDATA[dynamic imagery]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>12</wp:term_id><wp:tag_slug>easy-readers</wp:tag_slug><wp:tag_name><![CDATA[easy readers]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>218</wp:term_id><wp:tag_slug>ecssential</wp:tag_slug><wp:tag_name><![CDATA[eCSSential]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>263</wp:term_id><wp:tag_slug>embed-tweets</wp:tag_slug><wp:tag_name><![CDATA[Embed Tweets]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>252</wp:term_id><wp:tag_slug>emulator-debugging</wp:tag_slug><wp:tag_name><![CDATA[emulator debugging]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>55</wp:term_id><wp:tag_slug>enahncejs</wp:tag_slug><wp:tag_name><![CDATA[enahncejs]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>136</wp:term_id><wp:tag_slug>energumen</wp:tag_slug><wp:tag_name><![CDATA[energumen]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>193</wp:term_id><wp:tag_slug>enhancejs</wp:tag_slug><wp:tag_name><![CDATA[enhanceJS]]></wp:tag_name></wp:tag>
@@ -122,6 +129,7 @@
 	<wp:tag><wp:term_id>139</wp:term_id><wp:tag_slug>figuriste</wp:tag_slug><wp:tag_name><![CDATA[figuriste]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>56</wp:term_id><wp:tag_slug>filament-group</wp:tag_slug><wp:tag_name><![CDATA[filament group]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>140</wp:term_id><wp:tag_slug>filler</wp:tag_slug><wp:tag_name><![CDATA[filler]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>249</wp:term_id><wp:tag_slug>finding-a-webkit-engineer</wp:tag_slug><wp:tag_name><![CDATA[finding a webkit engineer]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>20</wp:term_id><wp:tag_slug>firefox</wp:tag_slug><wp:tag_name><![CDATA[firefox]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>92</wp:term_id><wp:tag_slug>flex-box</wp:tag_slug><wp:tag_name><![CDATA[flex-box]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>85</wp:term_id><wp:tag_slug>flexbox</wp:tag_slug><wp:tag_name><![CDATA[flexbox]]></wp:tag_name></wp:tag>
@@ -160,6 +168,7 @@
 	<wp:tag><wp:term_id>89</wp:term_id><wp:tag_slug>markup-layout</wp:tag_slug><wp:tag_name><![CDATA[markup layout]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>184</wp:term_id><wp:tag_slug>media-queries</wp:tag_slug><wp:tag_name><![CDATA[media queries]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>149</wp:term_id><wp:tag_slug>misinformed</wp:tag_slug><wp:tag_name><![CDATA[misinformed]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>251</wp:term_id><wp:tag_slug>mobile-emulator</wp:tag_slug><wp:tag_name><![CDATA[mobile emulator]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>182</wp:term_id><wp:tag_slug>modernizr-2</wp:tag_slug><wp:tag_name><![CDATA[modernizr]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>188</wp:term_id><wp:tag_slug>modernizr-mq</wp:tag_slug><wp:tag_name><![CDATA[modernizr.mq]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>187</wp:term_id><wp:tag_slug>modernizr-touch</wp:tag_slug><wp:tag_name><![CDATA[modernizr.touch]]></wp:tag_name></wp:tag>
@@ -170,10 +179,16 @@
 	<wp:tag><wp:term_id>88</wp:term_id><wp:tag_slug>native-faux-columns</wp:tag_slug><wp:tag_name><![CDATA[native faux columns]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>222</wp:term_id><wp:tag_slug>non-blocking-resource-loading</wp:tag_slug><wp:tag_name><![CDATA[non-blocking resource loading]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>80</wp:term_id><wp:tag_slug>offline-storage</wp:tag_slug><wp:tag_name><![CDATA[offline storage]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>261</wp:term_id><wp:tag_slug>open-source</wp:tag_slug><wp:tag_name><![CDATA[open source]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>216</wp:term_id><wp:tag_slug>open-source-contributing</wp:tag_slug><wp:tag_name><![CDATA[open source contributing]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>257</wp:term_id><wp:tag_slug>opera</wp:tag_slug><wp:tag_name><![CDATA[opera]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>253</wp:term_id><wp:tag_slug>opera-dragonfly</wp:tag_slug><wp:tag_name><![CDATA[opera dragonfly]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>255</wp:term_id><wp:tag_slug>opera-mobile-emulator</wp:tag_slug><wp:tag_name><![CDATA[Opera Mobile emulator]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>259</wp:term_id><wp:tag_slug>opera-presto</wp:tag_slug><wp:tag_name><![CDATA[Opera Presto]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>152</wp:term_id><wp:tag_slug>outlaw</wp:tag_slug><wp:tag_name><![CDATA[outlaw]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>224</wp:term_id><wp:tag_slug>page-rendering</wp:tag_slug><wp:tag_name><![CDATA[page rendering]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>153</wp:term_id><wp:tag_slug>pamphjlet</wp:tag_slug><wp:tag_name><![CDATA[pamphjlet]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>254</wp:term_id><wp:tag_slug>patrick-h-lauke</wp:tag_slug><wp:tag_name><![CDATA[Patrick H. Lauke]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>98</wp:term_id><wp:tag_slug>php-2</wp:tag_slug><wp:tag_name><![CDATA[php]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>103</wp:term_id><wp:tag_slug>php-cms-framework</wp:tag_slug><wp:tag_name><![CDATA[php CMS framework]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>106</wp:term_id><wp:tag_slug>picture-element</wp:tag_slug><wp:tag_name><![CDATA[picture element]]></wp:tag_name></wp:tag>
@@ -192,6 +207,7 @@
 	<wp:tag><wp:term_id>211</wp:term_id><wp:tag_slug>psuedo-selectors</wp:tag_slug><wp:tag_name><![CDATA[psuedo selectors]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>160</wp:term_id><wp:tag_slug>psychological</wp:tag_slug><wp:tag_name><![CDATA[psychological]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>161</wp:term_id><wp:tag_slug>puncher</wp:tag_slug><wp:tag_name><![CDATA[puncher]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>258</wp:term_id><wp:tag_slug>qvga</wp:tag_slug><wp:tag_name><![CDATA[QVGA]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>162</wp:term_id><wp:tag_slug>ramose</wp:tag_slug><wp:tag_name><![CDATA[ramose]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>38</wp:term_id><wp:tag_slug>readability</wp:tag_slug><wp:tag_name><![CDATA[readability]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>41</wp:term_id><wp:tag_slug>reading</wp:tag_slug><wp:tag_name><![CDATA[reading]]></wp:tag_name></wp:tag>
@@ -215,6 +231,9 @@
 	<wp:tag><wp:term_id>111</wp:term_id><wp:tag_slug>screen-resolution</wp:tag_slug><wp:tag_name><![CDATA[screen resolution]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>196</wp:term_id><wp:tag_slug>screen-width</wp:tag_slug><wp:tag_name><![CDATA[screen width]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>226</wp:term_id><wp:tag_slug>server-side-concantenation</wp:tag_slug><wp:tag_name><![CDATA[server-side concantenation]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>265</wp:term_id><wp:tag_slug>simple-twitter-feed</wp:tag_slug><wp:tag_name><![CDATA[simple twitter feed]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>260</wp:term_id><wp:tag_slug>small-screen-emulator-debugging</wp:tag_slug><wp:tag_name><![CDATA[small screen emulator debugging]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>256</wp:term_id><wp:tag_slug>small-screen-testing</wp:tag_slug><wp:tag_name><![CDATA[small screen testing]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>219</wp:term_id><wp:tag_slug>southstreet</wp:tag_slug><wp:tag_name><![CDATA[southstreet]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>165</wp:term_id><wp:tag_slug>stagnation-unhorsed</wp:tag_slug><wp:tag_name><![CDATA[stagnation unhorsed]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>234</wp:term_id><wp:tag_slug>standards-of-design-professionalism</wp:tag_slug><wp:tag_name><![CDATA[standards of design professionalism]]></wp:tag_name></wp:tag>
@@ -239,7 +258,11 @@
 	<wp:tag><wp:term_id>62</wp:term_id><wp:tag_slug>touch-events</wp:tag_slug><wp:tag_name><![CDATA[touch events]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>189</wp:term_id><wp:tag_slug>touch-interfaces</wp:tag_slug><wp:tag_name><![CDATA[touch interfaces]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>61</wp:term_id><wp:tag_slug>touchstart</wp:tag_slug><wp:tag_name><![CDATA[touchstart]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>250</wp:term_id><wp:tag_slug>tracking-a-webkit-engineer</wp:tag_slug><wp:tag_name><![CDATA[tracking a webkit engineer]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>241</wp:term_id><wp:tag_slug>transform-origin</wp:tag_slug><wp:tag_name><![CDATA[transform-origin]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>262</wp:term_id><wp:tag_slug>tweet-widget</wp:tag_slug><wp:tag_name><![CDATA[tweet widget]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>267</wp:term_id><wp:tag_slug>twitter-api</wp:tag_slug><wp:tag_name><![CDATA[twitter api]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>266</wp:term_id><wp:tag_slug>twitter-api-customization</wp:tag_slug><wp:tag_name><![CDATA[twitter api customization]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>209</wp:term_id><wp:tag_slug>ui</wp:tag_slug><wp:tag_name><![CDATA[ui]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>15</wp:term_id><wp:tag_slug>un-obtrusive</wp:tag_slug><wp:tag_name><![CDATA[un-obtrusive]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>175</wp:term_id><wp:tag_slug>unculpable</wp:tag_slug><wp:tag_name><![CDATA[unculpable]]></wp:tag_name></wp:tag>
@@ -254,6 +277,8 @@
 	<wp:tag><wp:term_id>10</wp:term_id><wp:tag_slug>web-design</wp:tag_slug><wp:tag_name><![CDATA[web design]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>212</wp:term_id><wp:tag_slug>web-etiquette</wp:tag_slug><wp:tag_name><![CDATA[web etiquette]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>213</wp:term_id><wp:tag_slug>web-manners</wp:tag_slug><wp:tag_name><![CDATA[web manners]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>247</wp:term_id><wp:tag_slug>webkit-bug-tracker</wp:tag_slug><wp:tag_name><![CDATA[webkit bug tracker]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>248</wp:term_id><wp:tag_slug>webkit-rem-media-query-bug</wp:tag_slug><wp:tag_name><![CDATA[webkit rem media query bug]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>195</wp:term_id><wp:tag_slug>window-screen-width</wp:tag_slug><wp:tag_name><![CDATA[window.screen.width]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>190</wp:term_id><wp:tag_slug>windows-8</wp:tag_slug><wp:tag_name><![CDATA[windows 8]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>176</wp:term_id><wp:tag_slug>withered-brandnew</wp:tag_slug><wp:tag_name><![CDATA[withered brandnew]]></wp:tag_name></wp:tag>
@@ -1330,236 +1355,6 @@ background–color: red;
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Readability Rocks</title>
-		<link>http://blog.grayghostvisuals.com/css/readability-rocks/</link>
-		<pubDate>Tue, 20 Sep 2011 23:56:29 +0000</pubDate>
-		<dc:creator>grayghostvisuals</dc:creator>
-		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=69</guid>
-		<description></description>
-		<content:encoded><![CDATA[Readability is a subscription–based web app that delivers a premium reading experience around just about any readable content on the Web. Readability is unique in that it earmarks 70% of subscriber fees to be distributed out to the owners of the sites that subscribers visit.<!--more-->
-
-After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "styles" drop down box. Want to get rid of styling on a bit of text, but having trouble doing it? Just use the "remove formatting" button to strip the text of any formatting and reset your style. Install the free Readability browser add–on or sign–up for the Web’s best reading platform. With a Readability subscription, you can save articles to read later, and read anywhere on your mobile phone, tablet, or e-reader. Readability provides one-click send and sync integration with Amazon Kindle.
-
-The Readability dashboard displays Readability usage on a page-by-page basis, offering insight on which articles are trending and how reader fees are being allocated across your content. 
-<blockquote cite="http://www.readability.com">
-As part of the Readability ecosystem, we're working toward better Web Standards by recognizing important article metadata like author, byline and source information.
-</blockquote>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>69</wp:post_id>
-		<wp:post_date>2011-09-20 23:56:29</wp:post_date>
-		<wp:post_date_gmt>2011-09-20 23:56:29</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>readability-rocks</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="post_tag" nicename="content"><![CDATA[content]]></category>
-		<category domain="category" nicename="css"><![CDATA[css]]></category>
-		<category domain="post_tag" nicename="free-browser-add-on"><![CDATA[free browser add-on]]></category>
-		<category domain="post_tag" nicename="readability"><![CDATA[readability]]></category>
-		<category domain="post_tag" nicename="reading"><![CDATA[reading]]></category>
-		<category domain="post_tag" nicename="subscription-based"><![CDATA[subscription based]]></category>
-		<category domain="post_tag" nicename="subscription-based-web-app"><![CDATA[subscription based web app]]></category>
-		<category domain="post_tag" nicename="web-app"><![CDATA[web app]]></category>
-		<category domain="post_tag" nicename="web-content"><![CDATA[web content]]></category>
-		<category domain="post_tag" nicename="web-content-format-removal"><![CDATA[web content format removal]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[readability, subscription based, subscription based web app, reading, content]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Readability is a subscription–based web app that delivers a premium reading experience around just about any readable content on the Web]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Readability Rocks]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[readability, subscription based, subscription based web app, reading, content]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Readability is a subscription–based web app that delivers a premium reading experience around just about any readable content on the Web]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Readability Rocks]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Google Chromebook</title>
-		<link>http://blog.grayghostvisuals.com/css/google-chromebook/</link>
-		<pubDate>Fri, 23 Sep 2011 23:59:14 +0000</pubDate>
-		<dc:creator>grayghostvisuals</dc:creator>
-		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=71</guid>
-		<description></description>
-		<content:encoded><![CDATA[You know those things we like to call an <abbr title="operating system">OS</abbr> through names like Windows 7, Windows XP, Snow Leopard, Lion? Take a moment to think about what your use of the computer is at this very moment. Are you using it to create complicated graphs, charts, designs, coding? The million dollar answer is the average user uses a computer to get on the internet -that’s it! We’re all living in the “cloud” so to speak.<!--more-->Not the actual Jesus-like cloud you may be thinking of, but the “digital cloud.” You know, chatting on Skype, communicating on Facebook, reading the news, and so on. Gee golly! what would Thomas Edison or Alexander Graham Bell do if they saw all this kind of communication? Coming back to the point of the discussion, let’s take a gander at the description of Chromium OS taken directly from the site and home base for the project.
-
-<blockquote>"Chromium OS is an open-source project that aims to build an operating system that provides a fast, simple, and more secure computing experience for people who spend most of their time on the web."</blockquote>
-
-<iframe width="100%" height="315" src="http://www.youtube.com/embed/DazdIFMbC_4" frameborder="0" allowfullscreen></iframe>
-
-Wow that seems crazy, huh? If you think about it, your computer or laptop would be stripped away from all of the annoying business that you put up with on an OS just to get on the Web. Now go get a Chromebook and experience a faster Web.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>71</wp:post_id>
-		<wp:post_date>2011-09-23 23:59:14</wp:post_date>
-		<wp:post_date_gmt>2011-09-23 23:59:14</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>google-chromebook</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="post_tag" nicename="chromebook"><![CDATA[chromebook]]></category>
-		<category domain="post_tag" nicename="chromium-os"><![CDATA[chromium os]]></category>
-		<category domain="post_tag" nicename="communication"><![CDATA[communication]]></category>
-		<category domain="category" nicename="css"><![CDATA[css]]></category>
-		<category domain="post_tag" nicename="digital-cloud"><![CDATA[digital cloud]]></category>
-		<category domain="post_tag" nicename="google"><![CDATA[google]]></category>
-		<category domain="post_tag" nicename="technology"><![CDATA[technology]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[google-chromium-laptop]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Chromium OS is an open-source project that aims to build an operating system that provides a fast, simple, and more secure computing experience.]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[chromium, google chromebook, chromebook, open-source, communication, digital cloud]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Google Chromebook]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[google-chromium-laptop]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Chromium OS is an open-source project that aims to build an operating system that provides a fast, simple, and more secure computing experience.]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[chromium, google chromebook, chromebook, open-source, communication, digital cloud]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Google Chromebook]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Design For The Future</title>
-		<link>http://blog.grayghostvisuals.com/css/designforthefuture/</link>
-		<pubDate>Sat, 10 Dec 2011 17:18:44 +0000</pubDate>
-		<dc:creator>grayghostvisuals</dc:creator>
-		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=140</guid>
-		<description></description>
-		<content:encoded><![CDATA[I've been thinking a lot lately since the surfacing of terms like <cite title="http://www.abookapart.com/products/responsive-web-design">Responsive Web Design</cite>, <cite title="http://easy-readers.net/books/adaptive-web-design/">Adaptive Web Design</cite>, and even more so upon hearing <strong>Mark Boulton</strong> discuss the shape of the web we are currently experiencing. <!--more-->If we stop to think about the way we use the web today, multiple devices like the <strong>iPad</strong> or the <strong>iPod</strong> come to mind. How are users accessing this information? Lets face it, we are always after information, but various devices render and interpret code slightly different due to the rendering engines and web standards supported. <strong>Responsive Web Design</strong> and <code>@media queries</code> are great -don't get me wrong- but what we are essentially doing still is designing fixed canvas' all over again. Instead of widths like 960px, 800px or even 1024px we now have widths like 768px, 320px, 480px, 600px, 540px and on and on. What is a Web Designer to do in this mish–mash of options? I call upon <a title="Full Library Download" href="http://code.google.com/p/enhancejs" rel="external"><strong>EnhanceJS</strong></a> by <a href="http://filamentgroup.com" rel="external"><strong>The Filament Group</strong></a>.
-
-What <a title="Full Library Download" href="http://code.google.com/p/enhancejs" rel="external"><strong>EnhanceJS</strong></a> accomplishes is something of great wizardry in my opinion. I had the pleasure to read <a href="http://filamentgroup.com/dwpe" rel="external"><cite title="http://filamentgroup.com/dwpe">Designing With Progressive Enhancement</cite></a> that includes contributions from intelligent minded folks like Scott Jehl, Todd Parker, Patty Toland and Maggie Costello. <strong>EnhanceJS</strong> helps to deliver the proper experience to the right audience while maintaining bandwidth, decreasing bulky data/file transfers to create a strong separation between required functionality and enhancements (yeah just like the name...go figure). All of this wizardry is done with the basic foundational markup to give us our run of the mill vanilla experience (basically the foundational HTML markup with minimal CSS styling). By controlling the experience we control the speed, bulky data requests and much more for the user. For example, a mobile phone may only need the styles appropriate to it's device and not the bulk of the desktop site files(both CSS and JS). It's so crazy it just might work Dr. Jones. OK, enough talk already here is the live action...
-<figure>
-<pre name="code" class="html">&lt;!doctype html&gt;
-&lt;html&gt;
-
-&lt;head&gt;
-&lt;link rel="stylesheet" type="text/css" href="root_directory/basic.css" title="basic vanilla styles" /&gt;
-
-&lt;!--reference the main brains of the operation --&gt;
-&lt;script src="root_directory/js/enhance.min.js" &gt;&lt;/script&gt;
-&lt;script&gt; 
-//call to the enhance function 
-enhance({});
-&lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-[.....content.....]
-&lt;/body&gt;
-
-&lt;/html&gt;</pre>
-</figure>
-We can also pass a boat load of options in the <code>enhance({})</code> function with Object Literal notations like so...
-
-<script src="https://gist.github.com/1667763.js"></script>
-
-This gives us the option for users to toggle the enhanced as well as the basic experience." My gosh" you say, " That is incredible, but what about that screen.js file they have on their site?"  Glad you asked!  Here is the secret in the sauce
-
-<script src="https://gist.github.com/1667707.js"></script>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>140</wp:post_id>
-		<wp:post_date>2011-12-10 17:18:44</wp:post_date>
-		<wp:post_date_gmt>2011-12-10 17:18:44</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>designforthefuture</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="post_tag" nicename="adaptive-web-design"><![CDATA[adaptive web design]]></category>
-		<category domain="post_tag" nicename="code-examples"><![CDATA[code examples]]></category>
-		<category domain="category" nicename="css"><![CDATA[css]]></category>
-		<category domain="post_tag" nicename="designing-with-progressive-enhancement"><![CDATA[designing with progressive enhancement]]></category>
-		<category domain="post_tag" nicename="enahncejs"><![CDATA[enahncejs]]></category>
-		<category domain="post_tag" nicename="enrichment"><![CDATA[enrichment]]></category>
-		<category domain="post_tag" nicename="filament-group"><![CDATA[filament group]]></category>
-		<category domain="post_tag" nicename="fluid-layouts"><![CDATA[fluid layouts]]></category>
-		<category domain="post_tag" nicename="progressive-enhancement"><![CDATA[progressive enhancement]]></category>
-		<category domain="post_tag" nicename="responsive-web-design"><![CDATA[responsive web design]]></category>
-		<category domain="post_tag" nicename="scott-jehl"><![CDATA[scott jehl]]></category>
-		<category domain="post_tag" nicename="todd-parker"><![CDATA[todd parker]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[responsive web design, adaptive web design, progressive enhancement, enhance script, the filament group, scott jehl, todd parker, enhancejs]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Designing with Progressive Enhancement is a practical guide that both explains the principles and benefits of progressive enhancement, and explores examples to teach you how. ]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Design For The Future : Designing with Progressive Enhancement]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>Geolocation Aware Browsers</title>
 		<link>http://blog.grayghostvisuals.com/?p=192</link>
 		<pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
@@ -2087,6 +1882,329 @@ http://www.microsoft.com/typography/fonts/font.aspx?FMID=1567]]></content:encode
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>blogin-logo</title>
+		<link>http://blog.grayghostvisuals.com/?attachment_id=1217</link>
+		<pubDate>Sat, 14 Jul 2012 03:28:12 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/wp-content/uploads/2012/07/blogin-logo.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1217</wp:post_id>
+		<wp:post_date>2012-07-14 03:28:12</wp:post_date>
+		<wp:post_date_gmt>2012-07-14 03:28:12</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>blogin-logo</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://blog.grayghostvisuals.com/wp-content/uploads/2012/07/blogin-logo.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";s:2:"72";s:6:"height";s:2:"72";s:14:"hwstring_small";s:22:"height='72' width='72'";s:4:"file";s:23:"2012/07/blogin-logo.png";s:10:"image_meta";a:10:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2012/07/blogin-logo.png]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>What&#039;s an Independent Contractor?</title>
+		<link>http://blog.grayghostvisuals.com/?p=1400</link>
+		<pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1400</guid>
+		<description></description>
+		<content:encoded><![CDATA[http://www.irs.gov/businesses/small/selfemployed/index.html#who]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1400</wp:post_id>
+		<wp:post_date>2012-08-10 18:50:49</wp:post_date>
+		<wp:post_date_gmt>0000-00-00 00:00:00</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name></wp:post_name>
+		<wp:status>draft</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="css"><![CDATA[css]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>twit</title>
+		<link>http://blog.grayghostvisuals.com/open-source/twit-embed-tweets-the-right-way/attachment/twit1/</link>
+		<pubDate>Sun, 19 Aug 2012 18:48:51 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/wp-content/uploads/2012/08/twit1.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1418</wp:post_id>
+		<wp:post_date>2012-08-19 18:48:51</wp:post_date>
+		<wp:post_date_gmt>2012-08-19 18:48:51</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>twit1</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>1414</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://blog.grayghostvisuals.com/wp-content/uploads/2012/08/twit1.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_image_alt</wp:meta_key>
+			<wp:meta_value><![CDATA[find twit on github for your tweet embedding needs]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2012/08/twit1.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:6:{s:5:"width";s:3:"990";s:6:"height";s:3:"609";s:14:"hwstring_small";s:23:"height='78' width='128'";s:4:"file";s:17:"2012/08/twit1.png";s:5:"sizes";a:3:{s:9:"thumbnail";a:3:{s:4:"file";s:17:"twit1-150x150.png";s:5:"width";s:3:"150";s:6:"height";s:3:"150";}s:6:"medium";a:3:{s:4:"file";s:17:"twit1-300x184.png";s:5:"width";s:3:"300";s:6:"height";s:3:"184";}s:14:"post-thumbnail";a:3:{s:4:"file";s:17:"twit1-700x450.png";s:5:"width";s:3:"700";s:6:"height";s:3:"450";}}s:10:"image_meta";a:10:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Readability Rocks</title>
+		<link>http://blog.grayghostvisuals.com/css/readability-rocks/</link>
+		<pubDate>Tue, 20 Sep 2011 23:56:29 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=69</guid>
+		<description></description>
+		<content:encoded><![CDATA[Readability is a subscription–based web app that delivers a premium reading experience around just about any readable content on the Web. Readability is unique in that it earmarks 70% of subscriber fees to be distributed out to the owners of the sites that subscribers visit.<!--more-->
+
+After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "styles" drop down box. Want to get rid of styling on a bit of text, but having trouble doing it? Just use the "remove formatting" button to strip the text of any formatting and reset your style. Install the free Readability browser add–on or sign–up for the Web’s best reading platform. With a Readability subscription, you can save articles to read later, and read anywhere on your mobile phone, tablet, or e-reader. Readability provides one-click send and sync integration with Amazon Kindle.
+
+The Readability dashboard displays Readability usage on a page-by-page basis, offering insight on which articles are trending and how reader fees are being allocated across your content. 
+<blockquote cite="http://www.readability.com">
+As part of the Readability ecosystem, we're working toward better Web Standards by recognizing important article metadata like author, byline and source information.
+</blockquote>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>69</wp:post_id>
+		<wp:post_date>2011-09-20 23:56:29</wp:post_date>
+		<wp:post_date_gmt>2011-09-20 23:56:29</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>readability-rocks</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="post_tag" nicename="content"><![CDATA[content]]></category>
+		<category domain="category" nicename="css"><![CDATA[css]]></category>
+		<category domain="post_tag" nicename="free-browser-add-on"><![CDATA[free browser add-on]]></category>
+		<category domain="post_tag" nicename="readability"><![CDATA[readability]]></category>
+		<category domain="post_tag" nicename="reading"><![CDATA[reading]]></category>
+		<category domain="post_tag" nicename="subscription-based"><![CDATA[subscription based]]></category>
+		<category domain="post_tag" nicename="subscription-based-web-app"><![CDATA[subscription based web app]]></category>
+		<category domain="post_tag" nicename="web-app"><![CDATA[web app]]></category>
+		<category domain="post_tag" nicename="web-content"><![CDATA[web content]]></category>
+		<category domain="post_tag" nicename="web-content-format-removal"><![CDATA[web content format removal]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[readability, subscription based, subscription based web app, reading, content]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Readability is a subscription–based web app that delivers a premium reading experience around just about any readable content on the Web]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Readability Rocks]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[readability, subscription based, subscription based web app, reading, content]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Readability is a subscription–based web app that delivers a premium reading experience around just about any readable content on the Web]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Readability Rocks]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Google Chromebook</title>
+		<link>http://blog.grayghostvisuals.com/css/google-chromebook/</link>
+		<pubDate>Fri, 23 Sep 2011 23:59:14 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=71</guid>
+		<description></description>
+		<content:encoded><![CDATA[You know those things we like to call an <abbr title="operating system">OS</abbr> through names like Windows 7, Windows XP, Snow Leopard, Lion? Take a moment to think about what your use of the computer is at this very moment. Are you using it to create complicated graphs, charts, designs, coding? The million dollar answer is the average user uses a computer to get on the internet -that’s it! We’re all living in the “cloud” so to speak.<!--more-->Not the actual Jesus-like cloud you may be thinking of, but the “digital cloud.” You know, chatting on Skype, communicating on Facebook, reading the news, and so on. Gee golly! what would Thomas Edison or Alexander Graham Bell do if they saw all this kind of communication? Coming back to the point of the discussion, let’s take a gander at the description of Chromium OS taken directly from the site and home base for the project.
+
+<blockquote>"Chromium OS is an open-source project that aims to build an operating system that provides a fast, simple, and more secure computing experience for people who spend most of their time on the web."</blockquote>
+
+<iframe width="100%" height="315" src="http://www.youtube.com/embed/DazdIFMbC_4" frameborder="0" allowfullscreen></iframe>
+
+Wow that seems crazy, huh? If you think about it, your computer or laptop would be stripped away from all of the annoying business that you put up with on an OS just to get on the Web. Now go get a Chromebook and experience a faster Web.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>71</wp:post_id>
+		<wp:post_date>2011-09-23 23:59:14</wp:post_date>
+		<wp:post_date_gmt>2011-09-23 23:59:14</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>google-chromebook</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="post_tag" nicename="chromebook"><![CDATA[chromebook]]></category>
+		<category domain="post_tag" nicename="chromium-os"><![CDATA[chromium os]]></category>
+		<category domain="post_tag" nicename="communication"><![CDATA[communication]]></category>
+		<category domain="category" nicename="css"><![CDATA[css]]></category>
+		<category domain="post_tag" nicename="digital-cloud"><![CDATA[digital cloud]]></category>
+		<category domain="post_tag" nicename="google"><![CDATA[google]]></category>
+		<category domain="post_tag" nicename="technology"><![CDATA[technology]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[google-chromium-laptop]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Chromium OS is an open-source project that aims to build an operating system that provides a fast, simple, and more secure computing experience.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[chromium, google chromebook, chromebook, open-source, communication, digital cloud]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Google Chromebook]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[google-chromium-laptop]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Chromium OS is an open-source project that aims to build an operating system that provides a fast, simple, and more secure computing experience.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[chromium, google chromebook, chromebook, open-source, communication, digital cloud]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Google Chromebook]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Design For The Future</title>
+		<link>http://blog.grayghostvisuals.com/css/designforthefuture/</link>
+		<pubDate>Sat, 10 Dec 2011 17:18:44 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=140</guid>
+		<description></description>
+		<content:encoded><![CDATA[I've been thinking a lot lately since the surfacing of terms like <cite title="http://www.abookapart.com/products/responsive-web-design">Responsive Web Design</cite>, <cite title="http://easy-readers.net/books/adaptive-web-design/">Adaptive Web Design</cite>, and even more so upon hearing <strong>Mark Boulton</strong> discuss the shape of the web we are currently experiencing. <!--more-->If we stop to think about the way we use the web today, multiple devices like the <strong>iPad</strong> or the <strong>iPod</strong> come to mind. How are users accessing this information? Lets face it, we are always after information, but various devices render and interpret code slightly different due to the rendering engines and web standards supported. <strong>Responsive Web Design</strong> and <code>@media queries</code> are great -don't get me wrong- but what we are essentially doing still is designing fixed canvas' all over again. Instead of widths like 960px, 800px or even 1024px we now have widths like 768px, 320px, 480px, 600px, 540px and on and on. What is a Web Designer to do in this mish–mash of options? I call upon <a title="Full Library Download" href="http://code.google.com/p/enhancejs" rel="external"><strong>EnhanceJS</strong></a> by <a href="http://filamentgroup.com" rel="external"><strong>The Filament Group</strong></a>.
+
+What <a title="Full Library Download" href="http://code.google.com/p/enhancejs" rel="external"><strong>EnhanceJS</strong></a> accomplishes is something of great wizardry in my opinion. I had the pleasure to read <a href="http://filamentgroup.com/dwpe" rel="external"><cite title="http://filamentgroup.com/dwpe">Designing With Progressive Enhancement</cite></a> that includes contributions from intelligent minded folks like Scott Jehl, Todd Parker, Patty Toland and Maggie Costello. <strong>EnhanceJS</strong> helps to deliver the proper experience to the right audience while maintaining bandwidth, decreasing bulky data/file transfers to create a strong separation between required functionality and enhancements (yeah just like the name...go figure). All of this wizardry is done with the basic foundational markup to give us our run of the mill vanilla experience (basically the foundational HTML markup with minimal CSS styling). By controlling the experience we control the speed, bulky data requests and much more for the user. For example, a mobile phone may only need the styles appropriate to it's device and not the bulk of the desktop site files(both CSS and JS). It's so crazy it just might work Dr. Jones. OK, enough talk already here is the live action...
+<figure>
+<pre name="code" class="html">&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css" href="root_directory/basic.css" title="basic vanilla styles" /&gt;
+
+&lt;!--reference the main brains of the operation --&gt;
+&lt;script src="root_directory/js/enhance.min.js" &gt;&lt;/script&gt;
+&lt;script&gt; 
+//call to the enhance function 
+enhance({});
+&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+[.....content.....]
+&lt;/body&gt;
+
+&lt;/html&gt;</pre>
+</figure>
+We can also pass a boat load of options in the <code>enhance({})</code> function with Object Literal notations like so...
+
+<script src="https://gist.github.com/1667763.js"></script>
+
+This gives us the option for users to toggle the enhanced as well as the basic experience." My gosh" you say, " That is incredible, but what about that screen.js file they have on their site?"  Glad you asked!  Here is the secret in the sauce
+
+<script src="https://gist.github.com/1667707.js"></script>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>140</wp:post_id>
+		<wp:post_date>2011-12-10 17:18:44</wp:post_date>
+		<wp:post_date_gmt>2011-12-10 17:18:44</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>designforthefuture</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="post_tag" nicename="adaptive-web-design"><![CDATA[adaptive web design]]></category>
+		<category domain="post_tag" nicename="code-examples"><![CDATA[code examples]]></category>
+		<category domain="category" nicename="css"><![CDATA[css]]></category>
+		<category domain="post_tag" nicename="designing-with-progressive-enhancement"><![CDATA[designing with progressive enhancement]]></category>
+		<category domain="post_tag" nicename="enahncejs"><![CDATA[enahncejs]]></category>
+		<category domain="post_tag" nicename="enrichment"><![CDATA[enrichment]]></category>
+		<category domain="post_tag" nicename="filament-group"><![CDATA[filament group]]></category>
+		<category domain="post_tag" nicename="fluid-layouts"><![CDATA[fluid layouts]]></category>
+		<category domain="post_tag" nicename="progressive-enhancement"><![CDATA[progressive enhancement]]></category>
+		<category domain="post_tag" nicename="responsive-web-design"><![CDATA[responsive web design]]></category>
+		<category domain="post_tag" nicename="scott-jehl"><![CDATA[scott jehl]]></category>
+		<category domain="post_tag" nicename="todd-parker"><![CDATA[todd parker]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[responsive web design, adaptive web design, progressive enhancement, enhance script, the filament group, scott jehl, todd parker, enhancejs]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Designing with Progressive Enhancement is a practical guide that both explains the principles and benefits of progressive enhancement, and explores examples to teach you how. ]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Design For The Future : Designing with Progressive Enhancement]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
 		<title>Touch Events for iOS</title>
 		<link>http://blog.grayghostvisuals.com/css/touchevents/</link>
 		<pubDate>Fri, 23 Dec 2011 16:50:18 +0000</pubDate>
@@ -2498,11 +2616,11 @@ Make sure to "view source" of the live examples with further notes on my results
 		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=438</guid>
 		<description></description>
 		<content:encoded><![CDATA[After many hours of reading and sifting through the Wordpress Codex, I'm proud to announce a wonderful tool for devs using Wordpress whom submit their creations to the Wordpress theme repository. In a nutshell, WP&ndash;Flex, is a blank, foundational, responsive <a href="//wordpress.org" rel="external">Wordpress</a> theme boilerplate for developers submitting to the wordpress theme repository. For your convenience, WP&ndash;Flex has been tested and debugged with the required <code>theme-unit-test.xml</code> <em>(also included)</em> and <code>wp-config.php</code> per <a href="//codex.wordpress.org/" rel="external">Wordpress Codex</a> requirements.<!--more-->
-
+<div class="wpflex-callout clearfix"><img src="//static.grayghostvisuals.com/portfolio/wpflex.png" class="wpflex-logo" alt="WP-Flex Wordpress theme boilerplate"/><div class="wpflex-tests">
 <h2>Browser Tests</h2>
-<ul>
+<ul class="wpflex-platforms windows">
 <li><h3>Windows 7</h3>
-    <ul>
+    <ul class="list">
         <li>IE 7-9</li>
         <li>Chrome 18</li>
         <li>Firefox 12.0</li>
@@ -2512,9 +2630,9 @@ Make sure to "view source" of the live examples with further notes on my results
 </li>
 </ul>
 
-<ul>
+<ul class="wpflex-platforms mac">
 <li><h3>Mac Lion 10.7.3</h3>
-    <ul>
+    <ul class="list">
         <li>Chrome 19.0.1084.46</li>
         <li>Firefox 12.0</li>
         <li>Safari 5.1.5</li>
@@ -2522,53 +2640,61 @@ Make sure to "view source" of the live examples with further notes on my results
     </ul>
 </li>
 </ul>
-
-<h2>Built With</h2>
-<ul>
-<li><a href="http://html5boilerplate.com" rel="external">http://html5boilerplate.com</a></li>
-<li>Github Repo &rarr; <a href="https://github.com/h5bp/html5-boilerplate" rel="external">https://github.com/h5bp/html5-boilerplate</a></li>
-<li><a href="http://modernizr.com" rel="external">http://modernizr.com</a></li>
-<li>Github Repo &rarr; <a href="https://github.com/Modernizr/Modernizr" rel="external">https://github.com/Modernizr/Modernizr</a></li>
-</ul>
+</div>
+</div>
 
 <h2>Under The Hood</h2>
 <dl>
 <dt><h3><code>themename-readme.txt</code></h3></dt>
-<dd>A must have for theme submissions. This document describes the ins and outs to users what's great and what still needs work with your theme &ndash;Wordpress Codex Recommendation.
-</dd>
+<dd><p>A must have for theme submissions. This document describes the ins and outs to users what's great and what still needs work with your theme &ndash;Wordpress Codex Recommendation.</p></dd>
 
 <dt><h3>Required Wordpress Generated <abbr title="cascading style sheets"><code>CSS</code></abbr> Classes</h3></dt>
-<dd>Every theme submission is required to have specific <abbr title="cascading style sheets"><code>CSS</code></abbr> classes for your style sheets in order to be accepted into the <a href="//wordpress.org/extend/themes/upload  " rel="external">Wordpress.org</a> theme repository</dd>
+<dd><p>Every theme submission is required to have specific CSS classes for your style sheets in order to be accepted into the WordPress.org theme repository. These are provided by default.</p></dd>
 
 <dt><h3><code>themename&ndash;readme.txt</code></h3></dt>
-<dd>A must have for theme submissions. This document describes the ins and outs to users what's great and what still needs work with your theme &ndash;Wordpress Codex Recommendation.
-</dd>
+<dd><p>A must have for theme submission. Describes the ins and outs to users what's great and what still needs work with your theme. (A reccomendation from the Wordpress Codex for theme authors)</p></dd>
 
 <dt><h3>Responsive Images</h3></dt>
-<dd>You know the drill. Blah, blah, blah, something, something, max-width:100% sorta stuff for embedded media. Also implemented for Wordpress post attachments by making sure images with WordPress&ndash;added height and width attributes are scaled correctly.</dd>
+<dd><p>You know the drill. Blah, blah, blah, something, something, <code>max-width:100%</code> sorta stuff for embedded media. Also implemented for WordPress post attachments by making sure images with WordPress added height and width attributes are scaled correctly.</p></dd>
 
 <dt><h3>Responsive Category and Tag listings</h3></dt>
-<dd>In order to flow the listing of tags and categories as the browser expands and contracts we must break up the lists and display them inline &ndash;in order to avoid a run on measure. We make absolutely sure we stop too many categories from breaking the layout.</dd>
+<dd><p>In order to flow the listing of tags and categories as the browser expands and contracts we must break up the lists and display them inline &ndash;in order to avoid a run on measure. We make absolutely sure we stop too many categories from breaking the layout.</p></dd>
 
 <dt><h3>Comment Thread Styling</h3></dt>
-<dd>Those tricky comment thread styling classes are provided to you by default. No more scanning the DOM or reading more tutorials. It's all there for your convenience and thanks to Chris Coyier.</dd>
+<dd><p>Those tricky comment thread styling classes provided to you by default. No more scanning the DOM or reading more tutorials. It's all there bro!</p></dd>
 
-<dt><h3><abbr title="cascading style sheets"><code>CSS</code></abbr> Comment Flags</h3></dt>
-<dd><a href="http://codex.wordpress.org/CSS_Coding_Standards" rel="external">The Wordpress Codex suggests that your style sheet(s) be delimited with special comment flags</a>. This allows your users the ability for easy maintenance and also makes things nice and neat for our wonderfully talented theme repository review team</dd>
+<dt><h3>Responsive Category and Tag Listings</h3></dt>
+<dd><p>In order to flow the listing of tags and categories as the browser expands and contracts we must break up the lists and display them inline –in order to avoid a run on measure. We make absolutely sure we stop too many categories from breaking the layout.</p></dd>
+
+<dt><h3>Standardized <abbr title="cascading style sheets">CSS</abbr> Comment Flags</h3></dt>
+<dd><p><a href="http://codex.wordpress.org/CSS_Coding_Standards" rel="external">The Wordpress Codex suggests that your style sheet(s) be delimited with special comment flags</a>. This allows your users the ability for easy maintenance and also makes things nice and neat for our wonderfully talented theme repository review team</p></dd>
 
 <dt><h3><code><a href="http://codex.wordpress.org/Theme_Unit_Test" rel="external">theme-unit-test.xml</a></code></h3></dt>
-<dd>Used primarily for theme testing, this <abbr title="extended markup language"><code>XMl</code></abbr> file provides us with an extended database of multiple users, comment threads, posts helping tremendously with generic theme content testing.</dd>
+<dd><p>Used primarily for theme testing, this <abbr title="extended markup language"><code>XMl</code></abbr> file provides us with an extended database of multiple users, comment threads, posts helping tremendously with generic theme content testing.</p></dd>
 
 <dt><h3><code><a href="http://themeshaper.com/2010/06/03/sample-theme-options" rel="external">theme-options.php</a></code></h3></dt>
-<dd>Ever wanted to give your theme custom options, but didn't know how? Well you're welcome. Also a little help from a tutorial by Ian Stewart.</dd>
+<dd><p>Custom boilerplate starting point to give your users and authors awesome theme options.</p></dd>
 
 <dt><h3><code>functions.php</code></h3></dt>
-<dd>A foundational base that includes all the required functionality for your awesome theme to be</dd>
+<dd><p>A creamy base for required functionality of themes and submission via Wordpress.org Theme Repository. http://wordpress.org/extend/themes/upload</p></dd>
 
-<h2>WP&ndash;Flex Live Demo</h2>
+<h2>Keep up to Date with WP&ndash;Flex</h2>
+<ul>
+<li>
+<h3>WP&ndash;Flex Live Demo</h3>
 <a href="//grayghostvisuals.com/wpflex" rel="external">http://grayghostvisuals.com/wpflex</a>
-<h2>WP&ndash;Flex Github Repository</h2>
+</li>
+<li>
+<h3>WP&ndash;Flex Github Repository</h3>
 <a href="//github.com/grayghostvisuals/WP-Flex" rel="external">https://github.com/grayghostvisuals/WP-Flex</a>
+</li>
+<li>
+<h3>Posterous</h3>
+<a href="http://wpflex.posterous.com" rel="external">http://wpflex.posterous.com</a></li>
+<li>
+<h3>Twitter</h3>
+<a href="https://twitter.com/WPFlex" rel="external">@WPFlex</a></li>
+</ul>
 
 </dl>
 <h3>Droppin' Hot Links</h3>
@@ -2598,24 +2724,61 @@ Make sure to "view source" of the live examples with further notes on my results
 		<category domain="post_tag" nicename="wordpress-theme"><![CDATA[wordpress theme]]></category>
 		<category domain="post_tag" nicename="wordpress-theme-boilerplate"><![CDATA[wordpress theme boilerplate]]></category>
 		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+			<wp:meta_key>art_direction_page</wp:meta_key>
+			<wp:meta_value><![CDATA[<style>
+.wpflex-callout {
+    position: relative;
+}
+
+.wpflex-logo {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: auto;
+}
+
+.wpflex-tests {
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+}
+
+.wpflex-platforms {
+    padding: 0;
+}
+
+.wpflex-platforms .list {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1270px) {
+    .wpflex-tests {
+        position: static;
+        width: 100%;
+    }
+}
+</style>]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[WP Flex, A blank and responsive Wordpress theme submission framework]]></wp:meta_value>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_aioseop_description</wp:meta_key>
 			<wp:meta_value><![CDATA[WP Flex, is a blank, responsive Wordpress theme foundation for all your super awesome theme submission needs. ]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[wp-flex-the-wordpress-boilerplate]]></wp:meta_value>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[WP Flex, A blank and responsive Wordpress theme submission framework]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[wordpress, theme submission boilerplate, wordpress theme boilerplate, blank wordpress theme, responsive wordpress theme]]></wp:meta_value>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[wp-flex-the-wordpress-boilerplate]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -2624,6 +2787,65 @@ Make sure to "view source" of the live examples with further notes on my results
 		<wp:postmeta>
 			<wp:meta_key>_wp_old_slug</wp:meta_key>
 			<wp:meta_value><![CDATA[wp-flex-the-wordpress-boilerplate]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>art_direction_single</wp:meta_key>
+			<wp:meta_value><![CDATA[<style>
+/* .wpflex-callout {}
+.wpflex-logo,
+.wpflex-tests {}
+*/
+
+.wpflex-logo {
+    float: left;
+    width: auto;
+}
+
+.wpflex-tests {
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.11), 1px 0px 2px rgba(0, 0, 0, 0.11);
+    float: right;
+    width: 35%;
+    padding: 5%;
+
+    background: #FFF;
+    background: rgba(255,255,255,.50);    
+}
+
+.wpflex-tests h2 {
+    margin: 0 0 .25em;
+    color:  #0cbcfd;
+}
+
+.wpflex-platforms {
+    margin: 0;
+    padding: 0;
+}
+
+.wpflex-platforms .list {
+    margin: 0 0 .5em;
+    padding: 0;
+}
+
+.wpflex-platforms .list li {
+    border-bottom: 1px solid #CCC;
+}
+
+@media screen and (max-width: 102.1875em) { /* 1635px/16px */
+    .wpflex-logo,
+    .wpflex-tests { 
+        float: none;
+        width: auto;
+    }
+    .wpflex-logo {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+</style>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[wordpress, theme submission boilerplate, wordpress theme boilerplate, blank wordpress theme, responsive wordpress theme]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -3154,14 +3376,14 @@ Windows users can install Ruby via the <a href="http://rubyinstaller.org" rel="e
 		<description></description>
 		<content:encoded><![CDATA[So you wanna conditionally load assets for your web app? Do you load them based on <code>@media queries</code> (device size, screen width, pixel density etc.) or based on <code>touch</code> events? Are we detecting "touch device" or are we asking "supports touch events"? Which touch events are we looking for? With so many different capabilities across the device spectrum, and with the advancement of touch capabilities ( or lack thereof ), touch will no longer mean "mobile." For instance, the new version of Windows 8 will now incorporate a touch interface so it's now more disastrous than ever before to assume "touch" means "mobile" or "no touch" means "desktop."<!--more-->
 
-<figure>
-<iframe width="100%" height="400" src="http://www.youtube.com/embed/p92QfWOw88I" frameborder="0" allowfullscreen></iframe>
-<figcaption>A gander into the new touch interface for Windows 8. It's not just your momma's mobile device anymore</figcaption>
+<figure class="flex-video">
+<iframe width="560" height="315" src="http://www.youtube.com/embed/p92QfWOw88I" frameborder="0" allowfullscreen></iframe>
+<figcaption>A first look at the new "Windows 8" user interface. Read more at http://bit.ly/iCTxY6. Developers: Learn how to take advantage of the future of Windows at the Build Conference: <a href="http://www.buildwindows.com" rel="external">http://www.buildwindows.com</a></figcaption>
 </figure>
 
 When I originally set out to do some experimenting, I was reading <a href="http://www.filamentgroup.com/dwpe" rel="external bookmark" title="building the web that works for everyone">Progressive Enhancement</a> by those smarty pants over at the <a href="http://www.filamentgroup.com" rel="external" title="We design engaging user interfaces for web applications, mobile devices and touchscreen kiosks that are simple and accessible to everyone.">Filament Group</a> and tooling around with <a href="http://code.google.com/p/enhancejs" rel="external">EnhanceJS</a>. Adorned in its best Easter Sunday clothes, EnhanceJS sets out to achieve, but falls short of what <a href="http://modernizr.com" rel="external" title="feature detection library for web developers">Modernizr</a> helps us front&ndash;end devs do so well (of course EnhanceJS came before Modernizr). The downside of EnhanceJS that I have discovered is that it strictly uses <code>@media</code> detection to load assets (css,js), but with Modernizr we are using feature detection to test for the capabilities over just one feature; screen size. 
 
-<h3>Device Width and Orientation</h3>
+<h2>Device Width and Orientation</h2>
 As we all know (and if you don't, you do now) some devices detect touch events and some don't. Take the Windows phone for example, <code><a href="https://github.com/Modernizr/Modernizr/issues/448" rel="external" title="modernizr github issue 448">Modernizr.touch == false</a></code>. Eek! What's a front&ndash;end web developer to do? Run for the hills? I say face it with great strength as we do when facing our fears. In <a href="#example1">example 1</a> we use Modernizr to load resources based on <code>max-device-width: 1024px</code> and <code>orientation: landscape</code>. I will also soon mention where this idea falls short. <a href="//blog.grayghostvisuals.com/tutorials/modernizr/resource-loading/device-width.html">View Example 1</a>
 
 <figure id="example1">
@@ -3178,7 +3400,7 @@ Modernizr.load([{
 
 If you've tested like the good little front-end dev you are, you'll find <code>device-width</code> doesn't change when the device is rotated. On an iPhone for example, the device width is 320px and the device height is 480px regardless of its rotation. What this means is that orientation testing for resource loading isn't the best approach <del>so be sure to use it all the time</del>. Another valid point is that orientation testing isn't even needed (it only tests the initial orientation, <a href="http://responsejs.com/labs/dimensions" rel="external">because it isn't binded to a rotation or resize event)</a>. Since the example above also includes totally different plugins, there is an implied switch from a mobile design to a desktop design based on one feature.
 
-<h4>window.Screen.width</h4>
+<h2>window.Screen.width</h2>
 <figure id="example2">
 <pre name="code" class="javascript">&lt;script&gt;
 Modernizr.load([{
@@ -3192,7 +3414,7 @@ Modernizr.load([{
 
 <a href="//blog.grayghostvisuals.com/tutorials/modernizr/resource-loading/screen-width.html">View Example 2</a>. As of this writing, Windows 8 tablet with IE10 ( 1366w x 768h ) supports touch events in both its tablet mode and in IE10 desktop mode. So if you use <code>screen.width</code> it's a desktop, but if you use <code>Modernizr.touch</code> it's a tablet, even when running in desktop mode (docked for example) and has a mouse/keyboard connected. We just can't guesstimate whether something is mobile because there's lots of devices out there in the wild with varying capabilities (solidifying even more that the web is one but I digress). If testing <code>screen.width</code> for plugins is a must for you, then using Modernizr to test <code>window.screen.width</code> is a better choice over <code>device-width</code> and <code>orientation</code>.
 
-<h3>Down the Rabbit Hole</h3>
+<h2>Down the Rabbit Hole</h2>
 Now that we have a little more knowledge about the cause and effects of these examples we can start to narrow down the scope of our objectives. What we're essentially looking for in our detection is;
 <ol>
 <li><a href="//github.com/Modernizr/Modernizr/issues/548#issuecomment-5347988">Event Model Detection : where authors can fork their Javascript event binding code to do the right thing</a></li>
@@ -3200,7 +3422,7 @@ Now that we have a little more knowledge about the cause and effects of these ex
 </ol>
 <code>@media queries</code> tackle the second item on our list, but we'd still need to detect and render clickable controls vs swipeable ones. So, for the current breed of Windows Phones "<code>touch</code>" &ndash;being true&ndash; is valid in that the input method is a touch one so you'll need bigger manipulation controllers, but for Windows 8 on Desktop that means the same either way. This leads me to wonder how in the hell can we the web authors decide what the $#@* to do. 
 
-<h4>My Two Cents</h4>
+<h2>My Two Cents</h2>
 With the following detection method, we're loading our assets/resources based on whether the device is touch capable and if so, giving our app the finger fatty styles it deserves. If touch is not supported then let the controls be styled as normal as if the touch interface wasn't there in the first place. <a href="//blog.grayghostvisuals.com/tutorials/modernizr/resource-loading/touch-detection.html">View Example 3</a>
 
 <figure>
@@ -3216,7 +3438,7 @@ Modernizr.load([{
 
 The problem encountered with this method is that we're assuming once again about the device and its capabilities &ndash;and you know what happens when we assume right? Over on the IE blog they discuss some ways of handling <a href="http://blogs.msdn.com/b/ie/archive/2011/10/19/handling-multi-touch-and-mouse-input-in-all-browsers.aspx" rel="external">Multi&ndash;touch and Mouse Input in All Browsers so feel free to give it a read through</a>. Also be warned that there is no discussion into what we are to do as authors in order to style those inputs once the detection has been indicated.
 
-<h4>Alright, So Now What?</h4>
+<h2>Alright, So Now What?</h2>
 As I said previously in my ramblings, Internet Explorer 10 for Windows 8 will now support touch events and interfaces so we must be prepared more than ever for the changing landscape of interface interactions. IE10 will introduce a new concept coined <code>pointer</code> events so authors won't have to create code that handles each type of input separately.
 
 <blockquote cite="http://msdn.microsoft.com/en-us/library/ie/hh673538(v=vs.85).aspx#Pointer_and_Gesture_Events">
@@ -3229,30 +3451,41 @@ As I said previously in my ramblings, Internet Explorer 10 for Windows 8 will no
 
 I certainly don't claim to be an expert on anything I've said previously and by all means certainly challenge or even update me on your own research with this matter. Of course this is only a glimpse into what I've found in my research. I'd love to hear what you've discovered so we can all gain more insight into this tricky little devil known as "conditional resource loading."  
 
-<h4>Mucho Thanks</h4>
+<h2>Mucho Thanks</h2>
 A special thanks to Scott Jehl, Todd Parker, Patty Toland, Maggie Costello Wachs along with Technical Editor James Craig of <abbr title="world wide web consortium">W3C</abbr> WAI-ARI for a wonderful book helping to seed the new methods being created and widely implemented (Modernizr, yepnope) to solve these issues. My research could not have been possible without the combination of these huge brains on the Modernizr issues threading via Github (and a little push from this <a href="https://github.com/Modernizr/Modernizr/issues/475#issuecomment-5644436" title="paul irish commenting on Modernizr issue 475">dude</a>). 
-<ul id="article-links">
-<li><a href="https://github.com/Modernizr/Modernizr/issues/475" rel="external">https://github.com/Modernizr/Modernizr/issues/475</a></li>
-<li><a href="https://github.com/Modernizr/Modernizr/issues/548" rel="external">https://github.com/Modernizr/Modernizr/issues/548</a></li>
+<ul>
+<li><a href="https://github.com/Modernizr/Modernizr/issues/475" rel="external" class="ss-link">https://github.com/Modernizr/Modernizr/issues/475</a></li>
+<li><a href="https://github.com/Modernizr/Modernizr/issues/548" rel="external" class="ss-link">https://github.com/Modernizr/Modernizr/issues/548</a></li>
 </ul>
 
-<h4>Updates</h4>
+<h2>Updates</h2>
 <ul id="article-updates">
-<li>May 29<sup>th</sup>, 2012 &rarr; <a href="http://dev.w3.org/csswg/css4-mediaqueries/#pointer" rel="external">Media Queries Level 4 Editor's Draft</a> introduces a pointer query <code>@media(pointer:coarse)</code>
+<li>
+<h3>April 10<sup>th</sup>, 2012</h3>
+<a href="http://blog.jquery.com/2012/04/10/getting-touchy-about-patents" rel="external">http://blog.jquery.com/2012/04/10/getting-touchy-about-patents</a>
+jQuery publicly calls upon Microsoft to submit a proposal to the W3C for Pointer Events and encourages the community to experiment with Touch and MSPointer. Send your feedback directly to the <a href="http://lists.w3.org/Archives/Public/public-webevents" rel="external">W3C public-webevents mailing list</a>.
+</li>
+
+<li>
+<h3>May 29<sup>th</sup>, 2012</h3>
+<a href="http://dev.w3.org/csswg/css4-mediaqueries/#pointer" rel="external">Media Queries Level 4 Editor's Draft</a> introduces a pointer query <code>@media(pointer:coarse)</code>
 <blockquote cite="">
 <small>Typical examples of a ‘fine’ pointing system are a mouse, a track-pad or a stylus&ndash;based touch screen. Finger&ndash;based touch screens would qualify as ‘coarse’.</small>
 </blockquote>
-</li>
-<li>May 29<sup>th</sup>, 2012 &rarr; <a href="http://dev.w3.org/csswg/css4-mediaqueries/#hover" rel="external">Media Queries Level 4 Editor's Draft</a> introduces the ability to query your style sheets for <code>:hover</code> interactions using the query <code>@media(hover)</code>
+
+<a href="http://dev.w3.org/csswg/css4-mediaqueries/#hover" rel="external">Media Queries Level 4 Editor's Draft</a> introduces the ability to query your style sheets for <code>:hover</code> interactions using the query <code>@media(hover)</code>
 <blockquote cite="http://dev.w3.org/csswg/css4-mediaqueries/#pointer">
 <small>The value of ‘hover’ media query should for example be 0 on a touch screen device that can also be controlled via an optional mouse. Authors should therefore be careful not to assume that the ‘:hover’ pseudo class will never match on device where ‘hover:0’ is true, but they should design layouts that do not depend on hovering to be fully usable.
 </small>
 </blockquote>
 </li>
-<li>June 19<sup>th</sup>, 2012 &rarr; <a href="http://filamentgroup.com/lab/southstreet_event_apart" rel="external">Filament Group announces</a> a new workflow titled <a href="https://github.com/filamentgroup/Southstreet" rel="external">SouthStreet</a> : A workflow for Progressive Enhancement. The projects in SouthStreet focus on two key themes to help reduce overhead and improve performance in responsive designs</li>
+
+<li>
+<h3>June 19<sup>th</sup>, 2012</h3>
+<a href="http://filamentgroup.com/lab/southstreet_event_apart" rel="external">Filament Group announces</a> a new workflow titled <a href="https://github.com/filamentgroup/Southstreet" rel="external">SouthStreet</a> : A workflow for Progressive Enhancement. The projects in SouthStreet focus on two key themes to help reduce overhead and improve performance in responsive designs</li>
 </ul>
 
-<h4>Conditional Resource Links</h4>
+<h3>Conditional Resource Links</h3>
 <ul id="article-links">
 <li><a href="http://modernizr.com" rel="external">Modernizr &rarr; http://modernizr.com</a></li>
 <li><a href="http://code.google.com/p/enhancejs" rel="external">EnhanceJS &rarr; http://code.google.com/p/enhancejs</a></li>
@@ -3307,6 +3540,14 @@ A special thanks to Scott Jehl, Todd Parker, Patty Toland, Maggie Costello Wachs
 		<wp:postmeta>
 			<wp:meta_key>_aioseop_keywords</wp:meta_key>
 			<wp:meta_value><![CDATA[modernizr, feature detection, touch event detection, touch events, conditional resource loading, conditonally loading resource assets, enhancejs, ]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>art_direction_single</wp:meta_key>
+			<wp:meta_value><![CDATA[<style>
+#article-updates blockquote {
+    margin-bottom: 1.5em;
+}
+</style>]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:comment>
 			<wp:comment_id>366</wp:comment_id>
@@ -3473,15 +3714,6 @@ The demo doesn’t fork js at all, just a bare bones demo using the device type 
 				<wp:meta_key>akismet_history</wp:meta_key>
 				<wp:meta_value><![CDATA[a:4:{s:4:"time";s:15:"1341792933.8507";s:7:"message";s:28:"Akismet cleared this comment";s:5:"event";s:9:"check-ham";s:4:"user";s:16:"grayghostvisuals";}]]></wp:meta_value>
 			</wp:commentmeta>
-			<wp:commentmeta>
-				<wp:meta_key>akismet_as_submitted</wp:meta_key>
-				<wp:meta_value><![CDATA[a:70:{s:15:"comment_post_ID";s:3:"784";s:14:"comment_author";s:18:"Gray Ghost Visuals";s:20:"comment_author_email";s:30:"grayghost@grayghostvisuals.com";s:18:"comment_author_url";s:27:"http://grayghostvisuals.com";s:15:"comment_content";s:199:"Thanks for the kind words @Devin. Targeting devices is certainly a chore to say the least. One thing I'm finding is that window.screen.width will cut laptop users off at the knees. 
-
-~Happy coding!";s:12:"comment_type";s:0:"";s:14:"comment_parent";s:3:"521";s:7:"user_ID";s:1:"2";s:7:"user_ip";s:14:"67.253.222.195";s:10:"user_agent";s:119:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.47 Safari/536.11";s:8:"referrer";s:75:"http://blog.grayghostvisuals.com/modernizr/conditionally-loading-resources/";s:4:"blog";s:32:"http://blog.grayghostvisuals.com";s:9:"blog_lang";s:5:"en_US";s:12:"blog_charset";s:5:"UTF-8";s:9:"permalink";s:75:"http://blog.grayghostvisuals.com/modernizr/conditionally-loading-resources/";s:9:"user_role";s:13:"administrator";s:21:"akismet_comment_nonce";s:6:"passed";s:12:"POST_comment";s:199:"Thanks for the kind words @Devin. Targeting devices is certainly a chore to say the least. One thing I'm finding is that window.screen.width will cut laptop users off at the knees. 
-
-~Happy coding!";s:11:"POST_submit";s:12:"Post Comment";s:20:"POST_comment_post_ID";s:3:"784";s:19:"POST_comment_parent";s:3:"521";s:32:"POST__wp_unfiltered_html_comment";s:10:"2fb17f5d47";s:26:"POST_akismet_comment_nonce";s:10:"af7f37ebea";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"REQUEST_URI";s:21:"/wp-comments-post.php";s:6:"TMPDIR";s:28:"/home/content/22/6946122/tmp";s:5:"PHPRC";s:40:"/var/chroot/home/content/22/6946122/html";s:4:"TEMP";s:28:"/home/content/22/6946122/tmp";s:17:"PHP_FCGI_CHILDREN";s:1:"0";s:4:"PATH";s:29:"/sbin:/usr/sbin:/bin:/usr/bin";s:3:"PWD";s:12:"/web/cgi-bin";s:5:"SHLVL";s:1:"0";s:9:"RAILS_ENV";s:10:"production";s:3:"SPI";s:4:"TRUE";s:3:"TMP";s:28:"/home/content/22/6946122/tmp";s:21:"PHP_FCGI_MAX_REQUESTS";s:6:"100000";s:9:"FCGI_ROLE";s:9:"RESPONDER";s:10:"SCRIPT_URL";s:21:"/wp-comments-post.php";s:10:"SCRIPT_URI";s:53:"http://blog.grayghostvisuals.com/wp-comments-post.php";s:23:"SUBDOMAIN_DOCUMENT_ROOT";s:45:"/var/chroot/home/content/22/6946122/html/blog";s:9:"HTTP_HOST";s:25:"blog.grayghostvisuals.com";s:15:"HTTP_CONNECTION";s:5:"close";s:14:"CONTENT_LENGTH";s:3:"354";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:11:"HTTP_ORIGIN";s:32:"http://blog.grayghostvisuals.com";s:15:"HTTP_USER_AGENT";s:119:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.47 Safari/536.11";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:11:"HTTP_ACCEPT";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:12:"HTTP_REFERER";s:75:"http://blog.grayghostvisuals.com/modernizr/conditionally-loading-resources/";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip,deflate,sdch";s:20:"HTTP_ACCEPT_LANGUAGE";s:14:"en-US,en;q=0.8";s:19:"HTTP_ACCEPT_CHARSET";s:30:"ISO-8859-1,utf-8;q=0.7,*;q=0.3";s:11:"HTTP_COOKIE";s:0:"";s:16:"SERVER_SIGNATURE";s:70:"<address>Apache Server at blog.grayghostvisuals.com Port 80</address>
-";s:11:"SERVER_NAME";s:25:"blog.grayghostvisuals.com";s:11:"SERVER_ADDR";s:12:"72.167.1.128";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:14:"67.253.222.195";s:13:"DOCUMENT_ROOT";s:40:"/var/chroot/home/content/22/6946122/html";s:12:"SERVER_ADMIN";s:26:"support@supportwebsite.com";s:15:"SCRIPT_FILENAME";s:66:"/var/chroot/home/content/22/6946122/html/blog/wp-comments-post.php";s:11:"REMOTE_PORT";s:5:"61328";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:0:"";s:11:"SCRIPT_NAME";s:21:"/wp-comments-post.php";s:8:"PHP_SELF";s:21:"/wp-comments-post.php";s:12:"REQUEST_TIME";s:10:"1341792933";s:25:"comment_post_modified_gmt";s:19:"2012-07-05 21:35:04";}]]></wp:meta_value>
-			</wp:commentmeta>
 		</wp:comment>
 		<wp:comment>
 			<wp:comment_id>521</wp:comment_id>
@@ -3503,11 +3735,6 @@ The demo doesn’t fork js at all, just a bare bones demo using the device type 
 			<wp:commentmeta>
 				<wp:meta_key>akismet_history</wp:meta_key>
 				<wp:meta_value><![CDATA[a:4:{s:4:"time";s:15:"1341288260.1398";s:7:"message";s:28:"Akismet cleared this comment";s:5:"event";s:9:"check-ham";s:4:"user";s:0:"";}]]></wp:meta_value>
-			</wp:commentmeta>
-			<wp:commentmeta>
-				<wp:meta_key>akismet_as_submitted</wp:meta_key>
-				<wp:meta_value><![CDATA[a:72:{s:15:"comment_post_ID";s:3:"784";s:14:"comment_author";s:12:"Devin Walker";s:20:"comment_author_email";s:18:"sdtucson@gmail.com";s:18:"comment_author_url";s:16:"http://imdev.in/";s:15:"comment_content";s:177:"Very well written post.  This is exactly what I was looking for.  I've been using Modernizr and wondering how to target various resolutions properly.  Here's my complete answer!";s:12:"comment_type";s:0:"";s:14:"comment_parent";s:1:"0";s:7:"user_ID";s:1:"0";s:7:"user_ip";s:13:"174.65.147.55";s:10:"user_agent";s:106:"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.56 Safari/536.5";s:8:"referrer";s:75:"http://blog.grayghostvisuals.com/modernizr/conditionally-loading-resources/";s:4:"blog";s:32:"http://blog.grayghostvisuals.com";s:9:"blog_lang";s:5:"en_US";s:12:"blog_charset";s:5:"UTF-8";s:9:"permalink";s:75:"http://blog.grayghostvisuals.com/modernizr/conditionally-loading-resources/";s:21:"akismet_comment_nonce";s:6:"passed";s:11:"POST_author";s:12:"Devin Walker";s:10:"POST_email";s:18:"sdtucson@gmail.com";s:8:"POST_url";s:16:"http://imdev.in/";s:12:"POST_comment";s:177:"Very well written post.  This is exactly what I was looking for.  I've been using Modernizr and wondering how to target various resolutions properly.  Here's my complete answer!";s:11:"POST_submit";s:12:"Post Comment";s:20:"POST_comment_post_ID";s:3:"784";s:19:"POST_comment_parent";s:1:"0";s:26:"POST_akismet_comment_nonce";s:10:"140d4f3a56";s:14:"POST_subscribe";s:9:"subscribe";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"REQUEST_URI";s:21:"/wp-comments-post.php";s:6:"TMPDIR";s:28:"/home/content/22/6946122/tmp";s:5:"PHPRC";s:40:"/var/chroot/home/content/22/6946122/html";s:4:"TEMP";s:28:"/home/content/22/6946122/tmp";s:17:"PHP_FCGI_CHILDREN";s:1:"0";s:4:"PATH";s:29:"/sbin:/usr/sbin:/bin:/usr/bin";s:3:"PWD";s:12:"/web/cgi-bin";s:5:"SHLVL";s:1:"0";s:9:"RAILS_ENV";s:10:"production";s:3:"SPI";s:4:"TRUE";s:3:"TMP";s:28:"/home/content/22/6946122/tmp";s:21:"PHP_FCGI_MAX_REQUESTS";s:6:"100000";s:9:"FCGI_ROLE";s:9:"RESPONDER";s:10:"SCRIPT_URL";s:21:"/wp-comments-post.php";s:10:"SCRIPT_URI";s:53:"http://blog.grayghostvisuals.com/wp-comments-post.php";s:23:"SUBDOMAIN_DOCUMENT_ROOT";s:45:"/var/chroot/home/content/22/6946122/html/blog";s:9:"HTTP_HOST";s:25:"blog.grayghostvisuals.com";s:15:"HTTP_CONNECTION";s:5:"close";s:14:"CONTENT_LENGTH";s:3:"377";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:11:"HTTP_ORIGIN";s:32:"http://blog.grayghostvisuals.com";s:15:"HTTP_USER_AGENT";s:106:"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.56 Safari/536.5";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:11:"HTTP_ACCEPT";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:12:"HTTP_REFERER";s:75:"http://blog.grayghostvisuals.com/modernizr/conditionally-loading-resources/";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip,deflate,sdch";s:20:"HTTP_ACCEPT_LANGUAGE";s:14:"en-US,en;q=0.8";s:19:"HTTP_ACCEPT_CHARSET";s:30:"ISO-8859-1,utf-8;q=0.7,*;q=0.3";s:11:"HTTP_COOKIE";s:0:"";s:16:"SERVER_SIGNATURE";s:70:"<address>Apache Server at blog.grayghostvisuals.com Port 80</address>
-";s:11:"SERVER_NAME";s:25:"blog.grayghostvisuals.com";s:11:"SERVER_ADDR";s:12:"72.167.1.128";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:13:"174.65.147.55";s:13:"DOCUMENT_ROOT";s:40:"/var/chroot/home/content/22/6946122/html";s:12:"SERVER_ADMIN";s:26:"support@supportwebsite.com";s:15:"SCRIPT_FILENAME";s:66:"/var/chroot/home/content/22/6946122/html/blog/wp-comments-post.php";s:11:"REMOTE_PORT";s:5:"49760";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:0:"";s:11:"SCRIPT_NAME";s:21:"/wp-comments-post.php";s:8:"PHP_SELF";s:21:"/wp-comments-post.php";s:12:"REQUEST_TIME";s:10:"1341288259";s:25:"comment_post_modified_gmt";s:19:"2012-06-23 21:01:29";}]]></wp:meta_value>
 			</wp:commentmeta>
 			<wp:commentmeta>
 				<wp:meta_key>akismet_history</wp:meta_key>
@@ -3752,39 +3979,6 @@ Cheers]]></wp:comment_content>
 				<wp:meta_value><![CDATA[a:4:{s:4:"time";s:15:"1341184366.0089";s:7:"message";s:28:"Akismet cleared this comment";s:5:"event";s:9:"check-ham";s:4:"user";s:0:"";}]]></wp:meta_value>
 			</wp:commentmeta>
 			<wp:commentmeta>
-				<wp:meta_key>akismet_as_submitted</wp:meta_key>
-				<wp:meta_value><![CDATA[a:72:{s:15:"comment_post_ID";s:3:"900";s:14:"comment_author";s:3:"Ben";s:20:"comment_author_email";s:27:"ben.sciascia@sciascia.co.nz";s:18:"comment_author_url";s:0:"";s:15:"comment_content";s:746:"Thanks for this - very helpful. How would you require Zurb's Foundation in a compass project? 
-
-I've installed the Foundation gem and added the following to my config.rb file as per Codekit docs: require "/Library/Ruby/Gems/1.8/gems/ZURB-foundation-3.0.0/lib/zurb-foundation.rb"; 
-
-But when I try to compile the project form Codekit I see "LoadError on line 1 of /Library/Ruby/Gems/1.8/gems/ZURB-foundation-3.0.0/lib/zurb-foundation.rb: no such file to load -- foundation/version
-Run with --trace to see the full backtrace"
-
-If I open zurb-foundation.rb, line 1 contains: require "foundation/version"
-
-Does anyone know if this is Codekit, Compass or Foundation?
-
-Any pointers in the right direction would be much appreciated.
-
-Cheers";s:12:"comment_type";s:0:"";s:14:"comment_parent";s:1:"0";s:7:"user_ID";s:1:"0";s:7:"user_ip";s:14:"121.72.167.113";s:10:"user_agent";s:119:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.47 Safari/536.11";s:8:"referrer";s:56:"http://blog.grayghostvisuals.com/css/installing-compass/";s:4:"blog";s:32:"http://blog.grayghostvisuals.com";s:9:"blog_lang";s:5:"en_US";s:12:"blog_charset";s:5:"UTF-8";s:9:"permalink";s:56:"http://blog.grayghostvisuals.com/css/installing-compass/";s:21:"akismet_comment_nonce";s:6:"passed";s:11:"POST_author";s:3:"Ben";s:10:"POST_email";s:27:"ben.sciascia@sciascia.co.nz";s:8:"POST_url";s:0:"";s:12:"POST_comment";s:750:"Thanks for this - very helpful. How would you require Zurb's Foundation in a compass project? 
-
-I've installed the Foundation gem and added the following to my config.rb file as per Codekit docs: require "/Library/Ruby/Gems/1.8/gems/ZURB-foundation-3.0.0/lib/zurb-foundation.rb"; 
-
-But when I try to compile the project form Codekit I see "LoadError on line 1 of /Library/Ruby/Gems/1.8/gems/ZURB-foundation-3.0.0/lib/zurb-foundation.rb: no such file to load -- foundation/version
-Run with --trace to see the full backtrace"
-
-If I open zurb-foundation.rb, line 1 contains: require "foundation/version"
-
-Does anyone know if this is Codekit, Compass or Foundation?
-
-Any pointers in the right direction would be much appreciated.
-
-Cheers
-
-";s:11:"POST_submit";s:12:"Post Comment";s:20:"POST_comment_post_ID";s:3:"900";s:19:"POST_comment_parent";s:1:"0";s:26:"POST_akismet_comment_nonce";s:10:"180ff3fc61";s:14:"POST_subscribe";s:9:"subscribe";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"REQUEST_URI";s:21:"/wp-comments-post.php";s:6:"TMPDIR";s:28:"/home/content/22/6946122/tmp";s:5:"PHPRC";s:40:"/var/chroot/home/content/22/6946122/html";s:4:"TEMP";s:28:"/home/content/22/6946122/tmp";s:17:"PHP_FCGI_CHILDREN";s:1:"0";s:4:"PATH";s:29:"/sbin:/usr/sbin:/bin:/usr/bin";s:3:"PWD";s:12:"/web/cgi-bin";s:5:"SHLVL";s:1:"0";s:9:"RAILS_ENV";s:10:"production";s:3:"SPI";s:4:"TRUE";s:3:"TMP";s:28:"/home/content/22/6946122/tmp";s:21:"PHP_FCGI_MAX_REQUESTS";s:6:"100000";s:9:"FCGI_ROLE";s:9:"RESPONDER";s:10:"SCRIPT_URL";s:21:"/wp-comments-post.php";s:10:"SCRIPT_URI";s:53:"http://blog.grayghostvisuals.com/wp-comments-post.php";s:23:"SUBDOMAIN_DOCUMENT_ROOT";s:45:"/var/chroot/home/content/22/6946122/html/blog";s:9:"HTTP_HOST";s:25:"blog.grayghostvisuals.com";s:14:"CONTENT_LENGTH";s:4:"1048";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:11:"HTTP_ORIGIN";s:32:"http://blog.grayghostvisuals.com";s:15:"HTTP_USER_AGENT";s:119:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.47 Safari/536.11";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:11:"HTTP_ACCEPT";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:12:"HTTP_REFERER";s:56:"http://blog.grayghostvisuals.com/css/installing-compass/";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip,deflate,sdch";s:20:"HTTP_ACCEPT_LANGUAGE";s:14:"en-US,en;q=0.8";s:19:"HTTP_ACCEPT_CHARSET";s:30:"ISO-8859-1,utf-8;q=0.7,*;q=0.3";s:11:"HTTP_COOKIE";s:0:"";s:15:"HTTP_CONNECTION";s:5:"close";s:16:"SERVER_SIGNATURE";s:70:"<address>Apache Server at blog.grayghostvisuals.com Port 80</address>
-";s:11:"SERVER_NAME";s:25:"blog.grayghostvisuals.com";s:11:"SERVER_ADDR";s:12:"72.167.1.128";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:14:"121.72.167.113";s:13:"DOCUMENT_ROOT";s:40:"/var/chroot/home/content/22/6946122/html";s:12:"SERVER_ADMIN";s:26:"support@supportwebsite.com";s:15:"SCRIPT_FILENAME";s:66:"/var/chroot/home/content/22/6946122/html/blog/wp-comments-post.php";s:11:"REMOTE_PORT";s:5:"53492";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:0:"";s:11:"SCRIPT_NAME";s:21:"/wp-comments-post.php";s:8:"PHP_SELF";s:21:"/wp-comments-post.php";s:12:"REQUEST_TIME";s:10:"1341184364";s:25:"comment_post_modified_gmt";s:19:"2012-06-28 18:45:23";}]]></wp:meta_value>
-			</wp:commentmeta>
-			<wp:commentmeta>
 				<wp:meta_key>akismet_history</wp:meta_key>
 				<wp:meta_value><![CDATA[a:4:{s:4:"time";s:15:"1341188650.3134";s:7:"message";s:55:"grayghostvisuals changed the comment status to approved";s:5:"event";s:15:"status-approved";s:4:"user";s:16:"grayghostvisuals";}]]></wp:meta_value>
 			</wp:commentmeta>
@@ -3826,43 +4020,6 @@ Here are the links for the documentation with Codekit and from Zurb
 				<wp:meta_key>akismet_history</wp:meta_key>
 				<wp:meta_value><![CDATA[a:4:{s:4:"time";s:15:"1341208466.7716";s:7:"message";s:28:"Akismet cleared this comment";s:5:"event";s:9:"check-ham";s:4:"user";s:16:"grayghostvisuals";}]]></wp:meta_value>
 			</wp:commentmeta>
-			<wp:commentmeta>
-				<wp:meta_key>akismet_as_submitted</wp:meta_key>
-				<wp:meta_value><![CDATA[a:79:{s:15:"comment_post_ID";s:3:"900";s:14:"comment_author";s:18:"Gray Ghost Visuals";s:20:"comment_author_email";s:30:"grayghost@grayghostvisuals.com";s:18:"comment_author_url";s:27:"http://grayghostvisuals.com";s:15:"comment_content";s:1000:"@ben
-It sounds like you'll need to go back to your terminal and set up the zurb foundation project per the docs.
-
-<pre><code>compass create &lt;project-name&gt; -r zurb-foundation --using foundation</code></pre>
-
-When I tried to install Zurb foundation by way of the terminal line previously mentioned, I received the following message ...
-
-<pre><code>Gem::LoadError on line 1637 of /Library/Ruby/Site/1.8/rubygems/specification.rb: Unable to activate zurb-foundation-3.0.0, because compass-
-0.13.alpha.0 conflicts with compass (= 0.12.2)</code></pre>
-
-<a href="https://twitter.com/#!/chriseppstein">@chrisepstein</a> told me that "it sounds like foundation needs to relax their version constraints."
-
-Here are the links for the documentation with Codekit and from Zurb
-<ul>
-<li><a href="http://foundation.zurb.com/docs/gem-install.php">http://foundation.zurb.com/docs/gem-install.php</a></li>
-<li><a href="http://incident57.com/codekit/help.php">http://incident57.com/codekit/help.php</a></li>
-</ul>";s:14:"comment_parent";s:3:"516";s:7:"user_ID";s:1:"2";s:7:"user_ip";s:14:"67.253.222.195";s:10:"user_agent";s:119:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.47 Safari/536.11";s:8:"referrer";s:59:"http://blog.grayghostvisuals.com/wp-admin/edit-comments.php";s:4:"blog";s:32:"http://blog.grayghostvisuals.com";s:9:"blog_lang";s:5:"en_US";s:12:"blog_charset";s:5:"UTF-8";s:9:"permalink";s:56:"http://blog.grayghostvisuals.com/css/installing-compass/";s:9:"user_role";s:13:"administrator";s:21:"akismet_comment_nonce";s:6:"passed";s:22:"POST_newcomment_author";s:0:"";s:28:"POST_newcomment_author_email";s:0:"";s:26:"POST_newcomment_author_url";s:0:"";s:12:"POST_user_ID";s:1:"2";s:11:"POST_action";s:15:"replyto-comment";s:15:"POST_comment_ID";s:3:"516";s:20:"POST_comment_post_ID";s:3:"900";s:11:"POST_status";s:0:"";s:13:"POST_position";s:2:"-1";s:13:"POST_checkbox";s:1:"1";s:9:"POST_mode";s:6:"detail";s:32:"POST__ajax_nonce-replyto-comment";s:10:"f524631b23";s:32:"POST__wp_unfiltered_html_comment";s:10:"d29a32fdec";s:12:"POST_content";s:1000:"@ben
-It sounds like you'll need to go back to your terminal and set up the zurb foundation project per the docs.
-
-<pre><code>compass create &lt;project-name&gt; -r zurb-foundation --using foundation</code></pre>
-
-When I tried to install Zurb foundation by way of the terminal line previously mentioned, I received the following message ...
-
-<pre><code>Gem::LoadError on line 1637 of /Library/Ruby/Site/1.8/rubygems/specification.rb: Unable to activate zurb-foundation-3.0.0, because compass-
-0.13.alpha.0 conflicts with compass (= 0.12.2)</code></pre>
-
-<a href="https://twitter.com/#!/chriseppstein">@chrisepstein</a> told me that "it sounds like foundation needs to relax their version constraints."
-
-Here are the links for the documentation with Codekit and from Zurb
-<ul>
-<li><a href="http://foundation.zurb.com/docs/gem-install.php">http://foundation.zurb.com/docs/gem-install.php</a></li>
-<li><a href="http://incident57.com/codekit/help.php">http://incident57.com/codekit/help.php</a></li>
-</ul>";s:7:"POST_id";s:3:"900";s:21:"POST_comments_listing";s:3:"all";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"REQUEST_URI";s:24:"/wp-admin/admin-ajax.php";s:6:"TMPDIR";s:28:"/home/content/22/6946122/tmp";s:5:"PHPRC";s:40:"/var/chroot/home/content/22/6946122/html";s:4:"TEMP";s:28:"/home/content/22/6946122/tmp";s:17:"PHP_FCGI_CHILDREN";s:1:"0";s:4:"PATH";s:29:"/sbin:/usr/sbin:/bin:/usr/bin";s:3:"PWD";s:12:"/web/cgi-bin";s:5:"SHLVL";s:1:"0";s:9:"RAILS_ENV";s:10:"production";s:3:"SPI";s:4:"TRUE";s:3:"TMP";s:28:"/home/content/22/6946122/tmp";s:21:"PHP_FCGI_MAX_REQUESTS";s:6:"100000";s:9:"FCGI_ROLE";s:9:"RESPONDER";s:10:"SCRIPT_URL";s:24:"/wp-admin/admin-ajax.php";s:10:"SCRIPT_URI";s:56:"http://blog.grayghostvisuals.com/wp-admin/admin-ajax.php";s:23:"SUBDOMAIN_DOCUMENT_ROOT";s:45:"/var/chroot/home/content/22/6946122/html/blog";s:9:"HTTP_HOST";s:25:"blog.grayghostvisuals.com";s:15:"HTTP_CONNECTION";s:5:"close";s:14:"CONTENT_LENGTH";s:4:"1534";s:11:"HTTP_ORIGIN";s:32:"http://blog.grayghostvisuals.com";s:21:"HTTP_X_REQUESTED_WITH";s:14:"XMLHttpRequest";s:15:"HTTP_USER_AGENT";s:119:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.47 Safari/536.11";s:12:"CONTENT_TYPE";s:48:"application/x-www-form-urlencoded; charset=UTF-8";s:11:"HTTP_ACCEPT";s:3:"*/*";s:12:"HTTP_REFERER";s:59:"http://blog.grayghostvisuals.com/wp-admin/edit-comments.php";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip,deflate,sdch";s:20:"HTTP_ACCEPT_LANGUAGE";s:14:"en-US,en;q=0.8";s:19:"HTTP_ACCEPT_CHARSET";s:30:"ISO-8859-1,utf-8;q=0.7,*;q=0.3";s:11:"HTTP_COOKIE";s:0:"";s:16:"SERVER_SIGNATURE";s:70:"<address>Apache Server at blog.grayghostvisuals.com Port 80</address>
-";s:11:"SERVER_NAME";s:25:"blog.grayghostvisuals.com";s:11:"SERVER_ADDR";s:12:"72.167.1.128";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:14:"67.253.222.195";s:13:"DOCUMENT_ROOT";s:40:"/var/chroot/home/content/22/6946122/html";s:12:"SERVER_ADMIN";s:26:"support@supportwebsite.com";s:15:"SCRIPT_FILENAME";s:69:"/var/chroot/home/content/22/6946122/html/blog/wp-admin/admin-ajax.php";s:11:"REMOTE_PORT";s:5:"49182";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:0:"";s:11:"SCRIPT_NAME";s:24:"/wp-admin/admin-ajax.php";s:8:"PHP_SELF";s:24:"/wp-admin/admin-ajax.php";s:12:"REQUEST_TIME";s:10:"1341208465";s:25:"comment_post_modified_gmt";s:19:"2012-07-02 04:15:01";}]]></wp:meta_value>
-			</wp:commentmeta>
 		</wp:comment>
 		<wp:comment>
 			<wp:comment_id>518</wp:comment_id>
@@ -3888,17 +4045,6 @@ Cheers, thanks for your help.]]></wp:comment_content>
 				<wp:meta_value><![CDATA[a:4:{s:4:"time";s:14:"1341251772.527";s:7:"message";s:28:"Akismet cleared this comment";s:5:"event";s:9:"check-ham";s:4:"user";s:0:"";}]]></wp:meta_value>
 			</wp:commentmeta>
 			<wp:commentmeta>
-				<wp:meta_key>akismet_as_submitted</wp:meta_key>
-				<wp:meta_value><![CDATA[a:70:{s:15:"comment_post_ID";s:3:"900";s:14:"comment_author";s:3:"Ben";s:20:"comment_author_email";s:27:"ben.sciascia@sciascia.co.nz";s:18:"comment_author_url";s:0:"";s:15:"comment_content";s:192:"Thanks mate, the weird thing is that Compass/Foundation works in the command line - so have decided to just use it to create new projects and watch/unwatch it.
-
-Cheers, thanks for your help.";s:12:"comment_type";s:0:"";s:14:"comment_parent";s:1:"0";s:7:"user_ID";s:1:"0";s:7:"user_ip";s:13:"60.234.147.42";s:10:"user_agent";s:117:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.57.5 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.4";s:8:"referrer";s:56:"http://blog.grayghostvisuals.com/css/installing-compass/";s:4:"blog";s:32:"http://blog.grayghostvisuals.com";s:9:"blog_lang";s:5:"en_US";s:12:"blog_charset";s:5:"UTF-8";s:9:"permalink";s:56:"http://blog.grayghostvisuals.com/css/installing-compass/";s:21:"akismet_comment_nonce";s:6:"passed";s:11:"POST_author";s:3:"Ben";s:10:"POST_email";s:27:"ben.sciascia@sciascia.co.nz";s:8:"POST_url";s:0:"";s:12:"POST_comment";s:196:"Thanks mate, the weird thing is that Compass/Foundation works in the command line - so have decided to just use it to create new projects and watch/unwatch it.
-
-Cheers, thanks for your help.
-
-";s:11:"POST_submit";s:12:"Post Comment";s:20:"POST_comment_post_ID";s:3:"900";s:19:"POST_comment_parent";s:1:"0";s:26:"POST_akismet_comment_nonce";s:10:"7cdd807e6f";s:14:"POST_subscribe";s:9:"subscribe";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"REQUEST_URI";s:21:"/wp-comments-post.php";s:6:"TMPDIR";s:28:"/home/content/22/6946122/tmp";s:5:"PHPRC";s:40:"/var/chroot/home/content/22/6946122/html";s:4:"TEMP";s:28:"/home/content/22/6946122/tmp";s:17:"PHP_FCGI_CHILDREN";s:1:"0";s:4:"PATH";s:29:"/sbin:/usr/sbin:/bin:/usr/bin";s:3:"PWD";s:12:"/web/cgi-bin";s:5:"SHLVL";s:1:"0";s:9:"RAILS_ENV";s:10:"production";s:3:"SPI";s:4:"TRUE";s:3:"TMP";s:28:"/home/content/22/6946122/tmp";s:21:"PHP_FCGI_MAX_REQUESTS";s:6:"100000";s:9:"FCGI_ROLE";s:9:"RESPONDER";s:10:"SCRIPT_URL";s:21:"/wp-comments-post.php";s:10:"SCRIPT_URI";s:53:"http://blog.grayghostvisuals.com/wp-comments-post.php";s:23:"SUBDOMAIN_DOCUMENT_ROOT";s:45:"/var/chroot/home/content/22/6946122/html/blog";s:9:"HTTP_HOST";s:25:"blog.grayghostvisuals.com";s:15:"HTTP_USER_AGENT";s:117:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.57.5 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.4";s:14:"CONTENT_LENGTH";s:3:"390";s:11:"HTTP_ACCEPT";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:11:"HTTP_ORIGIN";s:32:"http://blog.grayghostvisuals.com";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:12:"HTTP_REFERER";s:56:"http://blog.grayghostvisuals.com/css/installing-compass/";s:20:"HTTP_ACCEPT_LANGUAGE";s:5:"en-us";s:20:"HTTP_ACCEPT_ENCODING";s:13:"gzip, deflate";s:11:"HTTP_COOKIE";s:0:"";s:15:"HTTP_CONNECTION";s:5:"close";s:16:"SERVER_SIGNATURE";s:70:"<address>Apache Server at blog.grayghostvisuals.com Port 80</address>
-";s:11:"SERVER_NAME";s:25:"blog.grayghostvisuals.com";s:11:"SERVER_ADDR";s:12:"72.167.1.128";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:13:"60.234.147.42";s:13:"DOCUMENT_ROOT";s:40:"/var/chroot/home/content/22/6946122/html";s:12:"SERVER_ADMIN";s:26:"support@supportwebsite.com";s:15:"SCRIPT_FILENAME";s:66:"/var/chroot/home/content/22/6946122/html/blog/wp-comments-post.php";s:11:"REMOTE_PORT";s:5:"49751";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:0:"";s:11:"SCRIPT_NAME";s:21:"/wp-comments-post.php";s:8:"PHP_SELF";s:21:"/wp-comments-post.php";s:12:"REQUEST_TIME";s:10:"1341251771";s:25:"comment_post_modified_gmt";s:19:"2012-07-02 04:15:01";}]]></wp:meta_value>
-			</wp:commentmeta>
-			<wp:commentmeta>
 				<wp:meta_key>akismet_history</wp:meta_key>
 				<wp:meta_value><![CDATA[a:4:{s:4:"time";s:15:"1341252133.2747";s:7:"message";s:55:"grayghostvisuals changed the comment status to approved";s:5:"event";s:15:"status-approved";s:4:"user";s:16:"grayghostvisuals";}]]></wp:meta_value>
 			</wp:commentmeta>
@@ -3911,51 +4057,55 @@ Cheers, thanks for your help.
 		<dc:creator>grayghostvisuals</dc:creator>
 		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=921</guid>
 		<description></description>
-		<content:encoded><![CDATA[For <a href="http://grayghostvisuals.com/tuckedin" rel="external">my first jQuery plugin</a> baby steps I went ahead and created a cheesy little doo dad that I call "Tucked In" because it gives you those sweet tucked in corners using pure <abbr title="cascading style sheets">CSS</abbr> in only a few lines. It's a simple and unobtrusive way to create tucked corners using progressive enhancement as our guide. In order to activate this monster, simply add the references below to your pages <code>&lt;head&gt;</code>.<!--more-->
+		<content:encoded><![CDATA[For <a href="http://grayghostvisuals.com/tuckedin" rel="external">my first jQuery plugin</a> baby steps I went ahead and created a cheesy little doo dad that I call "Tucked In" because it gives you those sweet tucked in corners using pure <abbr title="cascading style sheets">CSS</abbr> in only a few lines. It's a simple and unobtrusive way using progressive enhancement as our guide. In order to activate this monster, simply add the following to your site page(s) <code>&lt;head&gt;</code>.<!--more-->
 <figure>
 <pre name="code" class="html">&lt;head&gt;
 &lt;style&gt;
   /* tucked-in top corners bg */
   .tuckedin-corners-frame .top-corners:before,
-  .tuckedin-corners-frame .top-corners:after {
-    /*background: &lt;your choice here&gt;*/
-  }
+  .tuckedin-corners-frame .top-corners:after,
   /* tucked-in bottom corners bg */
-    .tuckedin-corners-frame .bottom-corners:before,
-    .tuckedin-corners-frame .bottom-corners:after {
-    /*background: &lt;your choice here&gt;*/
-  }
-  /*
-   * Tucked-In container styles.
-   * Customize or change these styles if you
-   * wanna be different.
-   * You do wanna be different ... right?
+  .tuckedin-corners-frame .bottom-corners:before,
+  .tuckedin-corners-frame .bottom-corners:after {/*background: &lt;your choice here&gt;*/}
+  /* 
+   * tucked-in containing frame
+   * adjust to your custom needs
    */
   .tuckedin-corners-frame {&lt;customize here&gt;}
 &lt;/style&gt;
 
-&lt;script src=&quot;js/minified/tuckedin.corners-min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- tuckedin corners plugin --&gt;
+&lt;script src=&quot;js/tuckedin-min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
-  $(document).ready(function(){ 
-    $(&#39;element&#39;).tuckedInCorners();
+  $(document).ready(function(){
+    $(&#39;element&#39;).tuckedIn({
+      // default options for the containing
+      // element of your tucked-in corners
+      &#39;background&#39; : &#39;transparent&#39;,
+      &#39;border&#39;     : &#39;none&#39;,
+      &#39;height&#39;     : &#39;auto&#39;,
+      &#39;margin&#39;     : &#39;0 auto&#39;,
+      &#39;max-width&#39;  : &#39;100%&#39;,
+      &#39;padding&#39;    : &#39;auto&#39;,
+      &#39;width&#39;      : &#39;auto&#39;
+    });
   });
 &lt;/script&gt;
 &lt;/head&gt;</pre>
 </figure>
 
-In order to customize this puppy you'll currently need to be a user of Sass and Compass. I'm diligently working on a way to add custom CSS so hang tight &hellip; unless you get there before me.
-
 By slim chance you've never made a jQuery plugin then let me give you a quick run down of what it takes to get started.
 <figure>
 <pre name="code" class="javascript">// jQuery plugin
 (function($) {
-  $.fn.yourFunctionName = function() { 
+  $.fn.pluginName = function() { 
       /*do awesome stuff here*/ 
   }
 })(jQuery);
 
 // call to your plugin
-$(selector).yourFunctionName();</pre>
+$(selector).pluginName();</pre>
 </figure>
 
 Anything inside <code>/*do awesome stuff here*/</code> is what your plugin can do. In other words, this is where you get your plugins functionality from. Give it a try and make your own simple jQuery plugin right this very minute. Now go and be cool.
@@ -3964,6 +4114,8 @@ Anything inside <code>/*do awesome stuff here*/</code> is what your plugin can d
 <ul id="article-links">
 <li><a href="https://github.com/grayghostvisuals/tucked-in" rel="external">github repo &rarr; https://github.com/grayghostvisuals/tucked-in</a></li>
 <li><a href="http://grayghostvisuals.com/tuckedin" rel="external">live example &rarr; http://grayghostvisuals.com/tuckedin</a></li>
+<li><a href="https://github.com/addyosmani/jquery-plugin-patterns" rel="external">https://github.com/addyosmani/jquery-plugin-patterns</a></li>
+<li><a href="http://coding.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns" rel="external">http://coding.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns</a></li>
 <li><a href="http://docs.jquery.com/Plugins/Authoring" rel="external">jQuery Plugin Authoring Docs &rarr; http://docs.jquery.com/Plugins/Authoring</a></li>
 </ul>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4193,7 +4345,7 @@ Do your users a favor and take into account their poor connections and ask yours
 	</item>
 	<item>
 		<title>The Code of Professional Conduct</title>
-		<link>http://blog.grayghostvisuals.com/freelance/professional-conduct-code/</link>
+		<link>http://blog.grayghostvisuals.com/design-ethics/professional-conduct-code/</link>
 		<pubDate>Wed, 11 Jul 2012 21:02:38 +0000</pubDate>
 		<dc:creator>grayghostvisuals</dc:creator>
 		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1098</guid>
@@ -4243,10 +4395,10 @@ Today I mark my ground and humbly declare allegiance to The Academy of Design Pr
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<category domain="post_tag" nicename="andy-rutledge"><![CDATA[andy rutledge]]></category>
+		<category domain="category" nicename="design-ethics"><![CDATA[design ethics]]></category>
 		<category domain="post_tag" nicename="design-pro-academy"><![CDATA[design pro academy]]></category>
 		<category domain="post_tag" nicename="design-professionalism"><![CDATA[design professionalism]]></category>
 		<category domain="post_tag" nicename="designers-academy"><![CDATA[designers academy]]></category>
-		<category domain="category" nicename="freelance"><![CDATA[freelance]]></category>
 		<category domain="post_tag" nicename="pledge-of-conduct"><![CDATA[pledge of conduct]]></category>
 		<category domain="post_tag" nicename="standards-of-design-professionalism"><![CDATA[standards of design professionalism]]></category>
 		<category domain="post_tag" nicename="the-code-of-professional-conduct"><![CDATA[The Code of Professional Conduct]]></category>
@@ -4274,7 +4426,7 @@ Today I mark my ground and humbly declare allegiance to The Academy of Design Pr
 
 <h2>The Example</h2>
 <figure>
-<pre class="codepen" data-type="result" data-user="grayghostvisuals" data-href="volume-knobs/39" data-host="http://codepen.io"><code></code></pre>
+<pre class="codepen" data-type="result" data-href="iptIb" data-user="grayghostvisuals" data-host="http://codepen.io"  ><code></code></pre>
 <script async src="http://codepen.io/assets/embed/ei.js"></script>
 <figcaption>Setting text in a circle using <abbr title="cascading style sheets">CSS</abbr>3 Transformations with a Sass loop for the heavy lifting</figcaption>
 </figure>
@@ -4409,6 +4561,432 @@ Pretty much like <code>background&ndash;position</code> right? Actually, it's ex
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
 			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Debugging QVGA Remotely Using Opera&#039;s Mobile Emulator</title>
+		<link>http://blog.grayghostvisuals.com/emulators/debugging-qvga-remotely-using-opera-mobile-emulator/</link>
+		<pubDate>Fri, 10 Aug 2012 00:00:10 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1219</guid>
+		<description></description>
+		<content:encoded><![CDATA[It was a hot summers day and all I could think about was "How the hell do I test for screens with sizes of 220px thru 260px?" Our faithful browsers currently on the market such as Chrome, Firefox, Opera and Safari only squeeze down so far and I don't have a device that small to test with. We need a way to see what small devices look like when no device is within reach and debug them remotely. Now that the belly aching is taken care of, and a few tweets later, we can get started on finding our solution to small screen emulator debugging.<!--more-->
+
+<blockquote class="opera-quote"><cite title="http://www.opera.com/dragonfly/documentation/remote">Opera Dragonfly Documentation<span class="entity">&#10087;</span></cite>"With Opera Dragonfly it is possible to debug in separate instances of the Opera browser, as well as other Opera Presto powered user agents. It doesn’t matter if these are located on the same machine or on another device such as a mobile phone or television. When put into Remote Debugging mode, Opera Dragonfly will listen for a connection to the IP address and Port specified. The separate instance of the Opera browser can then connect over a network and pass debugging information across the connection. Opera Dragonfly can then interact with the webpages and applications on the remote instance, just as if it were running locally."</blockquote>
+
+The first thing we'll need is the <a href="http://www.opera.com/developer/tools/mobile" rel="external">Opera Mobile Emulator</a>. The next items on our list will be the <a href="http://www.opera.com/browser" rel="external">Opera Desktop Browser</a> topped off with <a href="http://www.opera.com/dragonfly" rel="external">Opera Dragonfly</a>. Once our items listed have been attained and are in full working order, we can begin to debug those pesky critters burrowing a hole in our Web App &ndash; especially on screens that aren't 320px x 480px (Sorry iPhone).
+
+<div class="clear"></div>
+
+<h2><a href="http://www.opera.com/dragonfly/documentation/remote" rel="external">Debugging with Opera Dragonfly</a></h2>
+
+<figure class="flex-video opera">
+<iframe width="640" height="360" src="http://www.youtube.com/embed/YHwiaH8Z5vA" frameborder="0" allowfullscreen></iframe>
+<figcaption>Patrick H. Lauke, Web Evangelist and Opera Dragonfly product manager, (re)introduces developers to the Opera Mobile emulator and the remote debugging functionality of Opera Dragonfly. See <a href="http://www.opera.com/developer/tools" rel="external">http://www.opera.com/developer/tools</a> for more information.</figcaption>
+</figure>
+
+What these means for developers is that we now have an amazing ability to debug using an emulator with <a href="http://en.wikipedia.org/wiki/Graphics_display_resolution#QVGA_.28320.C3.97240.29" rel="external"><abbr title="Quarter Video Graphics Array">QVGA</abbr></a> proportions. As far as I know the Opera Mobile Emulator is the only emulator on the market that currently allows <a href="http://en.wikipedia.org/wiki/Graphics_display_resolution#QVGA_.28320.C3.97240.29" rel="external"><abbr title="Quarter Video Graphics Array">QVGA</abbr></a> detection and live remote debugging in a really useful and pleasant way. Sure, you can certainly open up Eclipse, but be warned your experience will not be pleasant (long load times, inconsistent results, choppy interactions). For those that desire checking breakpoints primarily for small screens then feel free to give <a href="//www.responsinator.com" rel="external">http://www.responsinator.com</a> a whirl just be warned there is no easy debugging method with this Web App ( unless you enjoy extreme <abbr title="document object model">DOM</abbr> traversing every time you want to double check something plus constantly refreshing the browser after you've uploaded new files to the server). On top of all this madness we can add to that an inconsistent User Agent. Do yourself a favor and just use Opera's Mobile Emulator and Dragonfly for QVGA emulator debugging.
+
+<h3>The Debugging Breakdown</h3>
+<ol>
+<li>Activate Opera Desktop Browser</li>
+<li>Activate Opera Mobile Emulator</li>
+<li>Activate Dragonfly from your Desktop Browser : View &rarr; Developer Tools &rarr; Opera Dragonfly</li>
+<li>From the Opera Mobile Emulator, Enter this into the URL address bar <code>opera:debug</code></li>
+<li>Click "Connect" from the emulator debug window and enjoy!</li>
+</ol>
+
+<h3>Holy Crap! Did you see those links?</h3>
+<ul id="article-links">
+<li><a href="http://www.opera.com/dragonfly/documentation/remote">Remote Debugging using Opera Mobile Emulator</a></li>
+<li><a href="http://dev.opera.com/articles/view/opera-mini-web-content-authoring-guidelines/#typography" rel="external">http://dev.opera.com/articles/view/opera-mini-web-content-authoring-guidelines/#typography</a></li>
+<li><a href="http://dev.opera.com/articles/view/opera-mobile-emulator">http://dev.opera.com/articles/view/opera-mobile-emulator</a></li>
+</ul>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1219</wp:post_id>
+		<wp:post_date>2012-08-10 00:00:10</wp:post_date>
+		<wp:post_date_gmt>2012-08-10 00:00:10</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>debugging-qvga-remotely-using-opera-mobile-emulator</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="post_tag" nicename="emulator-debugging"><![CDATA[emulator debugging]]></category>
+		<category domain="category" nicename="emulators"><![CDATA[emulators]]></category>
+		<category domain="post_tag" nicename="mobile-emulator"><![CDATA[mobile emulator]]></category>
+		<category domain="post_tag" nicename="opera"><![CDATA[opera]]></category>
+		<category domain="post_tag" nicename="opera-dragonfly"><![CDATA[opera dragonfly]]></category>
+		<category domain="post_tag" nicename="opera-mobile-emulator"><![CDATA[Opera Mobile emulator]]></category>
+		<category domain="post_tag" nicename="opera-presto"><![CDATA[Opera Presto]]></category>
+		<category domain="post_tag" nicename="patrick-h-lauke"><![CDATA[Patrick H. Lauke]]></category>
+		<category domain="post_tag" nicename="qvga"><![CDATA[QVGA]]></category>
+		<category domain="post_tag" nicename="small-screen-emulator-debugging"><![CDATA[small screen emulator debugging]]></category>
+		<category domain="post_tag" nicename="small-screen-testing"><![CDATA[small screen testing]]></category>
+		<wp:postmeta>
+			<wp:meta_key>art_direction_page</wp:meta_key>
+			<wp:meta_value><![CDATA[<style>
+.post-1219 header h1 {
+text-transform: uppercase;
+text-shadow: 0 1px 0px red;
+}
+</style>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Developers now have an amazing ability to debug remotely with Dragonfly using Opera's Mobile Emulator which supports a range of sizes including QVGA]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>art_direction_single</wp:meta_key>
+			<wp:meta_value><![CDATA[<style>
+[role="main"]  .opera-quote {
+    border: .375em solid #cb2608;
+    border-radius: 10px;
+    box-shadow: inset  1px 1px  4px rgba(0, 0, 0, 0.29), 
+                            inset -1px -1px 4px rgba(0, 0, 0, 0.29);
+
+    background: #bb230b;
+    color: #f2d5cf;
+    
+    text-shadow: none;
+}
+
+.opera-quote cite {
+    display: block;
+    margin: .75em 0;
+    
+    color: #EFEFEF;
+
+    text-align: center;
+}
+
+.entity {
+    display: block;
+    text-align: center;
+}
+
+.flex-video.opera {
+    color: #848179;
+    color: rgba(132, 129, 121, 0.53);
+}
+
+@media screen and (min-width: 1200px) {
+    [role="main"]  .opera-quote {
+        float: right;
+        margin-left: 3em;
+        margin-bottom: 1.5em;
+        max-width: 37.25em;
+    }
+
+    .clear {
+        clear: both;
+    }
+    
+    .flex-video.opera {
+        float: left;
+        width: 41.25%;
+        margin-right: 3em;
+    }
+}
+</style>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[ Debug QVGA Remotely w/ Opera's Mobile Emulator and Dragonfly]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Tracking the Dark Knight; AKA finding a Webkit engineer</title>
+		<link>http://blog.grayghostvisuals.com/bug-reporting/tracking-webkit-engineers/</link>
+		<pubDate>Fri, 27 Jul 2012 04:19:33 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1260</guid>
+		<description></description>
+		<content:encoded><![CDATA[Did you ever come across a browser bug in Webkit and wonder how the hell you get it fixed? or how one tracks down the actual engineer whom landed that feature if no progress is in sight? Well I have no idea either, but I can certainly tell you it's gonna be a fun and bumpy ride so hang on tight. Where we're going ... we don't need roads<!--more-->
+
+<h3>The Bug</h3>
+<pre class="codepen" data-type="result" data-href="AFjDK" data-user="grayghostvisuals" data-host="http://codepen.io"><code></code></pre>
+<script async src="http://codepen.io/assets/embed/ei.js"></script>
+
+<h3>How did this mess start?</h3>
+I saw that Google was broadcasting their Chrome Office Hours, live from London where the room was chock full of smart brains so I decided to ask a question and see what happened. Well it was up voted and read out loud live by Paul Irish. The answer was obviously something that couldn't be concluded at that time, but I hit Paul up in a tweet and got this response moments later...
+
+<h3>Ghost Hunting with Paul Irish</h3>
+
+<figure class="flex-video">
+<iframe width="420" height="315" src="http://www.youtube.com/embed/CUiIf_tQEyI" frameborder="0" allowfullscreen></iframe>
+<figcaption>Paul Irish displaying cat&ndash;like abilities and super human strength when searching for Webkit engineering ghosts</figcaption>
+</figure>
+
+The next stop on this witch hunt is sending an email to Dave Hyatt a Webkit Engineer at Apple and also a main contact listed on the bug issue tracker. My only choice left now was to open up that fancy e&ndash;mail client editor of mine, start typing, hit send and painfully wait quietly. 
+
+<blockquote>
+Hi Dave,
+
+I came across a Webkit bug particularly REM support within Media Query conditions. Instead of discussing the chain of events in this email I will just share my test case link which contains all the info pertaining to this case. Thanks for your time and looking forward to your help.
+
+Bug Demo Link
+<a href="http://codepen.io/grayghostvisuals/full/AFjDK" rel="external">http://codepen.io/grayghostvisuals/full/AFjDK</a>
+
+Sincerely,
+Dennis Gaebel Jr.
+<time datetime="2012-07-26" pubdate>July 26<sup>th</sup>, 2012</time>
+</blockquote>
+
+<h3>Updates Since Dave Hyatt e&ndash;mail</h3>
+<ul>
+<li><time><em>2012-07-27</em></time>
+<ol>
+<li><a href="https://bugs.webkit.org/show_bug.cgi?id=27283" rel="external">https://bugs.webkit.org/show_bug.cgi?id=27283</a>
+<p>Apparently Dave Hyatt is the #1 most busiest Webkit engineer and also hasn't been very available. I'm now creating a bug tracker account in order to CC Simon Fraser and ask him for a triage. Paul Irish also asked me if REMS are really that cool...YES rems are cool and pixels drool.</p></li>
+<li><a href="https://bugs.webkit.org/show_bug.cgi?id=78295" rel="external">https://bugs.webkit.org/show_bug.cgi?id=78295</a>
+<p>Via Peter Beverloo &rarr; "Please use the bug 78295 for tracking "rem" support in Media Queries." Basically this leads me back to the original bug filed on February 9<sup>th</sup>, 2012.</p></li>
+</ol>
+</li>
+</ul>
+
+<div class="bug-reporting">
+<h3 class="bug-reporting title">The Five Stepped Bug Filing Samba</h3>
+<ol class="bug-reporting steps">
+<li><h4>Check your WebKit version</h4>
+To make sure you're not wasting your (and our) time, you should be using the latest version of WebKit before you file your bug. First of all, you should download the latest nightly build to be sure you have the latest version. If you've done this and you still experience the bug, go ahead to the next step.</li>
+<li><h4>Search Bugzilla</h4>
+Now that you have the latest WebKit version and still think you've found a WebKit bug, search through Bugzilla first to see if anyone else has already filed it. This step is very important! If you find that someone has filed your bug already, please go to the next step anyway, but instead of filing a new bug, comment on the one you've found. If you can't find your bug in Bugzilla, go to the next step</li>
+<li><h4>Create a Bugzilla account</h4>
+You will need to create a Bugzilla account to be able to report bugs (and to comment on them). If you have registered, proceed to the next step.</li>
+<li><h4>File the bug!</h4>
+Now you are ready to file a bug on the WebKit product. The Writing a Good Bug Report document (also linked in the sidebar) gives some tips about the most useful information to include in bug reports. The better your bug report, the higher the chance that your bug will be addressed (and possibly fixed) quickly!</li>
+<li><h4>What happens next?</h4>
+Once your bug is filed, you will receive email when it is updated at each stage in the bug life cycle. After the bug is considered fixed, you may be asked to download the latest nightly and confirm that the fix works for you.</li>
+</ol>
+</div>
+
+<h3>Holy Shiz...Links!</h3>
+<ul id="article-links">
+<li><a href="//bugs.webkit.org" rel="external">http://bugs.webkit.org</a></li>
+<li><a href="//www.webkit.org/quality/reduction.html" rel="external">http://www.webkit.org/quality/reduction.html</a></li>
+</ul>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1260</wp:post_id>
+		<wp:post_date>2012-07-27 04:19:33</wp:post_date>
+		<wp:post_date_gmt>2012-07-27 04:19:33</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>tracking-webkit-engineers</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="post_tag" nicename="bug-filing"><![CDATA[bug filing]]></category>
+		<category domain="category" nicename="bug-reporting"><![CDATA[bug reporting]]></category>
+		<category domain="post_tag" nicename="finding-a-webkit-engineer"><![CDATA[finding a webkit engineer]]></category>
+		<category domain="post_tag" nicename="tracking-a-webkit-engineer"><![CDATA[tracking a webkit engineer]]></category>
+		<category domain="post_tag" nicename="webkit-bug-tracker"><![CDATA[webkit bug tracker]]></category>
+		<category domain="post_tag" nicename="webkit-rem-media-query-bug"><![CDATA[webkit rem media query bug]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Tracking the Dark Knight; AKA finding a Webkit engineer]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Wondering how to find a Webkit engineer when you have a bug that nobody is fixing? Paul Irish and Gray Ghost Visuals show you how to contact the right Webkit engineer]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Twit : &quot;Embed Tweets the Right Way&quot;</title>
+		<link>http://blog.grayghostvisuals.com/open-source/twit-embed-tweets-the-right-way/</link>
+		<pubDate>Sun, 19 Aug 2012 21:03:43 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1414</guid>
+		<description></description>
+		<content:encoded><![CDATA[I tried ... I really, really tried, but I just couldn't stand reading the Twitter <abbr title="application programming interface">API</abbr> any longer. The provided widget embedder Twitter has out of the box isn't quite there to say the least. So I'm probably sure that you know what it's like when you can't get what you want &ndash;and in my case I made what I wanted; A simple twitter feed to embed within my own personal website that didn't suck. Let's take a closer look and see how I did shall we?<!--more-->
+
+<div id="twit">
+<img src="http://blog.grayghostvisuals.com/wp-content/uploads/2012/08/twit1.png" alt="find twit on github for your tweet embedding needs" title="twit" width="990" height="609" class="alignnone size-full wp-image-1418" />
+<button class="twit-button"><a href="http://grayghostvisuals.koding.com/twit" class="ss-icon ss-action" rel="external">Demo</a></button>
+</div>
+
+Meet twit. He's a special guy with a special purpose. Flying around at night he collects tweets and spits them back to you where you would like in a <a href="http://www.stevesouders.com/blog/2009/04/27/loading-scripts-without-blocking" rel="external">non&ndash;blocking</a>, asynchronous manner that is just a pleasure to use on any personal site. To get started refer to the <a href="#twit-recipe" rel="bookmark">simple recipe provided below</a>.
+
+<section id="twit-recipe">
+<h3>TWIT'S RECIPE</h3>
+<h4><code>index.html</code></h4>
+<pre name="code" class="html">&lt;head&gt;
+&lt;!-- jQuery --&gt;
+&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;window.jQuery || document.write(&#39;&lt;script src=&quot;js/vendor/jquery-1.8.0.min.js&quot;&gt;&lt;\/script&gt;&#39;)&lt;/script&gt;
+
+&lt;!-- Twit --&gt;
+&lt;script src=&quot;js/twit.js&quot; async&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;!-- twit --&gt;
+&lt;div id=&quot;twit-container&quot;&gt;
+    &lt;ul id=&quot;twitter_update_list&quot;&gt;
+        &lt;li id=&quot;twitter_feed&quot;&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- twit --&gt;
+&lt;/body&gt;</pre>
+
+<h3>USERNAME and TWIT DISPLAY SETUP</h3>
+<h4><code>twit.js</code></h4>
+<pre name="code" class="javascript">// Load Twit
+window.onload = function() {
+    var ajax_load            = &quot;&lt;img class=&#39;twit-loader&#39; src=&#39;img/loading.gif&#39; alt=&#39;Loading...&#39;&gt;&quot;,
+        twitter_preferences  = {
+            count    : 1,
+            username : &#39;gryghostvisuals&#39;
+        },
+        twitterUrl = &#39;http://twitter.com/statuses/user_timeline.json?screen_name=&#39; + twitter_preferences.username + &#39;&amp;callback=twitterCallback&amp;count=&#39; + twitter_preferences.count,
+        script     = document.createElement(&#39;script&#39;);
+
+    $(&quot;#twitter_feed&quot;).html(ajax_load);
+
+    script.setAttribute(&#39;src&#39;, twitterUrl);
+    script.setAttribute(&#39;async&#39;, true);
+
+    document.body.appendChild(script);
+};</pre>
+</section>
+
+In order to customize for your own personal tweets, just replace the object literal in <code>twit.js</code> titled 'username' with your own unique twitter account. There is no need to use the @ symbol; just the literal account name will suffice. Embedded tweets can also have their 'count' customized by once again changing the object literal value for 'count' to whatever count you would like. My suggestion is to stick with '1' as that is the design basis for this widget, but feel free to display as many tweets as you desire.
+
+<h3>GOTCHYAS</h3>
+<ul>
+<li>Unauthenticated Twitter API calls are permitted 150 requests per hour https://dev.twitter.com/docs/rate-limiting</li>
+<li>Retweets and favorites will not display currently. Only single user tweets will display at the moment (this will eventually change)</li>
+</ul>
+
+<h3>IN THE PIPELINE</h3>
+<ul>
+<li>jQuery Plugin → checkout our jQueryPlugin feature branch</li>
+<li>Due to unauthenticated Twitter API requests being limited to 150 per hour we're working out a way to cache them properly. Feel free to chime in if you have a better way or are great with Twitter's oAuth (350 per hour)</li>
+</ul>
+
+<h3>News and Updates API v1.1 migration period</h3>
+<ul>
+<li>Currently, in v1.0 of the Twitter API developers are allowed access to certain API endpoints without requiring their applications to authenticate, essentially enabling them to access public information from the Twitter API without Twitter knowing who they are. For example, there are many applications that are pulling data from the Twitter API at very high rates (scraping, bots, etc.) where Twitter only knows the IP address of the applications. To prevent malicious use of the Twitter API and gain an understanding of what types of applications are accessing the API in order to evolve it to meet the needs of developers, it's important to have visibility into the activity on the Twitter API and the applications using the platform. In version 1.1, Twitter will require every request to the API to be authenticated. For developers who are already using OAuth when making API requests, all of your authentication tokens will transition seamlessly from v1.0 to v1.1. If your application is currently using the Twitter API without using OAuth, you will need to update your application before March 2013. When Twitter releases version 1.1 of the API they will simultaneously announce the deprecation of v1.0. From the day of the release, developers will have six months to migrate applications from v1.0 to v1.1. For developers who are already making authenticated calls to the API, this migration will be relatively easy, and should only involve updating the API endpoint, and testing your application's behavior against the new rate limiting policies. For developers whose applications are accessing the API without authenticating, you will need to update your applications to use OAuth.
+<a href="https://dev.twitter.com/blog/changes-coming-to-twitter-api" rel="external">https://dev.twitter.com/blog/changes-coming-to-twitter-api</a>
+</li>
+</ul>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1414</wp:post_id>
+		<wp:post_date>2012-08-19 21:03:43</wp:post_date>
+		<wp:post_date_gmt>2012-08-19 21:03:43</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>twit-embed-tweets-the-right-way</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="post_tag" nicename="custom-twitter-widget"><![CDATA[Custom Twitter Widget]]></category>
+		<category domain="post_tag" nicename="embed-tweets"><![CDATA[Embed Tweets]]></category>
+		<category domain="category" nicename="open-source"><![CDATA[open source]]></category>
+		<category domain="post_tag" nicename="open-source"><![CDATA[open source]]></category>
+		<category domain="post_tag" nicename="simple-twitter-feed"><![CDATA[simple twitter feed]]></category>
+		<category domain="post_tag" nicename="tweet-widget"><![CDATA[tweet widget]]></category>
+		<category domain="post_tag" nicename="twitter-api"><![CDATA[twitter api]]></category>
+		<category domain="post_tag" nicename="twitter-api-customization"><![CDATA[twitter api customization]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Twit : "Embed Tweets the Right Way"]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>art_direction_single</wp:meta_key>
+			<wp:meta_value><![CDATA[<style>
+.twit-button {
+    -webkit-transition: .3s all ease-in-out;
+    -moz-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.41);
+    width: 100%;
+
+    background: #1a334d;
+    background-image: linear-gradient(top, rgb(26,51,77) 89%, rgb(22,78,116) 43%);
+    background-image: -o-linear-gradient(top, rgb(26,51,77) 89%, rgb(22,78,116) 43%);
+    background-image: -moz-linear-gradient(top, rgb(26,51,77) 89%, rgb(22,78,116) 43%);
+    background-image: -webkit-linear-gradient(top, rgb(26,51,77) 89%, rgb(22,78,116) 43%);
+    background-image: -ms-linear-gradient(top, rgb(26,51,77) 89%, rgb(22,78,116) 43%);
+
+    background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0.89, rgb(26,51,77)),
+	color-stop(0.43, rgb(22,78,116))
+    );
+    color: #f8f8f8;
+
+     font-size: 3em;
+}
+
+.twit-button a {
+    display: inline-block;
+    padding: 5% 0;
+    width: 100%;
+
+    color: #f8f8f8;
+
+    font-family: Georgia;
+}
+
+.twit-button:hover {
+    background: #164f74;
+    background-image: linear-gradient(top, rgb(37,69,102) 89%, rgb(30,109,161) 43%);
+    background-image: -o-linear-gradient(top, rgb(37,69,102) 89%, rgb(30,109,161) 43%);
+    background-image: -moz-linear-gradient(top, rgb(37,69,102) 89%, rgb(30,109,161) 43%);
+    background-image: -webkit-linear-gradient(top, rgb(37,69,102) 89%, rgb(30,109,161) 43%);
+    background-image: -ms-linear-gradient(top, rgb(37,69,102) 89%, rgb(30,109,161) 43%);
+
+    background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0.89, rgb(37,69,102)),
+	color-stop(0.43, rgb(30,109,161))
+    );
+}
+
+.twit-button:active {
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.41);
+}
+
+.twit-button .ss-icon.ss-action:before {
+    position: relative;
+    top: .1075em;
+
+    color: #6291a6;
+}
+</style>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Meet twit. He's a special guy with a special purpose. Flying around at night he collects tweets and spits them back where you would like using the Twitter API.]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 </channel>
