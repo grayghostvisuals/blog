@@ -477,10 +477,20 @@ blockquote {
     list-style-type: none;
     padding: 0;
 
+    font-size: 1.5em;
     text-align: center;
 
     li {
         display: inline-block;
+        border-radius: 80%;
+        height: 1.5em;
+        width: 1.5em;
+        text-align: center;
+        line-height: 1.75em;
+        padding: .1825em;
+        a {
+            @include transition($transition-1: .3s all ease-in-out);
+        }
     }
 
     @media only all and (min-width: 55.25em) {
@@ -1124,6 +1134,20 @@ header[role="banner"] {
 
     .no-svg & {
         background: $rss-ribbon;
+    }
+}
+
+
+// = $Socials Header Module
+// ------------------------------------------------------------------------------- //
+
+.socials.header {
+
+    li {
+        background: #FFF;
+        a {
+            @include transition($transition-1: .3s all ease-in-out);
+        }
     }
 }
 
