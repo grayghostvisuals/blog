@@ -2,7 +2,7 @@
     <footer role="contentinfo">
         <section id="footer-widgets">
             <?php if ( function_exists('dynamic_sidebar') ) : ?>
-            <?php dynamic_sidebar('footer widget') ?>
+                <?php dynamic_sidebar('footer widget') ?>
             <?php endif; ?>
         </section>
 
