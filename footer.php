@@ -36,7 +36,7 @@ s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 <!-- Symbolset -->
-<script src="<?php echo get_template_directory_uri(); ?>/webfonts/minified/ss-min.js?v1.9.31"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/webfonts/minified/ss-min.js?v1.9.32"></script>
 <script src="https://get.gridsetapp.com/1046/overlay/"></script>
 <?php wp_footer(); ?>
 </body>
