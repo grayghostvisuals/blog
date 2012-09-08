@@ -479,20 +479,24 @@ blockquote {
     list-style-type: none;
     padding: 0;
 
+    -webkit-perspective: 600px;
+  /* vanishing point of perspective default is in middle of the scene */
+  -webkit-perspective-origin: 50% 50%;
+
     font-size: 1.5em;
     text-align: center;
 
     li {
+        border: .0625em solid #C9BCBC;
+        border: .0625em solid rgba(209, 209, 209, 0.8);
+        border-radius: 8px;
         display: inline-block;
-        border-radius: 80%;
         height: 1.5em;
+        padding: .1825em;
         width: 1.5em;
+
         text-align: center;
         line-height: 1.75em;
-        padding: .1825em;
-        a {
-            @include transition($transition-1: .3s all ease-in-out);
-        }
     }
 
     @media only all and (min-width: 55.25em) {
@@ -611,7 +615,7 @@ blockquote {
 }
 
 
-// = $Input & Forms Layout
+// = $Search Form Layout
 // ------------------------------------------------------------------------------- //
 
 #search-form {
@@ -631,7 +635,7 @@ blockquote {
 
     @media only all and (min-width: 55.25em) {
         position: absolute;
-        top: $baseline;
+        top: 2em;
         right: 15.10989012%;
         width: 21.491820406154em; //21.491820406154%;
     }
@@ -644,6 +648,10 @@ blockquote {
 label[for="s"] {
     display: inline-block;
 }
+
+
+// = $Input & Forms Layout
+// ------------------------------------------------------------------------------- //
 
 input,
 textarea {
@@ -1139,15 +1147,28 @@ header[role="banner"] {
 }
 
 
-// = $Socials Header Module
+// = $Socials Header Module Color
 // ------------------------------------------------------------------------------- //
 
 .socials.header {
 
     li {
-        background: #FFF;
+        background: #ffffff;
+        background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 47%, #d8d8d8 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f2f2f2), color-stop(100%,#d8d8d8));
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
+        background: -o-linear-gradient(top,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
+        background: -ms-linear-gradient(top,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
+        background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8d8d8',GradientType=0 );
+
         a {
             @include transition($transition-1: .3s all ease-in-out);
+            color: #727a7f;
+
+            &:hover {
+                color: #D6D6D6;
+            }
         }
     }
 }
