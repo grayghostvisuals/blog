@@ -15,7 +15,6 @@
                 <li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF611;</a></li>
                 <li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF671;</a></li>
                 <li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF660;</a></li>
-                <li class="website"><a href="//grayghostvisuals.com" class="ss-icon" rel="external">&#x2601;</a></li>
                 <li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF610;</a></li>
                 <li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social-circle" rel="external">&#xF613;</a></li>
             </ul>
@@ -37,7 +36,7 @@ s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 <!-- Symbolset -->
-<script src="<?php echo get_template_directory_uri(); ?>/webfonts/minified/ss-min.js?v1.9.31"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/webfonts/minified/ss-min.js?v1.9.32"></script>
 <script src="https://get.gridsetapp.com/1046/overlay/"></script>
 <?php wp_footer(); ?>
 </body>
