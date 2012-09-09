@@ -70,10 +70,7 @@ endif; ?></title>
 <meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); esc_attr( bloginfo( 'description' ) ) ?>">
 <?php endif; ?>
 
-<!--    I Use Scott Jehl's iOS Orientation Fix
-        While SJ rides trains, he fixes things for us
-        https://github.com/scottjehl/iOS-Orientationchange-Fix -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -81,6 +78,7 @@ endif; ?></title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
 <!-- Modern Browsers CSS -->
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.32">
 <!--[if gt IE 8]><!--><link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.32" rel="stylesheet" media="all"><!--<![endif]-->
 
 <!-- lt-IE 9 Gridset and Style Adjustments -->
