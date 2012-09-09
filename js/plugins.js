@@ -11,65 +11,7 @@ if (!(window.console && console.log)) {
     }());
 }
 
-// Place any jQuery/helper plugins in here.
-
 // place any jQuery/helper plugins in here, instead of separate, slower script files.
-/*! A fix for the iOS orientationchange zoom bug.
- Script by @scottjehl, rebound by @wilto.
- MIT License.
-*/
-(function(w){
-
-    // This fix addresses an iOS bug, so return early if the UA claims it's something else.
-    if( !( /iPhone|iPad|iPod/.test( navigator.platform ) && navigator.userAgent.indexOf( "AppleWebKit" ) > -1 ) ){
-        return;
-    }
-
-    var doc = w.document;
-
-    if( !doc.querySelector ){ return; }
-
-    var meta = doc.querySelector( "meta[name=viewport]" ),
-        initialContent = meta && meta.getAttribute( "content" ),
-        disabledZoom = initialContent + ",maximum-scale=1",
-        enabledZoom = initialContent + ",maximum-scale=10",
-        enabled = true,
-        x, y, z, aig;
-
-    if( !meta ){ return; }
-
-    function restoreZoom(){
-        meta.setAttribute( "content", enabledZoom );
-        enabled = true;
-    }
-
-    function disableZoom(){
-        meta.setAttribute( "content", disabledZoom );
-        enabled = false;
-    }
-
-    function checkTilt( e ){
-        aig = e.accelerationIncludingGravity;
-        x = Math.abs( aig.x );
-        y = Math.abs( aig.y );
-        z = Math.abs( aig.z );
-
-        // If portrait orientation and in one of the danger zones
-        if( !w.orientation && ( x > 7 || ( ( z > 6 && y < 8 || z < 8 && y > 6 ) && x > 5 ) ) ){
-            if( enabled ){
-                disableZoom();
-            }           
-        }
-        else if( !enabled ){
-            restoreZoom();
-        }
-    }
-
-    w.addEventListener( "orientationchange", restoreZoom, false );
-    w.addEventListener( "devicemotion", checkTilt, false );
-
-})( this );
-
 
 /*global jQuery */
 /*!
@@ -112,16 +54,16 @@ if (!(window.console && console.log)) {
 
     ref.parentNode.insertBefore(div,ref);
 
-    if ( options ) { 
+    if ( options ) {
       $.extend( settings, options );
     }
 
     return this.each(function(){
       var selectors = [
-        "iframe[src*='player.vimeo.com']", 
-        "iframe[src*='www.youtube.com']",  
-        "iframe[src*='www.kickstarter.com']", 
-        "object", 
+        "iframe[src*='player.vimeo.com']",
+        "iframe[src*='www.youtube.com']",
+        "iframe[src*='www.kickstarter.com']",
+        "object",
         "embed"
       ];
 
@@ -133,7 +75,7 @@ if (!(window.console && console.log)) {
 
       $allVideos.each(function(){
         var $this = $(this);
-        if (this.tagName.toLowerCase() == 'embed' && $this.parent('object').length || $this.parent('.fluid-width-video-wrapper').length) { return; } 
+        if (this.tagName.toLowerCase() == 'embed' && $this.parent('object').length || $this.parent('.fluid-width-video-wrapper').length) { return; }
         var height = this.tagName.toLowerCase() == 'object' ? $this.attr('height') : $this.height(),
             aspectRatio = height / $this.width();
         if(!$this.attr('id')){

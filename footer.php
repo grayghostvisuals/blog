@@ -25,7 +25,7 @@
 <!-- jQuery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery.min.js"><\/script>')</script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/minified/script-min.js?v1.9.31"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/minified/script-min.js?v1.9.33"></script>
 
 <!-- Google Analytics -->
 <script>
@@ -35,9 +35,6 @@ g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js
 s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
-<!-- Symbolset -->
-<script src="<?php echo get_template_directory_uri(); ?>/webfonts/minified/ss-min.js?v1.9.32"></script>
-<script src="https://get.gridsetapp.com/1046/overlay/"></script>
 <?php wp_footer(); ?>
 </body>
 </html>
