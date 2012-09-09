@@ -6,7 +6,7 @@ Description: Exploring Front-end Web Development and Design using Wordpress, WP-
 Author: Gray Ghost Visuals Press
 Author URI: http://blog.grayghostvisuals.com
 
-Version: 1.9.2
+Version: 1.9.32
 Tags: full-width-template, flexible-width, microformats, sticky-post, front-page-post-form, sticky-post, threaded-comments, post-formats, light
 
 Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
@@ -17,6 +17,8 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // = $Imports
 // ------------------------------------------------------------------------------- */
 
+@import "imports/gridset.raw.scss";    // gridset
+
 @import "compass";                     // compass
 
 @import "imports/vars.scss";           // variables
@@ -26,8 +28,8 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 @import "imports/resets.scss";         // html5boilerplate resets
 @import "imports/wp-classes.scss";     // Wordpress Classes
 
-@import "webfonts/ss-social.css";   // social icons
-@import "webfonts/ss-standard.css"; // social standard icons
+@import "imports/ss-social.scss";      // social icons
+@import "imports/ss-standard.scss";    // social standard icons
 
 
 // ------------------------------------------------------------------------------- */
@@ -38,7 +40,7 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // ------------------------------------------------------------------------------- //
 
 html {
-    -webkit-tap-highlight-color: transparent; 
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -85,7 +87,7 @@ h2,
 h3,
 h4,
 h5,
-h6 { 
+h6 {
     font-weight: 400;
 }
 
@@ -275,7 +277,7 @@ label[for="s"] {
 #respond label,
 #respond input,
 #respond textarea {
-    font-family: "adobe-garamond-pro", serif; 
+    font-family: "adobe-garamond-pro", serif;
     font-style: italic;
 }
 
@@ -400,10 +402,12 @@ blockquote {
 // ------------------------------------------------------------------------------- //
 
 /*evernote clip button*/
+.home .evernoteSiteMemory {
+    //display: none;
+}
 .evernoteSiteMemory {
     height: 1.5em;
 }
-
 .evernoteSiteMemoryLinkText {
     margin-left: .5em;
 }
@@ -477,10 +481,24 @@ blockquote {
     list-style-type: none;
     padding: 0;
 
+    -webkit-perspective: 600px;
+  /* vanishing point of perspective default is in middle of the scene */
+  -webkit-perspective-origin: 50% 50%;
+
+    font-size: 1.5em;
     text-align: center;
 
     li {
+        border: .0625em solid #C9BCBC;
+        border: .0625em solid rgba(209, 209, 209, 0.8);
+        border-radius: 8px;
         display: inline-block;
+        height: 1.5em;
+        padding: .1825em;
+        width: 1.5em;
+
+        text-align: center;
+        line-height: 1.75em;
     }
 
     @media only all and (min-width: 55.25em) {
@@ -599,7 +617,7 @@ blockquote {
 }
 
 
-// = $Input & Forms Layout
+// = $Search Form Layout
 // ------------------------------------------------------------------------------- //
 
 #search-form {
@@ -619,7 +637,7 @@ blockquote {
 
     @media only all and (min-width: 55.25em) {
         position: absolute;
-        top: $baseline;
+        top: 2em;
         right: 15.10989012%;
         width: 21.491820406154em; //21.491820406154%;
     }
@@ -632,6 +650,10 @@ blockquote {
 label[for="s"] {
     display: inline-block;
 }
+
+
+// = $Input & Forms Layout
+// ------------------------------------------------------------------------------- //
 
 input,
 textarea {
@@ -736,7 +758,7 @@ textarea {
         content: "";
         display: block;
         position: absolute;
-        top: -.75em;    // 18px / 24px = .75em 
+        top: -.75em;    // 18px / 24px = .75em
         left: -.75em;   // 18px / 24px = .75em
         bottom: -.75em; // 18px / 24px = .75em
         right: -.75em;  // 18px / 24px = .75em
@@ -815,7 +837,7 @@ textarea {
 #commentform {
     #submit {
         border: solid 1px transparent;
-        box-shadow: 0px 3px 8px #aaa, 
+        box-shadow: 0px 3px 8px #aaa,
               inset 0px 2px 3px #fff;
         display: block;
         line-height: ($baseline * 2);
@@ -1104,7 +1126,6 @@ header[role="banner"] {
 // = $RSS Ribbon Color
 // ------------------------------------------------------------------------------- //
 
-
 #rss {
 
     .no-textshadow & {
@@ -1124,6 +1145,33 @@ header[role="banner"] {
 
     .no-svg & {
         background: $rss-ribbon;
+    }
+}
+
+
+// = $Socials Header Module Color
+// ------------------------------------------------------------------------------- //
+
+.socials.header {
+
+    li {
+        background: #ffffff;
+        background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 47%, #d8d8d8 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f2f2f2), color-stop(100%,#d8d8d8));
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
+        background: -o-linear-gradient(top,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
+        background: -ms-linear-gradient(top,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
+        background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8d8d8',GradientType=0 );
+
+        a {
+            @include transition($transition-1: .3s all ease-in-out);
+            color: #727a7f;
+
+            &:hover {
+                color: #D6D6D6;
+            }
+        }
     }
 }
 
@@ -1415,16 +1463,16 @@ footer[role="contentinfo"] {
 // ========================================================================== */
 
 @media print {
-  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; } /* Black prints faster: h5bp.com/s */
-  a, a:visited { text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* h5bp.com/t */
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
+    * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; } /* Black prints faster: h5bp.com/s */
+    a, a:visited { text-decoration: underline; }
+    a[href]:after { content: " (" attr(href) ")"; }
+    abbr[title]:after { content: " (" attr(title) ")"; }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } /* Don't show links for images, or javascript/internal links */
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; } /* h5bp.com/t */
+    tr, img { page-break-inside: avoid; }
+    img { max-width: 100% !important; }
+    @page { margin: 0.5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3 { page-break-after: avoid; }
 }
