@@ -77,13 +77,15 @@ endif; ?></title>
 <meta name="MobileOptimized" content="320">
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<!-- Modern Browsers CSS -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.32">
-<!--[if gt IE 8]><!--><link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.32" rel="stylesheet" media="all"><!--<![endif]-->
+<!-- Standard Supporting Browsers CSS -->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.33">
+<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.33" rel="stylesheet" media="all">
+<!--<![endif]-->
 
 <!-- lt-IE 9 Gridset and Style Adjustments -->
-<!--[if (lt IE 9) | (IEMobile)]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.raw.css?v1.9.32"><![endif]-->
-<!--[if lt IE 9]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.32" type="text/css" media="all"><![endif]-->
+<!--[if (lt IE 9) | (IEMobile)]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.raw.css?v1.9.33"><![endif]-->
+<!--[if lt IE 9]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.33" type="text/css" media="all"><![endif]-->
 
 <!-- pingback url -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -125,11 +127,11 @@ endif; ?></title>
             <h2 class="tagline"><?php echo esc_attr( bloginfo( 'description' ) ); ?></h2>
 
             <ul class="socials header">
-                <li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social" rel="external">&#xF611;</a></li>
-                <li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social" rel="external">&#xF671;</a></li>
-                <li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social" rel="external">&#xF660;</a></li>
-                <li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social" rel="external">&#xF610;</a></li>
-                <li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social" rel="external">&#xF613;</a></li>
+                <li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social" rel="external">twitter</a></li>
+                <li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social" rel="external">github</a></li>
+                <li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social" rel="external">dribbble</a></li>
+                <li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social" rel="external">facebook</a></li>
+                <li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social" rel="external">googleplus</a></li>
             </ul>
 
             <?php if( ! is_search() && ! is_archive() && ! is_category() && ! is_single() && ! is_404() ) :?>
@@ -145,6 +147,7 @@ endif; ?></title>
                 <a href="<?php bloginfo('rss2_url') ?>"><b class="ss-icon ss-rss"></b><span class="visuallyhidden">Feed</span></a>
             </article>
         </header>
+
     <!-- gridset -->
     </div>
 </div>
