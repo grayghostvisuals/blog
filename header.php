@@ -79,13 +79,13 @@ endif; ?></title>
 
 <!-- Standard Supporting Browsers CSS -->
 <!--[if gt IE 8]><!-->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.33">
-<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.33" rel="stylesheet" media="all">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.34">
+<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.34" rel="stylesheet" media="all">
 <!--<![endif]-->
 
 <!-- lt-IE 9 Gridset and Style Adjustments -->
-<!--[if (lt IE 9) | (IEMobile)]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.raw.css?v1.9.33"><![endif]-->
-<!--[if lt IE 9]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.33" type="text/css" media="all"><![endif]-->
+<!--[if (lt IE 9) | (IEMobile)]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.raw.css?v1.9.34"><![endif]-->
+<!--[if lt IE 9]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.34" type="text/css" media="all"><![endif]-->
 
 <!-- pingback url -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
