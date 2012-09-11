@@ -6,11 +6,18 @@
             <?php endif; ?>
         </section>
 
-        <section id="copyright">
-            <small><a href="//github.com/grayghostvisuals/WP-Flex" rel="external"><b class="ss-icon">&#xEB85;</b> WP&ndash;Flex Boilerplate</a> <a href="//wordpress.org" rel="external"><b class="ss-icon ss-social ss-wordpress"></b> Foundation</a></small>
+        <section id="copyright" class="d2-d4">
+            <p><small><a href="//github.com/grayghostvisuals/WP-Flex" rel="external"><b class="ss-icon">&#xEB85;</b> WP&ndash;Flex Boilerplate</a> <a href="//wordpress.org" rel="external"><b class="ss-icon ss-social ss-wordpress"></b> Foundation</a></small></p>
         </section>
 
-        <section class="socials footer">
+        <section class="htaccess-ad d6-d9">
+            <p>
+                <a href="//htaccessbook.com/store/?ap_id=ggv61111"><img src="//htaccessbook.com/wp/wp-content/uploads/2012/09/280x160-htaccess-made-easy.jpg" alt="htaccess made easy. Configure, optimize,
+and secure your website"></a>
+            </p>
+        </section>
+
+        <section class="socials footer d10-d11">
             <ul>
                 <li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF611;</a></li>
                 <li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social-circle" rel="external">&#xF671;</a></li>
@@ -34,7 +41,6 @@ var _gaq=[ ['_setAccount','UA-27240293-1'],['_trackPageview'],['_trackPageLoadTi
 g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
-
 <?php wp_footer(); ?>
 </body>
 </html>
