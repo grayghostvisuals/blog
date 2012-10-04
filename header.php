@@ -78,13 +78,13 @@ endif; ?></title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
 <!-- Standard Supporting Browsers CSS -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.34">
-<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.34" rel="stylesheet" media="all">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.35">
+<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.35" rel="stylesheet" media="all">
 
 <!-- lt-IE 9 Gridset and Style Adjustments -->
 <!--[if (lt IE 9) | (IEMobile)]>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.raw.css?v1.9.34">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lt-ie9.css?v1.9.34" type="text/css" media="all">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.raw.css?v1.9.35">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lt-ie9.css?v1.9.35" type="text/css" media="all">
 <![endif]-->
 
 <!-- pingback url -->
