@@ -7,7 +7,7 @@
 @import "compass"; // compass
 
 
-// =WordPress Required - Generated Core Classes 
+// =WordPress Required - Generated Core Classes
 //  http://codex.wordpress.org/CSS#WordPress_Generated_Classes
 //------------------------------------------------------------------------------- //
 
@@ -100,18 +100,18 @@ a img.aligncenter {
 .cats ul li { display: inline; }
 
 
-/* =WordPress - Additional Styling Classes 
+/* =WordPress - Additional Styling Classes
   http://codex.wordpress.org/CSS#WordPress_Generated_Classes
 ------------------------------------------------------------------------------- */
 
 /**** Wordpress Fluid Images */
-img[class*="align"], 
+img[class*="align"],
 img[class*="wp-image-"] {
   /* Make sure images with WordPress-added height and width attributes are scaled correctly */
       height: auto
 }
 
-.wp-caption, 
+.wp-caption,
 .wp-caption img {
   max-width: 100%
 }
@@ -142,7 +142,7 @@ img.size-full {
 
 /* WP TAGS AND CATEGORIES */
 #taxonomies {
-  list-style-type: none; 
+  list-style-type: none;
   padding: 0;
 }
 .tags ul,
@@ -183,10 +183,11 @@ img.size-full {
 // no user comments styling class provided via comments.php line#69
 .moderating,
 .nocomments {
-  color: red
+  color: red;
+
+  text-align: center;
+  text-shadow: none;
 }
-//.moderating {}
-//.nocomments {}
 
 // comment form inputs
 #commentform input {
@@ -221,13 +222,13 @@ img.size-full {
   font-size: small;
 }
 
-/* 
+/*
  * response form container
  * keep this consistent for comment form
  * everytime a user clicks reply to a thread
  * the comment form that appears contains these very
  * styles defined below
- * 
+ *
  */
 //#respond {}
 //#reply-title {}
@@ -256,7 +257,7 @@ ol.commentlist li {}
 
 .commentlist .reply {
   padding: .75em 2.35715em;
-  
+
   background-color: #f7f7f7;
   background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7);
   background-image:    -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
@@ -330,11 +331,11 @@ ol.commentlist li.comment {
 
 //ol.commentlist li.comment div.comment-author {}
 
-ol.commentlist li.comment div.vcard { 
+ol.commentlist li.comment div.vcard {
   font: normal 100%/1.5 Georgia, Times, serif;
 }
 ol.commentlist li.comment div.vcard cite.fn {
-  font-style: normal; 
+  font-style: normal;
 }
 
 //ol.commentlist li.comment div.vcard cite.fn a.url {}
@@ -356,18 +357,18 @@ ol.commentlist li.comment div.vcard img.avatar {
 //ol.commentlist li.comment div.commentmetadata {}
 
 ol.commentlist li.comment div.comment-meta {
-  //font-size: .5625em; 
+  //font-size: .5625em;
 }
 ol.commentlist li.comment div.comment-meta a {}
 
 ol.commentlist li.comment p {
-  //font-size: .875em; 
-  //margin: 0 0 1em; 
+  //font-size: .875em;
+  //margin: 0 0 1em;
 }
 ol.commentlist li.comment ul {}
 ol.commentlist li.comment div.reply {}
 //ol.commentlist li.comment div.reply a {
-  //font-weight: bold; 
+  //font-weight: bold;
 //}
 ol.commentlist li.comment ul.children {
   list-style: none;

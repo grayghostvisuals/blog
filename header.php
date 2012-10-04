@@ -19,30 +19,30 @@
 <title><?php
 // if tag
 if( function_exists( 'is_tag' ) && is_tag() ) :
-    single_tag_title( 'Tag Archive for &quot;' ); echo '&quot; -';
+  single_tag_title( 'Tag Archive for &quot;' ); echo '&quot; - ';
 
 // if archives
 elseif( is_archive() ) :
-    esc_attr( wp_title( '' ) ); echo ' '; echo 'Archive -';
+  esc_attr( wp_title( '' ) ); echo ' '; echo 'Archive -';
 
 // if search
 elseif( is_search() ) :
-    echo 'Search for &quot;' . wp_specialchars( $s ) . '&quot; -';
+  echo 'Search for &quot;' . esc_html( $s ) . '&quot; -';
 
 // if !404 and single or page
-elseif( !( is_404() ) && ( is_single() ) || ( is_page() ) ) :
-    esc_attr( wp_title( '' ) ); echo '-';
+elseif( !( is_404() ) && ( is_single() ) || ( is_page() ) && !(is_front_page() ) ) :
+  esc_attr( wp_title( '' ) ); echo '-';
 
 // if 404
 elseif( is_404() ) :
-    echo 'Not Found -';
+  echo 'Not Found -';
 endif;
 
 //if home
-if( is_home() ):
+if( is_home() || is_front_page() ):
   esc_attr( bloginfo( 'name' ) ); echo '-'; esc_attr( bloginfo( 'description' ) ); echo '-'; esc_attr( wp_title() );
 else :
-  esc_attr( bloginfo( 'name' ) ); echo 'Exploring Front-end Web Design';
+  esc_attr( bloginfo( 'name' ) );
 endif;
 
 // if pages is greater than 1
@@ -78,14 +78,14 @@ endif; ?></title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 
 <!-- Standard Supporting Browsers CSS -->
-<!--[if gt IE 8]><!-->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.34">
-<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.34" rel="stylesheet" media="all">
-<!--<![endif]-->
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.35">
+<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.35" rel="stylesheet" media="all">
 
 <!-- lt-IE 9 Gridset and Style Adjustments -->
-<!--[if (lt IE 9) | (IEMobile)]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.raw.css?v1.9.34"><![endif]-->
-<!--[if lt IE 9]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lt-ie9.css?v1.9.34" type="text/css" media="all"><![endif]-->
+<!--[if (lt IE 9) | (IEMobile)]>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.raw.css?v1.9.35">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lt-ie9.css?v1.9.35" type="text/css" media="all">
+<![endif]-->
 
 <!-- pingback url -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
