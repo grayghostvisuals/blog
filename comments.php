@@ -2,7 +2,7 @@
 if( ! empty( $_SERVER[ 'SCRIPT_FILENAME' ] ) && 'comments.php' == basename( $_SERVER[ 'SCRIPT_FILENAME' ] ) )
 die('please do not load this page directly kind sir');
 ?>
-<div class="stripe m-all t-all d-all">
+<div class="stripe comments m-all t-all d-all">
     <div class="t2-t6 d4-d10">
     <!-- gridset -->
 
@@ -70,7 +70,7 @@ die('please do not load this page directly kind sir');
                 //If there are no comments and comments are closed,
                 //let's leave a little note, shall we?
                 if ( ! comments_open() ) : ?>
-                    <p class="nocomments"><b class="ss-icon ss-warning"></b><?php echo( 'Comments are closed bro. you\'re way late.' ); ?></p>
+                    <p class="nocomments"><span class="ss-icon" style="display:block">&#x1F512;</span><?php echo( 'Comments are closed bro. You\'re way late.' ); ?></p>
                 <?php endif; ?>
             <?php endif; ?>
 

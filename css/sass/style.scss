@@ -17,19 +17,17 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // = $Imports
 // ------------------------------------------------------------------------------- */
 
-@import "compass";                     // compass
+@import "compass";                    // compass
 
-//@import "imports/gridset.raw.scss";    // gridset
+@import "imports/vars";               // variables
+@import "imports/mixins";             // mixins
+@import "imports/extends";            // extends
 
-@import "imports/vars.scss";           // variables
-@import "imports/mixins.scss";         // mixins
-@import "imports/extends.scss";        // extends
+@import "imports/resets";             // html5boilerplate resets
+@import "imports/wp-classes";         // Wordpress Classes
 
-@import "imports/resets.scss";         // html5boilerplate resets
-@import "imports/wp-classes.scss";     // Wordpress Classes
-
-@import "imports/ss-social.scss";      // social icons
-@import "imports/ss-standard.scss";    // social standard icons
+@import "imports/ss-social";          // social icons
+@import "imports/ss-standard";        // social standard icons
 
 
 // ------------------------------------------------------------------------------- */
@@ -324,14 +322,9 @@ footer[role="contentinfo"] {
 }
 
 .socials.footer {
-
     .ss-icon {
-        text-shadow: 0 1px 0px rgba(255,255,255,.25),
-                     0 -1px 0px #000;
-    }
-
-    ul {
-        font-size: 1.5em;
+        text-shadow: 0 1px 0px rgba(255, 255, 255, 0.25),
+                     0 -1px 0px rgba(0, 0, 0, 0.39)
     }
 }
 
@@ -449,6 +442,7 @@ blockquote {
     top: 0;
     width: 4.375em;
     height: 6em;
+    z-index: 1;
 
     &:hover {
         cursor: pointer;
@@ -474,29 +468,51 @@ blockquote {
 }
 
 
-// = $Socials Header Module
+// = $Socials Module
 // ------------------------------------------------------------------------------- //
 
-.socials.header {
+.socials {
     list-style-type: none;
     padding: 0;
-
-    font-size: 1.5em;
-    text-align: center;
 
     li {
         border: .0625em solid #C9BCBC;
         border: .0625em solid rgba(209, 209, 209, 0.8);
         border-radius: 8px;
         display: inline-block;
+
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+
+// = $Socials Header Module
+// ------------------------------------------------------------------------------- //
+
+.socials.header {
+    li {
         height: 1.5em;
+        line-height: 1.75em;
         padding: .1825em;
         width: 1.5em;
-
-        text-align: center;
-        line-height: 1.75em;
     }
+    @media only all and (min-width: 55.25em) {
+        text-align: right;
+    }
+}
 
+
+// = $Footer Socials Module
+// ------------------------------------------------------------------------------- //
+
+.socials.footer {
+    li {
+        font-size: 1.25em;
+        height: 2em;
+        line-height: 2.25em;
+        width: 2em;
+    }
     @media only all and (min-width: 55.25em) {
         text-align: right;
     }
@@ -700,7 +716,7 @@ textarea {
         border-bottom: 1px solid #C9C9C9;
         box-shadow: inset 0  1px 0px rgba(255,255,255,.9),
                           0  1px 0px rgba(255,255,255,.9);
-        padding: .75em 0;
+        padding: .75em 0 1.25em;
     }
 
     small {
@@ -949,7 +965,6 @@ textarea {
 // ------------------------------------------------------------------------------- //
 
 .search {
-
     #thumbsdown {
         background: #dd4b2a;
         background: rgba(221, 75, 42, 1.0);
@@ -983,39 +998,10 @@ textarea {
 
 footer[role="contentinfo"] {
     @extend .rule;
-    padding: 3em $mobile-gutter .5em;
+    padding: 1em 0;
     position: relative;
-
-    @media screen and (min-width: 55.25em) {
-        padding: 3em $desktop-gutter;
-    }
-
-    @media screen and (min-width: 102.8125em) {
-        padding: 3em $desktop-gutter 15em;
-    }
-}
-
-
-// = $Footer Socials Module
-// ------------------------------------------------------------------------------- //
-
-.socials.footer {
-    font-size: 1.75em;
-
-    @media screen and (min-width: 55.25em) {
-        position: absolute;
-        top: 1em;
-        right: $desktop-gutter;
-
-        font-size: 1.5em;
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-        li {
-            display: inline-block;
-        }
+    @media only all and (min-width: 42.25em) {
+        padding: 3em $desktop-gutter 6.5em;
     }
 }
 
@@ -1151,11 +1137,10 @@ header[role="banner"] {
 }
 
 
-// = $Socials Header Module Color
+// = $Socials Widget Module Color
 // ------------------------------------------------------------------------------- //
 
-.socials.header {
-
+.socials {
     li {
         background: #ffffff;
         background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 47%, #d8d8d8 100%);
@@ -1164,10 +1149,21 @@ header[role="banner"] {
         background: -o-linear-gradient(top,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
         background: -ms-linear-gradient(top,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
         background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8d8d8',GradientType=0 );
 
         a {
             @include transition($transition-1: .3s all ease-in-out);
+            color: #727a7f;
+
+            &:hover {
+                color: #D6D6D6;
+            }
+        }
+    }
+}
+
+.socials.footer {
+    li {
+        a {
             color: #727a7f;
 
             &:hover {
@@ -1409,6 +1405,12 @@ textarea {
 
 .ss-alert {
     color: #b34532;
+}
+
+.single {
+    .stripe.comments {
+        background: #751c00;
+    }
 }
 
 
