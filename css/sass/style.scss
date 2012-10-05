@@ -1014,7 +1014,7 @@ footer[role="contentinfo"] {
 // ------------------------------------------------------------------------------- //
 
 body {
-    background: #C9C8C8 url(img/lghtmesh.png) top left repeat;
+    background: #C9C8C8 image-url("lghtmesh.png") top left repeat;
     color: #666;
     color: rgba(102, 102, 102, 0.76);
 }
@@ -1127,12 +1127,12 @@ header[role="banner"] {
     }
 
     .svg & {
-        background: url(img/rss-svg-ribbon.svg) top left no-repeat;
+        background: image-url("rss-svg-ribbon.svg") top left no-repeat;
         @include background-size(100%);
     }
 
     .no-svg & {
-        background: url(img/rss.png) top left no-repeat;
+        background: image-url("rss.png") top left no-repeat;
     }
 }
 
@@ -1163,8 +1163,8 @@ header[role="banner"] {
 
 .socials.footer {
     li {
-        a {
-            color: #727a7f;
+        a, &:visited {
+            color: #666f74;
 
             &:hover {
                 color: #D6D6D6;
@@ -1181,7 +1181,7 @@ header[role="banner"] {
     color: #B3B3B3;
 
     small {
-        background: #C9C8C8 url(img/lghtmesh.png) top left repeat;
+        background: #C9C8C8 image-url("lghtmesh.png") top left repeat;
     }
 
     b {
@@ -1407,18 +1407,22 @@ textarea {
     color: #b34532;
 }
 
-.single {
-    .stripe.comments {
-        background: #751c00;
-    }
+.stripe.comments,
+.stripe.no-comments {
+    background: #f8f8f8;
 }
 
+.no-comments {
+    .reply {
+        display: none;
+    }
+}
 
 // = $Footer Color
 // ------------------------------------------------------------------------------- //
 
 footer[role="contentinfo"] {
-    background: #C9C8C8 url(img/irongrip.png) top left repeat;
+    background: #2e2e2e image-url("irongrip.png") top left repeat;
     a {
         color: #f4f4f4;
         opacity: .7;
