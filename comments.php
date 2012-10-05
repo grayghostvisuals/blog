@@ -2,63 +2,66 @@
 if( ! empty( $_SERVER[ 'SCRIPT_FILENAME' ] ) && 'comments.php' == basename( $_SERVER[ 'SCRIPT_FILENAME' ] ) )
 die('please do not load this page directly kind sir');
 ?>
-<div class="stripe comments m-all t-all d-all">
+<?php if ( comments_open() ) : ?>
+    <div class="stripe comments m-all t-all d-all">
+<?php else : ?>
+    <div class="stripe no-comments m-all t-all d-all">
+<?php endif; ?>
     <div class="t2-t6 d4-d10">
     <!-- gridset -->
 
         <section class="comments padding">
 
             <?php if ( post_password_required() ) : ?>
-            <p class="nopassword"><b class="ss-icon ss-lock"></b><?php echo( 'This post is password protected. Enter the password to view any comments.' ); ?></p>
-            <?php return; ?>
+                <p class="nopassword"><b class="ss-icon ss-lock"></b><?php echo( 'This post is password protected. Enter the password to view any comments.' ); ?></p>
+                <?php return; ?>
             <?php endif; ?>
 
             <!-- begin comment count -->
             <div id="comment-count">
             <?php if ( have_comments() ) : ?>
-            <h3 id="comments-title"><b class="ss-icon">comment</b> <?php printf( _n( 'One Response to %2$s', '%1$s Responses to %2$s', get_comments_number() ), number_format_i18n( get_comments_number() ), '<em>' . get_the_title() . '</em>' ); ?></h3>
+                <h3 id="comments-title"><b class="ss-icon">comment</b> <?php printf( _n( 'One Response to %2$s', '%1$s Responses to %2$s', get_comments_number() ), number_format_i18n( get_comments_number() ), '<em>' . get_the_title() . '</em>' ); ?></h3>
 
             <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // check if there comments to navigate through ?>
-
-            <div class="pagination comment-pagination">
-                <span class="prev-comments-link"><?php previous_comments_link( '<span>&larr; older comments</span>' ); ?></span>
-                <span class="nxt-comments-link"><?php next_comments_link( '<span>newer comments &rarr;</span>' ); ?></span>
-            </div>
-            <!-- .comment-pagination -->
-
+                <div class="pagination comment-pagination">
+                    <span class="prev-comments-link"><?php previous_comments_link( '<span>&larr; older comments</span>' ); ?></span>
+                    <span class="nxt-comments-link"><?php next_comments_link( '<span>newer comments &rarr;</span>' ); ?></span>
+                </div>
             <?php endif; //end check for comment navigation ?>
             </div>
+            <!-- end comment count -->
 
+            <!-- comment list -->
             <ol class="commentlist">
-            <?php foreach( $comments as $comment ) ?>
+                <?php foreach( $comments as $comment ) ?>
 
-            <?php
-            //comment array
-            //see developer docs http://codex.wordpress.org/Function_Reference/wp_list_comments
-            $themename_comment_array = array(
-                          'walker'              => null,
-                          'max_depth'           => '',
-                          'style'               => 'ol',
-                          'callback'            => null,
-                          'end-callback'        => null,
-                          'type'                => 'all',
-                          'reply_text'          => 'shout back<b class="ss-icon">&#x21A9;</b>',
-                          'page'                => '',
-                          'per_page'            => '',
-                          'avatar_size'         => 64,
-                          'reverse_top_level'   => true,
-                          'reverse_children'    => true,
-                        ); ?>
+                <?php
+                //comment array
+                //see developer docs http://codex.wordpress.org/Function_Reference/wp_list_comments
+                $themename_comment_array = array(
+                              'walker'              => null,
+                              'max_depth'           => '',
+                              'style'               => 'ol',
+                              'callback'            => null,
+                              'end-callback'        => null,
+                              'type'                => 'all',
+                              'reply_text'          => 'shout back<b class="ss-icon">&#x21A9;</b>',
+                              'page'                => '',
+                              'per_page'            => '',
+                              'avatar_size'         => 64,
+                              'reverse_top_level'   => true,
+                              'reverse_children'    => true,
+                            ); ?>
 
-            <?php if ( $comment -> comment_approved == '0' ) : ?>
-                <p class="moderating"><b class="ss-icon ss-clock"></b><em><?php echo('Your rant, suggestion, or comment is awaiting moderation from our head cheese. Please be patient') ?></em></p>
-            <?php endif; ?>
+                <?php if ( $comment -> comment_approved == '0' ) : ?>
+                    <p class="moderating"><b class="ss-icon ss-clock"></b><em><?php echo('Your rant, suggestion, or comment is awaiting moderation from our head cheese. Please be patient') ?></em></p>
+                <?php endif; ?>
 
                 <?php wp_list_comments( $themename_comment_array ); ?>
             </ol>
+            <!-- end comment list -->
 
             <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-
             <div class="pagination comment-pagination">
                 <span class="prev-comments-link"><?php previous_comments_link( '<span>&larr; older comments</span>' ); ?></span>
                 <span class="nxt-comments-link"><?php next_comments_link( '<span>newer comments &rarr;</span>' ); ?></span>
@@ -74,7 +77,9 @@ die('please do not load this page directly kind sir');
                 <?php endif; ?>
             <?php endif; ?>
 
-            <?php comment_form(); ?>
+            <?php if ( comments_open() ) : ?>
+                <?php comment_form(); ?>
+            <?php endif; ?>
         </section>
 
     <!-- gridset -->
