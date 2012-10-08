@@ -16,39 +16,16 @@
 <meta name="readability-verification" content="9uWKYX94r5bNc7pVTAg7Y24SxGgHWHqfMjVU9Lq3">
 
 <!-- title -->
-<title><?php
-// if tag
-if( function_exists( 'is_tag' ) && is_tag() ) :
-  single_tag_title( 'Tag Archive for &quot;' ); echo '&quot; - ';
+<!-- http://codex.wordpress.org/Function_Reference/wp_title -->
+<title><?php wp_title(); ?>
+<?php
+    // Add the blog description for the home/front page.
+    $site_description = get_bloginfo( 'description', 'display' );
 
-// if archives
-elseif( is_archive() ) :
-  esc_attr( wp_title( '' ) ); echo ' '; echo 'Archive -';
-
-// if search
-elseif( is_search() ) :
-  echo 'Search for &quot;' . esc_html( $s ) . '&quot; -';
-
-// if !404 and single or page
-elseif( !( is_404() ) && ( is_single() ) || ( is_page() ) && !(is_front_page() ) ) :
-  esc_attr( wp_title( '' ) ); echo '-';
-
-// if 404
-elseif( is_404() ) :
-  echo 'Not Found -';
-endif;
-
-//if home
-if( is_home() || is_front_page() ):
-  esc_attr( bloginfo( 'name' ) ); echo '-'; esc_attr( bloginfo( 'description' ) ); echo '-'; esc_attr( wp_title() );
-else :
-  esc_attr( bloginfo( 'name' ) );
-endif;
-
-// if pages is greater than 1
-if( $paged > 1 ) :
-  echo '-page' . $paged;
-endif; ?></title>
+    if ( $site_description && ( is_home() || is_front_page() ) ) :
+        echo " &raquo; $site_description";
+    endif;
+?></title>
 
 <?php if ( is_search() || is_404() ) : ?>
 <meta name="robots" content="noindex, nofollow">
@@ -116,7 +93,7 @@ endif; ?></title>
             <h1 class="blog-name">
                 <a href="<?php echo home_url();  ?>" class="blog-uri">
                     <!--[if gt IE 8]><!-->
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/blogbadge.png" alt="gray ghost visuals press icon leading you home" class="logo">
+                        <img src="//static.grayghostvisuals.com/imgblog/blogbadge.png" alt="gray ghost visuals press icon leading you home" class="logo">
                         <span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( 'name' ) ); ?></span>
                     <!--<![endif]-->
 
