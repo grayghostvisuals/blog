@@ -1,12 +1,3 @@
-// ------------------------------------------------------------------------------- */
-// =Imports
-// ------------------------------------------------------------------------------- */
-
-@import "imports/vars.scss"; // variables
-@import "imports/mixins.scss"; // mixins
-@import "compass"; // compass
-
-
 // =WordPress Required - Generated Core Classes
 //  http://codex.wordpress.org/CSS#WordPress_Generated_Classes
 //------------------------------------------------------------------------------- //
@@ -304,7 +295,7 @@ ol.commentlist .children li.comment-author-grayghostvisuals,
 .comment.even.thread-even.depth-1.parent .children .comment-author-grayghostvisuals {
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
-  background: #C9C8C8 url(img/lghtmesh.png) top left repeat;
+  background: #C9C8C8 image-url("lghtmesh.png") top left repeat;
   position: relative;
   z-index: 0;
 }
