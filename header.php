@@ -54,15 +54,9 @@
 <meta name="MobileOptimized" content="320">
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<!-- Standard Supporting Browsers CSS -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset.raw.css?v1.9.36">
+<!-- Standard Supporting Browsers CSS ?v1.9.36 -->
+<link href="https://get.gridsetapp.com/1046/" rel="stylesheet">
 <link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.36" rel="stylesheet" media="all">
-
-<!-- lt-IE 9 Gridset and Style Adjustments -->
-<!--[if (lt IE 9) | (IEMobile)]>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gridset/gridset-ie.raw.css?v1.9.36">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lt-ie9.css?v1.9.36" type="text/css" media="all">
-<![endif]-->
 
 <!-- pingback url -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -93,7 +87,8 @@
             <h1 class="blog-name">
                 <a href="<?php echo home_url();  ?>" class="blog-uri">
                     <!--[if gt IE 8]><!-->
-                        <img src="//static.grayghostvisuals.com/imgblog/blogbadge.png" alt="gray ghost visuals press icon leading you home" class="logo">
+                        <!-- //static.grayghostvisuals.com/imgblog -->
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/blogbadge.svgz" alt="gray ghost visuals press icon leading you home" class="logo">
                         <span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( 'name' ) ); ?></span>
                     <!--<![endif]-->
 
@@ -110,13 +105,6 @@
                 <li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social" rel="external">facebook</a></li>
                 <li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social" rel="external">googleplus</a></li>
             </ul>
-
-            <?php if( ! is_search() && ! is_archive() && ! is_category() && ! is_single() && ! is_404() ) :?>
-            <blockquote id="hero-quote">
-                <p><b class="ss-icon ss-quote"></b>The control which designers know in the print medium, and often desire in the web medium, is simply a function of the limitation of the printed page.</p>
-                <small><cite>John Allsopp</cite></small>
-            </blockquote>
-            <?php endif; ?>
 
             <?php get_search_form(); ?>
 

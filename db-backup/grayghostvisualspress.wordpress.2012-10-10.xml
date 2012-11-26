@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/3.4.2" created="2012-10-03 18:59" -->
+<!-- generator="WordPress/3.4.2" created="2012-10-10 04:06" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -28,8 +28,8 @@
 <channel>
 	<title>Gray Ghost Visuals Press</title>
 	<link>http://blog.grayghostvisuals.com</link>
-	<description>Exploring Front-end Web Design and Development</description>
-	<pubDate>Wed, 03 Oct 2012 18:59:08 +0000</pubDate>
+	<description>Exploring front–end web development &#38; design</description>
+	<pubDate>Wed, 10 Oct 2012 04:06:42 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://blog.grayghostvisuals.com</wp:base_site_url>
@@ -39,6 +39,7 @@
 
 	<wp:category><wp:term_id>3</wp:term_id><wp:category_nicename>accessibility</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[accessibility]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>4</wp:term_id><wp:category_nicename>bug-reporting</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[bug reporting]]></wp:cat_name></wp:category>
+	<wp:category><wp:term_id>48</wp:term_id><wp:category_nicename>compass</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[compass]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>5</wp:term_id><wp:category_nicename>css</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[css]]></wp:cat_name></wp:category>
 	<wp:category><wp:term_id>6</wp:term_id><wp:category_nicename>design-ethics</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[design ethics]]></wp:cat_name><wp:category_description><![CDATA[entries discussing the ethics of the design profession. ]]></wp:category_description></wp:category>
 	<wp:category><wp:term_id>248</wp:term_id><wp:category_nicename>developers</wp:category_nicename><wp:category_parent></wp:category_parent><wp:cat_name><![CDATA[developers]]></wp:cat_name></wp:category>
@@ -86,6 +87,8 @@
 	<wp:tag><wp:term_id>46</wp:term_id><wp:tag_slug>communication</wp:tag_slug><wp:tag_name><![CDATA[communication]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>47</wp:term_id><wp:tag_slug>community-participation</wp:tag_slug><wp:tag_name><![CDATA[community participation]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>48</wp:term_id><wp:tag_slug>compass</wp:tag_slug><wp:tag_name><![CDATA[compass]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>264</wp:term_id><wp:tag_slug>compass-configuration</wp:tag_slug><wp:tag_name><![CDATA[compass configuration]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>265</wp:term_id><wp:tag_slug>compass-configuration-properties</wp:tag_slug><wp:tag_name><![CDATA[compass configuration properties]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>49</wp:term_id><wp:tag_slug>conditional-interface-styling</wp:tag_slug><wp:tag_name><![CDATA[conditional interface styling]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>50</wp:term_id><wp:tag_slug>conditional-resource-loading</wp:tag_slug><wp:tag_name><![CDATA[conditional resource loading]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>51</wp:term_id><wp:tag_slug>config-rb</wp:tag_slug><wp:tag_name><![CDATA[config.rb]]></wp:tag_name></wp:tag>
@@ -153,7 +156,10 @@
 	<wp:tag><wp:term_id>109</wp:term_id><wp:tag_slug>hostility-impregnability</wp:tag_slug><wp:tag_name><![CDATA[hostility impregnability]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>110</wp:term_id><wp:tag_slug>html5</wp:tag_slug><wp:tag_name><![CDATA[html5]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>111</wp:term_id><wp:tag_slug>html5-boileplate-make-it-better</wp:tag_slug><wp:tag_name><![CDATA[HTML5 Boileplate Make It Better]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>266</wp:term_id><wp:tag_slug>http_images_path</wp:tag_slug><wp:tag_name><![CDATA[http_images_path]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>112</wp:term_id><wp:tag_slug>image-optimizing</wp:tag_slug><wp:tag_name><![CDATA[image optimizing]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>263</wp:term_id><wp:tag_slug>image-url</wp:tag_slug><wp:tag_name><![CDATA[image-url]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>261</wp:term_id><wp:tag_slug>image-url-helper</wp:tag_slug><wp:tag_name><![CDATA[image-url helper]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>113</wp:term_id><wp:tag_slug>impropriation</wp:tag_slug><wp:tag_name><![CDATA[impropriation]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>114</wp:term_id><wp:tag_slug>installing-compass</wp:tag_slug><wp:tag_name><![CDATA[installing compass]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>115</wp:term_id><wp:tag_slug>installing-ruby-gems</wp:tag_slug><wp:tag_name><![CDATA[installing ruby gems]]></wp:tag_name></wp:tag>
@@ -217,6 +223,9 @@
 	<wp:tag><wp:term_id>169</wp:term_id><wp:tag_slug>ramose</wp:tag_slug><wp:tag_name><![CDATA[ramose]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>170</wp:term_id><wp:tag_slug>readability</wp:tag_slug><wp:tag_name><![CDATA[readability]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>171</wp:term_id><wp:tag_slug>reading</wp:tag_slug><wp:tag_name><![CDATA[reading]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>262</wp:term_id><wp:tag_slug>relative-assets</wp:tag_slug><wp:tag_name><![CDATA[relative assets]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>260</wp:term_id><wp:tag_slug>relative-url</wp:tag_slug><wp:tag_name><![CDATA[relative url]]></wp:tag_name></wp:tag>
+	<wp:tag><wp:term_id>267</wp:term_id><wp:tag_slug>relative_assets</wp:tag_slug><wp:tag_name><![CDATA[relative_assets]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>172</wp:term_id><wp:tag_slug>renegade</wp:tag_slug><wp:tag_name><![CDATA[renegade]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>173</wp:term_id><wp:tag_slug>resource-loading</wp:tag_slug><wp:tag_name><![CDATA[resource loading]]></wp:tag_name></wp:tag>
 	<wp:tag><wp:term_id>174</wp:term_id><wp:tag_slug>responsive</wp:tag_slug><wp:tag_name><![CDATA[responsive]]></wp:tag_name></wp:tag>
@@ -1576,22 +1585,6 @@ navigator.geolocation.getCurrentPosition(showPosition);
 			<wp:meta_key>_edit_last</wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-			<wp:meta_value><![CDATA[draft]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-			<wp:meta_value><![CDATA[1348709970]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-			<wp:meta_value><![CDATA[draft]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-			<wp:meta_value><![CDATA[1348709970]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>File Extension Rewrite for Apache</title>
@@ -1776,6 +1769,699 @@ RewriteCond %{REQUEST_FILENAME}.php -f RewriteRule ^(.*)$ $1.php [L]
 			<wp:meta_key>_aioseop_title</wp:meta_key>
 			<wp:meta_value><![CDATA[If you aren't using a CMS/Blogging System (i.e. Drupal, Wordpress etc.) then why not create a custom rewrite rule to strip your directory files of their extensions]]></wp:meta_value>
 		</wp:postmeta>
+	</item>
+	<item>
+		<title>Adaptive Schmaptive</title>
+		<link>http://blog.grayghostvisuals.com/css/adaptive-design/</link>
+		<pubDate>Tue, 31 May 2011 18:49:31 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1</guid>
+		<description></description>
+		<content:encoded><![CDATA[<cite title="Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement">Aaron Gustafson's</cite> new book hits the shelves and it has changed my world forever. Aaron is not only extremely smart about what he is discussing, but also presents some really great approaches and reasoning for this technique called "Progressive Enhancement."<!--more-->
+
+What we are essentially looking at as developers is the content first and from there we add sugar to make it taste sweet. This sweetness is attained at each level the user reaches with their browsers capabilities. Aaron discusses this method using the comparison with an M&amp;M chocolate covered peanut(hmmmmm tasty!). At the core we have a delicious peanut and with every layer the peanut gets better. This is exactly what progressive enhancement aims for. Thinking of the user rather than the browser will get you far my friend. <a title="visit easy reader" href="http://easy-readers.net/" rel="external">Buy it now or Read More</a> about Adaptive Web Design]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>767</wp:post_id>
+		<wp:post_date>2011-05-31 18:49:31</wp:post_date>
+		<wp:post_date_gmt>2011-05-31 18:49:31</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>adaptive-design</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="post_tag" nicename="aaron-gustafson"><![CDATA[aaron gustafson]]></category>
+		<category domain="post_tag" nicename="accessible"><![CDATA[accessible]]></category>
+		<category domain="post_tag" nicename="adaptive"><![CDATA[adaptive]]></category>
+		<category domain="post_tag" nicename="adaptive-web-design"><![CDATA[adaptive web design]]></category>
+		<category domain="post_tag" nicename="book"><![CDATA[book]]></category>
+		<category domain="post_tag" nicename="content-first"><![CDATA[content first]]></category>
+		<category domain="category" nicename="css"><![CDATA[css]]></category>
+		<category domain="post_tag" nicename="easy-readers"><![CDATA[easy readers]]></category>
+		<category domain="post_tag" nicename="responsive"><![CDATA[responsive]]></category>
+		<category domain="post_tag" nicename="un-obtrusive"><![CDATA[un-obtrusive]]></category>
+		<category domain="post_tag" nicename="unobtrusive-javascript"><![CDATA[unobtrusive javascript]]></category>
+		<category domain="post_tag" nicename="web-design"><![CDATA[web design]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_old_slug</wp:meta_key>
+			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_keywords</wp:meta_key>
+			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Neat CSS Arrows</title>
+		<link>http://blog.grayghostvisuals.com/?p=919</link>
+		<pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=919</guid>
+		<description></description>
+		<content:encoded><![CDATA[Css3 Arrows Please
+Also &uparr;&darr;&larr;&rarr;
+Tweet from Andy Unleash
+<span class="arrow-right"></span>
+<style>
+  .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+  }
+</style>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>919</wp:post_id>
+		<wp:post_date>2012-05-30 22:40:14</wp:post_date>
+		<wp:post_date_gmt>0000-00-00 00:00:00</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name></wp:post_name>
+		<wp:status>draft</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="css"><![CDATA[css]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>The Accessibility Checklist</title>
+		<link>http://blog.grayghostvisuals.com/?p=1070</link>
+		<pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1070</guid>
+		<description></description>
+		<content:encoded><![CDATA[I don't know about you but I sure do forget about best practices with regards to Accessibility from time to time. Oh wait...you forget about that stuff too? Great then let's be forgetful together and help each other out. Waddya say? First we need to create an accessibility checklist where we as the Authors can remember the important facts that we sometimes can forget and must always keep at arms length. How about I save us some trouble and just put one up on Github and give you the URL? Awesome right? 
+
+<h3>Github Repo</h3>
+<a href="https://github.com/grayghostvisuals/Accessibility-Checklist" rel="external">https://github.com/grayghostvisuals/Accessibility-Checklist</a>
+
+The checklist began as I was listening to my favorite Podcast Shop Talk Show where I heard Chris Coyier and Dave Rupert mention that naughty word "Accessibility" and how they too can forget important details in certain Accessible related situations. The show also featured <a href="http://desandro.com" rel="external">David Desandro</a> where he happened to share his experience as a colorblind designer and that's when my ears perked up like a dog when it sees a tennis ball. You see, I had recently read Jeffrey Zeldman's 3rd edition of his masterpiece "<a href="http://www.zeldman.com/dwws" rel="external">Designing with Web Standards</a>" especially noting along the way his discussions about Accessibility. I should also tell you I'm also a colorblind designer much like Mr. Desandro. I quickly grabbed Evernote and went for my folder titled "Accessibilty Reminders" copy and pasted my notes into markdown and Viola! A Githb Repo it now is.
+
+What the checklist helps us keep in mind are all sorts of goodies like...
+<ul>
+    <li>What type of Screen Reader to use on a particular platform</li>
+    <li>Accessibility Specification URL references</li>
+    <li>The Must Haves of ARIA role attributes</li>
+    <li>Best use of the <img /> alt attribute</li>
+    <li>Denoting information using color</li>
+    <li>What to do when using Harmonious Color Schemes</li>
+    <li>User interaction Reminders</li>
+</ul>
+
+I don;t think I hav to mention the benefits of Accessibility but just in case here is a good one we can mention. Accessibility Increases findability with search engine optimization (SEO). Accessibility techniques increase the findability of web pages by exposing content to search engines, both internally (within a website) and externally (across the World Wide Web). 
+For example:
+Alternative text for images and multimedia is available to search engines 
+* Most search engines access text and not images 
+* Some search engines give higher weight to text that is marked up as headings 
+* Some search engines are unable to access some script-generated content such as mouse-overs
+* Additional perspectives on the benefits of accessibility for SEO are available on the Web.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1070</wp:post_id>
+		<wp:post_date>2012-07-11 00:36:49</wp:post_date>
+		<wp:post_date_gmt>0000-00-00 00:00:00</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>accessibility-checklist</wp:post_name>
+		<wp:status>draft</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="accessibility"><![CDATA[accessibility]]></category>
+		<category domain="post_tag" nicename="accessibility"><![CDATA[accessibility]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Operator; Connect me with System Fonts Please</title>
+		<link>http://blog.grayghostvisuals.com/?p=1118</link>
+		<pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1118</guid>
+		<description></description>
+		<content:encoded><![CDATA[Microsoft's Typography group researches and develops fonts and font technologies, and supports the development of TrueType and OpenType formatted fonts by independent type vendors.
+
+http://www.microsoft.com/typography
+
+http://www.microsoft.com/typography/fonts/font.aspx?FMID=1567
+http://www.microsoft.com/typography/fonts/font.aspx?FMID=1567]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1118</wp:post_id>
+		<wp:post_date>2012-07-11 23:15:03</wp:post_date>
+		<wp:post_date_gmt>0000-00-00 00:00:00</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name></wp:post_name>
+		<wp:status>draft</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="css"><![CDATA[css]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_63694247e65c6128078190e74fbb65b4</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_465526163036675727950f1be0587b19</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_63694247e65c6128078190e74fbb65b4</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_465526163036675727950f1be0587b19</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_63694247e65c6128078190e74fbb65b4</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_465526163036675727950f1be0587b19</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_63694247e65c6128078190e74fbb65b4</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_465526163036675727950f1be0587b19</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>What&#039;s an Independent Contractor?</title>
+		<link>http://blog.grayghostvisuals.com/?p=1400</link>
+		<pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1400</guid>
+		<description></description>
+		<content:encoded><![CDATA[http://www.irs.gov/businesses/small/selfemployed/index.html#who]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1400</wp:post_id>
+		<wp:post_date>2012-08-10 18:50:49</wp:post_date>
+		<wp:post_date_gmt>0000-00-00 00:00:00</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name></wp:post_name>
+		<wp:status>draft</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="css"><![CDATA[css]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>mt-234x60-dk2</title>
+		<link>http://blog.grayghostvisuals.com/?attachment_id=1673</link>
+		<pubDate>Wed, 03 Oct 2012 06:02:39 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/xS6BUjV1g8vgRT/wp-content/uploads/2012/10/mt-234x60-dk2.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1673</wp:post_id>
+		<wp:post_date>2012-10-03 06:02:39</wp:post_date>
+		<wp:post_date_gmt>2012-10-03 06:02:39</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>mt-234x60-dk2</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://blog.grayghostvisuals.com/xS6BUjV1g8vgRT/wp-content/uploads/2012/10/mt-234x60-dk2.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:6:{s:5:"width";s:3:"234";s:6:"height";s:2:"60";s:14:"hwstring_small";s:23:"height='32' width='128'";s:4:"file";s:25:"2012/10/mt-234x60-dk2.png";s:5:"sizes";a:1:{s:9:"thumbnail";a:3:{s:4:"file";s:24:"mt-234x60-dk2-150x60.png";s:5:"width";s:3:"150";s:6:"height";s:2:"60";}}s:10:"image_meta";a:10:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2012/10/mt-234x60-dk2.png]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>png</title>
+		<link>http://blog.grayghostvisuals.com/compass/image-url/attachment/png/</link>
+		<pubDate>Fri, 05 Oct 2012 15:07:22 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/xS6BUjV1g8vgRT/wp-content/uploads/2012/10/png.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1679</wp:post_id>
+		<wp:post_date>2012-10-05 15:07:22</wp:post_date>
+		<wp:post_date_gmt>2012-10-05 15:07:22</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>png</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>1675</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://blog.grayghostvisuals.com/xS6BUjV1g8vgRT/wp-content/uploads/2012/10/png.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2012/10/png.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:6:{s:5:"width";s:3:"423";s:6:"height";s:3:"176";s:14:"hwstring_small";s:23:"height='53' width='128'";s:4:"file";s:15:"2012/10/png.png";s:5:"sizes";a:2:{s:9:"thumbnail";a:3:{s:4:"file";s:15:"png-150x150.png";s:5:"width";s:3:"150";s:6:"height";s:3:"150";}s:6:"medium";a:3:{s:4:"file";s:15:"png-300x124.png";s:5:"width";s:3:"300";s:6:"height";s:3:"124";}}s:10:"image_meta";a:10:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>How it&#039;s made</title>
+		<link>http://blog.grayghostvisuals.com/?p=1783</link>
+		<pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1783</guid>
+		<description></description>
+		<content:encoded><![CDATA[I'm a big tool nerd. There I said it. Typically I'm the guy watching musician/bio documentaries paying close attention to the interviews about song writing processes or the flow of imagination. That kinda stuff gets me off. I like knowing what's behind the curtain if you will. Witnessing how the Great and Wonderful Oz makes all his whizzy bangs. At the first Buffalo Front end Dev meetup the majority of the room asked the all curious question we want to ask OZ? How do you do it? what do you use? when do you use it?
+
+I decided to go out on my own and and ask other devs to share their processes starting with the initial set up of their local development environment to deploying the final product. A special thanks to @Andyunleash, @Zakkain and @ChrisVanPatten for opening up the curtain to everyone on their process. Since this is my blog the only wise thing to do would be to start with myself.
+
+#ME:
+To tell you the truth when I develop I'm using one thing. MAMP...the free version. I start with all my files kept in the httpd directory which can be found under <code>/Library/WebServer/share/httpd</code>. This allows me to use the local web server address 192.168.1.100. I started using this approach because when Adobe shadow was released it only worked on local IP addresses and not localhost. so all my project folder are under httpd and I use 192.168.1.100 to scan for the project I want to work on. 
+
+When I work on my projects I'm primarily using Codekit and Sublime Text2. After I've tinkered and want to deploy to a private viewing platform on a live server I usually do a few things. The first thing I do is set up a folder on my own Live Server through Media Temple. I've also been using Koding as I find it to be quite powerful and extremely simple. They have a really great platform nd awesome tools in the cloud. Anytime I want to make a project live I just say go to http://grayghostvisuals.koding.com/<projectname>. Works like a charm! When I upload my files I use Fetch combined with the mirror capbilities it provides. I just say mirror this folder and all my files appear magically on the other side.
+
+Setapp: http://www.setapp.me/users/grayghostvisuals
+
+<!--nextpage-->
+#Andy Howells:
+UK
+Twitter:@andyunleash
+Website: http://www.unleash-it.co.uk
+
+#Zak:
+Ontario, Canada
+Twitter:<a href="https://twitter.com/zakkain">@Zakkain</a>
+Website:
+Setapp: http://setapp.me/users/zakkain
+
+#Chris Van Patten:
+Chris wrote a more in depth article June 6, 2012 if you wanna read more about his tools.
+<a href="http://www.chrisvanpatten.com/blog/2012/06/dev-setup">http://www.chrisvanpatten.com/blog/2012/06/dev-setup/</a>
+Buffalo, New York
+Twitter:@ChrisVanPatten
+Website:http://www.chrisvanpatten.com
+
+###LINKS
+--------------------------------------
+
+###Developer Tooling Community
+----------------------
+Setapp
+http://setapp.me
+
+###Videos
+----------------------
+http://paulirish.com/2012/talk-tooling-the-webapp-development-stack
+One of the things I recognize at Google is how productive developers surround themselves with powerful tools for iterative development and debugging
+
+###Local Development
+----------------------
+####MAMP / MAMP Pro
+http://www.mamp.info/en/index.html
+MAMP installs a local server environment in a matter of seconds on your Mac OS X computer
+
+####Vagrant
+http://vagrantup.com
+Virtualized development made easy. Create and configure lightweight, reproducible, and portable development environments.
+
+####Anvil
+http://anvilformac.com
+Anvil takes your site folder, gives it a .dev URL and makes it run for you. Works for any static HTML sites and Rack apps.
+
+####Koding
+https://koding.com
+A new way for developers to work in the cloud
+
+####Yeoman
+http://yeoman.io
+Yeoman is a robust and opinionated set of tools, libraries, and a workflow that can help developers quickly build beautiful, compelling web apps.
+
+###Optimization
+----------------------
+####Codekit
+http://incident57.com/codekit/
+
+###Text Editor
+----------------------
+####SublimeText 2
+http://www.sublimetext.com/2
+
+###Version Control
+----------------------
+Bitbucket
+Github
+Source Tree
+
+###Deploying
+----------------------
+####Fetch
+http://fetchsoftworks.com
+Fetch is a reliable, full-featured file transfer client for the Apple Macintosh whose user interface emphasizes simplicity and ease of use
+
+####BeanstalkApp
+http://beanstalkapp.com
+The easiest way to manage code, collaborate and deploy
+
+####Koding
+https://koding.com
+A new way for developers to work in the cloud]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1783</wp:post_id>
+		<wp:post_date>2012-10-10 00:06:11</wp:post_date>
+		<wp:post_date_gmt>0000-00-00 00:00:00</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>tooling-and-workflow</wp:post_name>
+		<wp:status>draft</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="developers"><![CDATA[developers]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_63a132fa3d1d427de8aedc8c79f0f4b5</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_1af91680287c70a5c19f806b4d2a8768</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_b3949b478d1905be911d28a1dcdc9bd2</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_1e7cb02e51ae941b9bf92c99ee7403ad</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_b39c9b68fe30691a642a22b4299cc713</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_ba95db86683f61e7e0de571083137b31</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_fe393117e1488bc1dd72b0c9b12378ed</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_21daef941fa21cf27cdd5e8803a5fb81</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_1e1fa9a805feafbc5d756da20b8ed6af</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_7faa60f54cab4613bd4aebe6a124d964</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_oembed_5cd1ad5dfc02898e730e8219abb5e8ff</wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Hello world!</title>
+		<link>http://blog.grayghostvisuals.com/css/hello-world/</link>
+		<pubDate>Wed, 03 Oct 2012 04:25:45 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com.s155584.gridserver.com/xS6BUjV1g8vgRT/?p=1</guid>
+		<description></description>
+		<content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1</wp:post_id>
+		<wp:post_date>2012-10-03 04:25:45</wp:post_date>
+		<wp:post_date_gmt>2012-10-03 04:25:45</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>hello-world</wp:post_name>
+		<wp:status>trash</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="css"><![CDATA[css]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
+			<wp:meta_value><![CDATA[1349238613]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_comments_status</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:1;s:1:"1";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:comment>
+			<wp:comment_id>1</wp:comment_id>
+			<wp:comment_author><![CDATA[Mr WordPress]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url>http://wordpress.org/</wp:comment_author_url>
+			<wp:comment_author_IP></wp:comment_author_IP>
+			<wp:comment_date>2012-10-03 04:25:45</wp:comment_date>
+			<wp:comment_date_gmt>2012-10-03 04:25:45</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Hi, this is a comment.<br />To delete a comment, just log in and view the post&#039;s comments. There you will have the option to edit or delete them.]]></wp:comment_content>
+			<wp:comment_approved>post-trashed</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+		</wp:comment>
 	</item>
 	<item>
 		<title>Cache Manifest For Wordpress and Typekit</title>
@@ -2066,551 +2752,6 @@ psyched to try this out
 				<wp:meta_key>akismet_history</wp:meta_key>
 				<wp:meta_value><![CDATA[a:4:{s:4:"time";s:15:"1348518745.2338";s:7:"message";s:55:"grayghostvisuals changed the comment status to approved";s:5:"event";s:15:"status-approved";s:4:"user";s:16:"grayghostvisuals";}]]></wp:meta_value>
 			</wp:commentmeta>
-		</wp:comment>
-	</item>
-	<item>
-		<title>Adaptive Schmaptive</title>
-		<link>http://blog.grayghostvisuals.com/css/adaptive-design/</link>
-		<pubDate>Tue, 31 May 2011 18:49:31 +0000</pubDate>
-		<dc:creator>grayghostvisuals</dc:creator>
-		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1</guid>
-		<description></description>
-		<content:encoded><![CDATA[<cite title="Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement">Aaron Gustafson's</cite> new book hits the shelves and it has changed my world forever. Aaron is not only extremely smart about what he is discussing, but also presents some really great approaches and reasoning for this technique called "Progressive Enhancement."<!--more-->
-
-What we are essentially looking at as developers is the content first and from there we add sugar to make it taste sweet. This sweetness is attained at each level the user reaches with their browsers capabilities. Aaron discusses this method using the comparison with an M&amp;M chocolate covered peanut(hmmmmm tasty!). At the core we have a delicious peanut and with every layer the peanut gets better. This is exactly what progressive enhancement aims for. Thinking of the user rather than the browser will get you far my friend. <a title="visit easy reader" href="http://easy-readers.net/" rel="external">Buy it now or Read More</a> about Adaptive Web Design]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>767</wp:post_id>
-		<wp:post_date>2011-05-31 18:49:31</wp:post_date>
-		<wp:post_date_gmt>2011-05-31 18:49:31</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>adaptive-design</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="post_tag" nicename="aaron-gustafson"><![CDATA[aaron gustafson]]></category>
-		<category domain="post_tag" nicename="accessible"><![CDATA[accessible]]></category>
-		<category domain="post_tag" nicename="adaptive"><![CDATA[adaptive]]></category>
-		<category domain="post_tag" nicename="adaptive-web-design"><![CDATA[adaptive web design]]></category>
-		<category domain="post_tag" nicename="book"><![CDATA[book]]></category>
-		<category domain="post_tag" nicename="content-first"><![CDATA[content first]]></category>
-		<category domain="category" nicename="css"><![CDATA[css]]></category>
-		<category domain="post_tag" nicename="easy-readers"><![CDATA[easy readers]]></category>
-		<category domain="post_tag" nicename="responsive"><![CDATA[responsive]]></category>
-		<category domain="post_tag" nicename="un-obtrusive"><![CDATA[un-obtrusive]]></category>
-		<category domain="post_tag" nicename="unobtrusive-javascript"><![CDATA[unobtrusive javascript]]></category>
-		<category domain="post_tag" nicename="web-design"><![CDATA[web design]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[2]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-			<wp:meta_value><![CDATA[1348709969]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_old_slug</wp:meta_key>
-			<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_keywords</wp:meta_key>
-			<wp:meta_value><![CDATA[aaron gustafson, adaptive web design, unobtrusive javascript, book, content first, easy readers]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Adaptive Web Design: Crafting Rich Experiences with Progressive Enhancement by Aaron Gustafson]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-			<wp:meta_value><![CDATA[1348709969]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Neat CSS Arrows</title>
-		<link>http://blog.grayghostvisuals.com/?p=919</link>
-		<pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
-		<dc:creator>grayghostvisuals</dc:creator>
-		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=919</guid>
-		<description></description>
-		<content:encoded><![CDATA[Css3 Arrows Please
-Also &uparr;&darr;&larr;&rarr;
-Tweet from Andy Unleash
-<span class="arrow-right"></span>
-<style>
-  .arrow-right {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid black;
-  }
-</style>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>919</wp:post_id>
-		<wp:post_date>2012-05-30 22:40:14</wp:post_date>
-		<wp:post_date_gmt>0000-00-00 00:00:00</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name></wp:post_name>
-		<wp:status>draft</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="css"><![CDATA[css]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>The Accessibility Checklist</title>
-		<link>http://blog.grayghostvisuals.com/?p=1070</link>
-		<pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
-		<dc:creator>grayghostvisuals</dc:creator>
-		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1070</guid>
-		<description></description>
-		<content:encoded><![CDATA[I don't know about you but I sure do forget about best practices with regards to Accessibility from time to time. Oh wait...you forget about that stuff too? Great then let's be forgetful together and help each other out. Waddya say? First we need to create an accessibility checklist where we as the Authors can remember the important facts that we sometimes can forget and must always keep at arms length. How about I save us some trouble and just put one up on Github and give you the URL? Awesome right? 
-
-<h3>Github Repo</h3>
-<a href="https://github.com/grayghostvisuals/Accessibility-Checklist" rel="external">https://github.com/grayghostvisuals/Accessibility-Checklist</a>
-
-The checklist began as I was listening to my favorite Podcast Shop Talk Show where I heard Chris Coyier and Dave Rupert mention that naughty word "Accessibility" and how they too can forget important details in certain Accessible related situations. The show also featured <a href="http://desandro.com" rel="external">David Desandro</a> where he happened to share his experience as a colorblind designer and that's when my ears perked up like a dog when it sees a tennis ball. You see, I had recently read Jeffrey Zeldman's 3rd edition of his masterpiece "<a href="http://www.zeldman.com/dwws" rel="external">Designing with Web Standards</a>" especially noting along the way his discussions about Accessibility. I should also tell you I'm also a colorblind designer much like Mr. Desandro. I quickly grabbed Evernote and went for my folder titled "Accessibilty Reminders" copy and pasted my notes into markdown and Viola! A Githb Repo it now is.
-
-What the checklist helps us keep in mind are all sorts of goodies like...
-<ul>
-    <li>What type of Screen Reader to use on a particular platform</li>
-    <li>Accessibility Specification URL references</li>
-    <li>The Must Haves of ARIA role attributes</li>
-    <li>Best use of the <img /> alt attribute</li>
-    <li>Denoting information using color</li>
-    <li>What to do when using Harmonious Color Schemes</li>
-    <li>User interaction Reminders</li>
-</ul>
-
-I don;t think I hav to mention the benefits of Accessibility but just in case here is a good one we can mention. Accessibility Increases findability with search engine optimization (SEO). Accessibility techniques increase the findability of web pages by exposing content to search engines, both internally (within a website) and externally (across the World Wide Web). 
-For example:
-Alternative text for images and multimedia is available to search engines 
-* Most search engines access text and not images 
-* Some search engines give higher weight to text that is marked up as headings 
-* Some search engines are unable to access some script-generated content such as mouse-overs
-* Additional perspectives on the benefits of accessibility for SEO are available on the Web.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1070</wp:post_id>
-		<wp:post_date>2012-07-11 00:36:49</wp:post_date>
-		<wp:post_date_gmt>0000-00-00 00:00:00</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>accessibility-checklist</wp:post_name>
-		<wp:status>draft</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="accessibility"><![CDATA[accessibility]]></category>
-		<category domain="post_tag" nicename="accessibility"><![CDATA[accessibility]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Operator; Connect me with System Fonts Please</title>
-		<link>http://blog.grayghostvisuals.com/?p=1118</link>
-		<pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
-		<dc:creator>grayghostvisuals</dc:creator>
-		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1118</guid>
-		<description></description>
-		<content:encoded><![CDATA[Microsoft's Typography group researches and develops fonts and font technologies, and supports the development of TrueType and OpenType formatted fonts by independent type vendors.
-
-http://www.microsoft.com/typography
-
-http://www.microsoft.com/typography/fonts/font.aspx?FMID=1567
-http://www.microsoft.com/typography/fonts/font.aspx?FMID=1567]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1118</wp:post_id>
-		<wp:post_date>2012-07-11 23:15:03</wp:post_date>
-		<wp:post_date_gmt>0000-00-00 00:00:00</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name></wp:post_name>
-		<wp:status>draft</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="css"><![CDATA[css]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_oembed_63694247e65c6128078190e74fbb65b4</wp:meta_key>
-			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_oembed_465526163036675727950f1be0587b19</wp:meta_key>
-			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_oembed_63694247e65c6128078190e74fbb65b4</wp:meta_key>
-			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_oembed_465526163036675727950f1be0587b19</wp:meta_key>
-			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_oembed_63694247e65c6128078190e74fbb65b4</wp:meta_key>
-			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_oembed_465526163036675727950f1be0587b19</wp:meta_key>
-			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_oembed_63694247e65c6128078190e74fbb65b4</wp:meta_key>
-			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_oembed_465526163036675727950f1be0587b19</wp:meta_key>
-			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>What&#039;s an Independent Contractor?</title>
-		<link>http://blog.grayghostvisuals.com/?p=1400</link>
-		<pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
-		<dc:creator>grayghostvisuals</dc:creator>
-		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1400</guid>
-		<description></description>
-		<content:encoded><![CDATA[http://www.irs.gov/businesses/small/selfemployed/index.html#who]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1400</wp:post_id>
-		<wp:post_date>2012-08-10 18:50:49</wp:post_date>
-		<wp:post_date_gmt>0000-00-00 00:00:00</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name></wp:post_name>
-		<wp:status>draft</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="css"><![CDATA[css]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>mt-234x60-lt</title>
-		<link>http://blog.grayghostvisuals.com/?attachment_id=1416</link>
-		<pubDate>Wed, 03 Oct 2012 04:31:24 +0000</pubDate>
-		<dc:creator>grayghostvisuals</dc:creator>
-		<guid isPermaLink="false">http://blog.grayghostvisuals.com/xS6BUjV1g8vgRT/wp-content/uploads/2012/10/mt-234x60-lt.jpeg</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1416</wp:post_id>
-		<wp:post_date>2012-10-03 04:31:24</wp:post_date>
-		<wp:post_date_gmt>2012-10-03 04:31:24</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>mt-234x60-lt</wp:post_name>
-		<wp:status>inherit</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>attachment</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url>http://blog.grayghostvisuals.com/xS6BUjV1g8vgRT/wp-content/uploads/2012/10/mt-234x60-lt.jpeg</wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key>_wp_attached_file</wp:meta_key>
-			<wp:meta_value><![CDATA[2012/10/mt-234x60-lt.jpeg]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-			<wp:meta_value><![CDATA[a:6:{s:5:"width";s:3:"234";s:6:"height";s:2:"60";s:14:"hwstring_small";s:23:"height='32' width='128'";s:4:"file";s:25:"2012/10/mt-234x60-lt.jpeg";s:5:"sizes";a:1:{s:9:"thumbnail";a:3:{s:4:"file";s:24:"mt-234x60-lt-150x60.jpeg";s:5:"width";s:3:"150";s:6:"height";s:2:"60";}}s:10:"image_meta";a:10:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>mt-234x60-dk2</title>
-		<link>http://blog.grayghostvisuals.com/?attachment_id=1673</link>
-		<pubDate>Wed, 03 Oct 2012 06:02:39 +0000</pubDate>
-		<dc:creator>grayghostvisuals</dc:creator>
-		<guid isPermaLink="false">http://blog.grayghostvisuals.com/xS6BUjV1g8vgRT/wp-content/uploads/2012/10/mt-234x60-dk2.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1673</wp:post_id>
-		<wp:post_date>2012-10-03 06:02:39</wp:post_date>
-		<wp:post_date_gmt>2012-10-03 06:02:39</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>mt-234x60-dk2</wp:post_name>
-		<wp:status>inherit</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>attachment</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url>http://blog.grayghostvisuals.com/xS6BUjV1g8vgRT/wp-content/uploads/2012/10/mt-234x60-dk2.png</wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
-			<wp:meta_value><![CDATA[a:6:{s:5:"width";s:3:"234";s:6:"height";s:2:"60";s:14:"hwstring_small";s:23:"height='32' width='128'";s:4:"file";s:25:"2012/10/mt-234x60-dk2.png";s:5:"sizes";a:1:{s:9:"thumbnail";a:3:{s:4:"file";s:24:"mt-234x60-dk2-150x60.png";s:5:"width";s:3:"150";s:6:"height";s:2:"60";}}s:10:"image_meta";a:10:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";}}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_attached_file</wp:meta_key>
-			<wp:meta_value><![CDATA[2012/10/mt-234x60-dk2.png]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Hello world!</title>
-		<link>http://blog.grayghostvisuals.com/css/hello-world/</link>
-		<pubDate>Wed, 03 Oct 2012 04:25:45 +0000</pubDate>
-		<dc:creator>grayghostvisuals</dc:creator>
-		<guid isPermaLink="false">http://blog.grayghostvisuals.com.s155584.gridserver.com/xS6BUjV1g8vgRT/?p=1</guid>
-		<description></description>
-		<content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1</wp:post_id>
-		<wp:post_date>2012-10-03 04:25:45</wp:post_date>
-		<wp:post_date_gmt>2012-10-03 04:25:45</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>hello-world</wp:post_name>
-		<wp:status>trash</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="css"><![CDATA[css]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_wp_trash_meta_time</wp:meta_key>
-			<wp:meta_value><![CDATA[1349238613]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_trash_meta_comments_status</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:1;s:1:"1";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_wp_trash_meta_status</wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:comment>
-			<wp:comment_id>1</wp:comment_id>
-			<wp:comment_author><![CDATA[Mr WordPress]]></wp:comment_author>
-			<wp:comment_author_email></wp:comment_author_email>
-			<wp:comment_author_url>http://wordpress.org/</wp:comment_author_url>
-			<wp:comment_author_IP></wp:comment_author_IP>
-			<wp:comment_date>2012-10-03 04:25:45</wp:comment_date>
-			<wp:comment_date_gmt>2012-10-03 04:25:45</wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Hi, this is a comment.<br />To delete a comment, just log in and view the post&#039;s comments. There you will have the option to edit or delete them.]]></wp:comment_content>
-			<wp:comment_approved>post-trashed</wp:comment_approved>
-			<wp:comment_type></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
 		</wp:comment>
 	</item>
 	<item>
@@ -6220,14 +6361,16 @@ I couldn't agree more. The actual bug filing site is a bit hard to navigate arou
 		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1414</guid>
 		<description></description>
 		<content:encoded><![CDATA[I tried ... I really, really tried, but I just couldn't stand reading the Twitter <abbr title="application programming interface">API</abbr> any longer. The provided widget embedder Twitter has out of the box isn't quite there to say the least. So I'm probably sure that you know what it's like when you can't get what you want –and in my case I made what I wanted; A simple twitter feed to embed within my own personal website that didn't suck. Let's take a closer look and see how I did shall we?<!--more-->
-<div id="twit"><img class="alignnone size-full wp-image-1418" title="twit" src="http://static.grayghostvisuals.com/imgblog/2012/08/twit1.png" alt="find twit on github for your tweet embedding needs" width="990" height="609" />
-<a class="ss-icon ss-action" href="http://grayghostvisuals.koding.com/twit" rel="external">Demo</a></div>
+
+<div id="twit"><img class="alignnone size-full wp-image-1418" title="twit" src="http://static.grayghostvisuals.com/imgblog/2012/08/twit1.png" alt="find twit on github for your tweet embedding needs" width="990" height="609" /></div>
+
+<div class="twit-button"><a class="ss-icon ss-action" href="http://grayghostvisuals.koding.com/twit" rel="external">Demo</a></div>
 Meet twit. He's a special guy with a special purpose. Flying around at night he collects tweets and spits them back to you where you would like in a <a href="http://www.stevesouders.com/blog/2009/04/27/loading-scripts-without-blocking" rel="external">non–blocking</a>, asynchronous manner that is just a pleasure to use on any personal site. To get started refer to the <a href="#twit-recipe" rel="bookmark">simple recipe provided below</a>.
 
 <section id="twit-recipe">
 <h3>TWIT'S RECIPE</h3>
 <h4><code>index.html</code></h4>
-<pre class="html">&lt;head&gt;
+<pre name="code" class="html">&lt;head&gt;
 &lt;!-- jQuery --&gt;
 &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;window.jQuery || document.write('&lt;script src="js/vendor/jquery-1.8.0.min.js"&gt;&lt;/script&gt;')&lt;/script&gt;
@@ -6247,7 +6390,7 @@ Meet twit. He's a special guy with a special purpose. Flying around at night he 
 &lt;/body&gt;</pre>
 <h3>USERNAME and TWIT DISPLAY SETUP</h3>
 <h4><code>twit.js</code></h4>
-<pre class="javascript">// Load Twit
+<pre name="code" class="javascript">// Load Twit
 window.onload = function() {
     var ajax_load            = "&lt;img class='twit-loader' src='img/loading.gif' alt='Loading...'&gt;",
         twitter_preferences  = {
@@ -6302,30 +6445,6 @@ window.onload = function() {
 		<category domain="post_tag" nicename="twitter-api"><![CDATA[twitter api]]></category>
 		<category domain="post_tag" nicename="twitter-api-customization"><![CDATA[twitter api customization]]></category>
 		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_description</wp:meta_key>
-			<wp:meta_value><![CDATA[Meet twit. He's a special guy with a special purpose. Flying around at night he collects tweets and spits them back where you would like using the Twitter API.]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_aioseop_title</wp:meta_key>
-			<wp:meta_value><![CDATA[Twit : "Embed Tweets the Right Way"]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
 			<wp:meta_key>art_direction_single</wp:meta_key>
 			<wp:meta_value><![CDATA[<style>
 .twit-button {
@@ -6365,6 +6484,7 @@ window.onload = function() {
     color: #f8f8f8;
 
     font-family: Georgia;
+    text-align: center;
 }
 
 .twit-button:hover {
@@ -6395,6 +6515,30 @@ window.onload = function() {
     color: #6291a6;
 }
 </style>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[Meet twit. He's a special guy with a special purpose. Flying around at night he collects tweets and spits them back where you would like using the Twitter API.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Twit : "Embed Tweets the Right Way"]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -6635,12 +6779,7 @@ The master of squishy Websites and the number one reason I've never made a fixed
 			<wp:comment_author_IP>67.253.222.195</wp:comment_author_IP>
 			<wp:comment_date>2012-08-29 22:45:42</wp:comment_date>
 			<wp:comment_date_gmt>2012-08-29 22:45:42</wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Thanks T!
-
-I should also take this time to say thanks for your support as well. You're a true gentlemen and great at what you do. 
-
-BTW:
-That <a href="//itunes.apple.com/album/ghosts-and-memory/id317785154" rel="nofollow"><abbr title="compact disc">CD</abbr></a> you have of mine will be worth millions someday. Hang on to it tightly :)]]></wp:comment_content>
+			<wp:comment_content><![CDATA[Thanks T!]]></wp:comment_content>
 			<wp:comment_approved>1</wp:comment_approved>
 			<wp:comment_type></wp:comment_type>
 			<wp:comment_parent>22</wp:comment_parent>
@@ -7001,6 +7140,195 @@ If you have questions or are unsure about any of the examples from above please 
 		<wp:postmeta>
 			<wp:meta_key>_aioseop_title</wp:meta_key>
 			<wp:meta_value><![CDATA[Custom Wordpress Menu]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Where&#039;s Your Assets?</title>
+		<link>http://blog.grayghostvisuals.com/compass/image-url/</link>
+		<pubDate>Fri, 05 Oct 2012 20:16:09 +0000</pubDate>
+		<dc:creator>grayghostvisuals</dc:creator>
+		<guid isPermaLink="false">http://blog.grayghostvisuals.com/?p=1675</guid>
+		<description></description>
+		<content:encoded><![CDATA[<h2 id="compass-logo"><a href="//compass-style.org" rel="external"><img src="//static.grayghostvisuals.com/imgblog/compass-imageurl.png" alt="An Open-Source CSS Authoring Framework"></a></h2>
+
+<div id="image-url-intro"><p>Damn! I'm hard coding all the project imagery assets within my stylesheets. What if the <abbr title="uniform resource locator">URL</abbr> to those image assets change? This is where <a href="//compass-style.org" rel="external">Compass</a> will come to the rescue.</p></div><!--more-->To be completely frank, I almost completed an entire bowel movement upon discovery of this sneaky little helper I'm going to discuss. The story goes like this; work locally with your assets folder, upload your code and assets to the deployment server, test, and then finally make it production ready, but we're missing one important aspect from this entire process; What happens if the location of those assets change &ndash;or&ndash; worse they're moved to a <abbr title="content delivery network">CDN</abbr>? Now you've gotta sift through hundreds, or even thousands of lines of code and swap out the <abbr title="uniform resource locator">URL</abbr>s. Have no fear though as we can solve this problem in a non&ndash;trivial manner using a special compass helper called <code>image-url</code>.
+
+Before I found the <code>image-url</code> helper I was doing the following&hellip;
+<figure>
+<pre name="code" class="css">$assets_path: "//example.com";
+background: url(#{$assets_path}/img/logo-sprite.png) -277px 0 no-repeat;</pre>
+<figcaption><small>Figure 1</small></figcaption>
+</figure>
+
+Executing the method in <em><small>Figure 1</small></em>, I only had to change the <code>$assets_path</code> and call it a day, but that's not good enough yet. Compass can do way better than my silly Sass variable. This approach only works if your images always rest within an <code>img</code> directory, but it's flawed for that very reason.
+
+Lets take a look at the following examples to get a better understanding of this mysterious beast called <code>image-url</code>.
+
+<figure>
+<h3>Compass' config.rb</h3>
+<pre name="code" class="ruby"># Require any additional compass plugins? Uncomment the following line
+# require "/Library/Ruby/Gems/1.8/gems/compass-X.XX.X/lib/compass-plugin-name.rb";
+
+# Set this to the root of your project when deployed:
+http_path = "/"
+
+# Set the images directory relative to your http_path or change
+# the location of the images themselves using http_images_path:
+# http_images_dir = "assets/images"
+
+# Production Assets URL
+http_images_path = "http://your-url-goes-here/img"
+
+# Compass will automatically add cache busters to your images based on image timestamps. 
+# This will keep browser caches from displaying the wrong image if you change the image but not the url. 
+# If you don’t want this behavior, it's easy to configure or disable:
+# UNCOMMENT THE NEXT THREE LINES
+#asset_cache_buster do |http_path, real_path|
+#  nil
+#end
+
+# Project Assets Location
+css_dir = "/"
+sass_dir = "scss"
+images_dir = "img"
+javascripts_dir = "js"
+
+# Development
+output_style = :expanded
+environment = :development
+
+# Production
+# output_style = :compressed
+# environment = :production
+
+# To enable relative paths to assets via compass helper functions Uncomment the following line:
+# relative_assets = true
+
+line_comments = false
+color_output = false
+
+# If you prefer the indented syntax, you might want to regenerate this
+# project again passing --syntax sass, or you can uncomment this:
+# preferred_syntax = :sass
+# and then run:
+# sass-convert -R --from scss --to sass scss scss && rm -rf sass && mv scss sass</pre>
+<figcaption><small>Figure 2</small></figcaption>
+</figure>
+
+Using our <code>config.rb</code> example above we're including two very important helpers <code>http_images_path</code> &amp; <code>relative_assets</code>. Setting the value for <code>http_images_path</code> will direct all your image assets to your production server, CDN or any other dark closet you're hiding things in. It can also generate cache&ndash;busting query strings based on image timestamps. This will keep browser caches from displaying the wrong image if you change the image but not the url. If you don’t want this behavior, it's easy to configure or disable (see lines 14 thru 20 from <em><small>Figure 2</small></em>). 
+
+Say I want to keep my images on a sub&ndash;domain, then all I would do is change the path like so&hellip;
+<figure>
+<pre name="code" class="ruby">http_images_path = "http://static.mysite/img/"</pre>
+<figcaption><small>Figure 3</small></figcaption>
+</figure>
+and then in our <code>.scss</code> file...
+<figure>
+<pre name="code" class="css">// bring compass into our project
+@import "compass";
+
+// image-url() example.
+// Compass will automatically generate a relative URL to the file.
+background: image-url("logo-sprite.png") -277px 0 no-repeat;</pre>
+<figcaption><small>Figure 4</small></figcaption>
+</figure>
+
+This will direct all my assets to the URL I've defined for <code>http_images_path</code>&hellip;Hot Damn! that's some sweet sauce. I could take this one step further and uncomment the <code>relative_assets</code> line while working locally like so;
+
+<figure>
+<pre name="code" class="ruby"># Production Assets URL
+http_images_path = "http://your-url-goes-here/img"
+
+# To enable relative paths to assets via compass helper functions uncomment the following line:
+relative_assets = true</pre>
+<figcaption><small>Figure 5</small></figcaption>
+</figure>
+
+<code>relative_assets</code> will now serve all the assets from your local assets/images directory that's defined by your <code>config.rb</code> file seen in <em>Figure 6</em> Line 4 below: 
+
+<figure>
+<pre name="code" class="ruby"># Project Assets Location
+css_dir = "/"
+sass_dir = "scss"
+images_dir = "img"
+javascripts_dir = "js"</pre>
+<figcaption><small>Figure 6</small></figcaption>
+</figure>
+
+Pretty rad huh? we can also use relative <abbr title="uniform resource locator">URL</abbr>s based on our <code>http_path</code>
+<figure>
+<pre name="code" class="ruby"># Set this to the root of your project when deployed:
+http_path = "http://your-url-goes-here.com/path-to-your-directory/"
+
+# Set the images directory relative to your http_path or change
+# the location of the images themselves using http_images_path:
+http_images_dir = "img"
+
+# Production Assets URL
+# http_images_path = "http://your-url-goes-here/img"
+
+# Project Assets Location
+css_dir = "/"
+sass_dir = "scss"
+# images_dir = "img"
+javascripts_dir = "js"
+
+# To enable relative paths to assets via compass helper functions Uncomment the following line:
+# relative_assets = true</pre>
+<figcaption><small>Figure 7</small></figcaption>
+</figure>
+Although this method works just fine I prefer to use <code>http_images_path</code> and call it a day. As always, hit me up with any questions, comments, suggestions or rants. Now go and make wonderful relative <abbr title="uniform resource locator">URL</abbr>s frustration free on your next project.
+
+<h3>You're links Madam</h3>
+<ul id="article-links">
+    <li><a href="//chriseppstein.github.com/blog/2010/05/17/where-are-your-images" rel="external">http://chriseppstein.github.com/blog/2010/05/17/where-are-your-images</a></li>
+    <li><a href="//compass-style.org/reference/compass/helpers/urls/#stylesheet-url" rel="external">http://compass-style.org/reference/compass/helpers/urls/#stylesheet-url</a></li>
+    <li><a href="//compass-style.org/help/tutorials/configuration-reference" rel="external">http://compass-style.org/help/tutorials/configuration-reference</a></li>
+</ul>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1675</wp:post_id>
+		<wp:post_date>2012-10-05 20:16:09</wp:post_date>
+		<wp:post_date_gmt>2012-10-05 20:16:09</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>image-url</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="post_tag" nicename="compass"><![CDATA[compass]]></category>
+		<category domain="category" nicename="compass"><![CDATA[compass]]></category>
+		<category domain="post_tag" nicename="compass-configuration"><![CDATA[compass configuration]]></category>
+		<category domain="post_tag" nicename="compass-configuration-properties"><![CDATA[compass configuration properties]]></category>
+		<category domain="post_tag" nicename="http_images_path"><![CDATA[http_images_path]]></category>
+		<category domain="post_tag" nicename="image-url"><![CDATA[image-url]]></category>
+		<category domain="post_tag" nicename="image-url-helper"><![CDATA[image-url helper]]></category>
+		<category domain="post_tag" nicename="relative-assets"><![CDATA[relative assets]]></category>
+		<category domain="post_tag" nicename="relative-url"><![CDATA[relative url]]></category>
+		<category domain="post_tag" nicename="relative_assets"><![CDATA[relative_assets]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_description</wp:meta_key>
+			<wp:meta_value><![CDATA[What happens if the location of your project assets change or worse they’re moved to a CDN? Have no fear as Compass' image-url is here to help.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_aioseop_title</wp:meta_key>
+			<wp:meta_value><![CDATA[Where's Your Assets? Compass' image-url solves the problem]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>art_direction_single</wp:meta_key>
+			<wp:meta_value><![CDATA[<style>
+    #image-url-intro {
+        font-size: 1.5em;
+        line-height: 1.375;
+        color: #343434;
+    }
+</style>]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 </channel>

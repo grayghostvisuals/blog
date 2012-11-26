@@ -10,9 +10,6 @@ $(document).ready(function () {
     // FitVid.js
     $('.flex-video').fitVids();
 
-    // evernote's memory button text insertion
-    $('.evernoteSiteMemoryLink').append('<span class="evernoteSiteMemoryLinkText">Read Me Later</span>');
-
     //gives tactile feedback for read-more button on touch interfaces
     $('.read-more').bind('mousedown mouseup', function () {
         $(this).toggleClass('active');
@@ -21,13 +18,13 @@ $(document).ready(function () {
     // grab the button
     var el = document.getElementsByClassName('button');
 
-    function touchStart(event) {
-        el.setAttribute('class', active);
-    };
+    function touchStart() {
+        el.setAttribute('class', 'active');
+    }
 
     for (var i = 0; i < el.length; i++) {
         el[i].addEventListener('touchstart', touchStart, false);
-    };
+    }
 
     $('#article-links li').each(function() {
         $(this).prepend('<b class="ss-icon">&#x1F517;</b>');

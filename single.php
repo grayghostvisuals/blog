@@ -13,16 +13,21 @@
                     <?php get_template_part( 'inc/meta' ); ?>
                 </header>
 
-                <div class="rdbWrapper" data-show-read="1" data-show-send-to-kindle="0" data-show-print="0" data-show-email="0" data-orientation="0" data-version="1" data-bg-color="transparent"></div>
-                <script>(function() {var s = document.getElementsByTagName("script")[0],rdb = document.createElement("script"); rdb.async = true; rdb.src = document.location.protocol + "//www.readability.com/embed.js"; s.parentNode.insertBefore(rdb, s); })();</script>
-
                 <?php the_content(); ?>
 
-                <?php
-                wp_link_pages( array(
-                    'before' => '<div>' . 'Pages &raquo',
-                    'after'  => '</div>'
-                )); ?>
+                <?php $wpflex_post_pages = array(
+                                                'before'           => '<p>' . __('Pages:'),
+                                                'after'            => '</p>',
+                                                'link_before'      => '',
+                                                'link_after'       => '',
+                                                'next_or_number'   => 'number',
+                                                'nextpagelink'     => __('Next page'),
+                                                'previouspagelink' => __('Previous page'),
+                                                'pagelink'         => '%',
+                                                'echo'             => 1
+                                            ); ?>
+
+                <?php wp_link_pages( array( $wpflex_post_pages ) ); ?>
 
                 <footer class="entry-footer">
                     <div id="comments-count">
