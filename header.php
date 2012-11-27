@@ -40,16 +40,15 @@
 <meta name="MobileOptimized" content="320">
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<!-- Standard Supporting Browsers CSS ?v1.9.36 -->
-<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.36" rel="stylesheet" media="all">
-<!--[if IE 8]><link href="<?php echo get_template_directory_uri(); ?>/css/gridset-ie.css?v1.9.36" rel="stylesheet" media="all"><![endif]-->
+<!-- Standard Supporting Browsers CSS ?v1.9.37 -->
+<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.37" rel="stylesheet" media="all">
+<!--[if IE 8]><link href="<?php echo get_template_directory_uri(); ?>/css/gridset-ie.css?v1.9.37" rel="stylesheet" media="all"><![endif]-->
 <!-- pingback url -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <!-- RSS Feed -->
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo( 'rss2_url' ); ?>">
 <!-- Modernizr -->
 <script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr.js"></script>
-
 <?php if ( is_singular() ) { wp_enqueue_script( 'comment-reply' ); } ?>
 <?php wp_head(); ?>
 </head>
