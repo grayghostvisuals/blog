@@ -1,3 +1,9 @@
+if (Modernizr.svg) {
+    $('.blog-name a').append('<img src="http://static.grayghostvisuals.com/imgblog/blogbadge.svgz" alt="gray ghost visuals press icon leading you home" class="logo"><span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( "name" ) ); ?></span>');
+}else {
+    $('.blog-name a').append('<img src="http://static.grayghostvisuals.com/imgblog/blogbadge.png" alt="gray ghost visuals press icon leading you home" class="logo"><span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( "name" ) ); ?></span>');
+}
+
 $(document).ready(function () {
 
     $('#rss').click(function () {
