@@ -1,3 +1,9 @@
+if (Modernizr.svg) {
+    $('.blog-name a').append('<img src="http://static.grayghostvisuals.com/imgblog/blogbadge.svgz" alt="gray ghost visuals press icon leading you home" class="logo"><span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( "name" ) ); ?></span>');
+}else {
+    $('.blog-name a').append('<img src="http://static.grayghostvisuals.com/imgblog/blogbadge.png" alt="gray ghost visuals press icon leading you home" class="logo"><span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( "name" ) ); ?></span>');
+}
+
 $(document).ready(function () {
 
     $('#rss').click(function () {
@@ -10,9 +16,6 @@ $(document).ready(function () {
     // FitVid.js
     $('.flex-video').fitVids();
 
-    // evernote's memory button text insertion
-    $('.evernoteSiteMemoryLink').append('<span class="evernoteSiteMemoryLinkText">Read Me Later</span>');
-
     //gives tactile feedback for read-more button on touch interfaces
     $('.read-more').bind('mousedown mouseup', function () {
         $(this).toggleClass('active');
@@ -21,13 +24,13 @@ $(document).ready(function () {
     // grab the button
     var el = document.getElementsByClassName('button');
 
-    function touchStart(event) {
-        el.setAttribute('class', active);
-    };
+    function touchStart() {
+        el.setAttribute('class', 'active');
+    }
 
     for (var i = 0; i < el.length; i++) {
         el[i].addEventListener('touchstart', touchStart, false);
-    };
+    }
 
     $('#article-links li').each(function() {
         $(this).prepend('<b class="ss-icon">&#x1F517;</b>');

@@ -6,7 +6,7 @@ Description: Exploring Front-end Web Development and Design using Wordpress, WP-
 Author: Gray Ghost Visuals Press
 Author URI: http://blog.grayghostvisuals.com
 
-Version: 1.9.36
+Version: 1.9.37
 Tags: full-width-template, flexible-width, microformats, sticky-post, front-page-post-form, sticky-post, threaded-comments, post-formats, light
 
 Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
@@ -18,21 +18,21 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // ------------------------------------------------------------------------------- */
 
 @import "compass";                    // compass
-
+@import "imports/gridset";            // gridset vanilla css
 @import "imports/vars";               // variables
 @import "imports/mixins";             // mixins
 @import "imports/extends";            // extends
-
 @import "imports/resets";             // html5boilerplate resets
 @import "imports/wp-classes";         // Wordpress Classes
-
 @import "imports/ss-social";          // social icons
 @import "imports/ss-standard";        // social standard icons
+@import "imports/prism";              // lea verou prism.js syntax highlighter
 
 
 // ------------------------------------------------------------------------------- */
 // = $Typography
 // ------------------------------------------------------------------------------- */
+
 
 // = $Global Typography
 // ------------------------------------------------------------------------------- //
@@ -164,30 +164,6 @@ header[role="banner"] {
 }
 
 
-// = $Hero Quote Typography
-// ------------------------------------------------------------------------------- //
-
-#hero-quote {
-    text-transform: uppercase;
-
-    cite {
-        font-size: .5em;
-    }
-
-    @media only all and (min-width: 55.25em) {
-        font-size: 1.75em;
-    }
-
-    @media only all and (min-width: 55.25em) {
-        font-size: 1.75em;
-    }
-
-    @media only all and (min-width: 64.0625em) { // 1025px / 16
-        font-size: 2.5em;
-    }
-}
-
-
 // = $RSS Ribbon Typography
 // ------------------------------------------------------------------------------- //
 
@@ -299,7 +275,6 @@ label[for="s"] {
 // ------------------------------------------------------------------------------- */
 
 .search {
-
     #thumbsdown {
         font-size: 2em;
         line-height: 3.5;
@@ -391,29 +366,16 @@ blockquote {
 }
 
 
-// = $Evernote Memory Button Layout
-// ------------------------------------------------------------------------------- //
-
-/*evernote clip button*/
-.home .evernoteSiteMemory {
-    display: none;
-}
-.evernoteSiteMemory {
-    height: 1.5em;
-}
-.evernoteSiteMemoryLinkText {
-    margin-left: .5em;
-}
-
-
 // = $Header Layout
 // ------------------------------------------------------------------------------- //
 
 .blog-name {
     width: auto;
     display: inline-block;
-    margin-top: ($baseline / 2);
-    margin-bottom: 0;
+    margin: $baseline 0 0;
+    @media screen and (min-width: 55.25em) {
+        margin: ($baseline / 2) 0 0;
+    }
 }
 
 .blog-uri {
@@ -421,11 +383,11 @@ blockquote {
 }
 
 .logo {
-    width: 72px;
-    height: 72px;
+    width: 237px;
+    height: auto;
 
     @media screen and (min-width: 55.25em) {
-        padding-bottom: .75em;
+        //padding-bottom: .75em;
     }
 }
 
@@ -476,11 +438,8 @@ blockquote {
     padding: 0;
 
     li {
-        border: .0625em solid #C9BCBC;
-        border: .0625em solid rgba(209, 209, 209, 0.8);
         border-radius: 8px;
         display: inline-block;
-
         font-size: 1.5em;
         text-align: center;
     }
@@ -492,6 +451,9 @@ blockquote {
 
 .socials.header {
     li {
+        border: .0625em solid #C9BCBC;
+        border: .0625em solid rgba(209, 209, 209, 0.8);
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.50), 0px 1px 1px rgba(255, 255, 255, 0.80);
         height: 1.5em;
         line-height: 1.75em;
         padding: .1825em;
@@ -508,7 +470,8 @@ blockquote {
 
 .socials.footer {
     li {
-        font-size: 1.25em;
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.80), 0px 1px 1px rgba(255, 255, 255, 0.30);
+        background: #252525;
         height: 2em;
         line-height: 2.25em;
         width: 2em;
@@ -527,7 +490,7 @@ blockquote {
     margin-bottom: 1.5em;
     padding: ($baseline / 2);
     position: relative;
-    width: 7.3846153872em;
+    width: 50%;
 
     span {
         display: block;
@@ -639,6 +602,7 @@ blockquote {
 
     input {
         @include box-sizing(border-box);
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.92);
         //http://trentwalton.com/2010/07/14/css-webkit-appearance
         //changes the appearance of buttons & controls to resemble a native apple UI
         -webkit-appearance: none;
@@ -696,49 +660,6 @@ textarea {
     b[class="ss-icon"] {
         display: inline-block;
         margin-right: .75em;
-    }
-}
-
-
-// = $Hero Quote Layout
-// ------------------------------------------------------------------------------- //
-
-#hero-quote {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-
-    p {
-        border-top: 1px solid #C9C9C9;
-        border-bottom: 1px solid #C9C9C9;
-        box-shadow: inset 0  1px 0px rgba(255,255,255,.9),
-                          0  1px 0px rgba(255,255,255,.9);
-        padding: .75em 0 1.25em;
-    }
-
-    small {
-        padding-left: .75em;
-        padding-right: .75em;
-        position: absolute;
-        bottom: -.5em;
-        left: 42.5208687%;
-
-        @media only all and (min-width: 55.25em) {
-            bottom: 1.75em;
-        }
-
-        cite {
-            display: block;
-        }
-    }
-
-    @media only all and (min-width: 55.25em) {
-        margin-bottom: 0;
-        padding-top: 0;
-        padding-bottom: .75em;
     }
 }
 
@@ -998,10 +919,11 @@ textarea {
 
 footer[role="contentinfo"] {
     @extend .rule;
-    padding: 1em 0;
+    overflow: auto;
+    padding: 0;
     position: relative;
     @media only all and (min-width: 42.25em) {
-        padding: 3em $desktop-gutter 6.5em;
+        padding: 3em $desktop-gutter;
     }
 }
 
@@ -1049,16 +971,6 @@ h5 {
 
 h6 {
     color: lighten($header-color, 50%);
-}
-
-
-// = $Code Block Color
-// ------------------------------------------------------------------------------- //
-
-pre,
-code {
-    background: white;
-    color: purple;
 }
 
 
@@ -1142,6 +1054,14 @@ header[role="banner"] {
 
 .socials {
     li {
+        a {
+            @include transition($transition-1: .3s all ease-in-out);
+        }
+    }
+}
+
+.socials.header {
+    li {
         background: #ffffff;
         background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 47%, #d8d8d8 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f2f2f2), color-stop(100%,#d8d8d8));
@@ -1149,9 +1069,7 @@ header[role="banner"] {
         background: -o-linear-gradient(top,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
         background: -ms-linear-gradient(top,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
         background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 47%,#d8d8d8 100%);
-
         a {
-            @include transition($transition-1: .3s all ease-in-out);
             color: #727a7f;
 
             &:hover {
@@ -1163,33 +1081,14 @@ header[role="banner"] {
 
 .socials.footer {
     li {
-        a, &:visited {
-            color: #666f74;
+        a,
+        &:visited {
+            color: #000;
 
             &:hover {
                 color: #D6D6D6;
             }
         }
-    }
-}
-
-
-// = $Hero Quote Color
-// ------------------------------------------------------------------------------- //
-
-#hero-quote {
-    color: #B3B3B3;
-
-    small {
-        background: #C9C8C8 image-url("lghtmesh.png") top left repeat;
-    }
-
-    b {
-        color: #DDD;
-    }
-
-    cite {
-        color: lighten(#444, 20%);
     }
 }
 
@@ -1428,6 +1327,23 @@ footer[role="contentinfo"] {
         opacity: .7;
         &:hover {
             opacity: .9;
+        }
+    }
+}
+
+
+// ------------------------------------------------------------------------------- */
+// = $No Javascript Fallbacks
+// ------------------------------------------------------------------------------- */
+
+// = $Blog Name
+// ------------------------------------------------------------------------------- //
+
+.blog-name a {
+    .no-js & {
+        &:after {
+            content: "Gray Ghost Visuals Press";
+            display: inline-block;
         }
     }
 }

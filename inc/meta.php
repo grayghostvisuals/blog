@@ -1,7 +1,7 @@
 <div class="meta">
     <small class="meta-data">
         <span id="comments-title">
-            <b class="ss-icon right">&#x1F4AC;</b> <a href="<?php the_permalink(); ?>#comment-count"><?php printf( _n( 'One Response %2$s', '%1$s Responses %2$s', get_comments_number() ), number_format_i18n( get_comments_number() ),''); ?></a>
+            <b class="ss-icon right">&#x1F4AC;</b> <a href="<?php the_permalink(); ?>#comment-count"><?php printf( _n( '1 Response %2$s', '%1$s Responses %2$s', get_comments_number() ), number_format_i18n( get_comments_number() ),''); ?></a>
         </span>
 
         <span class="post-datetime">
