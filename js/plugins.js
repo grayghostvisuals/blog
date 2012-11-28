@@ -405,7 +405,9 @@ Prism.hooks.add('wrap', function(env) {
   }
 });;
 
-// CSS
+
+// ========================================================== CSS
+
 Prism.languages.css = {
   'comment': /\/\*[\w\W]*?\*\//g,
   'atrule': /@[\w-]+?(\s+[^;{]+)?(?=\s*{|\s*;)/gi,
@@ -473,7 +475,102 @@ if (Prism.languages.markup) {
 };
 
 
-// PHP Syntax Highlighting
+// ========================================================== Sass
+
+(function(){
+
+if(!window.Prism) {
+    return;
+}
+
+RegExp.create = function(str, replacements, flags) {
+    for(var id in replacements) {
+        var replacement = replacements[id],
+            idRegExp = RegExp('{{' + id + '}}', 'gi');
+
+        if(replacement.source) {
+            replacement = replacement.source.replace(/^\^|\$$/g, '');
+        }
+
+        // Don't add extra parentheses if they already exist
+        str = str.replace(RegExp('\\(' + idRegExp.source + '\\)', 'gi'), '(' + replacement + ')');
+
+        str = str.replace(idRegExp, '(?:' + replacement + ')');
+    }
+
+    return RegExp(str, flags);
+};
+var number = /-?\d*\.?\d+/;
+Prism.languages.sass = {
+    'comment': {
+        pattern: /(^|[^\\])(\/\*[\w\W]*?\*\/|\/\/.*?(\r?\n|$))/g,
+        lookbehind: true
+    },
+
+    'control': /@(if|else if|else|for|each|while)/i,
+    'directive': /@(import|extend|debug|warn)/i,
+    'keyword': /&amp;|@(mixin|include|function|return)/i,
+
+    'atrule': /@[\w-]+?(?=(\s+.+)?(\s*{|\s*;))/gi,
+    //'url': /url\((["']?).*?\1\)/gi,
+    'string': /("|')(\\?.)*?\1/g,
+    'url': /([-a-z]+-)*url(?=\()/gi, // compassified
+
+    'placeholder': /%[-_\w]+/i,
+    'variable': /\$[-_\w]+/i,
+
+    'property': /(\b|\B)[a-z-]+(?=\s*:)/ig,
+
+    'important': /\B!important\b/gi,
+    'statement': /\B!(default|optional)\b/gi,
+
+    'boolean': /\b(true|false)\b/g,
+    'null': /\b(null)\b/g,
+    'number': /\b-?(0x)?(\d*\.?\d+|([\da-f]{3}){1,2})(?=(ddpx|px|pt|cm|mm|in|em|ex|pc)|\b)/g,
+
+    // sass short mixin declaration
+    'mixin': /(^|\\n)\\s*=.*/g,
+    'mixin': /(^|\\n)\\s*\\+.*/g,
+
+    // specific css values (taken from dabblet source)
+    'gradient': /\b(repeating-)?(linear|radial)-gradient\(((rgb|hsl)a?\(.+?\)|[^\)])+\)/gi,
+    'abslength': RegExp.create('(\\b|\\B){{number}}{{unit}}\\b', {
+            number: number,
+            unit: /(cm|mm|in|pt|pc|px)/
+        }, 'gi'),
+    'easing': RegExp.create('\\b{{bezier}}\\B|\\b{{keyword}}(?=\\s|;|\\}|$)', {
+            bezier: RegExp.create('cubic-bezier\\(({{number}},\\s*){3}{{number}}\\)', {
+                number: number
+            }),
+            keyword: /linear|ease(-in)?(-out)?/
+        }, 'gi'),
+    'time': RegExp.create('(\\b|\\B){{number}}m?s\\b', {
+            number: number
+        }, 'gi'),
+    'angle': RegExp.create('(\\b|\\B){{number}}(deg|g?rad|turn)\\b', {
+            number: number
+        }, 'gi'),
+    'fontfamily': /(("|')[\w\s]+\2,\s*|\w+,\s*)*(sans-serif|serif|monospace|cursive|fantasy)\b/gi,
+
+    'entity': /\\[\da-f]{1,8}/gi,
+
+    //'selector-id': /#(\\w|-|_)+/g,
+    //'selector-class': /\\.(\\w|-|_)+/g,
+    'selector': /[^;\{\}\(\)\s][^;\{\}\(\)]*(?=\s*\{)/g,
+
+    'operator': /\s+([-+]{1,2}|={1,2}|!=|\|?\||\?|\*|\/|\%)\s+/g,
+
+    'unit': /\b(ddpx|px|pt|cm|mm|in|em|ex|pc)\b|%/i,
+
+    'ignore': /&(lt|gt|amp);/gi,
+    'punctuation': /[\{\}\(\);:,\.#]/g
+};
+
+})();
+
+
+// ========================================================== PHP
+
 Prism.languages.php = {
   'comment': {
     pattern: /(^|[^\\])(\/\*[\w\W]*?\*\/|\/\/.*?(\r?\n|$))/g,
@@ -526,15 +623,65 @@ if (Prism.languages.markup) {
   });
 }
 
-// Ruby
+
+// ========================================================== Ruby
+
+(function(){
+
+if(!window.Prism) {
+    return;
+}
+
 Prism.languages.ruby = {
-  'comment' : {
-    pattern : /\#/g,
-  },
-  'property': /(\b|\B)[a-z-]+(?=\s)/ig,
-  'url': /url\((["']?).*?\1\)/gi,
-  'string' : /[\d\w]/g
+    'comment': /#[^\r\n]*(\r?\n|$)/g,
+    'string': /("|')(\\?.)*?\1/g,
+    'regex': {
+    pattern: /(^|[^/])\/(?!\/)(\[.+?]|\\.|[^/\r\n])+\/[gim]{0,3}(?=\s*($|[\r\n,.;})]))/g,
+    lookbehind: true
+    },
+    'keyword': /\b(alias|and|BEGIN|begin|break|case|class|def|define_method|defined|do|each|else|elsif|END|end|ensure|false|for|if|in|module|new|next|nil|not|or|raise|redo|rescue|retry|return|self|super|then|throw|true|undef|unless|until|when|while|yield)\b/g,
+    'builtin': /\b(Array|Bignum|Binding|Class|Continuation|Dir|Exception|FalseClass|File|Stat|File|Fixnum|Fload|Hash|Integer|IO|MatchData|Method|Module|NilClass|Numeric|Object|Proc|Range|Regexp|String|Struct|TMS|Symbol|ThreadGroup|Thread|Time|TrueClass)\b/,
+    'boolean': /\b(true|false)\b/g,
+    'number': /\b-?(0x)?\d*\.?\d+\b/g,
+    'operator': /[-+]{1,2}|!|=?&lt;|=?&gt;|={1,2}|(&amp;){1,2}|\|?\||\?|\*|\//g,
+    'inst-var': /[@&]\b[a-zA-Z_][a-zA-Z_0-9]*[?!]?\b/g,
+    'symbol': /:\b[a-zA-Z_][a-zA-Z_0-9]*[?!]?\b/g,
+    'const': /\b[A-Z][a-zA-Z_0-9]*[?!]?\b/g,
+    'ignore': /&(lt|gt|amp);/gi,
+    'punctuation': /[{}[\];(),.:]/g
 };
+
+})();
+
+
+// ========================================================== Bash
+
+(function(){
+
+if(!window.Prism) {
+    return;
+}
+
+Prism.languages.bash = {
+    'comment': {
+        pattern: /^#.*(\r?\n|$)/gm,
+        lookbehind: false
+    },
+    'string': /("|')(\\?.)*?\1/g,
+    'regex': {
+        pattern: /(^|[^/])\/(?!\/)(\[.+?]|\\.|[^/\r\n])+\/[gim]{0,3}(?=\s*($|[\r\n,.;})]))/g,
+        lookbehind: true
+    },
+    'keyword': /\b(if|fi|then|elif|else|for|do|done|until|while|break|continue|case|function|return|in|eq|ne|gt|lt|ge|le|esac)\b/g,
+    'command': /\b(mkfs|alias|apropos|awk|bash|bc|bg|builtin|bzip2|cal|cat|cd|cfdisk|chgrp|chmod|chown|chroot|cksum|clear|cmp|comm|command|cp|cron|crontab|csplit|cut|curl|date|dc|dd|ddrescue|declare|df|diff|diff3|dig|dir|dircolors|dirname|dirs|du|echo|egrep|eject|enable|env|ethtool|eval|exec|exit|expand|export|expr|false|fdformat|fdisk|fg|fgrep|file|find|fmt|fold|format|free|fsck|ftp|gawk|getopts|grep|groups|gzip|hash|head|history|hostname|id|ifconfig|import|install|join|kill|less|let|ln|local|locate|logname|logout|look|lpc|lpr|lprint|lprintd|lprintq|lprm|ls|lsof|make|man|mkdir|mkfifo|mkisofs|mknod|more|mount|mtools|mv|netstat|nice|nl|nohup|nslookup|open|op|passwd|paste|pathchk|ping|popd|pr|printcap|printenv|printf|ps|pushd|pwd|quota|quotacheck|quotactl|ram|rcp|read|readonly|renice|remsync|rm|rmdir|rsync|screen|scp|sdiff|sed|select|seq|set|sftp|shift|shopt|shutdown|sleep|sort|source|split|ssh|strace|su|sudo|sum|symlink|sync|tail|tar|tee|test|time|times|touch|top|traceroute|trap|tr|true|tsort|tty|type|ulimit|umask|umount|unalias|uname|unexpand|uniq|units|unset|unshar|useradd|usermod|users|uuencode|uudecode|v|vdir|vi|watch|wc|whereis|which|who|whoami|wget|xargs|yes|vim|bind)\b/g,
+    'boolean': /\b(true|false)\b/g,
+    'number': /\b-?(0x)?\d*\.?\d+\b/g,
+    'operator': /[-+]{1,2}|!|`|=?&lt;|=?&gt;|={1,2}|(&amp;){1,2}|\|?\||\?|\*|\//g,
+    'ignore': /&(lt|gt|amp);/gi,
+    'punctuation': /[{}[\];(),.:]/g
+};
+
+})();
 
 
 /*global jQuery */
