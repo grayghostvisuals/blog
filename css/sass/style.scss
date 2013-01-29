@@ -12,6 +12,8 @@ Tags: full-width-template, flexible-width, microformats, sticky-post, front-page
 Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 */
 
+// Video Tut for Wavy Outline on Badge
+// http://layersmagazine.com/making-a-wavy-edge-using-the-transform-tool.html
 
 // ------------------------------------------------------------------------------- */
 // = $Imports
@@ -42,7 +44,6 @@ html {
 }
 
 body {
-    @include transition($transition-1: .3s opacity ease-in-out);
     font: normal 100%/1.5 Georgia, "Times New Roman", Times, serif;
     text-shadow: 0 1px 1px rgba(255,255,255,.9);
 }
@@ -53,12 +54,12 @@ body {
 
 .wf-loading body {
     font-family: Georgia, serif;
-    opacity: 0;
+    visibility: hidden;
 }
 
 .wf-active body {
     font-family: "adobe-garamond-pro", serif;
-    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -87,6 +88,11 @@ h4,
 h5,
 h6 {
     font-weight: 400;
+    text-transform: uppercase;
+}
+
+h1 {
+    line-height: 1.25;
 }
 
 h2 {
@@ -145,7 +151,6 @@ p {
 
 header[role="banner"] {
     text-align: center;
-
     @media only all and (min-width: 55.25em) { // 884px / 16px = 55.25em
         text-align: left;
     }
@@ -156,9 +161,9 @@ header[role="banner"] {
     font-style: italic;
     font-weight: 400;
     text-align: center;
-
+    text-transform: Capitalize;
     @media only all and (min-width: 55.25em) {
-        font-size: 1.165em;
+        font-size: 1.125em;
         text-align: right;
     }
 }
@@ -383,7 +388,8 @@ blockquote {
 }
 
 .logo {
-    width: 237px;
+    //width: 237px;
+    width: 137px;
     height: auto;
 
     @media screen and (min-width: 55.25em) {
@@ -790,20 +796,16 @@ textarea {
 // ------------------------------------------------------------------------------- //
 
 #sidebar {
-
     article {
         padding-bottom: $baseline;
-
         &:nth-child(1n+1) {
             @extend .rule-sidebar;
         }
-
         &:nth-child(1n+3) {
             border:none;
             box-shadow: none;
         }
     }
-
   ul {
     -webkit-column-count: 4;
     -webkit-column-gap: 10.7143%;
@@ -813,7 +815,6 @@ textarea {
          -o-column-gap: 10.7143%;
             column-count: 4;
             column-gap: 10.7143%;
-
     li {
       border-bottom: 1px solid lighten(#C9C9C9,5%);
 
@@ -822,7 +823,6 @@ textarea {
         margin-bottom: ($baseline / 2);
       }
     }
-
     @media only all and (max-width: 42.25em) {
       -webkit-column-count: 1;
          -moz-column-count: 1;
@@ -851,14 +851,12 @@ textarea {
 .single-pagination {
     overflow: auto;
     position: relative;
-
     a {
         @include box-sizing(border-box);
         display: inline-block;
         padding: ($baseline / 2) .25em;
         width: auto;
     }
-
     [class|="ss"] {
         border-radius: 80%;
         border: .75em solid white;
@@ -1102,7 +1100,6 @@ header[role="banner"] {
     background-image:    -moz-linear-gradient(top, #f7f7f7, #e7e7e7);
     background-image:     -ms-linear-gradient(top, #f7f7f7, #e7e7e7);
     background-image:      -o-linear-gradient(top, #f7f7f7, #e7e7e7);
-
     &:after {
         background: #fff;
         opacity: .7;
@@ -1115,7 +1112,6 @@ header[role="banner"] {
 
 .pagination {
     background: rgba(255,255,255,.5);
-
     .page-numbers {
         @include transition($transition-1: .3s all ease-in-out);
             background-color: #f7f7f7;
@@ -1123,11 +1119,9 @@ header[role="banner"] {
             background-image:    -moz-linear-gradient(top, $pagination_inactive_color1, $pagination_inactive_color2);
             background-image:     -ms-linear-gradient(top, $pagination_inactive_color1, $pagination_inactive_color2);
             background-image:      -o-linear-gradient(top, $pagination_inactive_color1, $pagination_inactive_color2);
-
         &:after {
             background: rgba(255,255,255,.5);
         }
-
         &:hover {
             background: #f0f0f0;
             background-image: -webkit-linear-gradient(top, $pagination_active_color1, $pagination_active_color2);
@@ -1137,7 +1131,6 @@ header[role="banner"] {
             color: maroon;
         }
     }
-
     .page-numbers.current {
         background: #FFF;
         color: maroon;
@@ -1227,7 +1220,6 @@ textarea {
     [class|="ss"] {
         background: rgba(255,255,255,.5);
         color: #333;
-
         &:after {
             background: rgba(255,255,255,.5);
         }
@@ -1239,24 +1231,20 @@ textarea {
 // ------------------------------------------------------------------------------- //
 
 .single-pagination {
-
     [class|="ss"] {
         background: #c80000;
         color: #fff;
-
         .cssgradients & {
             background: -webkit-radial-gradient(circle, lighten(#e63f00,5%) 0%, lighten(#950000,5%) 80%, lighten(#950000,10%) 100%);
             background:    -moz-radial-gradient(circle, lighten(#e63f00,5%) 0%, lighten(#950000,5%) 80%, lighten(#950000,10%) 100%);
             background:      -o-radial-gradient(circle, lighten(#e63f00,5%) 0%, lighten(#950000,5%) 80%, lighten(#950000,10%) 100%);
             background:         radial-gradient(circle, lighten(#e63f00,5%) 0%, lighten(#950000,5%) 80%, lighten(#950000,10%) 100%);
-
             &:hover {
                 background: -webkit-radial-gradient(circle, lighten(#e63f00,10%) 0%, lighten(#950000,10%) 80%, lighten(#950000,15%) 100%);
                 background:    -moz-radial-gradient(circle, lighten(#e63f00,10%) 0%, lighten(#950000,10%) 80%, lighten(#950000,15%) 100%);
                 background:      -o-radial-gradient(circle, lighten(#e63f00,10%) 0%, lighten(#950000,10%) 80%, lighten(#950000,15%) 100%);
                 background:         radial-gradient(circle, lighten(#e63f00,10%) 0%, lighten(#950000,10%) 80%, lighten(#950000,15%) 100%);
             }
-
             &:active {
                 background: -webkit-radial-gradient(circle, lighten(#e63f00,15%) 0%, lighten(#950000,15%) 80%, lighten(#950000,20%) 100%);
                 background:    -moz-radial-gradient(circle, lighten(#e63f00,15%) 0%, lighten(#950000,15%) 80%, lighten(#950000,20%) 100%);
