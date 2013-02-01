@@ -33,17 +33,15 @@
 <?php else : ?>
 <meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); esc_attr( bloginfo( 'description' ) ) ?>">
 <?php endif; ?>
-
 <!-- Mobile viewport optimized: h5bp.com/viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="apple-mobile-web-app-capable" content="yes">
-
 <!-- Standard Supporting Browsers CSS ?v1.9.37 -->
-<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.37" rel="stylesheet" media="all">
-<!--[if IE 8]><link href="<?php echo get_template_directory_uri(); ?>/css/gridset-ie.css?v1.9.37" rel="stylesheet" media="all"><![endif]-->
+<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.38" rel="stylesheet" media="all">
+<!--[if IE 8]><link href="<?php echo get_template_directory_uri(); ?>/css/gridset-ie.css?v1.9.38" rel="stylesheet" media="all"><![endif]-->
 <!-- pingback url -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <!-- RSS Feed -->
@@ -68,11 +66,11 @@
             <h1 class="blog-name"><a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark"></a></h1>
             <h2 class="tagline"><?php echo esc_attr( bloginfo( 'description' ) ); ?></h2>
             <ul class="socials header">
-                <li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social" rel="external">twitter</a></li>
-                <li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social" rel="external">github</a></li>
-                <li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social" rel="external">dribbble</a></li>
-                <li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social" rel="external">facebook</a></li>
-                <li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social" rel="external">googleplus</a></li>
+                <li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social" rel="external">&#xF611;</a></li>
+                <li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social" rel="external">&#xF670;</a></li>
+                <li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social" rel="external">&#xF660;</a></li>
+                <li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social" rel="external">&#xF610;</a></li>
+                <li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social" rel="external">&#xF613;</a></li>
             </ul>
             <?php get_search_form(); ?>
             <article id="rss">
