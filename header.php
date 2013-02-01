@@ -2,7 +2,11 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
-<script type="text/javascript">
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<link rel="dns-prefetch" href="//use.typekit.net">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<script>
   (function() {
     var config = {
       kitId: 'moj0xwf',
@@ -11,11 +15,7 @@
     var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/( |^)wf-loading( |$)/g,"");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script");tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(a&&a!="complete"&&a!="loaded")return;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
   })();
 </script>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-
 <title><?php wp_title( '&raquo;', true, 'left' ); ?></title>
-
 <?php if ( is_search() || is_404() ) : ?>
 <meta name="robots" content="noindex, nofollow">
 <?php else: ?>
@@ -39,10 +39,9 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="apple-mobile-web-app-capable" content="yes">
-
 <!-- Standard Supporting Browsers CSS ?v1.9.37 -->
-<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.37" rel="stylesheet" media="all">
-<!--[if IE 8]><link href="<?php echo get_template_directory_uri(); ?>/css/gridset-ie.css?v1.9.37" rel="stylesheet" media="all"><![endif]-->
+<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.38" rel="stylesheet" media="all">
+<!--[if IE 8]><link href="<?php echo get_template_directory_uri(); ?>/css/gridset-ie.css?v1.9.38" rel="stylesheet" media="all"><![endif]-->
 <!-- pingback url -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <!-- RSS Feed -->
@@ -67,11 +66,11 @@
             <h1 class="blog-name"><a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark"></a></h1>
             <h2 class="tagline"><?php echo esc_attr( bloginfo( 'description' ) ); ?></h2>
             <ul class="socials header">
-                <li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social" rel="external">twitter</a></li>
-                <li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social" rel="external">github</a></li>
-                <li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social" rel="external">dribbble</a></li>
-                <li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social" rel="external">facebook</a></li>
-                <li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social" rel="external">googleplus</a></li>
+                <li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social" rel="external">&#xF611;</a></li>
+                <li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social" rel="external">&#xF670;</a></li>
+                <li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social" rel="external">&#xF660;</a></li>
+                <li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social" rel="external">&#xF610;</a></li>
+                <li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social" rel="external">&#xF613;</a></li>
             </ul>
             <?php get_search_form(); ?>
             <article id="rss">
