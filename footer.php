@@ -5,17 +5,11 @@
                 <?php dynamic_sidebar('footer widget') ?>
             <?php endif; ?>
         </section>
-        <section id="copyright" class="t1-t3 d2-d6">
+<!--         <section id="copyright" class="t1-t3 d2-d6">
             <p><small><a href="//github.com/grayghostvisuals/WP-Flex" rel="external"><b class="ss-icon">&#xEB85;</b> Built on top of WP&ndash;Flex</a></small></p>
-        </section>
-        <section class="t4-t7 d10-d12">
-           <ul class="socials footer">
-                <li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social" rel="external me">twitter</a></li>
-                <li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social" rel="external me">github</a></li>
-                <li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social" rel="external me">dribbble</a></li>
-                <li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social" rel="external me">facebook</a></li>
-                <li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social" rel="external me">googleplus</a></li>
-            </ul>
+        </section> -->
+        <section class="m-all t2-t6 d4-d10">
+            <p><small>Gray Ghost Visuals Press &bull; Exploring Front&ndash;end Web Development &amp; Design <time datetime="2009" pubdate>since 2009</time></small></p>
         </section>
     </footer>
 </div>
@@ -28,6 +22,7 @@
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
+<script src="https://get.gridsetapp.com/1046/overlay/"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -2,7 +2,11 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
-<script type="text/javascript">
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<link rel="dns-prefetch" href="//use.typekit.net">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<script>
   (function() {
     var config = {
       kitId: 'moj0xwf',
@@ -11,11 +15,7 @@
     var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/( |^)wf-loading( |$)/g,"");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script");tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(a&&a!="complete"&&a!="loaded")return;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
   })();
 </script>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-
 <title><?php wp_title( '&raquo;', true, 'left' ); ?></title>
-
 <?php if ( is_search() || is_404() ) : ?>
 <meta name="robots" content="noindex, nofollow">
 <?php else: ?>
@@ -33,6 +33,7 @@
 <?php else : ?>
 <meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); esc_attr( bloginfo( 'description' ) ) ?>">
 <?php endif; ?>
+
 <!-- Mobile viewport optimized: h5bp.com/viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
 <!-- http://t.co/dKP3o1e -->
