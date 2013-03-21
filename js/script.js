@@ -1,5 +1,7 @@
 if (Modernizr.svg) {
-    $('.blog-name a').append('<img src="//static.grayghostvisuals.com/imgblog/blogbadge.png" alt="gray ghost visuals press icon leading you home" class="logo"><span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( "name" ) ); ?></span>');
+    var relativeURL = "http://192.168.1.100/wordpress/wp-content/themes/blog.grayghostvisuals/img/";
+    var staticURL = "//static.grayghostvisuals.com/imgblog/"
+    $('.blog-name a').append('<img src="' + relativeURL + 'logo.png" alt="gray ghost visuals press icon leading you home" class="logo"><span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( "name" ) ); ?></span>');
 }else {
     $('.blog-name a').append('<img src="//static.grayghostvisuals.com/imgblog/blogbadge.png" alt="gray ghost visuals press icon leading you home" class="logo"><span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( "name" ) ); ?></span>');
 }

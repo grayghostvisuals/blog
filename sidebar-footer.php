@@ -1,4 +1,4 @@
-<?php  if( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'WP-Flex Sidebar' ) ) : ?>
+<?php  if( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'WP-Flex Footer Widget' ) ) : ?>
 	<p>these are the default widgets not your custom ones</p>
 
 	<article>
