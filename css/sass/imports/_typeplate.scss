@@ -376,6 +376,15 @@ $stats-border-style: 0.125rem solid #ccc;
 
 html {
 	@include base-type($font-properties...);
+	@media screen and (max-width: 599px) {
+		font-size: 100%; // 16px
+	}
+	@media screen and (min-width: 800px) {
+		font-size: 125%; // 20px
+	}
+	@media screen and (min-width: 1030px) {
+		font-size: 137.5%; // 22px
+	}
 }
 
 body {
@@ -395,25 +404,26 @@ body {
 
 .wf-loading body {
 	font-family: Georgia, serif;
+	font-weight: normal;
 	visibility: hidden;
 }
 
 .wf-active body {
 	font-family: "ff-meta-serif-web-pro",serif;
+	font-weight: 500;
 	visibility: visible;
 }
 
-// @for $i from 1 through 6 {
-// 	h#{$i} {
-// 		.wf-loading & {
-// 			font-family: sans-serif;
-// 		}
-// 		.wf-active & {
-// 			font-family: "ff-meta-web-pro";
-// 			font-weight: 700;
-// 		}
-// 	}
-// }
+@for $i from 1 through 6 {
+	h#{$i} {
+		.wf-loading & {
+			font-weight: bold;
+		}
+		.wf-active & {
+			font-weight: 700;
+		}
+	}
+}
 
 
 // $H e a d i n g s
@@ -448,7 +458,7 @@ h1 {
 
 h2 {
 	@extend .beta;
- 	@extend %hN;
+	@extend %hN;
 }
 
 h3 {
@@ -730,7 +740,7 @@ h6 {
  */
 
 
- // $Footnotes
+// $Footnotes
 // --------------------------------------------------------------------------
 
 /**

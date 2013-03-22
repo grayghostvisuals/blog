@@ -58,11 +58,11 @@
 </head>
 <!-- body element tag -->
 <?php if ( is_single() ) : ?>
-<body <?php body_class(); ?> id="single">
+	<body <?php body_class( 'wrapper' ); ?> id="single">
 <?php elseif ( is_home() ) : ?>
-<body <?php body_class(); ?> id="index">
+	<body <?php body_class( 'wrapper' ); ?> id="index">
 <?php else : ?>
-<body <?php body_class(); ?> id="<?php the_title(); ?>">
+	<body <?php body_class( 'wrapper' ); ?> id="<?php the_title(); ?>">
 <?php endif; ?>
 
 <header class="branding" role="banner">

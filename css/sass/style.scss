@@ -44,10 +44,20 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // = $Wrapper
 // ------------------------------------------------------------------------------- */
 
+$gutter: 25.5%;
+
 body {
-	border-top: 45px solid gray;
-	max-width: 40em;
-	margin: 0 auto;
+	border-top: 45px solid transparent;
+}
+
+.wrapper {
+	@media screen and (max-width: 599px) {
+		padding: 0 $gutter/3;
+	}
+	@media screen and (min-width: 600px) {
+		max-width: 40em;
+		margin: 0 auto;
+	}
 }
 
 
@@ -95,6 +105,25 @@ body {
 			}
 		}
 	}
+}
+
+
+// ------------------------------------------------------------------------------- */
+// = $Search Form
+// ------------------------------------------------------------------------------- */
+
+#search-form {
+	padding: #{$line-height/2}em 0 #{$line-height}em;
+}
+
+label[for="s"] {
+	@extend .visuallyhidden;
+}
+
+input[name="s"] {
+	@include box-sizing(border-box);
+	padding: #{$line-height/3}em;
+	width: 100%;
 }
 
 
@@ -282,6 +311,14 @@ body {
 // = $Widgets
 // ------------------------------------------------------------------------------- */
 
+#rss {
+	@extend .visuallyhidden;
+}
+
+.widget_tag_cloud {
+	padding: #{$line-height/2}em 0 #{$line-height}em;
+}
+
 #footer-widgets {
 	li {
 		display: inline;
@@ -295,7 +332,7 @@ body {
 
 footer[role="contentinfo"] {
 	p {
-		text-align: center;
+		//text-align: center;
 	}
 }
 
