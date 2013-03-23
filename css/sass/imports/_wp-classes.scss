@@ -239,7 +239,12 @@ img.size-full {
 // $Comment List Author
 // =======================================================
 
-ol.commentlist li.bypostauthor {}
+ol.commentlist li.bypostauthor {
+	.children {
+		background: rgba(255,255,255,0.80);
+		color: #333;
+	}
+}
 
 ol.commentlist li.byuser {}
 
@@ -263,10 +268,12 @@ ol.commentlist li.comment div.vcard cite.fn a.url {}
 // =======================================================
 
 ol.commentlist li.comment div.vcard img.avatar {
+	border-radius: 80%;
 	border: 5px solid #ccc;
 	display: inline-block;
 	margin: 0 1em 1em 0;
 	background: white;
+	box-shadow: inset 0 1px 0px black;
 }
 
 ol.commentlist li.comment div.vcard img.avatar-32 {}
@@ -281,9 +288,14 @@ ol.commentlist li.comment div.vcard img.photo {}
 ol.commentlist li.comment div.vcard span.says {}
 ol.commentlist li.comment div.commentmetadata {}
 
-ol.commentlist li.comment div.comment-meta {}
+ol.commentlist li.comment div.comment-meta {
+	background: maroon;
+	color: #FFF;
+	padding: .5em 5%;
+	text-align: right;
+}
 ol.commentlist li.comment div.comment-meta a {
-	color: #ccc;
+	color: red;
 }
 
 
@@ -292,6 +304,7 @@ ol.commentlist li.comment div.comment-meta a {
 // =======================================================
 
 ol.commentlist li.comment {
+	border-left: 1px dotted red;
 	border-bottom: 1px solid #666;
 	padding: 1em;
 }
@@ -303,7 +316,24 @@ ol.commentlist {
 ol.commentlist li {}
 ol.commentlist li.alt {}
 
-ol.commentlist li.comment .comment-body {}
+ol.commentlist li.comment .comment-body {
+	padding: 5%;
+	position: relative;
+	background: red;
+	color: #FFF;
+	&:before {
+		content: "";
+		width: 0px;
+		height: 0px;
+		display: block;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		border-bottom: 25px solid red;
+		position: absolute;
+		top: -25px;
+		left: 0;
+	};
+}
 
 ol.commentlist li.comment p {
 	margin: 0 0 1em;
@@ -318,7 +348,10 @@ ol.commentlist li.comment ul {
 // $Comment Reply Link
 // =======================================================
 
-ol.commentlist li.comment div.reply {}
+ol.commentlist li.comment div.reply {
+	padding: 5% 0 5%;
+	text-align: right;
+}
 ol.commentlist li.comment div.reply a {}
 
 
@@ -345,16 +378,15 @@ ol.commentlist li.comment ul.children li.comment-author-admin {}
 // =======================================================
 
 ol.commentlist li.even {
-	// background: #fff;
-	// background: rgba(255,255,255,0.20);
+	background: #fff;
+	background: rgba(255,255,255,0.20);
 }
 ol.commentlist li.odd {
-	// background: #f6f6f6;
-	// background: rgba(255,255,255,0.20);
+	background: #f6f6f6;
+	background: rgba(255,255,255,0.20);
 }
-ol.commentlist li.parent {
-	border-left: 2px solid #0094cc;
-}
+
+ol.commentlist li.parent {}
 
 ol.commentlist li.thread-alt {}
 ol.commentlist li.thread-even {}

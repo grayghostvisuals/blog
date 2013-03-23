@@ -3,7 +3,7 @@
 	die('please do not load this page directly kind sir');
 ?>
 
-<section class="comments padding">
+<section class="comments">
 	<?php if ( post_password_required() ) : ?>
 		<p class="nopassword"><b class="ss-icon ss-lock"></b><?php echo( 'This post is password protected. Enter the password to view any comments.' ); ?></p>
 		<?php return; ?>

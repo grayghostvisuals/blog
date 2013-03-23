@@ -125,11 +125,11 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 						<div class="comment-meta commentdata">
 							<div class="says">
 								<?php
-									printf( __('<cite class="fn">%s</cite><span>says:</span>'), get_comment_author_link() );
+									printf( __('<cite class="fn">%s</cite> <span>shouted:</span>'), get_comment_author_link() );
 								?>
 							</div>
 
-							<a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID) ); ?>"><?php printf(__('%1$s at %2&s'), get_comment_date(), get_comment_time()) ?></a>
+							<a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID) ); ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()) ?></a>
 							<?php edit_comment_link( __('(Edit)' ), ' ', ''); ?>
 						</div>
 					</div>
@@ -146,7 +146,6 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 						<?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
 					</div>
 				</div>
-			</li>
 		<?php
 		};
 
