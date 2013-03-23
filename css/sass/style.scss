@@ -52,7 +52,7 @@ body {
 
 .wrapper {
 	@media screen and (max-width: 599px) {
-		padding: 0 $gutter/3;
+		padding: 0 $gutter/7;
 	}
 	@media screen and (min-width: 600px) {
 		max-width: 40em;
@@ -223,7 +223,8 @@ input[name="s"] {
 }
 
 .profile-avatar {
-	border: 2px solid #c0c2c0;
+	border: 6px solid #c0c2c0;
+	border-radius: 80%;
 	width: 168px;
 	background: red;
 	@media screen and (max-width: 39.99em) {
@@ -235,6 +236,7 @@ input[name="s"] {
 		width: auto;
 	}
 	img {
+		border-radius: 80%;
 		display: inline-block;
 	}
 }
@@ -252,28 +254,17 @@ input[name="s"] {
 // = $Comments Layout
 // ------------------------------------------------------------------------------- */
 
-#comments-count {
-		b {
-				font-size: 1.5em;
-		}
-}
+#comments-count {}
 
 #comments-link {
 		display: block;
-
 		b {
 				display: block;
 		}
 }
 
-#commentform {
-	#submit {
-		border: solid 1px transparent;
-		display: block;
-		text-align: center;
-		text-decoration: none;
-		//&:hover {}
-	}
+#comment {
+	width: 100%;
 }
 
 
@@ -293,18 +284,18 @@ input[name="s"] {
 }
 
 .page-numbers {
-	border: .0875em solid #DDD;
 	display: inline-block;
-	padding: .5em 1em;
+	margin: .5em 0;
+	padding: #{$line-height/2}em #{$line-height}em;
+	background: #E7E7E7;
+	border-radius:4px;
+	box-shadow: 0px 1px 1px black, inset 0px 1px 1px #FAA8A8;;
 	&:hover {
 		border-color: #CCC;
 	}
 }
 
-.nxt {
-	position: absolute;
-	right: 0;
-}
+.nxt {}
 
 
 // ------------------------------------------------------------------------------- */
@@ -335,6 +326,7 @@ footer[role="contentinfo"] {
 		//text-align: center;
 	}
 }
+
 
 // ------------------------------------------------------------------------------- */
 // = $Socials

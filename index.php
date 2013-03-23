@@ -14,9 +14,6 @@
 				<?php the_content( '<span class="read-more">...Read More →</span>' ); ?>
 			</div>
 		</article>
-
-		<!-- $Profile -->
-		<?php get_template_part( 'inc/profile' ); ?>
 	<?php endwhile; ?>
 
 	<?php else : ?>

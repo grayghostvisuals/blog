@@ -86,9 +86,4 @@
 
 <?php comments_template(); ?>
 
-<!-- sidebar -->
-<section id="sidebar" role="complementary">
-	<?php get_sidebar(); ?>
-</section>
-
 <?php get_footer(); ?>

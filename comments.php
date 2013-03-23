@@ -35,7 +35,7 @@
 										'callback'          => 'wpflex_comments',
 										'end-callback'      => null,
 										'type'              => 'comment',
-										'reply_text'        => 'shout back <b class="ss-icon">&#x21A9;</b>',
+										'reply_text'        => 'Enlighten Me <b class="ss-icon">&#x21A9;</b>',
 										'page'              => '',
 										'per_page'          => '',
 										'reverse_top_level' => false,
@@ -60,7 +60,17 @@
 	<?php endif; ?>
 
 	<?php if ( comments_open() ) : ?>
-		<?php comment_form(); ?>
+		<?php
+			$commentform_args = array(
+					'comment_notes_after' => '<p>If you\'re leaving code snippets please use this format in your reply...</p>
+<pre><code class="language-markup">&lt;pre&gt;&lt;code class=&quot;language-[markup | sass | css | php | javascript | ruby | clike | bash]&quot;&gt;
+	..code example goes here..
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:<pre><code class="language-markup">&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;strike&gt; &lt;strong&gt;</code></pre></p>'
+								);
+		?>
+		<?php comment_form($commentform_args); ?>
 	<?php endif; ?>
 </section>
 <!-- end /section.comments -->
