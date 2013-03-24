@@ -116,13 +116,13 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 
 			<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 				<div id="comment-<?php comment_ID(); ?>">
-					<div class="comment-author vcard">
+					<div class="comment-vcard">
 						<?php
 							$size='128';
 							echo get_avatar( $comment, $size, $default='');
 						?>
 
-						<div class="comment-meta commentdata">
+						<div class="comment-meta">
 							<div class="says">
 								<?php
 									printf( __('<cite class="fn">❧ %s</cite> <span>shouted:</span>'), get_comment_author_link() );
