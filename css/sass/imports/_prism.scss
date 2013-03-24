@@ -90,7 +90,6 @@ pre[class*="language-"] {
 	color: #5e8cba;
 }
 
-
 .token.regex,
 .token.important {
 	color: #e90;
@@ -104,7 +103,9 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
-// Bash
+
+// ====================================[ Bash ]
+
 .language-bash {
 	color: #f0cd91;
 	.token.operator {

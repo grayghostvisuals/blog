@@ -5,8 +5,9 @@
 
 	<div class="profile-meta">
 		<h3 class="profile-name"><?php the_author(); ?></h3>
+
 		<div class="profile-descr">
-			<p><?php the_author_meta('description'); ?></p>
+			<?php the_author_meta('description'); ?>
 		</div>
 	</div>
 </div>
