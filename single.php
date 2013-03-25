@@ -59,9 +59,9 @@
 						</ul>
 					</li>
 
-					<li class="taxonomycats">
+					<li class="taxonomy-cat">
 						<h6 class="taxonomy-title"><b class="ss-icon">&#x1F4E5;</b>Filed as</h6>
-						<ul class="taxonomies-list">
+						<ul class="taxonomy-list">
 							<li class="taxonomies-item"><?php the_category( '</li><li>' ) ?></li>
 						</ul>
 					</li>
@@ -71,10 +71,10 @@
 
 		<div class="single-pagination">
 			<span class="prev">
-				<?php previous_post_link( '%link', '<span class="ss-icon ss-navigateleft"></span> <span class="visuallyhidden">Previous Category Post</span>', TRUE ); ?>
+				<?php previous_post_link( '%link', '<span class="ss-icon ss-navigateleft"></span><span class="visuallyhidden">Previous Category Post</span>', TRUE ); ?>
 			</span>
 			<span class="nxt">
-				<?php next_post_link( '%link', '<span class="visuallyhidden">Next Category Post</span> <span class="ss-icon ss-navigateright"></span>', TRUE ); ?>
+				<?php next_post_link( '%link', '<span class="visuallyhidden">Next Category Post</span><span class="ss-icon ss-navigateright"></span>', TRUE ); ?>
 			</span>
 		</div>
 	<?php endwhile; ?>
