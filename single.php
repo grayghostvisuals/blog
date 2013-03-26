@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <section id="content" class="clearfix" role="main">
 	<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 		<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -24,8 +23,9 @@
 			<!-- $Ads -->
 			<div class="adverts">
 				<a href="http://referrals.trhou.se/grayghostvisuals" target="_blank"><img src="http://teamtreehouse.com/referral-badge/grayghostvisuals" class="treehouse" height="160"></a>
-				<a href="http://htaccessbook.com/store/?ap_id=ggv61111" target="_blank"><img src="http://htaccessbook.com/wp/wp-content/uploads/2012/08/300x250-htaccess-made-easy.jpg" class="htaccess" alt="" border="0" /></a>
-				<a href='http://www.stickermule.com/unlock?ref_id=2036059601'><img src="http://s3.amazonaws.com/assets.stickermule.com/banners/banner-1.jpg" alt="Custom Stickers, Die Cut Stickers, Bumper Stickers - Sticker Mule" width="200" height="160" border="0"/></a>
+				<a href="http://htaccessbook.com/store/?ap_id=ggv61111" target="_blank"><img src="http://htaccessbook.com/wp/wp-content/uploads/2012/08/300x250-htaccess-made-easy.jpg" class="htaccess" alt="" border="0"></a>
+				<a href='http://www.stickermule.com/unlock?ref_id=2036059601'><img src="http://s3.amazonaws.com/assets.stickermule.com/banners/banner-1.jpg" alt="Custom Stickers, Die Cut Stickers, Bumper Stickers - Sticker Mule" width="200" height="160" border="0"></a>
+				<a href='http://typeplate.com'><img src="<?php echo get_template_directory_uri(); ?>/img/typeplate.png" alt="typeplate, a typographic starter kit for web development and design" width="160" height="160" border="0"></a>
 			</div>
 
 			<!-- $Profile -->
@@ -53,14 +53,14 @@
 
 				<ul id="taxonomies">
 					<li class="taxonomy-tags">
-						<h6 class="taxonomy-title"><b class="ss-icon">&#xE100;</b>Tagged</h6>
+						<h6 class="taxonomy-title"><b class="ss-icon">&#xE100;</b> Tagged</h6>
 						<ul class="taxonomies-list">
 							<li class="taxonomies-item"><?php the_tags( '</li><li>' ); ?></li>
 						</ul>
 					</li>
 
 					<li class="taxonomy-cat">
-						<h6 class="taxonomy-title"><b class="ss-icon">&#x1F4E5;</b>Filed as</h6>
+						<h6 class="taxonomy-title"><b class="ss-icon">&#x1F4E5;</b> Filed as</h6>
 						<ul class="taxonomy-list">
 							<li class="taxonomies-item"><?php the_category( '</li><li>' ) ?></li>
 						</ul>
@@ -83,7 +83,5 @@
 		<p><?php echo ( 'Holy smokes! This is totally crazy. No posts match anything even remotely close to that in our database. Sorry Mon Frere, try again' ); ?></p>
 	<?php endif; ?>
 </section>
-
 <?php comments_template(); ?>
-
 <?php get_footer(); ?>
