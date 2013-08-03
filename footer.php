@@ -1,6 +1,5 @@
 <div class="m-all t-all d-all">
     <footer role="contentinfo">
-        <!-- Comment to Test Hook -->
         <section id="footer-widgets">
             <?php if ( function_exists('dynamic_sidebar') ) : ?>
                 <?php dynamic_sidebar('footer widget') ?>
