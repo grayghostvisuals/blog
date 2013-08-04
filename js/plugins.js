@@ -150,9 +150,7 @@ var _ = self.Prism = {
       return;
     }
 
-    code = code.replace(/&/g, '&amp;').replace(/</g, '&lt;')
-               .replace(/>/g, '&gt;').replace(/\u00a0/g, ' ');
-    //console.time(code.slice(0,50));
+    code = code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/\u00a0/g, ' ');
 
     var env = {
       element: element,
@@ -168,10 +166,12 @@ var _ = self.Prism = {
 
       worker.onmessage = function(evt) {
         env.highlightedCode = Token.stringify(JSON.parse(evt.data), language);
+
+        _.hooks.run('before-insert', env);
+
         env.element.innerHTML = env.highlightedCode;
 
         callback && callback.call(env.element);
-        //console.timeEnd(code.slice(0,50));
         _.hooks.run('after-highlight', env);
       };
 
@@ -182,12 +182,14 @@ var _ = self.Prism = {
     }
     else {
       env.highlightedCode = _.highlight(env.code, env.grammar, env.language)
+
+      _.hooks.run('before-insert', env);
+
       env.element.innerHTML = env.highlightedCode;
 
       callback && callback.call(element);
 
       _.hooks.run('after-highlight', env);
-      //console.timeEnd(code.slice(0,50));
     }
   },
 
@@ -217,7 +219,8 @@ var _ = self.Prism = {
 
       var pattern = grammar[token], 
         inside = pattern.inside,
-        lookbehind = !!pattern.lookbehind || 0;
+        lookbehind = !!pattern.lookbehind,
+        lookbehindLength = 0;
 
       pattern = pattern.pattern || pattern;
 
@@ -240,11 +243,11 @@ var _ = self.Prism = {
 
         if (match) {
           if(lookbehind) {
-            lookbehind = match[1].length;
+            lookbehindLength = match[1].length;
           }
 
-          var from = match.index - 1 + lookbehind,
-              match = match[0].slice(lookbehind),
+          var from = match.index - 1 + lookbehindLength,
+              match = match[0].slice(lookbehindLength),
               len = match.length,
               to = from + len,
             before = str.slice(0, from + 1),
@@ -513,7 +516,7 @@ if (Prism.languages.markup) {
 
 (function(){
 
-if (!window.Prism || !document.querySelector) {
+if (!self.Prism || !self.document || !document.querySelector) {
   return;
 }
 
@@ -542,7 +545,6 @@ Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(f
   xhr.open('GET', src, true);
 
   xhr.onreadystatechange = function() {
-    console.log(xhr.readyState, xhr.status, src);
     if (xhr.readyState == 4) {
 
       if (xhr.status < 400 && xhr.responseText) {
