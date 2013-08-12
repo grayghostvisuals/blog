@@ -29,7 +29,7 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 @import "imports/ss-social";          // social icons
 @import "imports/ss-standard";        // social standard icons
 @import "imports/prism";              // lea verou prism.js syntax highlighter
-
+//@import "imports/typeplate";
 
 
 /*!
@@ -389,16 +389,6 @@ pre {
 code {
     white-space: pre;
     font-family: monospace;
-}
-
-
-// $ P a r a g r a p h s
-// ==========================================================================
-
-p {
-    & + p {
-        @include txt-indent($indent-val); //siblings indentation
-    }
 }
 
 
