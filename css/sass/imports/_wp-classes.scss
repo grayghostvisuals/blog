@@ -312,6 +312,7 @@ ol.commentlist .children li.comment-author-grayghostvisuals .children .reply,
 }
 
 ol.commentlist li.comment {
+  margin: 1em 0;
   padding: .75em 5.35715%;
 }
 
@@ -381,7 +382,9 @@ ol.commentlist li.comment ul.children li.depth-4 {
 //ol.commentlist li.comment ul.children li.odd {}
 
 ol.commentlist li.even {}
-ol.commentlist li.odd {}
+ol.children li.odd {
+  background: #E7E5E5;
+}
 
 ol.commentlist li.comment.odd.alt.depth-2.parent {}
 
@@ -390,12 +393,17 @@ ol.commentlist li.comment.odd.alt.depth-2.parent {}
   border-bottom: 1px solid #CCC;
 }
 
-ol.commentlist li.parent {
+ol.commentlist li.parent,
+ol.commentlist li.comment.depth-1 {
   border-top: 1px solid #CCC;
 }
 
-ol.commentlist .parent .children {
-  padding: .75em 5.35715%;
+// ol.commentlist .parent .children {
+//   padding: .75em 5.35715%;
+// }
+
+ol.commentlist .comment .children .odd.parent:not(.bypostauthor) {
+  background: #F5F0F0;
 }
 
 //ol.commentlist li.thread-alt {}
