@@ -54,6 +54,17 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 		add_filter( 'wp_title', 'wpflex_title_filter' );
 
 
+		/*------------------------------------------------------------------------------------------------[ custom nav menu ] */
+
+		// This will take additonal objects for another custom nav menu
+		//
+		// 'primary' => 'Primary Menu',
+		// 'footer'  => 'Footer Menu'
+		register_nav_menus( array(
+			'primary'   => 'Primary Menu'
+		));
+
+
 		/*------------------------------------------------------------------------------------------------[ wp enque script ] */
 
 		if ( is_singular() ) :
@@ -61,11 +72,25 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 		endif;
 
 
-		/*------------------------------------------------------------------------------------------------[ rss feed ] */
+		/*------------------------------------------------------------------------------------------------[ Theme Support ] */
 
-		//enables post and comment RSS feed links to head
-		//required for theme submission
+		// enables post and comment RSS feed links to head
+		// required for theme submission
 		add_theme_support( 'automatic-feed-links' );
+
+		//enables post-thumbnail support
+		//enables for Posts and "movie" post type but not for Pages
+		add_theme_support( 'post-thumbnails', array( 'post', 'page', 'movie' ) );
+
+		// http://codex.wordpress.org/Function_Reference/add_theme_support#HTML5
+		// Output valid HTML5 for search form, comment form, and comments/
+		add_theme_support( 'html5', array(
+			'comment-list',
+			'comment-form',
+			'search-form',
+			'gallery',
+			'caption'
+		));
 
 
 		/*------------------------------------------------------------------------------------------------[ editor style sheet ] */
@@ -75,10 +100,6 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 
 
 		/*------------------------------------------------------------------------------------------------[ post thumbnails ] */
-
-		//enables post-thumbnail support
-		//enables for Posts and "movie" post type but not for Pages
-		add_theme_support( 'post-thumbnails', array( 'post', 'page', 'movie' ) );
 
 		// set post thumbnail size
 		set_post_thumbnail_size( 700, 450, true );

@@ -1,22 +1,24 @@
 <?php get_header(); ?>
-<section id="content search-page" class="clearfix" role="main">
+<main class="clearfix" id="content" role="main">
 	<header>
 		<h1 class="headline"><b class="ss-icon" data-icon="database">&#xE7A0;</b> Search Results</h1>
 	</header>
 
-	<ul class="">
+	<ul class="entries">
 		<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
-			<li class="entry-item" id="post-<?php the_ID(); ?>">
-				<article <?php post_class('padding entry'); ?>>
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+			<li class="entries__item" id="post-<?php the_ID(); ?>">
+				<article <?php post_class('entry'); ?>>
+					<h1 class="entry__title"><?php the_title(); ?></h1>
+
 					<?php get_template_part( 'inc/meta' ); ?>
+
 					<?php the_content( '<div class="button"><span class="read-more ss-icon">&#x1F440;</span></div>' ); ?>
 				</article>
 			</li>
 		<?php endwhile; ?>
 	</ul>
 	<?php else : ?>
-	<h3 id="thumbsdown"><b class="ss-icon">dislike</b></h3>
+		<h3 id="thumbsdown"><b class="ss-icon">dislike</b></h3>
 		<p><?php echo ( 'Sorry dude &ndash;or&ndash; dudette but your search term(s) didn\'t result in any matches from our sweet, sweet database of knowledge. Please do try refining your search term and/or query again won\'t you pretty please?' ); ?></p>
 	<?php endif; ?>
 
@@ -42,11 +44,9 @@
 		?>
 	</div>
 
-	<!-- sidebar -->
-	<section id="sidebar" class="padding" role="complementary">
+	<div id="sidebar">
 		<?php get_sidebar(); ?>
-	</section>
-
-</section><!-- /end #content -->
+	</div>
+</main>
 
 <?php get_footer(); ?>

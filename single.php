@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<section id="content" class="clearfix" role="main">
+
+<main class="clearfix" id="content" role="main">
 	<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 		<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 			<header>
@@ -8,19 +9,15 @@
 			</header>
 
 			<?php if ( has_post_thumbnail() ) : ?>
-				<figure class="post-thumbnail">
+				<figure class="feat-img post-thumbnail">
 					<?php the_post_thumbnail(); ?>
 				</figure>
 			<?php endif; ?>
 
-			<!-- *optional* remove read more link -->
-			<!-- http://codex.wordpress.org/Customizing_the_Read_More -->
-			<!-- Resolves Issue #4: https://github.com/grayghostvisuals/WP-Flex/issues/4 -->
 			<div class="entry-content">
 				<?php the_content( '<div class="button"><span class="read-more ss-icon ss-view"></span></div>' ); ?>
 			</div>
 
-			<!-- $Ads -->
 			<div class="adverts">
 				<a href="http://referrals.trhou.se/grayghostvisuals" target="_blank"><img src="http://teamtreehouse.com/referral-badge/grayghostvisuals" class="treehouse" height="160"></a>
 				<a href="http://htaccessbook.com/store/?ap_id=ggv61111" target="_blank"><img src="http://htaccessbook.com/wp/wp-content/uploads/2012/08/300x250-htaccess-made-easy.jpg" class="htaccess" alt="" border="0"></a>
@@ -28,20 +25,19 @@
 				<a href='http://typeplate.com'><img src="<?php echo get_template_directory_uri(); ?>/img/typeplate.png" alt="typeplate, a typographic starter kit for web development and design" width="160" height="160" border="0"></a>
 			</div>
 
-			<!-- $Profile -->
 			<?php get_template_part( 'inc/profile' ); ?>
 
 			<?php $wpflex_post_pages = array(
-											'before'           => '<p>' . __('Pages:'),
-											'after'            => '</p>',
-											'link_before'      => '',
-											'link_after'       => '',
-											'next_or_number'   => 'number',
-											'nextpagelink'     => __('Next page'),
-											'previouspagelink' => __('Previous page'),
-											'pagelink'         => '%',
-											'echo'             => 1
-										); ?>
+																		'before'           => '<p>' . __('Pages:'),
+																		'after'            => '</p>',
+																		'link_before'      => '',
+																		'link_after'       => '',
+																		'next_or_number'   => 'number',
+																		'nextpagelink'     => __('Next page'),
+																		'previouspagelink' => __('Previous page'),
+																		'pagelink'         => '%',
+																		'echo'             => 1
+																	); ?>
 
 			<?php wp_link_pages( array( $wpflex_post_pages ) ); ?>
 
@@ -73,6 +69,7 @@
 			<span class="prev">
 				<?php previous_post_link( '%link', '<span class="ss-icon ss-navigateleft"></span><span class="visuallyhidden">Previous Category Post</span>', TRUE ); ?>
 			</span>
+
 			<span class="nxt">
 				<?php next_post_link( '%link', '<span class="visuallyhidden">Next Category Post</span><span class="ss-icon ss-navigateright"></span>', TRUE ); ?>
 			</span>
@@ -82,6 +79,8 @@
 	<?php else : ?>
 		<p><?php echo ( 'Holy smokes! This is totally crazy. No posts match anything even remotely close to that in our database. Sorry Mon Frere, try again' ); ?></p>
 	<?php endif; ?>
-</section>
+</main>
+
 <?php comments_template(); ?>
+
 <?php get_footer(); ?>

@@ -1,12 +1,12 @@
 <div class="profile">
-	<div class="profile-avatar">
+	<div class="profile__avatar">
 		<?php echo get_avatar( get_the_author_meta('ID'), 180 ); ?>
 	</div>
 
-	<div class="profile-meta">
+	<div class="profile__meta">
 		<h3 class="profile-name"><?php the_author(); ?></h3>
 
-		<div class="profile-descr">
+		<div class="profile-desc">
 			<?php the_author_meta('description'); ?>
 		</div>
 	</div>
