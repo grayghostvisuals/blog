@@ -1,0 +1,86 @@
+/*
+ * wp-custom-admin
+ *
+ * Custom Boilerplate CSS for your WordPress Login Form
+ * @since : 1.6
+ *
+ * @authors : chrisvanpatten and grayghostvisuals
+ */
+
+/* Main Body */
+.login {
+	display: flex;
+	background: white;
+}
+
+#login {
+	padding: 0;
+}
+
+
+/* login page links */
+.login #login a {}
+.login #login a:hover {}
+
+
+/* login logo */
+.login h1 {
+	padding-top: 68px;
+}
+.login h1 a {}
+
+
+/* login page primary button */
+.login .button-primary {}
+.login .button-primary:hover {}
+
+#loginform {
+	box-shadow: none;
+}
+#wp-submit {
+	border-radius: 0;
+	border: none;
+}
+
+
+/* login form labels */
+.login label {}
+
+
+/* login page form text and password inputs */
+.login input {}
+.login form input[type="text"] {}
+.login form input[type="password"] {}
+
+
+/* login form notification message */
+.login .message {
+	box-shadow: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	background: beige;
+}
+
+/* login form error message */
+#login  #login_error {
+	box-shadow: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+/*-webkit-transform: translateY(-100%);
+transition: .3s -webkit-transform ease-in-out;*/
+	background: rgb(245, 45, 45);
+	color: whitesmoke;
+}
+
+
+/* login page nav and back to blog links */
+.login #nav {}
+.login #backtoblog {
+	display: none;
+}
