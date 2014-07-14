@@ -6,3 +6,9 @@
 
 # Ignore sass-cache directory
 .sass-cache
+
+# Sourcemaps
+*.*.map
+
+#NPM
+node_modules

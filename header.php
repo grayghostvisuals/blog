@@ -31,7 +31,7 @@
 	<?php elseif ( is_single() ) : ?>
 	<meta name="description" content="<?php esc_attr( wp_title() ) ?>">
 	<?php elseif ( is_archive() ) : ?>
-	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); esc_attr( bloginfo( 'description' ) ) ?>-Archives and Database of all blog entries with front-end web development and design">
+	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); esc_attr( bloginfo( 'description' ) ) ?>-Archives of blog entries on front-end web development and design">
 	<?php elseif ( is_search() ) : ?>
 	<meta name="" content="<?php wp_specialchars( $s ) ?>">
 	<?php else : ?>
@@ -46,15 +46,11 @@
 	<meta name="msapplication-tap-highlight" content="no">
 
 	<link href="https://get.gridsetapp.com/17266/" rel="stylesheet">
-	<link href="<?php bloginfo( 'stylesheet_url' ); ?>?v1.9.38" rel="stylesheet" media="all">
+	<link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" media="all">
 
-	<!-- pingback url -->
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-	<!-- RSS Feed -->
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo( 'rss2_url' ); ?>">
 
-	<!-- Modernizr -->
 	<script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr.js"></script>
 
 	<?php if ( is_singular() ) { wp_enqueue_script( 'comment-reply' ); } ?>
@@ -67,15 +63,13 @@
 		<?php if ( isset( $header ) || $header ) : ?>
 			<div id="header-image">
 				<a href="<?php echo home_url() ?>">
-					<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" usemap="#Map">
+					<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="">
 				</a>
 			</div>
 		<?php endif; ?>
 
 		<h1 class="blogname">
-			<a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark">
-				<?php esc_attr( bloginfo( 'name' ) ); ?>
-			</a>
+			<a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark"><?php esc_attr( bloginfo( 'name' ) ); ?></a>
 		</h1>
 
 		<h2 class="tagline"><?php echo esc_attr( bloginfo( 'description' ) ); ?></h2>

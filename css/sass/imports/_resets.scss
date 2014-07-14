@@ -53,7 +53,7 @@ body { margin: 0; font-size: 1em; line-height: 1.5; }
 //========================================================================== */
 
 a { 
-   @include transition($transition-1: .5s all ease-in-out);
+   @include transition(.5s all ease-in-out);
    font-weight: bold;
 }
 a,
