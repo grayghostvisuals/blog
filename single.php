@@ -3,16 +3,18 @@
 <main class="clearfix" id="content" role="main">
 	<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 		<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+			<?php if ( has_post_thumbnail( $post->ID ) ) : ?>
+				<?php
+					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+					$image = $image[0];
+				?>
+				<div style="background-image: url('<?php echo $image; ?>')"></div>
+			<?php endif; ?>
+
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 				<?php get_template_part( 'inc/meta' ); ?>
 			</header>
-
-			<?php if ( has_post_thumbnail() ) : ?>
-				<figure class="feat-img post-thumbnail">
-					<?php the_post_thumbnail(); ?>
-				</figure>
-			<?php endif; ?>
 
 			<div class="entry-content">
 				<?php the_content( '<div class="button"><span class="read-more ss-icon ss-view"></span></div>' ); ?>
@@ -28,16 +30,17 @@
 			<?php get_template_part( 'inc/profile' ); ?>
 
 			<?php $wpflex_post_pages = array(
-																		'before'           => '<p>' . __('Pages:'),
-																		'after'            => '</p>',
-																		'link_before'      => '',
-																		'link_after'       => '',
-																		'next_or_number'   => 'number',
-																		'nextpagelink'     => __('Next page'),
-																		'previouspagelink' => __('Previous page'),
-																		'pagelink'         => '%',
-																		'echo'             => 1
-																	); ?>
+										'before'           => '<p>' . __('Pages:'),
+										'after'            => '</p>',
+										'link_before'      => '',
+										'link_after'       => '',
+										'next_or_number'   => 'number',
+										'nextpagelink'     => __('Next page'),
+										'previouspagelink' => __('Previous page'),
+										'pagelink'         => '%',
+										'echo'             => 1
+									);
+			?>
 
 			<?php wp_link_pages( array( $wpflex_post_pages ) ); ?>
 
