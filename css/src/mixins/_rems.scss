@@ -1,0 +1,10 @@
+// ============================================================
+// $Rem Font Sizing
+// ============================================================
+
+// Rem Font Size w/px Fallback
+// Example: @include fontSizeRem(18); // 18px is our base in typeplate vars file.
+@mixin fontSizeRem($size, $font-base: $font-base) {
+	font-size: ($size) + px;
+	font-size: ($size / $font-base) + rem;
+}

@@ -1,0 +1,38 @@
+/*
+ * Select Menu Markup
+ * http://codepen.io/grayghostvisuals/pen/GpHmF
+
+<select class="custom-select">
+	<option>Property Closing*</option>
+	<option>open</option>
+	<option>closed</option>
+</select>
+
+ *
+ */
+
+// Custom Select Input
+// ======================================
+
+.custom-select {
+	border: 1px solid #CCC;
+	border-radius: 0;
+	@include appearance(none); // Compass helper
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 10px;
+	width: 100%;
+}
+
+
+// Custom Select Styling for Webkit
+// ======================================
+// Allows us to use a custom arrow and avoid
+// the browsers that dont support it.
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	.custom-select {
+		background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/392/select-arrow.png) 95% 50% no-repeat;
+	}
+}

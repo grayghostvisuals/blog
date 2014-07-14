@@ -1,0 +1,186 @@
+// @requirements
+// ================================================
+// 1. js/plugins/oc-push-menu.js
+// 2. Include Required Markup
+// 3. @import via styles.scss => @import "plugins/oc-push-menu";
+
+/*
+ *
+  <div id="oc-container" class="oc-container">
+    <div class="oc-pusher">
+
+      <div id="oc-trigger">
+        <button id="menu-button" data-effect="oc-push">Menu</button>
+      </div>
+
+      <header role="banner">
+        <h1 class="company-name"></h1>
+
+        <nav id="menu" class="oc-menu oc-push" role="navigation">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="oc-content" role="main">
+        <div class="oc-content-inner">
+          <div class="main">
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </div>
+ *
+ */
+
+
+// Variables
+// ================================================
+// @colors
+// http://chir.ag/projects/name-that-color
+
+$dust-gray: #999999;
+$clear: transparent;
+
+$oc-menu-bg: $dust-gray;
+$oc-overlay-bg: rgba($dust-gray,.5);
+
+$oc-menu-width: 225px;
+$oc-menu-speed: 400ms;
+
+
+
+// Styles
+// ================================================
+
+.oc-container,
+.oc-pusher,
+.oc-content {
+  height: 100%;
+}
+
+.oc-content {
+  overflow-y: scroll;
+}
+
+.oc-content,
+.oc-content-inner {
+  position: relative;
+}
+
+.oc-container {
+  position: relative;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.oc-pusher {
+  height: auto;
+  position: relative;
+  left: 0;
+  transition: transform $oc-menu-speed;
+  z-index: 99;
+
+  // Overlay
+  &::after {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    width: 0;
+    transition: opacity $oc-menu-speed, width 0.1s $oc-menu-speed, height 0.1s $oc-menu-speed;
+    background: $oc-overlay-bg;
+  }
+
+  .oc-menu-open & {
+    &::after {
+      height: 100%;
+      opacity: 1;
+      transition: opacity $oc-menu-speed;
+      width: 100%;
+    }
+  }
+}
+
+.oc-menu {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all $oc-menu-speed;
+  visibility: hidden;
+  width: $oc-menu-width;
+  z-index: 100;
+  background: $oc-menu-bg;
+
+  .oc-menu-open & {
+    &::after {
+      height: 0;
+      opacity: 0;
+      transition: opacity $oc-menu-speed, width 0.1s $oc-menu-speed, height 0.1s $oc-menu-speed;
+      width: 0;
+    }
+  }
+}
+
+
+// Push Effect
+// ================================================
+
+.oc-push {
+  &.oc-menu {
+    transform: translate3d(-100%, 0, 0);
+    &::after {
+      display: none;
+    }
+  }
+
+  &.oc-menu-open {
+    .oc-pusher {
+      transform: translate3d($oc-menu-width, 0, 0);
+    }
+  }
+}
+
+.oc-push.oc-menu-open .oc-push.oc-menu {
+  overflow: scroll;
+  transition: transform $oc-menu-speed;
+  visibility: visible;
+}
+
+
+// Fallbacks
+// ================================================
+
+.no-js {
+  .oc-menu {
+    height: auto;
+    position: static;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    width: 100%;
+    visibility: visible;
+  }
+
+  #oc-trigger {
+    display: none;
+  }
+
+  .oc-pusher {
+    padding-left: 0;
+  }
+}
+
+.no-csstransforms3d {
+  .oc-pusher {
+    padding-left: $oc-menu-width;
+  }
+}

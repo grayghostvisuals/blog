@@ -1,0 +1,24 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "homepage": "",
+  "authors": [
+    "grayghostvisuals <grayghost@grayghostvisuals.com>"
+  ],
+  "description": "",
+  "main": "style.css",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "qunit": "~1.14.0"
+  },
+  "dependencies": {
+    "normalize.scss": "~2.1.3"
+  }
+}

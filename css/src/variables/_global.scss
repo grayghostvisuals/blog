@@ -1,0 +1,60 @@
+// --------------------------------------------------------
+// Grid
+// --------------------------------------------------------
+
+@import "lib/grid";
+
+
+// --------------------------------------------------------
+// Breakpoints
+// http://www.youtube.com/watch?v=lR9lK_K8MDE
+// https://github.com/Team-Sass/breakpoint/wiki
+// --------------------------------------------------------
+
+@import "lib/media-breakpoints";
+
+
+// --------------------------------------------------------
+// Typeplate
+// http://typeplate.com
+// --------------------------------------------------------
+
+@import "lib/typeplate";
+
+
+// --------------------------------------------------------
+// Media Query Helper
+// Supports:
+// min-width, max-width, min-width and max-width
+// --------------------------------------------------------
+
+$viewport-increment: 0.1px;
+$min: min-width;
+$max: max-width;
+
+// Desktop
+$desktop: 1024px; // customize to suite
+$pre-desktop: $desktop - $viewport-increment;
+
+// Tablet
+$tablet: 768px; // customize to suite
+$pre-tablet: $tablet - $viewport-increment;
+
+// Palm
+$palm: 641px; // customize to suite
+$post-palm: $palm + $viewport-increment;
+
+
+// --------------------------------------------------------
+// Container
+// --------------------------------------------------------
+
+$container-max-width: 1024px;
+
+
+// --------------------------------------------------------
+// Link Colors
+// --------------------------------------------------------
+
+$global-anchor-color: blue;
+$global-anchor-color-hover: cyan;

@@ -1,0 +1,169 @@
+// ==========================================================================
+// $Sass Globbing Notes
+// http://fuseinteractive.ca/blog/automatic-sass-imports-sass-globbing
+// ==========================================================================
+
+// @example
+// @import 'layouts/*';
+
+// All partials inside 'layouts' are imported.
+// By default, partials are imported alphabetically.
+// In order to import them in a specific order
+// we can number the partial files like so…
+//
+// _1.layout-small.scss
+// _2.layout-wide.scss
+
+
+// ==========================================================================
+// $Plugins
+// ==========================================================================
+
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+
+
+// ==========================================================================
+// $Compass Sprites
+// http://appendto.com/2014/02/screencast-speed-image-spriting-compass
+// http://compass-style.org/help/tutorials/spriting/magic-selectors
+// http://blog.teamtreehouse.com/the-ecstasy-and-agony-of-compass-sprite-generation-part-1
+// ==========================================================================
+
+// $icons-spacing: 0px; // Increase the spacing between images within the sprite.
+// @import "icons/*.png";
+// @include all-icons-sprites(true); // .icons-[image-file-name] {}
+
+
+// ==========================================================================
+// $Vars
+// ==========================================================================
+
+@import "variables/global";
+
+
+// ==========================================================================
+// $Functions
+// ==========================================================================
+
+// 1. Aspect Ratio
+// 2. Context Calc
+// 3. Strip Units
+
+@import "functions/*";
+
+
+// ==========================================================================
+// $Placeholders
+// ==========================================================================
+
+// 1. Psuedo Content
+// 2. List Styling
+// 3. Highlight
+// 4. Display
+// 5. Vertical Align
+// 5. Font Loader
+
+@import "placeholders/*";
+
+
+// ==========================================================================
+// $Mixins
+// ==========================================================================
+
+// 1.  MediaQuery Helper
+// 2.  Centering
+// 3.  CSS Caret
+// 4.  Rem Font Sizing
+// 5.  Background-Size Polyfill
+// 6.  Vendor Prefix Helper
+// 7.  Keyframe Animations
+// 8.  Container
+// 9.  RGBA
+// 10. Image2x
+// 11. Respond Media Query Helper
+// 12. List Styles
+// 13. FlexEmbed
+// 14. Gradients
+// 15. Input Placeholders
+// 16. Size
+// 17. Offset Position
+// 18. Flexbox
+// 19. Font Icon Smoothing
+
+@import "mixins/*";
+
+
+// ==========================================================================
+// $Bower Packages
+// ==========================================================================
+
+// 1. Normalize.scss @Since v2.1.3
+// 2. Typeplate.scss @Since v1.1.2
+
+// @import "../../bower_components/normalize.scss/normalize"; // 1
+// @import "../../bower_components/typeplate/scss/typeplate"; // 2
+
+
+// ==========================================================================
+// $Base
+// ==========================================================================
+
+@import "utility/base";
+
+
+// ==========================================================================
+// $Typography
+// ==========================================================================
+
+@import "typography/typesetting";
+
+
+// ==========================================================================
+// $Layout
+// ==========================================================================
+
+// 1. Singularity Grid System
+// 2. Containers
+
+@import "layout/**/*";
+
+
+// ==========================================================================
+// $Plugins
+// ==========================================================================
+
+
+// ==========================================================================
+// $Modules
+// ==========================================================================
+
+
+// ==========================================================================
+// $Templates
+// ==========================================================================
+
+// 1. Home
+
+@import "templates/*";
+
+
+// ==========================================================================
+// $States
+// ==========================================================================
+
+
+// ==========================================================================
+// $Helpers
+// ==========================================================================
+
+@import "utility/helpers";
+
+
+// ==========================================================================
+// $Print
+// Inlined to avoid required HTTP connection: h5bp.com/r
+// ==========================================================================
+
+@import "utility/print";

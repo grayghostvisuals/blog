@@ -1,0 +1,105 @@
+// ==========================================================================
+//    Base styles: opinionated defaults
+// ==========================================================================
+// HTML5 Boilerplate
+//
+// What follows is the result of much research on cross-browser styling.
+// Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+// Kroc Camen, and the H5BP dev community and team.
+
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+// Remove text-shadow in selection highlight: h5bp.com/i
+// These selection rule sets have to be separate.
+// Customize the background color to match your design.
+::-moz-selection {
+	@extend %highlight;
+}
+
+::selection {
+	@extend %highlight;
+}
+
+
+// A better looking default horizontal rule
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+
+// Remove the gap between images, videos, audio and canvas and the bottom of
+// their containers: h5bp.com/i/440
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}
+
+
+// Remove default fieldset styles.
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+
+// Allow only vertical resizing of textareas.
+textarea {
+	resize: vertical;
+}
+
+
+// ============================================================
+// $Custom Base Styles
+// ============================================================
+
+// Box sizing FTW!
+* {
+	@include box-sizing(border-box);
+
+	&:before,
+	&:after {
+		@include box-sizing(border-box);
+	}
+}
+
+// Reset Margin & Padding for Digital Canvas
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+// Fluid Images
+// http://alistapart.com/article/fluid-images
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+// Global Links
+a {
+	// Compass Helper Function
+	// link-colors($normal, $hover, $active, $visited, $focus)
+	@include link-colors($global-anchor-color, $global-anchor-color-hover, $global-anchor-color-hover, $global-anchor-color, $global-anchor-color);
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

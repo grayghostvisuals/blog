@@ -1,0 +1,23 @@
+// ============================================================
+// Media Query Helper
+// ============================================================
+
+// Variables : css/src/variables/_vars-global.scss
+// Syntax & Accepted Values :
+// @include mediaQuery([$min, $max, null], [$desktop, $pre-desktop, $tablet, $pre-tablet, $palm, $post-palm]) {}
+
+@mixin mediaQuery($constraint, $viewport1, $viewport2: null) {
+	@if $constraint == $min {
+		@media screen and ($min: $viewport1) {
+			@content;
+		}
+	} @else if $constraint == $max {
+		@media screen and ($max: $viewport1) {
+			@content;
+		}
+	} @else {
+		@media screen and ($min: $viewport1) and ($max: $viewport2) {
+			@content;
+		}
+	}
+}

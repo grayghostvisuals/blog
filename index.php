@@ -11,6 +11,14 @@
 				<?php get_template_part( 'inc/meta' ); ?>
 			</header>
 
+			<?php if ( has_post_thumbnail( $post->ID ) ) : ?>
+				<?php
+					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+					$image = $image[0];
+				?>
+				<div style="background-image: url('<?php echo $image; ?>')"></div>
+			<?php endif; ?>
+
 			<div class="entry-content">
 				<?php the_content( '<span class="read-more">...Read More →</span>' ); ?>
 			</div>

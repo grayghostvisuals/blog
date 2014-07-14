@@ -241,6 +241,18 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 		add_filter( 'login_headertitle', 'my_login_imgtitle');
 
 
+		/**
+		* function my_admin_footer
+		* Rewrite the text in the bottom-left footer area
+		*
+		* @since 1.0
+		*/
+		function my_admin_footer() {
+		echo 'Built by <a href="#">Gray Ghost Visuals</a> with <a href="http://wordpress.org">WordPress</a>. &bull; <a href="' . admin_url('freedoms.php') . '">Freedoms</a> &bull; <a href="' . admin_url('credits.php') . '">Credits</a>';
+		}
+		add_filter('admin_footer_text', 'my_admin_footer');
+
+
 		/*------------------------------------------------------------------------------------------------[ admin dashboard ] */
 
 		/**
@@ -252,14 +264,11 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 		function my_remove_dashboard_widgets() {
 			// Left column
 			remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
-			//remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );
 			remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );
-			//remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );
 
 			// Right column
 			remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
 			remove_meta_box( 'dashboard_recent_drafts', 'dashboard', 'side' );
-			//remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );
 			remove_meta_box( 'dashboard_secondary', 'dashboard', 'side' );
 		}
 		add_action('wp_dashboard_setup', 'my_remove_dashboard_widgets' );
@@ -275,7 +284,7 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 
 			wp_widget_rss_output( array(
 				'url'          => 'http://blog.grayghostvisuals.com/feed/',
-				'title'        => 'Widget Title',
+				'title'        => 'RSS Feed',
 				'items'        => 2, // Number of items to display
 				'show_summary' => 1, // Boolean: show article excerpt
 				'show_author'  => 1, // Boolean: show article author
@@ -292,7 +301,7 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 		 * @author chrisvanpatten
 		 */
 		function my_blog_rss_widget() {
-			add_meta_box( 'my-blog-rss', 'Widget Title', 'my_blog_rss_output', 'dashboard', 'side', 'high' );
+			add_meta_box( 'my-blog-rss', 'RSS Feed', 'my_blog_rss_output', 'dashboard', 'side', 'high' );
 		}
 		add_action('wp_dashboard_setup', 'my_blog_rss_widget');
 

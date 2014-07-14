@@ -1,0 +1,27 @@
+// ============================================================
+// $List Style Variations
+// ============================================================
+
+%unordered {
+	list-style-position: outside; 
+	list-style-type: disc;
+}
+
+%unordered-inside {
+	list-style-position: inside; 
+	list-style-type: disc;
+}
+
+%ordered {
+	list-style-position: outside; 
+	list-style-type: decimal;
+}
+
+%ordered-inside {
+	list-style-position: inside; 
+	list-style-type: decimal;
+}
+
+%nobullet {
+	list-style-type: none;
+}

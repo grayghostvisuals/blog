@@ -1,3 +1,8 @@
+require 'sass-globbing'
+require 'singularitygs'
+require 'breakpoint'
+
+
 # Require any additional compass plugins here.
 #
 # use the absolute path to the plugin
@@ -14,7 +19,7 @@ http_path = "/"
 http_images_path = "http://static.grayghostvisuals.com/imgblog"
 
 css_dir = "/"
-sass_dir = "css/sass"
+sass_dir = "css/src"
 images_dir = "img"
 javascripts_dir = "js"
 

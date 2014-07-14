@@ -42,7 +42,7 @@ module.exports = function(grunt) {
             },
 
             sass: {
-                files: ['css/sass/**/*.scss'],
+                files: ['css/src/**/*.scss'],
                 tasks: ['compass:dist']
             },
 
@@ -316,7 +316,7 @@ module.exports = function(grunt) {
 
 
     // Development
-    grunt.registerTask('default', ['connect', 'watch']);
+    grunt.registerTask('default', ['watch']);
     grunt.registerTask('hint', ['jshint']);
     grunt.registerTask('test', ['qunit']);
 
