@@ -1,0 +1,35 @@
+<footer class="entry-footer">
+	<?php get_template_part( 'inc/meta' ); ?>
+	<?php get_template_part( 'inc/profile' ); ?>
+
+	<?php $wpflex_post_pages = array(
+								'before'           => '<p>' . __('Pages:'),
+								'after'            => '</p>',
+								'link_before'      => '',
+								'link_after'       => '',
+								'next_or_number'   => 'number',
+								'nextpagelink'     => __('Next page'),
+								'previouspagelink' => __('Previous page'),
+								'pagelink'         => '%',
+								'echo'             => 1
+							);
+	?>
+
+	<?php wp_link_pages( array( $wpflex_post_pages ) ); ?>
+
+	<ul id="taxonomies">
+		<li class="taxonomy-tags">
+			<h6 class="taxonomy-title">Tagged</h6>
+			<ul class="taxonomies-list">
+				<?php the_tags( '</li><li class="taxonomies-item">' ); ?>
+			</ul>
+		</li>
+
+		<li class="taxonomy-cat visuallyhidden">
+			<h6 class="taxonomy-title">Filed as</h6>
+			<ul class="taxonomy-list">
+				<?php the_category( '</li><li class="taxonomies-item">' ) ?>
+			</ul>
+		</li>
+	</ul>
+</footer>

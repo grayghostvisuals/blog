@@ -1,18 +1,27 @@
 <?php get_header(); ?>
 
 <main class="clearfix" id="content" role="main">
+	<?php global $more; ?>
 	<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
 				<h1 class="entry-title">
-					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					<?php the_title(); ?>
 				</h1>
 			</header>
 
 			<div class="entry-content">
-				<?php the_content( '<span class="read-more">...Read More →</span>' ); ?>
+				<?php $more = 1; ?>
+				<?php the_content(); ?>
 			</div>
+
+			<?php get_template_part( 'inc/entry-footer' ); ?>
 		</article>
+
+		<?php
+			$withcomments = "1"; // Display comments on front page
+			comments_template();
+		?>
 	<?php endwhile; ?>
 
 	<?php else : ?>
