@@ -133,13 +133,13 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 		// Digging into WordPress
 
 		function wpflex_comments( $comment, $args, $depth ) {
-			$GLOBALS['comment'] = $comment; ?>
+			$GLOBALS['comment'] = $comment;
+			extract($args, EXTR_SKIP); ?>
 
 			<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 				<div class="comment-vcard">
 					<?php
-						$size='128';
-						echo get_avatar( $comment, $size, $default='');
+						echo get_avatar( $comment, $args['avatar_size']);
 					?>
 
 					<div class="comment-meta">
@@ -165,7 +165,11 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 				</div>
 
 				<div class="reply">
-					<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+					<?php comment_reply_link( array_merge( $args, array(
+																	'depth' 	=> $depth,
+																	'max_depth' => $args['max_depth']
+																	)));
+					?>
 				</div>
 		<?php };
 

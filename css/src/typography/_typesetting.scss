@@ -1,0 +1,28 @@
+// $Typekit
+// --------------------------------------------------------------------------
+
+body {
+    .wf-active & {
+        font-family: "ff-meta-serif-web-pro",serif;
+        font-weight: 500;
+        visibility: visible;
+    }
+
+    .wf-loading {
+        font-family: Georgia, serif;
+        font-weight: normal;
+        visibility: hidden;
+    }
+}
+
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        .wf-loading & {
+            font-weight: bold;
+        }
+        .wf-active & {
+            font-weight: 700;
+        }
+    }
+}

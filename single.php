@@ -11,57 +11,45 @@
 				<div style="background-image: url('<?php echo $image; ?>')"></div>
 			<?php endif; ?>
 
-			<header>
+			<header class="entry-header">
 				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<?php get_template_part( 'inc/meta' ); ?>
 			</header>
 
 			<div class="entry-content">
-				<?php the_content( '<div class="button"><span class="read-more ss-icon ss-view"></span></div>' ); ?>
+				<?php the_content(); ?>
 			</div>
-
-			<div class="adverts">
-				<a href="http://referrals.trhou.se/grayghostvisuals" target="_blank"><img src="http://teamtreehouse.com/referral-badge/grayghostvisuals" class="treehouse" height="160"></a>
-				<a href="http://htaccessbook.com/store/?ap_id=ggv61111" target="_blank"><img src="http://htaccessbook.com/wp/wp-content/uploads/2012/08/300x250-htaccess-made-easy.jpg" class="htaccess" alt="" border="0"></a>
-				<a href='http://www.stickermule.com/unlock?ref_id=2036059601'><img src="http://s3.amazonaws.com/assets.stickermule.com/banners/banner-1.jpg" alt="Custom Stickers, Die Cut Stickers, Bumper Stickers - Sticker Mule" width="200" height="160" border="0"></a>
-				<a href='http://typeplate.com'><img src="<?php echo get_template_directory_uri(); ?>/img/typeplate.png" alt="typeplate, a typographic starter kit for web development and design" width="160" height="160" border="0"></a>
-			</div>
-
-			<?php get_template_part( 'inc/profile' ); ?>
-
-			<?php $wpflex_post_pages = array(
-										'before'           => '<p>' . __('Pages:'),
-										'after'            => '</p>',
-										'link_before'      => '',
-										'link_after'       => '',
-										'next_or_number'   => 'number',
-										'nextpagelink'     => __('Next page'),
-										'previouspagelink' => __('Previous page'),
-										'pagelink'         => '%',
-										'echo'             => 1
-									);
-			?>
-
-			<?php wp_link_pages( array( $wpflex_post_pages ) ); ?>
 
 			<footer class="entry-footer">
-				<div id="comments-count">
-					<h6 class="taxonomy-title"><b class="ss-icon">&#x1F3A4;</b></h6>
-					<a href="<?php comments_link(); ?>" id="comments-link"><span id="comments-number"><?php comments_number( '0', '1', '%' ); ?></span> Comments</a>
-				</div>
+				<?php get_template_part( 'inc/meta' ); ?>
+				<?php get_template_part( 'inc/profile' ); ?>
+
+				<?php $wpflex_post_pages = array(
+											'before'           => '<p>' . __('Pages:'),
+											'after'            => '</p>',
+											'link_before'      => '',
+											'link_after'       => '',
+											'next_or_number'   => 'number',
+											'nextpagelink'     => __('Next page'),
+											'previouspagelink' => __('Previous page'),
+											'pagelink'         => '%',
+											'echo'             => 1
+										);
+				?>
+
+				<?php wp_link_pages( array( $wpflex_post_pages ) ); ?>
 
 				<ul id="taxonomies">
 					<li class="taxonomy-tags">
-						<h6 class="taxonomy-title"><b class="ss-icon">&#xE100;</b> Tagged</h6>
+						<h6 class="taxonomy-title">Tagged</h6>
 						<ul class="taxonomies-list">
-							<li class="taxonomies-item"><?php the_tags( '</li><li>' ); ?></li>
+							<?php the_tags( '</li><li class="taxonomies-item">' ); ?>
 						</ul>
 					</li>
 
-					<li class="taxonomy-cat">
-						<h6 class="taxonomy-title"><b class="ss-icon">&#x1F4E5;</b> Filed as</h6>
+					<li class="taxonomy-cat visuallyhidden">
+						<h6 class="taxonomy-title">Filed as</h6>
 						<ul class="taxonomy-list">
-							<li class="taxonomies-item"><?php the_category( '</li><li>' ) ?></li>
+							<?php the_category( '</li><li class="taxonomies-item">' ) ?>
 						</ul>
 					</li>
 				</ul>

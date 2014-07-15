@@ -1,3 +1,28 @@
+/*!
+Theme Name: Gray Ghost Visuals Press
+Theme URI: http://blog.grayghostvisuals.com
+Description: Exploring Front-end Web Development and Design using Wordpress, WP-Flex Boilerplate, HTML5 Boilerplate, Gridset and Symbolset
+
+Author: Gray Ghost Visuals Press
+Author URI: http://blog.grayghostvisuals.com
+
+Version: 2.0.0
+Tags: full-width-template, flexible-width, microformats, sticky-post, front-page-post-form, sticky-post, threaded-comments, post-formats, light
+
+Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
+*/
+
+// Video Tut for Wavy Outline on Badge
+// http://layersmagazine.com/making-a-wavy-edge-using-the-transform-tool.html
+
+
+// Grid Layout Specs
+// Gutters should always be odd. They should always be bigger than you
+// think you need. 20px is way too narrow.
+//
+// Constant : Ad Sizes = 200px x 160px = 200 / 4 = 50
+
+
 // ==========================================================================
 // $Sass Globbing Notes
 // http://fuseinteractive.ca/blog/automatic-sass-imports-sass-globbing
@@ -100,10 +125,9 @@
 // ==========================================================================
 
 // 1. Normalize.scss @Since v2.1.3
-// 2. Typeplate.scss @Since v1.1.2
 
-// @import "../../bower_components/normalize.scss/normalize"; // 1
-// @import "../../bower_components/typeplate/scss/typeplate"; // 2
+@import "../../bower_components/normalize.scss/normalize";
+// @import "../../bower_components/typeplate/scss/typeplate";
 
 
 // ==========================================================================
@@ -111,6 +135,7 @@
 // ==========================================================================
 
 @import "utility/base";
+@import "utility/wp-classes";
 
 
 // ==========================================================================
@@ -129,10 +154,132 @@
 
 @import "layout/**/*";
 
+.meta-data {
+    display: inline-block;
+    padding: #{$line-height/2}em 0;
+}
+
+#article-links {
+    list-style-type: none;
+    padding: 0;
+
+    b[class="ss-icon"] {
+        display: inline-block;
+        margin-right: #{$line-height/2}em;
+    }
+}
+
+#comments-link {
+    font-style: italic;
+}
+
+.profile {
+    @media screen and (min-width: 40em) {
+        overflow: auto;
+        padding: #{$line-height/2}em 0;
+    }
+}
+
+.profile-name {
+    @media screen and (max-width: 39.99em) {
+        margin: #{$line-height/2}em auto auto;
+        text-align: center;
+    }
+}
+
+.profile-avatar {
+    border: 6px solid #c0c2c0;
+    border-radius: 80%;
+    width: 168px;
+    background: red;
+    @media screen and (max-width: 39.99em) {
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 40em) {
+        float: left;
+        margin-right: #{$line-height/2}em;
+        width: auto;
+    }
+    img {
+        border-radius: 80%;
+        display: inline-block;
+    }
+}
+
+.profile-meta {
+    b {
+        display: block;
+        margin: #{$line-height/2}em auto;
+        font-weight: 400;
+    }
+}
+
+#comments-count {}
+
+#comments-link {
+    display: block;
+}
+
+#comment {
+    width: 100%;
+}
+
+.pagination {
+    padding: #{$line-height/2}em 0 #{$line-height}em;
+    background: rgba(255,255,255,.5);
+
+    .page-numbers.current {
+        border-color: #CCC;
+        background: #FFF;
+        color: maroon;
+    }
+}
+
+.page-numbers {
+    display: inline-block;
+    margin: .5em 0;
+    padding: #{$line-height/2}em #{$line-height}em;
+    background: #E7E7E7;
+    border-radius:4px;
+    box-shadow: 0px 1px 1px black, inset 0px 1px 1px #FAA8A8;;
+    &:hover {
+        border-color: #CCC;
+    }
+}
+
+.nxt {}
+
+#rss {
+    @extend .visuallyhidden;
+}
+
+.widget_tag_cloud {
+    padding: #{$line-height/2}em 0 #{$line-height}em;
+}
+
+#footer-widgets {
+    li {
+        display: inline;
+    }
+}
+
+.widget_recent_entries {
+    ul {
+        li {
+            &:after {
+                content: "❦";
+                display: inline-block;
+            }
+        }
+    }
+}
+
 
 // ==========================================================================
 // $Plugins
 // ==========================================================================
+
+@import 'plugins/prism';
 
 
 // ==========================================================================

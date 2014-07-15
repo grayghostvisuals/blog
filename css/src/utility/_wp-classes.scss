@@ -1,8 +1,18 @@
-// =WordPress Required - Generated Core Classes
-//  http://codex.wordpress.org/CSS#WordPress_Generated_Classes
-//------------------------------------------------------------------------------- //
+/* =============================================================================
+   Required WordPress Styles
+   ========================================================================== */
 
-//.sticky {}
+/*
+* WordPress Required
+*
+* @since 1.0.6
+* Generated Core Classes
+* Each Theme should have these or similar styles in its style.css file
+* in order to display images and captions properly.
+* http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+*/
+
+.sticky {}
 
 .alignnone {
 	margin: 5px 20px 20px 0;
@@ -24,28 +34,30 @@
 }
 
 .aligncenter {
+	clear: both;
 	display: block;
 	margin: 5px auto 5px auto;
 }
 
-a img.alignright {
+.alignright {
 	float:right;
 	margin: 5px 0 20px 20px;
 }
 
-a img.alignnone {
+.alignnone {
+	clear: both;
 	margin: 5px 20px 20px 0;
 }
 
-a img.alignleft {
+.alignleft {
 	float:left;
 	margin: 5px 20px 20px 0;
 }
 
-a img.aligncenter {
+.aligncenter {
 	display: block;
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
 }
 
 .wp-caption {
@@ -84,82 +96,83 @@ a img.aligncenter {
 	padding:0 4px 5px;
 }
 
-//.gallery-caption {}
+.gallery-caption {}
 
-/* stops too many categories from breaking layout */
-.tags,
-.cats {
-	ul li {
-		display: inline;
-	}
+
+/*
+* stops too many categories from breaking the layout
+*/
+.entry-tags-list li,
+.entry-categories-list li {
+	display: inline-block;
 }
 
 
-/* =WordPress - Additional Styling Classes
-	http://codex.wordpress.org/CSS#WordPress_Generated_Classes
-------------------------------------------------------------------------------- */
+.bypostauthor {}
 
-/**** Wordpress Fluid Images */
+
+
+/* =============================================================================
+   WordPress Generated - Extra Styling Classes for Authors
+   http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+/* Fluid Images For Wordpress */
 img[class*="align"],
 img[class*="wp-image-"] {
-	/* Make sure images with WordPress-added height and width attributes are scaled correctly */
-	height: auto
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
 }
 
 .wp-caption,
 .wp-caption img {
-	max-width: 100%
+	max-width: 100%;
 }
 
 img.size-full {
 	max-width: 100%;
-	/* Prevent stretching of full-size images with height and width attributes in IE8 */
-	width: auto
+	width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
 }
-/**** END Wordpress Fluid Images */
+
+
+.cat-item {}
+.cat-item.current-cat {}
+
+.cat-item a:hover {}
+.cat-item.current-cat a:hover {}
+
+.cat-item a {}
+.cat-item.current-cat a {}
+
+
 .entry-content img.wp-smiley {
 	border: none;
 	margin-bottom: 0;
 	margin-top: 0;
-	padding: 0
-}
-
-/* widget styling */
-//.widget {}
-
-
-/* WP POST THUMBNAILS */
-//img.wp-post-image {}
-//img.attachment-thumbnail {}
-//img.attachment-medium {}
-//img.attachment-large {}
-//img.attachment-full {}
-
-/* WP TAGS AND CATEGORIES */
-#taxonomies {
-	list-style-type: none;
 	padding: 0;
 }
-.tags ul,
-.cats ul {
-	padding: 0;
-}
-//.tags {}
-//.cats {}
-
-/* WP 404 ERRORS */
-//.error404 {}
 
 
-/* WP PAGE CONTENT */
-//.more-link {}
-//.posttitle {}
+.widget {}
 
-/* WP PAGINATION */
-//a.page-numbers {}
-//a.prev.page-numbers {}
-//a.next.page-numbers {}
 
+.wp-post-image {}
+.attachment-thumbnail {}
+.attachment-medium {}
+.attachment-large {}
+.attachment-full {}
+
+
+.error404 {}
+
+
+.more-link {}
+.posttitle {}
+
+
+
+/* =============================================================================
+   WordPress Comments
+   ========================================================================== */
 
 /*
 * 2.0 Comment Styling Classes
@@ -169,11 +182,6 @@ img.size-full {
 * http://css-tricks.com/snippets/wordpress/base-threaded-comments-styling
 */
 
-// =======================================================
-// $Comment List
-// =======================================================
-
-/* comments list reset */
 .commentlist,
 .commentlist ul,
 .commentlist .children {
@@ -186,17 +194,11 @@ img.size-full {
 	padding: 1.65em 0 0;
 }
 
-
-// =======================================================
-// $Comment Globals
-// =======================================================
-
 .comment {
-	//padding: #{$line-height/2}em #{$line-height/2}em 0;
 	@media screen and (min-width: 78.75em) {
 		position: relative;
 	}
-	// avatar
+
 	.avatar {
 		display: block;
 		border-radius: 80%;
@@ -204,7 +206,7 @@ img.size-full {
 		display: inline-block;
 		margin: 0 1em 1em 0;
 		background: white;
-		// media query 78.775em
+
 		@media screen and (min-width: 78.75em) {
 			border-radius: 80%;
 			border: 6px solid #FA0000;
@@ -217,7 +219,7 @@ img.size-full {
 			margin-top: 18px;
 		}
 	}
-	// Comment Meta
+
 	.comment-meta {
 		background: #140202;
 		color: #FFF;
@@ -225,7 +227,7 @@ img.size-full {
 		font-size: small;
 		text-align: right;
 	}
-	// Comment Body
+
 	.comment-body {
 		padding: 5%;
 		position: relative;
@@ -243,7 +245,7 @@ img.size-full {
 			top: -25px;
 			left: 0;
 		};
-		// Blockquotes
+
 		blockquote {
 			border-left: 6px solid #000;
 			p {
@@ -251,7 +253,7 @@ img.size-full {
 			}
 		}
 	}
-	// Comment Text
+
 	.comment-text {
 		p {
 			& + p {
@@ -274,7 +276,7 @@ img.size-full {
 			}
 		}
 	}
-	// Comment Reply Link
+
 	.reply {
 		padding: #{$line-height/2}em 0;
 		text-align: right;
@@ -287,8 +289,8 @@ img.size-full {
 			margin-left: -50px;
 			content: "";
 			display: block;
-			width: 164px;
-			height: 164px;
+			width: 132px;
+			height: 132px;
 			background: transparent;
 			position: absolute;
 			z-index: 0;
@@ -296,23 +298,19 @@ img.size-full {
 			top: 0px;
 			left: -137px;
 			border: 6px solid #FA0000;
+			background: rgb(46, 44, 44);
 		}
 	}
 }
 
-
-// =======================================================
-// $Comment Admin
-// =======================================================
-
 .comment.bypostauthor {
-	// comment vCard
+
 	>	.comment-vcard {
 			.comment-meta {
 				background: maroon;
 			}
 		}
-	// Comment body
+
 	> .comment-body {
 		background: #000;
 		&:before {
@@ -326,7 +324,7 @@ img.size-full {
 			position: absolute;
 			top: -25px;
 			left: 0;
-			// comment text
+
 			.comment-text {
 				h3 { color: maroon; }
 				a { color: orange; }
@@ -335,28 +333,13 @@ img.size-full {
 	}
 }
 
-
-// =======================================================
-// $Comment Depth
-// =======================================================
-
 .comment.depth-1 {
-	border-bottom: 6px dotted rgba(10, 10, 10, 0.1);
-	margin-bottom: 1.65em;
+	border-bottom: 3px dotted rgba(10, 10, 10, 0.1);
+	margin-bottom: 3em;
 }
 
-
-// =======================================================
-// $Comment Even/Odd
-// =======================================================
-
-//ol.commentlist li.comment.even {}
-//ol.commentlist li.comment.odd {}
-
-
-// =======================================================
-// $Comment Children
-// =======================================================
+ol.commentlist li.comment.even {}
+ol.commentlist li.comment.odd {}
 
 .comment {
 	.children {
@@ -377,22 +360,9 @@ img.size-full {
 	}
 }
 
-
-// =======================================================
-// $Comment Thread
-// =======================================================
-
-.comment.thread-alt {
-	// background: #F3F3F3;
-	// box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.14);
-}
-//.comment.thread-even {}
-//.comment.thread-odd {}
-
-
-// =======================================================
-// $Comment Children Depth
-// =======================================================
+.comment.thread-alt {}
+.comment.thread-even {}
+.comment.thread-odd {}
 
 ol.commentlist li.comment ul.children li.depth-1 {
 	background: red;
@@ -407,11 +377,6 @@ ol.commentlist li.comment ul.children li.depth-4 {
 	margin: 0 0 .25em .25em;
 }
 ol.commentlist li.comment ul.children li.depth-5 {}
-
-
-// =======================================================
-// $Comment Form
-// =======================================================
 
 #commentform {
 	width: 100%;
@@ -428,11 +393,9 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 		text-align: center;
 		text-decoration: none;
 		padding: #{$line-height/2}em;
-		//&:hover {}
 	}
 }
 
-// form allowed tags
 .form-allowed-tags {
 	code {
 		display: block;
@@ -441,13 +404,6 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 	}
 }
 
-
-// =======================================================
-// $Comment Moderation
-// =======================================================
-
-// moderation response text class provided via comments.php line#48
-// no user comments styling class provided via comments.php line#69
 .moderating,
 .nocomments {
 	color: red;
@@ -455,25 +411,34 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 	text-shadow: none;
 }
 
-/*
- * response form container
- * keep this consistent for comment form
- * everytime a user clicks reply to a thread
- * the comment form that appears contains these very
- * styles defined below
- *
- */
 #respond {
 	padding: #{$line-height}em 0;
 }
-//#reply-title {}
 
 
-// =======================================================
-// $Comment Pagination
-// =======================================================
-
-// comments pagination
-//div.comment-pagination {}
-//span.prev-comments-link {}
-//span.nxt-comments-link {}
+/* =============================================================================
+   WP-Flex Custom Styles
+   ========================================================================== */
+/**
+* WP-Flex Styling Modules
+*
+* Use these custom Classes as helpers for your styling needs and based on
+* the classes written by this theme. These are not provided by WordPress
+*/
+.blogname {}
+.tagline {}
+.menu {}
+.page-title{}
+.entry-title {}
+.meta {}
+.entry-footer {}
+.comments-count {}
+.comments-count-number {}
+.entry-taxonomies {}
+.entry-tags-list {}
+.entry-tags {}
+.entry-categories-list {}
+.entry-categories {}
+.pagination {}
+.pagination.single {}
+#sidebar {}

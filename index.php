@@ -7,17 +7,7 @@
 				<h1 class="entry-title">
 					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 				</h1>
-
-				<?php get_template_part( 'inc/meta' ); ?>
 			</header>
-
-			<?php if ( has_post_thumbnail( $post->ID ) ) : ?>
-				<?php
-					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-					$image = $image[0];
-				?>
-				<div style="background-image: url('<?php echo $image; ?>')"></div>
-			<?php endif; ?>
 
 			<div class="entry-content">
 				<?php the_content( '<span class="read-more">...Read More →</span>' ); ?>
@@ -29,9 +19,10 @@
 		<p><?php echo ( 'Holy Shit! This is totally cray cray brochacho! No posts match anything even remotely close to that in this database. Sorry Mon Frere, try again' ); ?></p>
 	<?php endif; ?>
 
-	<div class="pagination">
-		<?php posts_nav_link(); ?>
-	</div>
+	<ul class="pagination list-reset">
+		<li><?php previous_posts_link('&laquo; Previous Entry') ?></li>
+		<li><?php next_posts_link('Next Entry &raquo;','') ?></li>
+	</ul>
 </main>
 
 <?php get_footer(); ?>
