@@ -1,21 +1,19 @@
 <?php global $more; ?>
 <?php get_header(); ?>
-
 <main class="clearfix" id="content" role="main">
 	<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<?php if ( has_post_thumbnail( $post->ID ) ) : ?>
-				<?php
-					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-					$image = $image[0];
-				?>
-				<div class="bg--featimg" style="background-image: url('<?php echo $image; ?>')"></div>
+			<?php
+				$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+				$image = $image[0];
+			?>
+			<div class="featimg--bg" style="background-image: url('<?php echo $image; ?>')"></div>
 			<?php endif; ?>
 
 			<header>
-				<h1 class="entry-title">
-					<?php the_title(); ?>
-				</h1>
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<?php get_template_part( 'inc/meta' ); ?>
 			</header>
 
 			<div class="entry-content">
@@ -41,5 +39,4 @@
 		<li><?php next_posts_link('Next Entry &raquo;','') ?></li>
 	</ul>
 </main>
-
 <?php get_footer(); ?>

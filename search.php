@@ -9,16 +9,13 @@
 			<li class="entries__item" id="post-<?php the_ID(); ?>">
 				<article <?php post_class('entry'); ?>>
 					<h1 class="entry__title"><?php the_title(); ?></h1>
-
 					<?php get_template_part( 'inc/meta' ); ?>
-
 					<?php the_content(); ?>
 				</article>
 			</li>
 		<?php endwhile; ?>
 	</ul>
 	<?php else : ?>
-		<h3 id="thumbsdown"><b class="ss-icon">dislike</b></h3>
 		<p><?php echo ( 'Sorry dude &ndash;or&ndash; dudette but your search term(s) didn\'t result in any matches from our sweet, sweet database of knowledge. Please do try refining your search term and/or query again won\'t you pretty please?' ); ?></p>
 	<?php endif; ?>
 
@@ -44,5 +41,4 @@
 		?>
 	</div>
 </main>
-
 <?php get_footer(); ?>

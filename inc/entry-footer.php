@@ -1,7 +1,4 @@
 <footer class="entry-footer">
-	<?php get_template_part( 'inc/meta' ); ?>
-	<?php get_template_part( 'inc/profile' ); ?>
-
 	<?php $wpflex_post_pages = array(
 								'before'           => '<p>' . __('Pages:'),
 								'after'            => '</p>',
@@ -32,4 +29,6 @@
 			</ul>
 		</li>
 	</ul>
+
+	<?php get_template_part( 'inc/profile' ); ?>
 </footer>

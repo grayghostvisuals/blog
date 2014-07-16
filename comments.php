@@ -66,7 +66,7 @@
 
 	<?php else :
 		if ( ! comments_open() ) : ?>
-			<p class="nocomments"><span class="ss-icon" style="display:block">&#x1F512;</span><?php echo( 'Comments are closed bro. You\'re way late.' ); ?></p>
+		<p class="nocomments"><?php echo( 'Comments are closed. You\'re way late.' ); ?></p>
 		<?php endif; ?>
 	<?php endif; ?>
 

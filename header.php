@@ -57,19 +57,22 @@
 	<?php wp_head(); ?>
 </head>
 
-<body class="wrapper<?php if ( has_post_thumbnail( $post->ID ) ) : ?> feat-bg<?php endif; ?>" id="<?php the_title(); ?>">
+<body class="wrapper<?php if ( has_post_thumbnail( $post->ID ) ) : ?> bg-feat<?php endif; ?>" id="<?php the_title(); ?>">
 	<header class="branding" role="banner">
-		<?php $header = get_header_image() ?>
+		<?php $header = get_header_image(); ?>
 		<?php if ( isset( $header ) || $header ) : ?>
-			<div id="header-image">
-				<a href="<?php echo home_url() ?>">
-					<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="">
-				</a>
-			</div>
+		<div id="header-image">
+			<a href="<?php echo home_url() ?>">
+				<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="">
+			</a>
+		</div>
 		<?php endif; ?>
 
 		<h1 class="blogname">
-			<a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark"><?php esc_attr( bloginfo( 'name' ) ); ?></a>
+			<a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark">
+				<?php esc_attr( bloginfo( 'name' ) ); ?>
+				<!-- <img src="http://static.grayghostvisuals.com/imgblog/blogbadge.png" class="logo" alt=""> -->
+			</a>
 		</h1>
 
 		<h2 class="tagline"><?php echo esc_attr( bloginfo( 'description' ) ); ?></h2>
@@ -137,6 +140,6 @@
 		<?php get_search_form(); ?>
 
 		<article id="rss">
-			<a href="<?php bloginfo('rss2_url') ?>"><b class="ss-icon ss-rss"></b><span class="visuallyhidden">Feed</span></a>
+			<a href="<?php bloginfo('rss2_url') ?>"><span>RSS Feed</span></a>
 		</article>
 	</header>

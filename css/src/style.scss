@@ -259,7 +259,7 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // $Modules
 // ==========================================================================
 
-.bg--featimg {
+.featimg--bg {
     height: 500px;
     position: absolute;
     top: 0;
@@ -274,10 +274,15 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
     color: white;
 }
 
-body.feat-bg {
-    main {
+
+main[role="main"] {
+    .bg-feat {
         padding-top: 300px;
     }
+}
+
+img.logo {
+-webkit-filter: grayscale(1) drop-shadow(0 -1px 0 rgba(255,255,255,0.3)) drop-shadow(0 1px 4px rgba(0,0,0,0.8));
 }
 
 
