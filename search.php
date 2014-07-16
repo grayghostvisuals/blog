@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main class="clearfix" id="content" role="main">
 	<header>
-		<h1 class="headline"><b class="ss-icon" data-icon="database">&#xE7A0;</b> Search Results</h1>
+		<h1 class="headline">Search Results</h1>
 	</header>
 
 	<ul class="entries">
@@ -12,7 +12,7 @@
 
 					<?php get_template_part( 'inc/meta' ); ?>
 
-					<?php the_content( '<div class="button"><span class="read-more ss-icon">&#x1F440;</span></div>' ); ?>
+					<?php the_content(); ?>
 				</article>
 			</li>
 		<?php endwhile; ?>
@@ -42,10 +42,6 @@
 				'add_fragment' => ''
 			));//end array
 		?>
-	</div>
-
-	<div id="sidebar">
-		<?php get_sidebar(); ?>
 	</div>
 </main>
 

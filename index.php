@@ -1,9 +1,17 @@
+<?php global $more; ?>
 <?php get_header(); ?>
 
 <main class="clearfix" id="content" role="main">
-	<?php global $more; ?>
 	<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+			<?php if ( has_post_thumbnail( $post->ID ) ) : ?>
+				<?php
+					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+					$image = $image[0];
+				?>
+				<div class="bg--featimg" style="background-image: url('<?php echo $image; ?>')"></div>
+			<?php endif; ?>
+
 			<header>
 				<h1 class="entry-title">
 					<?php the_title(); ?>
@@ -11,7 +19,7 @@
 			</header>
 
 			<div class="entry-content">
-				<?php $more = 1; ?>
+				<?php $more = 1;// don't truncate posts ?>
 				<?php the_content(); ?>
 			</div>
 

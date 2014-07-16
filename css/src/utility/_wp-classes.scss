@@ -244,6 +244,7 @@ img.size-full {
 			position: absolute;
 			top: -25px;
 			left: 0;
+			// @include transform(translate(-75%, -50%) rotate(-90deg));
 		};
 
 		blockquote {
@@ -304,7 +305,6 @@ img.size-full {
 }
 
 .comment.bypostauthor {
-
 	>	.comment-vcard {
 			.comment-meta {
 				background: maroon;
@@ -324,6 +324,7 @@ img.size-full {
 			position: absolute;
 			top: -25px;
 			left: 0;
+			// @include transform(translate(-75%, -50%) rotate(-90deg));
 
 			.comment-text {
 				h3 { color: maroon; }

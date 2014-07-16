@@ -66,13 +66,14 @@ textarea {
 // ============================================================
 
 // Box sizing FTW!
-* {
+html {
 	@include box-sizing(border-box);
+}
 
-	&:before,
-	&:after {
-		@include box-sizing(border-box);
-	}
+*,
+*:before,
+*:after {
+	@include box-sizing(inherit);
 }
 
 // Reset Margin & Padding for Digital Canvas
@@ -94,12 +95,15 @@ video {
 
 // Global Links
 a {
-	// Compass Helper Function
-	// link-colors($normal, $hover, $active, $visited, $focus)
-	@include link-colors($global-anchor-color, $global-anchor-color-hover, $global-anchor-color-hover, $global-anchor-color, $global-anchor-color);
+	font-weight: bold;
 	text-decoration: none;
-
-	&:hover {
-		text-decoration: underline;
-	}
+	// Compass Helper
+	// link-colors($normal, $hover, $active, $visited, $focus)
+	@include link-colors(
+		$global-anchor-color,
+		$global-anchor-color-hover,
+		$global-anchor-color-hover,
+		$global-anchor-color,
+		$global-anchor-color
+	);
 }

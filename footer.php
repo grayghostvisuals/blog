@@ -1,6 +1,4 @@
 <footer role="contentinfo">
-	<?php //get_sidebar('footer'); ?>
-
 	<p>
 		<small>Gray Ghost Visuals Press &bull; Exploring Front&ndash;end Web Development &amp; Design since <time datetime="2009">2009</time></small>
 	</p>
@@ -20,6 +18,32 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/prism.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
+
+<?php if ( is_single() || is_front_page() ) : ?>
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<script>
+	// @reference
+	// http://www.ivanthevariable.com/wordpress-comment-live-preview/
+	$('p[class*="comment-form"] > input').each(function() {
+		$(this).val('');
+	});
+
+	$('p[class*="comment-form"] > input').change(function() {
+		var author = $('#author').val(),
+				email = CryptoJS.MD5( $('#email').val().toLowerCase().trim() ),
+				url = $('#url').val();
+
+		$('.preview-url').text(author);
+		$('.commentPreview .avatar').attr('src','http://gravatar.com/avatar/' + email);
+		$('.preview-url').attr('href',url);
+	});
+
+	$('textarea#comment').keyup(function() {
+		var comment = $(this).val();
+		$('.preview-text').html(comment);
+	});
+</script>
+<?php endif; ?>
 
 <script async>
 	//var _gaq=[ ['_setAccount','UA-27240293-1'],['_trackPageview'],['_trackPageLoadTime'],['_setSiteSpeedSampleRate', 100]];

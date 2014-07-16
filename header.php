@@ -57,7 +57,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body class="wrapper" id="<?php the_title(); ?>">
+<body class="wrapper<?php if ( has_post_thumbnail( $post->ID ) ) : ?> feat-bg<?php endif; ?>" id="<?php the_title(); ?>">
 	<header class="branding" role="banner">
 		<?php $header = get_header_image() ?>
 		<?php if ( isset( $header ) || $header ) : ?>
