@@ -212,7 +212,7 @@ img.size-full {
 		background: white;
 		box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.24);
 
-		@media screen and (min-width: 78.75em) {
+		@include breakpoint($comments) {
 			border-radius: 80%;
 			display: inline-block;
 			margin: 0 1em 1em 0;
@@ -246,7 +246,7 @@ img.size-full {
 			top: -25px;
 			left: 0;
 
-			@media screen and (min-width: 78.75em) {
+			@include breakpoint($comments) {
 				border-top: 25px solid transparent;
 				border-bottom: 25px solid transparent;
 				border-right: 25px solid #A0A0A0;
@@ -294,7 +294,7 @@ img.size-full {
 
 .comment-vcard {
 	&:before {
-		@media screen and (min-width: 78.75em) {
+		@include breakpoint($comments) {
 			margin-left: -50px;
 			content: "";
 			display: block;
@@ -326,7 +326,7 @@ img.size-full {
 			top: -25px;
 			left: 0;
 
-			@media screen and (min-width: 78.75em) {
+			@include breakpoint($comments) {
 				border-top: 25px solid transparent;
 				border-bottom: 25px solid transparent;
 				border-right: 25px solid #696262;

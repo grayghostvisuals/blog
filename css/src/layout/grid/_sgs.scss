@@ -12,44 +12,16 @@
 
 // Background Grid
 // https://github.com/Team-Sass/Singularity/wiki/Creating-Grids#visualizing-your-grids
-@include sgs-change('debug', true);
+@include sgs-change('debug', false);
 
 .grid {
 	@extend .clearfix;
 	@include background-grid($color: $bg-grid-color);
 }
 
-.col-1 {
-	@include grid-span(5, 1);
-	@include breakpoint($grid12) {
-		@include grid-span(4, 1); // span 4 columns, start at 1st column.
-	}
-}
-
 .col-2 {
 	@include grid-span(5, 1);
 	@include breakpoint($grid12) {
-		@include grid-span(4, 5); // span 4 columns, start at 5th column.
-	}
-}
-
-.col-3 {
-	@include grid-span(5, 1);
-	@include breakpoint($grid12) {
-		@include grid-span(4, 9); // span 4 columns, start at 9th column.
-	}
-}
-
-.col-5 {
-	@include grid-span(5, 1);
-	@include breakpoint($grid12) {
-		@include grid-span(5, 1); // span 5 columns, start at 1st column.
-	}
-}
-
-.col-7 {
-	@include grid-span(5, 1);
-	@include breakpoint($grid12) {
-		@include grid-span(7, 6); // span 7 columns, start at 6th column.
+		@include grid-span(6, 4); // span 4 columns, start at 5th column.
 	}
 }

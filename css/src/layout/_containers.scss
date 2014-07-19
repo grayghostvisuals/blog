@@ -3,22 +3,5 @@
 // ============================================================
 
 .grid {
-	@include gridContainer($container-max-width);
-}
-
-$gutter: 25.5%;
-
-.wrapper {
-    @media screen and (max-width: 599px) {
-        padding: 0 $gutter/7;
-    }
-    @media screen and (min-width: 600px) {
-        max-width: 40em;
-        margin: 0 auto;
-    }
-
-    &--outer {
-        width: 100%;
-        background: white;
-    }
+    background: white;
 }
