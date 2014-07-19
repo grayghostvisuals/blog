@@ -12,7 +12,7 @@
 }
 
 .utility-bar__items {
-    display: flex;
+    @extend %flexbox;
     padding: 12px;
 }
 
