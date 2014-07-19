@@ -13,7 +13,7 @@
 							<?php get_template_part( 'inc/meta' ); ?>
 
 							<div class="entry__content">
-								<?php the_content( '<span class="read-more ss-icon">&#x1F440;</span>' ); ?>
+								<?php the_content( '<span class="read-more">Read More →</span>' ); ?>
 							</div>
 						</article>
 					</li>
@@ -21,7 +21,11 @@
 			</ul>
 
 			<?php else : ?>
-				<p><?php echo ( 'Holy smokes! This is totally crazy. No posts match anything even remotely close to that in our database. Sorry Mon Frere, try again' ); ?></p>
+				<p>
+					<?php 
+						echo "Holy smokes! This is totally crazy. No posts match anything even remotely close to that in our database. Sorry Mon Frere, try again";
+					?>
+				</p>
 			<?php endif; ?>
 
 			<div class="pagination">

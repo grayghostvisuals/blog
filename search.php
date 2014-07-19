@@ -11,8 +11,10 @@
 					<li class="entries__item" id="post-<?php the_ID(); ?>">
 						<article <?php post_class('entry'); ?>>
 							<h1 class="entry__title"><?php the_title(); ?></h1>
+
 							<?php get_template_part( 'inc/meta' ); ?>
-							<?php the_content(); ?>
+
+							<?php the_content('<span class="read-more">Read More →</span>'); ?>
 						</article>
 					</li>
 				<?php endwhile; ?>
@@ -25,6 +27,7 @@
 				<?php
 					global $wp_query;
 					$big = 999999999;
+
 					echo paginate_links( array(
 						'base'         => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
 						'format'       => '?paged=%#%',
@@ -39,7 +42,7 @@
 						'type'         => 'plain',
 						'add_args'     => False,
 						'add_fragment' => ''
-					));//end array
+					));
 				?>
 			</div>
 		</main>

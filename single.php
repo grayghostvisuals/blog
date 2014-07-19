@@ -17,6 +17,7 @@
 
 					<header class="entry-header">
 						<h1 class="entry-title"><?php the_title(); ?></h1>
+						<?php get_template_part( 'inc/meta' ); ?>
 					</header>
 
 					<div class="entry-content">
@@ -28,17 +29,21 @@
 
 				<div class="single-pagination">
 					<span class="prev">
-						<?php previous_post_link( '%link', '<span class="ss-icon ss-navigateleft"></span><span class="visuallyhidden">Previous Category Post</span>', TRUE ); ?>
+						<?php previous_post_link( '%link', '<span>Previous Category Post</span>', TRUE ); ?>
 					</span>
 
 					<span class="nxt">
-						<?php next_post_link( '%link', '<span class="visuallyhidden">Next Category Post</span><span class="ss-icon ss-navigateright"></span>', TRUE ); ?>
+						<?php next_post_link( '%link', '<span>Next Category Post</span>', TRUE ); ?>
 					</span>
 				</div>
 			<?php endwhile; ?>
 
 			<?php else : ?>
-				<p><?php echo ( 'Holy smokes! This is totally crazy. No posts match anything even remotely close to that in our database. Sorry Mon Frere, try again' ); ?></p>
+				<p>
+					<?php 
+						echo "Holy smokes! This is totally crazy. No posts match anything even remotely close to that in our database. Sorry Mon Frere, try again";
+					?>
+				</p>
 			<?php endif; ?>
 		</main>
 		<?php comments_template(); ?>

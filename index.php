@@ -23,7 +23,11 @@
 			<?php endwhile; ?>
 
 			<?php else : ?>
-				<p><?php echo ( 'Holy Shit! This is totally cray cray brochacho! No posts match anything even remotely close to that in this database. Sorry Mon Frere, try again' ); ?></p>
+				<p>
+					<?php 
+						echo "Holy smokes! This is totally crazy. No posts match anything even remotely close to that in our database. Sorry Mon Frere, try again";
+					?>
+				</p>
 			<?php endif; ?>
 		</main>
 	</div>
