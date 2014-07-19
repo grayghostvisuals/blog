@@ -57,8 +57,8 @@
 	<?php wp_head(); ?>
 </head>
 
-<body class="wrapper<?php if ( has_post_thumbnail( $post->ID ) ) : ?> bg-feat<?php endif; ?>" id="<?php the_title(); ?>">
-	<header class="branding" role="banner">
+<body class="<?php if(is_front_page()) : ?>index<?php endif; ?><?php if ( has_post_thumbnail() ) : ?> bg-feat<?php endif; ?>" id="<?php the_title(); ?>">
+	<header class="branding<?php if ( ! has_post_thumbnail() ) : ?> bg-feat--none<?php endif; ?>" role="banner">
 		<?php $header = get_header_image(); ?>
 		<?php if ( isset( $header ) || $header ) : ?>
 		<div id="header-image">
@@ -70,8 +70,8 @@
 
 		<h1 class="blogname">
 			<a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark">
-				<?php esc_attr( bloginfo( 'name' ) ); ?>
-				<!-- <img src="http://static.grayghostvisuals.com/imgblog/blogbadge.png" class="logo" alt=""> -->
+				<?php //esc_attr( bloginfo( 'name' ) ); ?>
+				<img src="http://static.grayghostvisuals.com/imgblog/blogbadge.png" class="logo" alt="">
 			</a>
 		</h1>
 
@@ -137,9 +137,15 @@
 			wpflex_custom_nav();
 		?>
 
-		<?php get_search_form(); ?>
+		<div class="utility-bar" id="utility-bar">
+			<div class="utility-bar__items">
+				<?php get_search_form(); ?>
 
-		<article id="rss">
-			<a href="<?php bloginfo('rss2_url') ?>"><span>RSS Feed</span></a>
-		</article>
+				<article id="rss">
+					<a href="<?php bloginfo('rss2_url') ?>"><span>RSS Feed</span></a>
+				</article>
+			</div>
+
+			<a href="#utility-bar" class="utility-bar__toggle">Menu</a>
+		</div>
 	</header>

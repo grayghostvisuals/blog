@@ -1,0 +1,25 @@
+.branding {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	.bg-feat & {
+		height: 500px;
+	}
+
+	&.bg-feat--none {
+		.single & {
+			background: #252525 url(http://subtlepatterns.com/patterns/cartographer.png) top left repeat;
+			height: 500px;
+		}
+	}
+
+	.index & {
+		height: 100%;
+	}
+}
+
+.tagline {
+	color: white;
+}

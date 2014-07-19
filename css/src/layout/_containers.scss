@@ -16,4 +16,9 @@ $gutter: 25.5%;
         max-width: 40em;
         margin: 0 auto;
     }
+
+    &--outer {
+        width: 100%;
+        background: white;
+    }
 }

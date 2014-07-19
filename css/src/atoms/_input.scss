@@ -1,0 +1,7 @@
+input,
+textarea {
+    @include appearance(none);
+    border: none;
+    resize: none;
+    background: rgba(128, 128, 128, 0.04);
+}

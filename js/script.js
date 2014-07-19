@@ -18,6 +18,11 @@ $(document).ready(function () {
 	// FitVid.js
 	$('.flex-video').fitVids();
 
+	$('.utility-bar__toggle').bind('click', function(event) {
+		event.preventDefault();
+		$(this).parent().toggleClass('active');
+	});
+
 	//gives tactile feedback for read-more button on touch interfaces
 	$('.read-more').bind('mousedown mouseup', function () {
 		$(this).toggleClass('active');

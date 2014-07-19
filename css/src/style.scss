@@ -156,134 +156,38 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 
 // 1. Singularity Grid System
 // 2. Containers
+// 2. Content
 
 @import "layout/**/*";
 
-.meta-data {
-    display: inline-block;
-    padding: #{$line-height/2}em 0;
-}
 
-#article-links {
-    list-style-type: none;
-    padding: 0;
+// ==========================================================================
+// $WordPress Widgets
+// ==========================================================================
 
-    b[class="ss-icon"] {
-        display: inline-block;
-        margin-right: #{$line-height/2}em;
-    }
-}
-
-#comments-link {
-    font-style: italic;
-}
-
-.profile {
-    @media screen and (min-width: 40em) {
-        overflow: auto;
-        padding: #{$line-height/2}em 0;
-    }
-}
-
-.profile-name {
-    @media screen and (max-width: 39.99em) {
-        margin: #{$line-height/2}em auto auto;
-        text-align: center;
-    }
-}
-
-.profile-avatar {
-    border: 6px solid #c0c2c0;
-    border-radius: 80%;
-    width: 168px;
-    background: red;
-    @media screen and (max-width: 39.99em) {
-        margin: 0 auto;
-    }
-    @media screen and (min-width: 40em) {
-        float: left;
-        margin-right: #{$line-height/2}em;
-        width: auto;
-    }
-    img {
-        border-radius: 80%;
-        display: inline-block;
-    }
-}
-
-.profile-meta {
-    b {
-        display: block;
-        margin: #{$line-height/2}em auto;
-        font-weight: 400;
-    }
-}
-
-#comments-count {}
-
-#comments-link {
-    display: block;
-}
-
-#comment {
-    width: 100%;
-}
-
-#rss {
-    @extend .visuallyhidden;
-}
-
-.widget_tag_cloud {
-    padding: #{$line-height/2}em 0 #{$line-height}em;
-}
-
-#footer-widgets {
-    li {
-        display: inline;
-    }
-}
-
-.widget_recent_entries {
-    ul {
-        li {
-            &:after {
-                content: "❦";
-                display: inline-block;
-            }
-        }
-    }
-}
+@import "widgets/tag-cloud";
+@import "widgets/recent-entries";
 
 
 // ==========================================================================
-// $Modules
+// $Atoms
 // ==========================================================================
 
-.featimg--bg {
-    height: 500px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: white;
-}
+@import "atoms/figcaption";
+@import "atoms/input";
 
 
-main[role="main"] {
-    .bg-feat {
-        padding-top: 300px;
-    }
-}
 
-img.logo {
--webkit-filter: grayscale(1) drop-shadow(0 -1px 0 rgba(255,255,255,0.3)) drop-shadow(0 1px 4px rgba(0,0,0,0.8));
-}
+// ==========================================================================
+// $Molecules
+// ==========================================================================
+
+@import "molecules/logo";
+@import "molecules/header";
+@import "molecules/utility-bar";
+@import "molecules/search-form";
+@import "molecules/feat-img";
+@import "molecules/profile";
 
 
 // ==========================================================================

@@ -1,0 +1,40 @@
+.profile {
+    @media screen and (min-width: 40em) {
+        overflow: auto;
+        padding: #{$line-height/2}em 0;
+    }
+}
+
+.profile-name {
+    @media screen and (max-width: 39.99em) {
+        margin: #{$line-height/2}em auto auto;
+        text-align: center;
+    }
+}
+
+.profile-avatar {
+    border: 6px solid #c0c2c0;
+    border-radius: 80%;
+    width: 168px;
+    background: red;
+    @media screen and (max-width: 39.99em) {
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 40em) {
+        float: left;
+        margin-right: #{$line-height/2}em;
+        width: auto;
+    }
+    img {
+        border-radius: 80%;
+        display: inline-block;
+    }
+}
+
+.profile-meta {
+    b {
+        display: block;
+        margin: #{$line-height/2}em auto;
+        font-weight: 400;
+    }
+}

@@ -1,7 +1,5 @@
 <footer role="contentinfo">
-	<p>
-		<small>Gray Ghost Visuals Press &bull; Exploring Front&ndash;end Web Development &amp; Design since <time datetime="2009">2009</time></small>
-	</p>
+	<?php get_sidebar('footer'); ?>
 
 	<ul class="socials">
 		<li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social">&#xF611;</a></li>
@@ -10,6 +8,8 @@
 		<li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social">&#xF610;</a></li>
 		<li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social">&#xF613;</a></li>
 	</ul>
+
+	<small>Gray Ghost Visuals Press &bull; Exploring Front&ndash;end Web Development &amp; Design since <time datetime="2009">2009</time></small>
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

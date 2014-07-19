@@ -73,7 +73,7 @@
 	<?php if ( comments_open() ) : ?>
 		<?php
 			$commentform_args = array(
-					'comment_notes_after' => '<p>If you\'re leaving code snippets please use this format in your reply...</p>
+					'comment_notes_after' => '<p>toggle formatting examples</p>
 
 					<div>
 					<pre><code class="language-markup">&lt;pre&gt;&lt;code class=&quot;language-[markup | sass | css | php | javascript | ruby | clike | bash]&quot;&gt;

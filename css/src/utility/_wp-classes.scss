@@ -189,8 +189,12 @@ img.size-full {
 	list-style-type: none
 }
 
+.commentPreview .comment.depth-1 {
+	border-bottom: none;
+}
+
 .commentlist {
-	border-top: 3px dotted red;
+	margin: 0;
 	padding: 1.65em 0 0;
 }
 
@@ -202,17 +206,16 @@ img.size-full {
 	.avatar {
 		display: block;
 		border-radius: 80%;
-		border: 6px solid #831400;
+		border: 3px solid snow;
 		display: inline-block;
 		margin: 0 1em 1em 0;
 		background: white;
+		box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.24);
 
 		@media screen and (min-width: 78.75em) {
 			border-radius: 80%;
-			border: 6px solid #FA0000;
 			display: inline-block;
 			margin: 0 1em 1em 0;
-			background: white;
 			position: relative;
 			float: left;
 			margin-left: -170px;
@@ -221,8 +224,6 @@ img.size-full {
 	}
 
 	.comment-meta {
-		background: #140202;
-		color: #FFF;
 		padding: .5em 2%;
 		font-size: small;
 		text-align: right;
@@ -231,7 +232,7 @@ img.size-full {
 	.comment-body {
 		padding: 5%;
 		position: relative;
-		background: #b81800;
+		background: #A0A0A0;
 		color: #E2DCDC;
 		&:before {
 			content: "";
@@ -240,11 +241,18 @@ img.size-full {
 			display: block;
 			border-left: 25px solid transparent;
 			border-right: 25px solid transparent;
-			border-bottom: 25px solid #b81800;
+			border-bottom: 25px solid #A0A0A0;
 			position: absolute;
 			top: -25px;
 			left: 0;
-			// @include transform(translate(-75%, -50%) rotate(-90deg));
+
+			@media screen and (min-width: 78.75em) {
+				border-top: 25px solid transparent;
+				border-bottom: 25px solid transparent;
+				border-right: 25px solid #A0A0A0;
+				top: 0;
+				left: -50px;
+			}
 		};
 
 		blockquote {
@@ -298,21 +306,14 @@ img.size-full {
 			border-radius: 100%;
 			top: 0px;
 			left: -137px;
-			border: 6px solid #FA0000;
-			background: rgb(46, 44, 44);
+			box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.23);
 		}
 	}
 }
 
 .comment.bypostauthor {
-	>	.comment-vcard {
-			.comment-meta {
-				background: maroon;
-			}
-		}
-
 	> .comment-body {
-		background: #000;
+		background: #696262;
 		&:before {
 			content: "";
 			width: 0px;
@@ -320,11 +321,18 @@ img.size-full {
 			display: block;
 			border-left: 25px solid transparent;
 			border-right: 25px solid transparent;
-			border-bottom: 25px solid #000;
+			border-bottom: 25px solid #696262;
 			position: absolute;
 			top: -25px;
 			left: 0;
-			// @include transform(translate(-75%, -50%) rotate(-90deg));
+
+			@media screen and (min-width: 78.75em) {
+				border-top: 25px solid transparent;
+				border-bottom: 25px solid transparent;
+				border-right: 25px solid #696262;
+				top: 0;
+				left: -50px;
+			}
 
 			.comment-text {
 				h3 { color: maroon; }
@@ -414,6 +422,20 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 
 #respond {
 	padding: #{$line-height}em 0;
+}
+
+#comments-link {
+    font-style: italic;
+}
+
+#comments-count {}
+
+#comments-link {
+    display: block;
+}
+
+#comment {
+    width: 100%;
 }
 
 
