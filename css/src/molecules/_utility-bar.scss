@@ -1,23 +1,26 @@
 .utility-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: white;
-    width: 100%;
-    @include transition(transform .3s ease-in-out);
-    @include transform(translateY(-100%));
-    &.active {
-        @include transform(translateY(0));
-    }
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 0.13);
+	color: white;
+	width: 100%;
+	@include transition(transform .3s ease-in-out);
+	@include transform(translateY(-100%));
+
+	&.active {
+		@include transform(translateY(0));
+	}
 }
+
 
 .utility-bar__items {
-    @extend %flexbox;
-    padding: 12px;
+	@extend %flexbox;
+	padding: 12px;
 }
 
+
 .utility-bar__toggle {
-    padding: 12px;
-    position: absolute;
-    color: white;
+	padding: 12px;
+	position: absolute;
 }
