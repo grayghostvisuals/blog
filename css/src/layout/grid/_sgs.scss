@@ -12,7 +12,7 @@
 
 // Background Grid
 // https://github.com/Team-Sass/Singularity/wiki/Creating-Grids#visualizing-your-grids
-@include sgs-change('debug', false);
+@include sgs-change('debug', true);
 
 .grid {
 	@extend .clearfix;
