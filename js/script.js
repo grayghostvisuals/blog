@@ -1,9 +1,5 @@
 $(document).ready(function () {
 
-	// Lettering.js
-	// $('.tagline').lettering();
-
-
 	// FitVids.js
 	$('.flex-video').fitVids();
 
