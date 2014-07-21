@@ -19,5 +19,12 @@
 }
 
 .tagline {
+	font-size: 30.6667px;
+	text-align: center;
 	color: white;
+	span {
+		font-style: italic;
+		font-size: 27px;
+		color: gray;
+	}
 }

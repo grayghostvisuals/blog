@@ -75,7 +75,7 @@
 			</a>
 		</h1>
 
-		<h2 class="tagline"><?php echo esc_attr( bloginfo( 'description' ) ); ?></h2>
+		<h2 class="tagline"><?php echo html_entity_decode(get_bloginfo('description')); ?></h2>
 
 		<?php
 			function wpflex_custom_nav() {

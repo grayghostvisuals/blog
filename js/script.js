@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 	// Lettering.js
-	$('.tagline').lettering();
+	// $('.tagline').lettering();
 
 
 	// FitVids.js
