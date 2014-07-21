@@ -61,7 +61,7 @@ $typl8-copy-color: #444 !default;
 // -------------------------------------//
 
 $typl8-amp-fontface: Ampersand !default;
-$typl8-amp-fontfamily: Verdana, sans-serif !default;
+$typl8-amp-fontfamily: "ff-meta-serif-web-pro", serif !default;
 $typl8-amp-src: local('Georgia'), local('Garamond'), local('Palatino'), local('Book Antiqua') !default;
 $typl8-amp-fallback: local('Georgia') !default;
 
@@ -527,7 +527,7 @@ $typl8-dropcap-bg: transparent !default;
 // Control OpenType feature settings where desired.
 //
 // smallcaps                    body { @extend %font-feature--smcp; }
-// text figures             body { @extend %font-feature--onum; }
+// text figures                 body { @extend %font-feature--onum; }
 
 %font-feature--smcp {
     @each $prefix in $typl8-prefixes {

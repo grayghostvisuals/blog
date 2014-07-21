@@ -3,10 +3,10 @@
 	<div class="col-6-4 col-9-3 col-5-1">
 		<main class="clearfix" id="content" role="main">
 			<header>
-				<h1 class="headline">Search Results</h1>
+				<h1 class="results-headline">Search Results</h1>
 			</header>
 
-			<ul class="entries">
+			<ul class="entries list-reset">
 				<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 					<li class="entries__item" id="post-<?php the_ID(); ?>">
 						<article <?php post_class('entry'); ?>>

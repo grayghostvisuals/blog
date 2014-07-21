@@ -138,8 +138,8 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // $Typography
 // ==========================================================================
 
+@import "plugins/typeplate-sk";
 @import "typography/typesetting";
-@import "plugins/typeplate-sk"; // @Since 2.0.0
 
 
 // ==========================================================================
@@ -185,7 +185,7 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 @import "molecules/tagline";
 @import "molecules/utility-bar";
 @import "molecules/search-form";
-@import "molecules/feat-img";
+@import "molecules/feat-img"; // http://codepen.io/grayghostvisuals/pen/c81c72c98da865a5e8fd7b02b00da7f3
 @import "molecules/profile";
 
 

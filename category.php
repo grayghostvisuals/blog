@@ -2,7 +2,7 @@
 <div class="grid">
 	<div class="col-6-4 col-9-3 col-5-1">
 		<main class="clearfix" id="content" role="main">
-			<h1 class="headline"><?php printf( 'Category Archives: %s', single_cat_title( '', false )); ?></h1>
+			<h1 class="results-headline"><?php printf( 'Category Archives: <span>%s</span>', single_cat_title( '', false )); ?></h1>
 
 			<ul class="entries list-reset">
 				<?php if( have_posts() ) : while( have_posts() ) : the_post()?>

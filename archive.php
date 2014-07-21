@@ -18,7 +18,7 @@ rewind_posts();
 	<div class="col-6-4 col-9-3 col-5-1">
 		<main class="clearfix" id="content" role="main">
 			<section>
-				<h1 class="headline">
+				<h1 class="results-headline">
 					<?php if ( is_day() ) : ?> <?php printf( 'Daily Archives: <span class="archive-title">%s</span>', get_the_date() ); ?>
 					<?php elseif ( is_month() ) : ?>
 						<?php printf( 'Monthly Archives: <span>%s</span>', get_the_date( 'F Y' ) ); ?>
