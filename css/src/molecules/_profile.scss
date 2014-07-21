@@ -1,13 +1,13 @@
 .profile {
     @media screen and (min-width: 40em) {
         overflow: auto;
-        padding: #{$line-height/2}em 0;
+        padding: #{$typl8-line-height/2}em 0;
     }
 }
 
 .profile-name {
     @media screen and (max-width: 39.99em) {
-        margin: #{$line-height/2}em auto auto;
+        margin: #{$typl8-line-height/2}em auto auto;
         text-align: center;
     }
 }
@@ -22,7 +22,7 @@
     }
     @media screen and (min-width: 40em) {
         float: left;
-        margin-right: #{$line-height/2}em;
+        margin-right: #{$typl8-line-height/2}em;
         width: auto;
     }
     img {
@@ -34,7 +34,7 @@
 .profile-meta {
     b {
         display: block;
-        margin: #{$line-height/2}em auto;
+        margin: #{$typl8-line-height/2}em auto;
         font-weight: 400;
     }
 }

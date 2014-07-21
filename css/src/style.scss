@@ -132,7 +132,6 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // ==========================================================================
 
 @import "utility/base";
-@import "utility/wp-classes";
 
 
 // ==========================================================================
@@ -147,6 +146,7 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // $Plugins
 // ==========================================================================
 
+@import "utility/wp-classes";
 @import 'plugins/prism';
 
 
