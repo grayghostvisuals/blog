@@ -4,11 +4,13 @@
 @include add-grid(5);
 
 // Width in relation to a column of 1. 3 gutters make 1 column
+// @include add-gutter(.25 at 900px);
 @include add-gutter(1/3);
 
 // [opposite] : Flush on either side of the container.
 // [split]    : 1/2 gutter width. Splits gutter on either side of columns.
-@include add-gutter-style('opposite');
+@include add-gutter-style('split');
+@include add-gutter-style('opposite' at $grid12);
 
 // Background Grid
 // https://github.com/Team-Sass/Singularity/wiki/Creating-Grids#visualizing-your-grids

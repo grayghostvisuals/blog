@@ -182,7 +182,7 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // ==========================================================================
 
 @import "molecules/logo";
-@import "molecules/header";
+@import "molecules/tagline";
 @import "molecules/utility-bar";
 @import "molecules/search-form";
 @import "molecules/feat-img";
@@ -192,6 +192,8 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // ==========================================================================
 // $Organisms
 // ==========================================================================
+
+@import "organisms/header";
 
 
 // ==========================================================================
