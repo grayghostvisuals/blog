@@ -21,6 +21,16 @@
     }
 }
 
-.featimg--bg-small {
+.featimg--bg-lg {
     display: none;
+    @include breakpoint(800px) {
+        display: block;
+    }
+}
+
+.featimg--bg-small {
+    
+    @include breakpoint(800px) {
+        display: none;
+    }
 }

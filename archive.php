@@ -14,8 +14,8 @@ if ( have_posts() ) the_post();
 */
 rewind_posts();
 ?>
-<div class="wrapper--outer">
-	<div class="wrapper">
+<div class="grid">
+	<div class="col-6-4 col-9-3 col-5-1">
 		<main class="clearfix" id="content" role="main">
 			<section>
 				<h1 class="headline">

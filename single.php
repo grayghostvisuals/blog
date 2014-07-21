@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="grid">
-	<div class="col-2">
+	<div class="col-6-4 col-9-3 col-5-1">
 		<main class="clearfix" id="content" role="main">
 			<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 				<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
