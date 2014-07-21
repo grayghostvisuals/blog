@@ -1,6 +1,6 @@
-/* =============================================================================
-   Required WordPress Styles
-   ========================================================================== */
+// ==========================================================================
+// Required WordPress Styles
+// ==========================================================================
 
 /*
 * WordPress Required
@@ -11,8 +11,6 @@
 * in order to display images and captions properly.
 * http://codex.wordpress.org/CSS#WordPress_Generated_Classes
 */
-
-.sticky {}
 
 .alignnone {
 	margin: 5px 20px 20px 0;
@@ -96,8 +94,6 @@
 	padding:0 4px 5px;
 }
 
-.gallery-caption {}
-
 
 /*
 * stops too many categories from breaking the layout
@@ -108,14 +104,11 @@
 }
 
 
-.bypostauthor {}
 
-
-
-/* =============================================================================
-   WordPress Generated - Extra Styling Classes for Authors
-   http://codex.wordpress.org/CSS#WordPress_Generated_Classes
-   ========================================================================== */
+// ==========================================================================
+// WordPress Generated - Extra Styling Classes for Authors
+// http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+// ==========================================================================
 
 /* Fluid Images For Wordpress */
 img[class*="align"],
@@ -134,14 +127,14 @@ img.size-full {
 }
 
 
-.cat-item {}
-.cat-item.current-cat {}
+// .cat-item {}
+// .cat-item.current-cat {}
 
-.cat-item a:hover {}
-.cat-item.current-cat a:hover {}
+// .cat-item a:hover {}
+// .cat-item.current-cat a:hover {}
 
-.cat-item a {}
-.cat-item.current-cat a {}
+// .cat-item a {}
+// .cat-item.current-cat a {}
 
 
 .entry-content img.wp-smiley {
@@ -152,27 +145,27 @@ img.size-full {
 }
 
 
-.widget {}
+// .widget {}
 
 
-.wp-post-image {}
-.attachment-thumbnail {}
-.attachment-medium {}
-.attachment-large {}
-.attachment-full {}
+// .wp-post-image {}
+// .attachment-thumbnail {}
+// .attachment-medium {}
+// .attachment-large {}
+// .attachment-full {}
 
 
-.error404 {}
+// .error404 {}
 
 
-.more-link {}
-.posttitle {}
+// .more-link {}
+// .posttitle {}
 
 
 
-/* =============================================================================
-   WordPress Comments
-   ========================================================================== */
+// ==========================================================================
+// WordPress Comments
+// ==========================================================================
 
 /*
 * 2.0 Comment Styling Classes
@@ -199,23 +192,21 @@ img.size-full {
 }
 
 .comment {
-	@media screen and (min-width: 78.75em) {
+	@include breakpoint($comments-avatar-side) {
 		position: relative;
 	}
 
 	.avatar {
-		display: block;
-		border-radius: 80%;
 		border: 3px solid snow;
+		border-radius: 80%;
+		display: block;
 		display: inline-block;
 		margin: 0 1em 1em 0;
 		background: white;
 		box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.24);
 
-		@include breakpoint($comments) {
-			border-radius: 80%;
+		@include breakpoint($comments-avatar-side) {
 			display: inline-block;
-			margin: 0 1em 1em 0;
 			position: relative;
 			float: left;
 			margin-left: -170px;
@@ -232,26 +223,20 @@ img.size-full {
 	.comment-body {
 		padding: 5%;
 		position: relative;
-		background: #A0A0A0;
+		background: $comment-body-bg;
 		color: #E2DCDC;
 		&:before {
 			content: "";
-			width: 0px;
-			height: 0px;
 			display: block;
-			border-left: 25px solid transparent;
-			border-right: 25px solid transparent;
-			border-bottom: 25px solid #A0A0A0;
+			@include caret(top, $comments-caret-width, $comment-body-bg);
 			position: absolute;
-			top: -25px;
+			top: -$comments-caret-width;
 			left: 0;
 
-			@include breakpoint($comments) {
-				border-top: 25px solid transparent;
-				border-bottom: 25px solid transparent;
-				border-right: 25px solid #A0A0A0;
+			@include breakpoint($comments-avatar-side) {
+				@include caret(left, $comments-caret-width, $comment-body-bg);
 				top: 0;
-				left: -50px;
+				left: -$comments-caret-width;
 			}
 		};
 
@@ -294,7 +279,7 @@ img.size-full {
 
 .comment-vcard {
 	&:before {
-		@include breakpoint($comments) {
+		@include breakpoint($comments-avatar-side) {
 			margin-left: -50px;
 			content: "";
 			display: block;
@@ -313,30 +298,19 @@ img.size-full {
 
 .comment.bypostauthor {
 	> .comment-body {
-		background: #696262;
+		background: $comment-body-author-bg;
 		&:before {
 			content: "";
-			width: 0px;
-			height: 0px;
 			display: block;
-			border-left: 25px solid transparent;
-			border-right: 25px solid transparent;
-			border-bottom: 25px solid #696262;
+			@include caret(top, $comments-caret-width, $comment-body-author-bg);
 			position: absolute;
-			top: -25px;
+			top: -$comments-caret-width;
 			left: 0;
 
-			@include breakpoint($comments) {
-				border-top: 25px solid transparent;
-				border-bottom: 25px solid transparent;
-				border-right: 25px solid #696262;
+			@include breakpoint($comments-avatar-side) {
+				@include caret(left, $comments-caret-width, $comment-body-author-bg);
 				top: 0;
-				left: -50px;
-			}
-
-			.comment-text {
-				h3 { color: maroon; }
-				a { color: orange; }
+				left: -$comments-caret-width;
 			}
 		}
 	}
@@ -347,8 +321,8 @@ img.size-full {
 	margin-bottom: 3em;
 }
 
-ol.commentlist li.comment.even {}
-ol.commentlist li.comment.odd {}
+// ol.commentlist li.comment.even {}
+// ol.commentlist li.comment.odd {}
 
 .comment {
 	.children {
@@ -369,9 +343,9 @@ ol.commentlist li.comment.odd {}
 	}
 }
 
-.comment.thread-alt {}
-.comment.thread-even {}
-.comment.thread-odd {}
+// .comment.thread-alt {}
+// .comment.thread-even {}
+// .comment.thread-odd {}
 
 ol.commentlist li.comment ul.children li.depth-1 {
 	background: red;
@@ -439,29 +413,24 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 }
 
 
-/* =============================================================================
-   WP-Flex Custom Styles
-   ========================================================================== */
-/**
-* WP-Flex Styling Modules
-*
-* Use these custom Classes as helpers for your styling needs and based on
-* the classes written by this theme. These are not provided by WordPress
-*/
-.blogname {}
-.tagline {}
-.menu {}
-.page-title{}
-.entry-title {}
-.meta {}
-.entry-footer {}
-.comments-count {}
-.comments-count-number {}
-.entry-taxonomies {}
-.entry-tags-list {}
-.entry-tags {}
-.entry-categories-list {}
-.entry-categories {}
-.pagination {}
-.pagination.single {}
-#sidebar {}
+// ==========================================================================
+// WP-Flex Custom Styles
+// ==========================================================================
+
+// .blogname {}
+// .tagline {}
+// .menu {}
+// .page-title{}
+// .entry-title {}
+// .meta {}
+// .entry-footer {}
+// .comments-count {}
+// .comments-count-number {}
+// .entry-taxonomies {}
+// .entry-tags-list {}
+// .entry-tags {}
+// .entry-categories-list {}
+// .entry-categories {}
+// .pagination {}
+// .pagination.single {}
+// #sidebar {}

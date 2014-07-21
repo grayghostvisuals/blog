@@ -49,11 +49,14 @@ $container-max-width: 1024px;
 // --------------------------------------------------------
 
 $header-height: 500px;
+$comments-caret-width: 25px;
 
 
 // --------------------------------------------------------
 // Colors
 // --------------------------------------------------------
+$silver-chalice: #A0A0A0;
+$scorpion: #696262;
 
 // links
 $global-anchor-color: rgb(200,0,0);
@@ -61,3 +64,7 @@ $global-anchor-color-hover: rgb(255,0,0);
 
 // backgrounds
 $no-feat-bg: #252525;
+
+// comments
+$comment-body-bg: $silver-chalice;
+$comment-body-author-bg: $scorpion;
