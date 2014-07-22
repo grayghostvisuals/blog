@@ -57,7 +57,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body class="<?php if(is_front_page()) : ?>index <?php endif; ?><?php if ( has_post_thumbnail() ) : ?>bg-feat<?php else : ?>no-feat-bg<?php endif; ?>" id="<?php if( is_single() ) : echo strtolower(preg_replace('/\s+/', '-', get_the_title($ID))); else : echo "page"; endif; ?>">
+<body class="<?php if(is_front_page()) : ?>index <?php endif; ?><?php if ( has_post_thumbnail() && is_single() ) : ?>bg-feat<?php else : ?>no-feat-bg<?php endif; ?>" id="<?php if( is_single() ) : echo strtolower(preg_replace('/\s+/', '-', get_the_title($ID))); else : echo "page"; endif; ?>">
 	<header class="branding<?php if ( ! has_post_thumbnail() ) : ?> bg-feat--none<?php endif; ?>" role="banner">
 		<?php $header = get_header_image(); ?>
 		<?php if ( $header ) : ?>
@@ -142,10 +142,12 @@
 				<?php get_search_form(); ?>
 
 				<article id="rss">
-					<a href="<?php bloginfo('rss2_url') ?>"><span>RSS Feed</span></a>
+					<a href="<?php bloginfo('rss2_url') ?>" class="ss-icon">RSS</a>
 				</article>
+
+				<a href="#info" class="ss-icon">Info</a>
 			</div>
 
-			<a href="#utility-bar" class="utility-bar__toggle">Menu</a>
+			<a href="#utility-bar" class="utility-bar__toggle"><span class="ss-icon" aria-hidden="true">list</span> Menu</a>
 		</div>
 	</header>

@@ -5,6 +5,8 @@
 // @example
 // @include breakpoint($ipad-landscape) {}
 
+$viewport-increment: 0.1px;
+
 // breakpoint globals
 $breakpoint-to-ems: false;
 $breakpoint-force-media-all: false; // do u desire the 'all' media type printed out?
@@ -22,6 +24,10 @@ $ipad2: (min-device-width 768px) (max-device-width 1024px) (-webkit-min-device-p
 
 // Samsung
 $galaxyS4: 1080px; // 1080 x 1920 pixels. 441 ppi
+
+// Menus
+$utility-nav-rows: 700px;
+$utility-nav-columns: (max-width: $utility-nav-rows - $viewport-increment);
 
 // Comments
 $comments-avatar-side: 1086px;

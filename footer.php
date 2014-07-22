@@ -3,15 +3,15 @@
 		<?php get_sidebar('footer'); ?>
 	</div>
 
-	<ul class="socials">
-		<li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social">&#xF611;</a></li>
-		<li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social">&#xF670;</a></li>
-		<li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social">&#xF660;</a></li>
-		<li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social">&#xF610;</a></li>
-		<li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social">&#xF613;</a></li>
+	<ul id="info" class="socials">
+		<li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social-circle" aria-hidden="true">twitter</a></li>
+		<li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social-circle" aria-hidden="true">github</a></li>
+		<li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social-circle" aria-hidden="true">dribbble</a></li>
+		<li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social-circle" aria-hidden="true">facebook</a></li>
+		<li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social-circle" aria-hidden="true">googleplus</a></li>
 	</ul>
 
-	<small>Gray Ghost Visuals Press &bull; Exploring Front&ndash;end Web Development &amp; Design since <time datetime="2009">2009</time></small>
+	<small class="copyright">Gray Ghost Visuals Press &bull; Exploring Front&ndash;end Web Development &amp; Design since <time datetime="2009">2009</time></small>
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -21,11 +21,11 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/prism.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 
-<?php if ( is_single() || is_front_page() ) : ?>
+<?php if ( is_single() ) : ?>
 <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
 <script>
 	// @reference
-	// http://www.ivanthevariable.com/wordpress-comment-live-preview/
+	// http://www.ivanthevariable.com/wordpress-comment-live-preview
 	$('p[class*="comment-form"] > input').each(function() {
 		$(this).val('');
 	});
@@ -53,9 +53,6 @@
 	//g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 	//s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
-
-<script src="https://get.gridsetapp.com/17266/overlay/"></script>
-
 <?php wp_footer(); ?>
 </body>
 </html>

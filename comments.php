@@ -73,9 +73,9 @@
 	<?php if ( comments_open() ) : ?>
 		<?php
 			$commentform_args = array(
-					'comment_notes_after' => '<p>toggle formatting examples</p>
+					'comment_notes_after' => '<a href="#formatting-examples" class="formatting-toggle">show formatting examples</a>
 
-					<div>
+					<div id="formatting-examples">
 					<pre><code class="language-markup">&lt;pre&gt;&lt;code class=&quot;language-[markup | sass | css | php | javascript | ruby | clike | bash]&quot;&gt;
 …code example goes here…
 &lt;/code&gt;&lt;/pre&gt;

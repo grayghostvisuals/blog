@@ -3,8 +3,17 @@
     @include flex(1);
     @include align-items(center);
 
+    @include breakpoint($utility-nav-columns) {
+        @include flex-direction(column);
+        padding: 12px 0;
+    }
+
+    @include breakpoint($utility-nav-rows) {
+        @include flex-direction(row);
+    }
+
     label {
-        font-size: initial;
+        margin-right: 6px;
         &:after {
             content: ": ";
         }
@@ -12,7 +21,9 @@
 }
 
 input[type="search"] {
+    display: inline-block;
     padding: 6px 12px;
+    width: auto;
     text-shadow: 0 -1px 0 rgba(5, 5, 5, 1);
     background: transparent;
     color: $search-input-color;

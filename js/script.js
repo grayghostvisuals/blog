@@ -9,6 +9,11 @@ $(document).ready(function () {
 		$(this).parent().toggleClass('active');
 	});
 
+	$('.formatting-toggle').bind('click', function(event) {
+		event.preventDefault();
+		$(this).next().toggleClass('active');
+	});
+
 
 	//gives tactile feedback for read-more button on touch interfaces
 	$('.read-more').bind('mousedown mouseup', function () {

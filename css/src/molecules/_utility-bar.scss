@@ -16,11 +16,44 @@
 
 .utility-bar__items {
 	@extend %flexbox;
+	@include flex-direction(column);
 	padding: 12px;
+
+	a {
+		font-size: 24px;
+		color: white;
+	}
+
+	@include breakpoint($utility-nav-rows) {
+		@include flex-direction(row);
+	}
 }
 
 
 .utility-bar__toggle {
+	display: table;
 	padding: 12px;
 	position: absolute;
+	font-size: 21.555px;
+
+	.ss-icon {
+		display: table-cell;
+		vertical-align: middle;
+		padding-right: 5.333px;
+		color: #E9D0CA;
+	}
+}
+
+
+a[href*="#info"] {
+	@extend %flexbox;
+	@include align-items(center);
+	@include justify-content(center);
+	padding-left: 12px;
+	text-transform: capitalize;
+
+	@include breakpoint($utility-nav-columns) {
+		border: 2px solid rgba(255, 255, 255, 0.22);
+		padding: 12px 0;
+	}
 }

@@ -15,8 +15,8 @@
 					<div class="featimg--bg featimg--bg-small" style="background-image: url('<?php echo $image; ?>')"></div>
 					<?php endif; ?>
 
-					<header class="entry-header">
-						<h1 class="entry-title"><?php the_title(); ?></h1>
+					<header class="entry__header">
+						<h1 class="entry__title"><?php the_title(); ?></h1>
 						<?php get_template_part( 'inc/meta' ); ?>
 					</header>
 

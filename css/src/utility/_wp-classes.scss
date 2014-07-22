@@ -242,10 +242,8 @@ img.size-full {
 		};
 
 		blockquote {
-			border-left: 6px solid #000;
-			p {
-				padding-left: 24px;
-			}
+			border-left: 3px solid #FFF;
+			padding-left: 24px;
 		}
 	}
 
@@ -373,6 +371,20 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 	}
 }
 
+.comment-form-email,
+.comment-form-url {
+    float: left;
+    width: 50%;
+}
+
+.comment-form-email {
+    padding-right: 6px;
+}
+
+.comment-form-url {
+    padding-left: 6px;
+}
+
 .form-allowed-tags {
 	code {
 		display: block;
@@ -430,12 +442,33 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 	a {
 		padding: 12px;
 		display: block;
+		font-weight: 300;
 	}
 }
+
+.formatting-toggle {
+	display: block;
+	margin: 12px 0 18px;
+	text-transform: capitalize;
+}
+
+#formatting-examples {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+
+
+
+// ==========================================================================
+// WP-Flex Entries
+// ==========================================================================
 
 .entries__item {
 	margin: 54px 0;
 }
+
 
 
 // ==========================================================================
