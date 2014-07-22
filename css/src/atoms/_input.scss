@@ -2,6 +2,8 @@ input,
 textarea {
     @include appearance(none);
     border: none;
+    padding: (12/$typl8-font-base)+rem; //12px;
     resize: none;
-    background: rgba(128, 128, 128, 0.04);
+    background: $inputs-bg;
+    color: text-contrast($inputs-bg);
 }

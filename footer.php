@@ -1,5 +1,7 @@
 <footer role="contentinfo">
-	<?php get_sidebar('footer'); ?>
+	<div class="widgets-wrap">
+		<?php get_sidebar('footer'); ?>
+	</div>
 
 	<ul class="socials">
 		<li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social">&#xF611;</a></li>

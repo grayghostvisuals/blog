@@ -3,6 +3,37 @@
 
 
 // ================================================================================= //
+// $Typekit
+// ================================================================================= //
+
+body {
+    .wf-loading & {
+        font-family: serif;
+        font-weight: normal;
+        visibility: hidden;
+    }
+    .wf-active & {
+        font-family: "ff-meta-serif-web-pro", serif;
+        font-weight: 400;
+        visibility: visible;
+    }
+}
+
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        .wf-loading & {
+            font-weight: bold;
+        }
+        .wf-active & {
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+// ================================================================================= //
 // $OpenType
 // https://github.com/kennethormandy/normalize-opentype.css
 // ================================================================================= //
@@ -84,34 +115,23 @@ table tfoot {
 
 
 // ================================================================================= //
-// $Typekit
+// $Headers
 // ================================================================================= //
 
-body {
-    .wf-loading {
-        font-family: Georgia, serif;
-        font-weight: normal;
-        visibility: hidden;
-    }
-    .wf-active & {
-        font-family: "ff-meta-serif-web-pro",serif;
-        font-weight: 500;
-        visibility: visible;
-    }
+#comments-title {
+    font-size: medium;
+    text-align: center;
 }
 
-
-@for $i from 1 through 6 {
-    h#{$i} {
-        .wf-loading & {
-            font-weight: bold;
-        }
-        .wf-active & {
-            font-weight: 700;
-        }
-    }
+.comment-notes {
+    font-size: initial;
 }
 
+.widget-title {
+    font-size: initial;
+    margin-bottom: (12/$typl8-font-base)+rem; //12px
+    padding-right: (12/$typl8-font-base)+rem; //12px;
+}
 
 .results-headline {
     font-size: large;

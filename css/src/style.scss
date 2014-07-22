@@ -75,6 +75,7 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // 1. Aspect Ratio
 // 2. Context Calc
 // 3. Strip Units
+// 4. A11Y Contrast Ratio
 
 @import "functions/*";
 
@@ -175,6 +176,7 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 
 @import "atoms/figcaption";
 @import "atoms/input";
+@import "atoms/select";
 
 
 // ==========================================================================
@@ -185,8 +187,11 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 @import "molecules/tagline";
 @import "molecules/utility-bar";
 @import "molecules/search-form";
+@import "molecules/rss";
 @import "molecules/feat-img"; // http://codepen.io/grayghostvisuals/pen/c81c72c98da865a5e8fd7b02b00da7f3
 @import "molecules/profile";
+@import "molecules/footer-widgets";
+@import "molecules/socials";
 
 
 // ==========================================================================

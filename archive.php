@@ -34,9 +34,9 @@ rewind_posts();
 						<article <?php post_class('entry'); ?>>
 							<h1 class="entry-title"><?php the_title(); ?></h1>
 
-								<?php get_template_part( 'inc/meta' ); ?>
+							<?php get_template_part( 'inc/meta' ); ?>
 
-								<?php the_content( '<span class="read-more">Read More →</span>' ); ?>
+							<?php the_content( '<span class="read-more">Read More →</span>' ); ?>
 						</article>
 					</li>
 					<?php endwhile; ?>

@@ -55,8 +55,13 @@ $comments-caret-width: 25px;
 // --------------------------------------------------------
 // Colors
 // --------------------------------------------------------
-$silver-chalice: #A0A0A0;
-$scorpion: #696262;
+
+// palette
+$mine-shaft: #363434;
+$chablis: #FFF0F0;
+$tundora: #4D4D4D;
+$alabaster: #F9F9F9;
+$silver-chalice: #A7A1A1;
 
 // links
 $global-anchor-color: rgb(200,0,0);
@@ -66,5 +71,11 @@ $global-anchor-color-hover: rgb(255,0,0);
 $no-feat-bg: #252525;
 
 // comments
-$comment-body-bg: $silver-chalice;
-$comment-body-author-bg: $scorpion;
+$comment-body-bg: $mine-shaft;
+$comment-body-author-bg: $chablis;
+$comment-body-author-txt: $tundora;
+
+// inputs
+$inputs-bg: $alabaster;
+$search-input-bg: rgba(255, 255, 255, 0.1);
+$search-input-color: $silver-chalice;

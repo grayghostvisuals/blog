@@ -1,3 +1,24 @@
 #search-form {
-    flex: 1;
+    @extend %flexbox;
+    @include flex(1);
+    @include align-items(center);
+
+    label {
+        font-size: initial;
+        &:after {
+            content: ": ";
+        }
+    }
+}
+
+input[type="search"] {
+    padding: 6px 12px;
+    text-shadow: 0 -1px 0 rgba(5, 5, 5, 1);
+    background: transparent;
+    color: $search-input-color;
+
+    &:focus {
+        outline: none;
+        background: $search-input-bg;
+    }
 }

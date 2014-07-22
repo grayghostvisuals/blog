@@ -188,7 +188,7 @@ img.size-full {
 
 .commentlist {
 	margin: 0;
-	padding: 1.65em 0 0;
+	padding: 1.65rem 0 0;
 }
 
 .comment {
@@ -199,11 +199,10 @@ img.size-full {
 	.avatar {
 		border: 3px solid snow;
 		border-radius: 80%;
-		display: block;
-		display: inline-block;
-		margin: 0 1em 1em 0;
-		background: white;
 		box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.24);
+		display: inline-block;
+		margin: 0 1rem 1rem 0;
+		background: white;
 
 		@include breakpoint($comments-avatar-side) {
 			display: inline-block;
@@ -221,10 +220,12 @@ img.size-full {
 	}
 
 	.comment-body {
-		padding: 5%;
+		padding: 54px;
+		padding-bottom: 32px;
 		position: relative;
 		background: $comment-body-bg;
-		color: #E2DCDC;
+		color: text-contrast($comment-body-bg);
+
 		&:before {
 			content: "";
 			display: block;
@@ -244,29 +245,6 @@ img.size-full {
 			border-left: 6px solid #000;
 			p {
 				padding-left: 24px;
-			}
-		}
-	}
-
-	.comment-text {
-		p {
-			& + p {
-				text-indent: 0;
-				margin-top: #{$typl8-line-height/2}em
-			}
-			&:first-child {
-				&:before {
-					content: "“";
-					display: inline-block;
-					text-indent: -.675em;
-				}
-			}
-			&:last-child {
-				&:after {
-					content: "”";
-					display: inline-block;
-					text-indent: .25em;
-				}
 			}
 		}
 	}
@@ -296,13 +274,28 @@ img.size-full {
 	}
 }
 
+.comment-author-admin {
+	> .comment-vcard:before {
+		background: #FBFFEC;
+	}
+}
+
+.comment-author-admin,
 .comment.bypostauthor {
+
+	> .comment-vcard {
+		.avatar {
+			@include filter(sepia(50%));
+		}
+	}
+
 	> .comment-body {
 		background: $comment-body-author-bg;
+		color: $comment-body-author-txt;
 		&:before {
 			content: "";
-			display: block;
 			@include caret(top, $comments-caret-width, $comment-body-author-bg);
+			display: block;
 			position: absolute;
 			top: -$comments-caret-width;
 			left: 0;
@@ -329,15 +322,16 @@ img.size-full {
 		list-style: none;
 		text-indent: 0;
 		&:before {
+			border: 2px solid rgb(245, 201, 201);
+			border-radius: 80%;
 			content: "↑";
 			display: block;
+			height: 2rem;
+			margin: #{$typl8-line-height/2}rem auto;
+			width: 2rem;
+			line-height: 2;
 			text-align: center;
-			background: black;
-			width: 2em;
-			margin: #{$typl8-line-height/2}em auto;
-			height: 2em;
-			line-height: 2.25;
-			border-radius: 80%;
+			background: rgb(70, 85, 74);
 			color: white;
 		}
 	}
@@ -375,7 +369,7 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 		display: block;
 		text-align: center;
 		text-decoration: none;
-		padding: #{$typl8-line-height/2}em;
+		padding: 24px 36px;
 	}
 }
 
@@ -412,10 +406,54 @@ ol.commentlist li.comment ul.children li.depth-5 {}
     width: 100%;
 }
 
+.comment-reply-title {
+	a {
+		font-size: large;
+	}
+}
+
+#cancel-comment-reply-link {
+	display: block;
+	font-size: initial;
+	text-transform: capitalize;
+}
+
+.logged-in-as {
+	font-style: italic;
+}
+
+#comments-title {
+	margin-top: 36px;
+	padding: 12px -webkit-calc(50% - 75px);
+	padding: 12px calc(50% - 75px);
+
+	a {
+		padding: 12px;
+		display: block;
+	}
+}
+
+.entries__item {
+	margin: 54px 0;
+}
+
 
 // ==========================================================================
 // WP-Flex Custom Styles
 // ==========================================================================
+
+.pagination {
+	text-align: center;
+}
+
+.single-pagination {
+	@extend %flexbox;
+	padding: 24px 0;
+}
+
+.prev {
+	@include flex(1);
+}
 
 // .blogname {}
 // .tagline {}
@@ -431,6 +469,4 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 // .entry-tags {}
 // .entry-categories-list {}
 // .entry-categories {}
-// .pagination {}
-// .pagination.single {}
 // #sidebar {}

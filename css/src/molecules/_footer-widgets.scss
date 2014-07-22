@@ -1,0 +1,10 @@
+.widgets-wrap {
+    @extend %flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+}
+
+.fwidget {
+    @include flex(1);
+    padding: 12px;
+}

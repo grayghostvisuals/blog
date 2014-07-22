@@ -14,17 +14,17 @@
 
 	<?php wp_link_pages( array( $wpflex_post_pages ) ); ?>
 
-	<ul id="taxonomies">
+	<ul class="list-reset" id="taxonomies">
 		<li class="taxonomy-tags">
 			<h6 class="taxonomy-title">Tagged</h6>
-			<ul class="taxonomies-list">
+			<ul class="taxonomies-list list-reset">
 				<?php the_tags( '</li><li class="taxonomies-item">' ); ?>
 			</ul>
 		</li>
 
 		<li class="taxonomy-cat visuallyhidden">
 			<h6 class="taxonomy-title">Filed as</h6>
-			<ul class="taxonomy-list">
+			<ul class="taxonomy-list list-reset">
 				<?php the_category( '</li><li class="taxonomies-item">' ) ?>
 			</ul>
 		</li>

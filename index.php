@@ -15,7 +15,6 @@
 						<?php the_content('<span class="read-more">Read More →</span>'); ?>
 					</div>
 				</article>
-
 				<?php
 					// $withcomments = "0"; // Display comments on front page
 					// comments_template();

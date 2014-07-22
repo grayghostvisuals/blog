@@ -282,9 +282,9 @@ $typl8-dropcap-bg: transparent !default;
 @mixin smallcaps($color, $font-weight) {
     @each $prefix in $typl8-prefixes {
         #{$prefix}font-variant: small-caps;
+        #{$prefix}font-feature-settings: "smcp";
     }
     font-weight: $font-weight;
-    text-transform: lowercase;
     color: $color;
 }
 
