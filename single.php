@@ -4,21 +4,23 @@
 		<main class="clearfix" id="content" role="main">
 			<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 				<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+					<header class="entry__header">
+						<h1 class="entry__title"><?php the_title(); ?></h1>
+						<?php get_template_part( 'inc/meta' ); ?>
+					</header>
+
 					<?php if ( has_post_thumbnail( $post->ID ) ) : ?>
 					<?php
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 						$image = $image[0];
 					?>
-					<div class="featimg--bg featimg--bg-lg" style="background-image: url('<?php echo $image; ?>')"></div>
+					<div class="featimg--bg featimg--lg" style="background-image: url('<?php echo $image; ?>')"></div>
 
 					<?php $image = get_field('small_feature_image'); ?>
-					<div class="featimg--bg featimg--bg-small" style="background-image: url('<?php echo $image; ?>')"></div>
+					<div class="featimg--small">
+						<img src="<?php echo $image; ?>" alt="">
+					</div>
 					<?php endif; ?>
-
-					<header class="entry__header">
-						<h1 class="entry__title"><?php the_title(); ?></h1>
-						<?php get_template_part( 'inc/meta' ); ?>
-					</header>
 
 					<div class="entry-content">
 						<?php the_content(); ?>

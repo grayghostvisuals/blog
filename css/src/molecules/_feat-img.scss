@@ -1,4 +1,6 @@
 // http://subtlepatterns.com/patterns/cartographer.png
+//background: $no-feat-bg url(http://subtlepatterns.com/patterns/cartographer.png) top left repeat;
+
 .featimg--bg {
     height: $header-height;
     position: absolute;
@@ -22,15 +24,15 @@
     }
 }
 
-.featimg--bg-lg {
+.featimg--lg {
     display: none;
     @include breakpoint(800px) {
         display: block;
     }
 }
 
-.featimg--bg-small {
-    
+.featimg--small {
+    margin-bottom: 14px;
     @include breakpoint(800px) {
         display: none;
     }

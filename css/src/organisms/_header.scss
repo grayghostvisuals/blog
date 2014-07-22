@@ -6,6 +6,9 @@
 
 	.bg-feat & {
 		height: $header-height;
+		@include breakpoint((max-width: 799.9px)) {
+			background: $no-feat-bg url(http://subtlepatterns.com/patterns/cartographer.png) top left repeat !important;
+		}
 	}
 
 	.no-feat-bg & {
