@@ -1,4 +1,19 @@
 #article-links {
     list-style-type: none;
     padding-left: 0;
+
+    li {
+        display: table;
+        a {
+            display: table-cell;
+            vertical-align: middle;
+            padding-right: 6px;
+        }
+    }
+
+    .ss-icon {
+        display: table-cell;
+        vertical-align: middle;
+        padding-right: 6px;
+    }
 }

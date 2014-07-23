@@ -472,6 +472,10 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 // WP-Flex Entries
 // ==========================================================================
 
+.entry-content {
+	padding-top: 12px;
+}
+
 .entries__item {
 	padding-bottom: 48.667px; // 54 - 5.333 0;
 }
