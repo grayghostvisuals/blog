@@ -1,0 +1,510 @@
+// ==========================================================================
+// Required WordPress Styles
+// ==========================================================================
+
+/*
+* WordPress Required
+*
+* @since 1.0.6
+* Generated Core Classes
+* Each Theme should have these or similar styles in its style.css file
+* in order to display images and captions properly.
+* http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+*/
+
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+	display:block;
+	margin: 5px auto 5px auto;
+}
+
+.alignright {
+	float:right;
+	margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+	float:left;
+	margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 5px auto 5px auto;
+}
+
+.alignright {
+	float:right;
+	margin: 5px 0 20px 20px;
+}
+
+.alignnone {
+	clear: both;
+	margin: 5px 20px 20px 0;
+}
+
+.alignleft {
+	float:left;
+	margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	max-width: 96%; /* Image does not overflow the content area */
+	padding: 5px 3px 10px;
+	text-align: center;
+}
+
+.wp-caption.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin:0;
+	max-width: 98.5%;
+	padding:0;
+	width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+
+
+/*
+* stops too many categories from breaking the layout
+*/
+.entry-tags-list li,
+.entry-categories-list li {
+	display: inline-block;
+}
+
+
+
+// ==========================================================================
+// WordPress Generated - Extra Styling Classes for Authors
+// http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+// ==========================================================================
+
+/* Fluid Images For Wordpress */
+img[class*="align"],
+img[class*="wp-image-"] {
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+.wp-caption,
+.wp-caption img {
+	max-width: 100%;
+}
+
+img.size-full {
+	max-width: 100%;
+	width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
+}
+
+
+// .cat-item {}
+// .cat-item.current-cat {}
+
+// .cat-item a:hover {}
+// .cat-item.current-cat a:hover {}
+
+// .cat-item a {}
+// .cat-item.current-cat a {}
+
+
+.entry-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+
+// .widget {}
+
+
+// .wp-post-image {}
+// .attachment-thumbnail {}
+// .attachment-medium {}
+// .attachment-large {}
+// .attachment-full {}
+
+
+// .error404 {}
+
+
+// .more-link {}
+// .posttitle {}
+
+
+
+// ==========================================================================
+// WordPress Comments
+// ==========================================================================
+
+/*
+* 2.0 Comment Styling Classes
+*
+* Built on the shoulders of Chris Coyier and Chris Harrison's awesome work
+* http://cdharrison.com/2008/12/03/threaded-comments
+* http://css-tricks.com/snippets/wordpress/base-threaded-comments-styling
+*/
+
+.commentlist,
+.commentlist ul,
+.commentlist .children {
+	padding: 0;
+	list-style-type: none
+}
+
+.commentPreview .comment.depth-1 {
+	border-bottom: none;
+}
+
+.commentlist {
+	margin: 0;
+	padding: 1.65rem 0 0;
+}
+
+.comment {
+	@include breakpoint($comments-avatar-side) {
+		position: relative;
+	}
+
+	.avatar {
+		border: 3px solid snow;
+		border-radius: 80%;
+		box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.24);
+		display: inline-block;
+		margin: 0 1rem 1rem 0;
+		background: white;
+
+		@include breakpoint($comments-avatar-side) {
+			display: inline-block;
+			position: relative;
+			float: left;
+			margin-left: -170px;
+			margin-top: 18px;
+		}
+	}
+
+	.comment-meta {
+		padding: .5em 2%;
+		font-size: small;
+		text-align: right;
+	}
+
+	.comment-body {
+		padding: 54px;
+		padding-bottom: 32px;
+		position: relative;
+		background: $comment-body-bg;
+		color: text-contrast($comment-body-bg);
+
+		&:before {
+			content: "";
+			display: block;
+			@include caret(top, $comments-caret-width, $comment-body-bg);
+			position: absolute;
+			top: -$comments-caret-width;
+			left: 0;
+
+			@include breakpoint($comments-avatar-side) {
+				@include caret(left, $comments-caret-width, $comment-body-bg);
+				top: 0;
+				left: -$comments-caret-width;
+			}
+		};
+
+		blockquote {
+			border-left: 3px solid #FFF;
+			padding-left: 24px;
+		}
+	}
+
+	.reply {
+		padding: #{$typl8-line-height/2}em 0;
+		text-align: right;
+	}
+}
+
+.comment-vcard {
+	&:before {
+		@include breakpoint($comments-avatar-side) {
+			margin-left: -50px;
+			content: "";
+			display: block;
+			width: 132px;
+			height: 132px;
+			background: transparent;
+			position: absolute;
+			z-index: 0;
+			border-radius: 100%;
+			top: 0px;
+			left: -137px;
+			box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.23);
+		}
+	}
+}
+
+.comment-author-admin {
+	> .comment-vcard:before {
+		background: #FBFFEC;
+	}
+}
+
+.comment-author-admin,
+.comment.bypostauthor {
+
+	> .comment-vcard {
+		.avatar {
+			@include filter(sepia(50%));
+		}
+	}
+
+	> .comment-body {
+		background: $comment-body-author-bg;
+		color: $comment-body-author-txt;
+		&:before {
+			content: "";
+			@include caret(top, $comments-caret-width, $comment-body-author-bg);
+			display: block;
+			position: absolute;
+			top: -$comments-caret-width;
+			left: 0;
+
+			@include breakpoint($comments-avatar-side) {
+				@include caret(left, $comments-caret-width, $comment-body-author-bg);
+				top: 0;
+				left: -$comments-caret-width;
+			}
+		}
+	}
+}
+
+.comment.depth-1 {
+	border-bottom: 3px dotted rgba(10, 10, 10, 0.1);
+	margin-bottom: 3em;
+}
+
+// ol.commentlist li.comment.even {}
+// ol.commentlist li.comment.odd {}
+
+.comment {
+	.children {
+		list-style: none;
+		text-indent: 0;
+		&:before {
+			border: 2px solid rgb(245, 201, 201);
+			border-radius: 80%;
+			content: "↑";
+			display: block;
+			height: 2rem;
+			margin: #{$typl8-line-height/2}rem auto;
+			width: 2rem;
+			line-height: 2;
+			text-align: center;
+			background: rgb(70, 85, 74);
+			color: white;
+		}
+	}
+}
+
+// .comment.thread-alt {}
+// .comment.thread-even {}
+// .comment.thread-odd {}
+
+ol.commentlist li.comment ul.children li.depth-1 {
+	background: red;
+}
+ol.commentlist li.comment ul.children li.depth-2 {
+	margin: 0 0 .25em .25em;
+}
+ol.commentlist li.comment ul.children li.depth-3 {
+	margin: 0 0 .25em .25em;
+}
+ol.commentlist li.comment ul.children li.depth-4 {
+	margin: 0 0 .25em .25em;
+}
+ol.commentlist li.comment ul.children li.depth-5 {}
+
+#commentform {
+	width: 100%;
+	p + p {
+		margin-top: auto;
+		text-indent: 0;
+	}
+	input {
+		display: block;
+	}
+	#submit {
+		border: solid 1px transparent;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		padding: 24px 36px;
+		background: rgb(255, 63, 63);
+		color: white;
+		&:hover {
+			background: scale-lightness(rgb(255, 63, 63), -10%);
+		}
+	}
+}
+
+.comment-form-email,
+.comment-form-url {
+    float: left;
+    width: 50%;
+}
+
+.comment-form-email {
+    padding-right: 6px;
+}
+
+.comment-form-url {
+    padding-left: 6px;
+}
+
+.form-allowed-tags {
+	code {
+		display: block;
+		font-size: .875em;
+		color: #248bd1;
+	}
+}
+
+.moderating,
+.nocomments {
+	color: red;
+	text-align: center;
+	text-shadow: none;
+}
+
+#respond {
+	padding: #{$typl8-line-height}em 0;
+}
+
+#comments-link {
+    font-style: italic;
+}
+
+#comments-count {}
+
+#comments-link {
+    display: block;
+}
+
+#comment {
+    width: 100%;
+}
+
+.comment-reply-title {
+	a {
+		font-size: large;
+	}
+}
+
+#cancel-comment-reply-link {
+	display: block;
+	font-size: initial;
+	text-transform: capitalize;
+}
+
+.logged-in-as {
+	font-style: italic;
+}
+
+#comments-title {
+	margin-top: 36px;
+	padding: 12px -webkit-calc(50% - 75px);
+	padding: 12px calc(50% - 75px);
+
+	a {
+		padding: 12px;
+		display: block;
+		font-weight: 300;
+	}
+}
+
+.formatting-toggle {
+	display: block;
+	margin: 12px 0 18px;
+	text-transform: capitalize;
+}
+
+#formatting-examples {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+
+
+
+// ==========================================================================
+// WP-Flex Entries
+// ==========================================================================
+
+.entries__item {
+	padding-bottom: 48.667px; // 54 - 5.333 0;
+}
+
+
+
+// ==========================================================================
+// WP-Flex Custom Styles
+// ==========================================================================
+
+.pagination {
+	text-align: center;
+}
+
+.single-pagination {
+	@extend %flexbox;
+	padding: 24px 0;
+}
+
+.prev {
+	@include flex(1);
+}
+
+// .blogname {}
+// .tagline {}
+// .menu {}
+// .page-title{}
+// .entry-title {}
+// .meta {}
+// .entry-footer {}
+// .comments-count {}
+// .comments-count-number {}
+// .entry-taxonomies {}
+// .entry-tags-list {}
+// .entry-tags {}
+// .entry-categories-list {}
+// .entry-categories {}
+// #sidebar {}

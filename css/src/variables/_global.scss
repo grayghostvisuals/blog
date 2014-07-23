@@ -1,0 +1,88 @@
+// --------------------------------------------------------
+// Grid
+// --------------------------------------------------------
+
+@import "lib/grid";
+
+
+// --------------------------------------------------------
+// Breakpoints
+// http://www.youtube.com/watch?v=lR9lK_K8MDE
+// https://github.com/Team-Sass/breakpoint/wiki
+// --------------------------------------------------------
+
+@import "lib/media-breakpoints";
+
+
+// --------------------------------------------------------
+// Media Query Helper
+// Supports:
+// min-width, max-width, min-width and max-width
+// --------------------------------------------------------
+
+$viewport-increment: 0.1px;
+$min: min-width;
+$max: max-width;
+
+// Desktop
+$desktop: 1024px; // customize to suite
+$pre-desktop: $desktop - $viewport-increment;
+
+// Tablet
+$tablet: 768px; // customize to suite
+$pre-tablet: $tablet - $viewport-increment;
+
+// Palm
+$palm: 641px; // customize to suite
+$post-palm: $palm + $viewport-increment;
+
+
+// --------------------------------------------------------
+// Container
+// --------------------------------------------------------
+
+$container-max-width: 1024px;
+
+
+// --------------------------------------------------------
+// Dimensions
+// --------------------------------------------------------
+
+$header-height: 500px;
+$comments-caret-width: 25px;
+
+
+// --------------------------------------------------------
+// Colors
+// --------------------------------------------------------
+
+$twitter: #55ACEE;
+$github: black;
+$dribbble: #EA4C89;
+$facebook: #46629E;
+$gplus: #DD4B39;
+
+
+// palette
+$mine-shaft: #201F1F;
+$chablis: #FFF0F0;
+$tundora: #4D4D4D;
+$alabaster: #F9F9F9;
+$silver-chalice: #A7A1A1;
+
+// links
+$global-anchor-color: rgb(200,0,0);
+$global-anchor-color-hover: rgb(255,0,0);
+
+// backgrounds
+$no-feat-bg: #252525;
+
+// comments
+$comment-body-bg: $mine-shaft;
+$comment-body-author-bg: $chablis;
+$comment-body-author-txt: $tundora;
+
+// inputs
+$inputs-bg: $alabaster;
+$search-input-bg: rgba(255, 255, 255, 0.1);
+$search-input-color: $silver-chalice;

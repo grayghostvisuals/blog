@@ -1,0 +1,29 @@
+.featimg--bg {
+    height: $header-height;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.65);
+    }
+}
+
+.featimg--lg {
+    display: none;
+    @include breakpoint(800px) {
+        display: block;
+    }
+}

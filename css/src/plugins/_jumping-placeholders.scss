@@ -1,0 +1,32 @@
+// ==========================================================================
+// Jumping Placeholders
+// http://dribbble.com/shots/1254439--GIF-Mobile-Form-Interaction
+// http://stackoverflow.com/questions/19325319/jumping-input-fields-in-safari
+// ==========================================================================
+
+// Add these to your main variables file
+$jumping-placeholder-color: lightgrey;
+$jumping-placeholder-padding: 11px;
+// Add these to your main variables file
+
+.jumping-placeholder {
+	position: relative;
+	padding: $jumping-placeholder-padding;
+}
+
+::-webkit-input-placeholder {
+	position: relative;
+	top: 0;
+	left: 0;
+	@include transition-property(top, color);
+	@include transition-duration(.1s);
+	color: $jumping-placeholder-color;
+}
+
+::-webkit-input-placeholder[style*=hidden] {
+	color: $jumping-placeholder-color;
+	font-weight: normal;
+	top: -8pt;
+	opacity: 1;
+	visibility: visible !important;
+}

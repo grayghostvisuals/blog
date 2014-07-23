@@ -1,0 +1,16 @@
+#rss {
+    @extend %flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+
+    @include breakpoint($utility-nav-columns) {
+        border: 2px solid rgba(255, 255, 255, 0.22);
+        @include flex-direction(column);
+        margin: 12px 0;
+        padding: 12px 0;
+    }
+
+    @include breakpoint($utility-nav-rows) {
+        @include flex-direction(row);
+    }
+}

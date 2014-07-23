@@ -1,0 +1,177 @@
+// $Modular Scale
+// http://modularscale.com/scale/?px1=18&px2=16&ra1=1.5&ra2=0
+
+
+// ================================================================================= //
+// $Typekit
+// ================================================================================= //
+
+body {
+    .wf-loading & {
+        font-family: serif;
+        font-weight: normal;
+        visibility: hidden;
+    }
+    .wf-active & {
+        font-family: "ff-meta-serif-web-pro", serif;
+        font-weight: 400;
+        visibility: visible;
+    }
+}
+
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        .wf-loading & {
+            font-weight: bold;
+        }
+        .wf-active & {
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+// ================================================================================= //
+// $OpenType
+// https://github.com/kennethormandy/normalize-opentype.css
+// ================================================================================= //
+
+html,
+body {
+    @each $prefix in $typl8-prefixes {
+        #{$prefix}font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+    }
+}
+
+h1,
+h2,
+h3 {
+    @each $prefix in $typl8-prefixes {
+        #{$prefix}font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+    }
+}
+
+abbr {
+    @each $prefix in $typl8-prefixes {
+        #{$prefix}font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+    }
+}
+
+time {
+    @each $prefix in $typl8-prefixes {
+        #{$prefix}font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0;
+    }
+}
+
+pre,
+kbd,
+samp,
+code {
+    @each $prefix in $typl8-prefixes {
+        #{$prefix}font-feature-settings: "kern" 0, "liga" 0, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+    }
+}
+
+sup {
+    @each $prefix in $typl8-prefixes {
+        #{$prefix}font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1;
+    }
+}
+
+sub {
+    @each $prefix in $typl8-prefixes {
+        #{$prefix}font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1;
+    }
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="range"],
+input[type="tel"],
+input[type="week"], {
+    @each $prefix in $typl8-prefixes {
+        #{$prefix}font-feature-settings: "kern" 0, "liga" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "zero" 0;
+    }
+}
+
+table {
+    @each $prefix in $typl8-prefixes {
+        #{$prefix}font-feature-settings: "kern" 0, "liga" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+    }
+}
+
+table thead,
+table tfoot {
+    @each $prefix in $typl8-prefixes {
+        #{$prefix}font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+    }
+}
+
+
+
+// ================================================================================= //
+// $Headings
+// ================================================================================= //
+
+#comments-title {
+    font-size: medium;
+    text-align: center;
+}
+
+.comment-notes {
+    font-size: initial;
+}
+
+.widget-title {
+    font-size: initial;
+    margin-bottom: (12/$typl8-font-base)+rem; //12px
+    padding-right: (12/$typl8-font-base)+rem; //12px;
+}
+
+.results-headline {
+    font-size: large;
+}
+
+.entry__title {
+    margin-bottom: 1.580px;
+}
+
+
+// ================================================================================= //
+// $Atoms
+// ================================================================================= //
+
+label {
+    font-size: smaller;
+}
+
+
+
+// ================================================================================= //
+// $Molecules
+// ================================================================================= //
+
+.more-link {
+    font-style: italic;
+}
+
+#search-form {
+    label {
+        font-size: initial;
+    }
+}
+
+.copyright {
+    text-align: center;
+    display: block;
+    font-style: italic;
+}
+
+.socials {
+    font-size: 36px;
+}

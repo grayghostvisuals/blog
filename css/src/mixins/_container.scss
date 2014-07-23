@@ -1,0 +1,16 @@
+// ============================================================
+// $Container
+// ============================================================
+
+@mixin container($container-max-width, $gutter) {
+    max-width: $container-max-width;
+    margin: auto;
+    padding: 0 $gutter;
+    width: 100%;
+}
+
+@mixin gridContainer($container-max-width) {
+    max-width: $container-max-width;
+    margin: auto;
+    width: 100%;
+}

@@ -1,0 +1,222 @@
+/*!
+Theme Name: Gray Ghost Visuals Press
+Theme URI: http://blog.grayghostvisuals.com
+Description: Exploring Front-end Web Development and Design using Wordpress, WP-Flex Boilerplate, HTML5 Boilerplate, Gridset and Symbolset
+
+Author: Gray Ghost Visuals Press
+Author URI: http://blog.grayghostvisuals.com
+
+Version: 2.0.0
+Tags: full-width-template, flexible-width, microformats, sticky-post, front-page-post-form, sticky-post, threaded-comments, post-formats, light
+
+Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
+*/
+
+// Video Tut for Wavy Outline on Badge
+// http://layersmagazine.com/making-a-wavy-edge-using-the-transform-tool.html
+
+
+// Grid Layout Specs
+// Gutters should always be odd. They should always be bigger than you
+// think you need. 20px is way too narrow.
+//
+// Constant : Ad Sizes = 200px x 160px = 200 / 4 = 50
+
+
+// ==========================================================================
+// $Sass Globbing Notes
+// http://fuseinteractive.ca/blog/automatic-sass-imports-sass-globbing
+// ==========================================================================
+
+// @example
+// @import 'layouts/*';
+
+// All partials inside 'layouts' are imported.
+// By default, partials are imported alphabetically.
+// In order to import them in a specific order
+// we can number the partial files like so…
+//
+// _1.layout-small.scss
+// _2.layout-wide.scss
+
+
+// ==========================================================================
+// $Plugins
+// ==========================================================================
+
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+
+
+// ==========================================================================
+// $Compass Sprites
+// http://appendto.com/2014/02/screencast-speed-image-spriting-compass
+// http://compass-style.org/help/tutorials/spriting/magic-selectors
+// http://blog.teamtreehouse.com/the-ecstasy-and-agony-of-compass-sprite-generation-part-1
+// ==========================================================================
+
+// $icons-spacing: 0px; // Increase the spacing between images within the sprite.
+// @import "icons/*.png";
+// @include all-icons-sprites(true); // .icons-[image-file-name] {}
+
+
+// ==========================================================================
+// $Vars
+// ==========================================================================
+
+@import "variables/global";
+
+
+// ==========================================================================
+// $Functions
+// ==========================================================================
+
+// 1. Aspect Ratio
+// 2. Context Calc
+// 3. Strip Units
+// 4. A11Y Contrast Ratio
+
+@import "functions/*";
+
+
+// ==========================================================================
+// $Placeholders
+// ==========================================================================
+
+// 1. Psuedo Content
+// 2. List Styling
+// 3. Highlight
+// 4. Display
+// 5. Vertical Align
+// 5. Font Loader
+
+@import "placeholders/*";
+
+
+// ==========================================================================
+// $Mixins
+// ==========================================================================
+
+// 1.  MediaQuery Helper
+// 2.  Centering
+// 3.  CSS Caret
+// 4.  Rem Font Sizing
+// 5.  Background-Size Polyfill
+// 6.  Vendor Prefix Helper
+// 7.  Keyframe Animations
+// 8.  Container
+// 9.  RGBA
+// 10. Image2x
+// 11. Respond Media Query Helper
+// 12. List Styles
+// 13. FlexEmbed
+// 14. Gradients
+// 15. Input Placeholders
+// 16. Size
+// 17. Offset Position
+// 18. Flexbox
+// 19. Font Icon Smoothing
+
+@import "mixins/*";
+
+
+// ==========================================================================
+// $Bower Packages
+// ==========================================================================
+
+@import "../../bower_components/normalize.scss/normalize"; // @Since v2.1.3
+
+
+// ==========================================================================
+// $Base
+// ==========================================================================
+
+@import "utility/base";
+
+
+// ==========================================================================
+// $Typography
+// ==========================================================================
+
+@import "plugins/typeplate-sk"; // typeplate starter kit
+@import "typography/ss-social"; // symbolset social
+@import "typography/ss-std";    // symbolset standard
+@import "typography/typesetting";
+
+
+// ==========================================================================
+// $Plugins
+// ==========================================================================
+
+@import "utility/wp-classes";
+@import 'plugins/prism';
+
+
+// ==========================================================================
+// $Layout
+// ==========================================================================
+
+// 1. Singularity Grid System
+// 2. Containers
+// 2. Content
+
+@import "layout/**/*";
+
+
+// ==========================================================================
+// $WordPress Widgets
+// ==========================================================================
+
+@import "widgets/**/*";
+
+
+// ==========================================================================
+// $Atoms
+// ==========================================================================
+
+@import "atoms/**/*";
+
+
+// ==========================================================================
+// $Molecules
+// ==========================================================================
+
+@import "molecules/**/*";
+
+
+// ==========================================================================
+// $Organisms
+// ==========================================================================
+
+@import "organisms/**/*";
+
+
+// ==========================================================================
+// $Templates
+// ==========================================================================
+
+// 1. Home
+
+@import "templates/*";
+
+
+// ==========================================================================
+// $States
+// ==========================================================================
+
+
+
+// ==========================================================================
+// $Helpers
+// ==========================================================================
+
+@import "utility/helpers";
+
+
+// ==========================================================================
+// $Print
+// Inlined to avoid required HTTP connection: h5bp.com/r
+// ==========================================================================
+
+@import "utility/print";

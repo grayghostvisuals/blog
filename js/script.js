@@ -1,42 +1,29 @@
-if (Modernizr.svg) {
-    $('.blog-name a').append('<img src="//static.grayghostvisuals.com/imgblog/blogbadge.png" alt="gray ghost visuals press icon leading you home" class="logo"><span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( "name" ) ); ?></span>');
-}else {
-    $('.blog-name a').append('<img src="//static.grayghostvisuals.com/imgblog/blogbadge.png" alt="gray ghost visuals press icon leading you home" class="logo"><span class="visuallyhidden" aria-hidden="true"><?php esc_attr( bloginfo( "name" ) ); ?></span>');
-}
-
 $(document).ready(function () {
 
-    $('#rss').click(function () {
-        var position = $(this).css('top') === '0px' ? '-2.75em' : '0';
-        $(this).animate({
-            top: position
-        }, 500);
-    });
+	// FitVids.js
+	$('.flex-video').fitVids();
 
-    // FitVid.js
-    $('.flex-video').fitVids();
 
-    //gives tactile feedback for read-more button on touch interfaces
-    $('.read-more').bind('mousedown mouseup', function () {
-        $(this).toggleClass('active');
-    });
+	$('.utility-bar__toggle').bind('click', function(event) {
+		event.preventDefault();
+		$('.utility-bar').toggleClass('active');
+		$('.utility-bar__items').toggleClass('active');
+	});
 
-    // grab the button
-    var el = document.getElementsByClassName('button');
 
-    function touchStart() {
-        el.setAttribute('class', 'active');
-    }
+	$('.formatting-toggle').bind('click', function(event) {
+		event.preventDefault();
+		$(this).next().toggleClass('active');
+	});
 
-    for (var i = 0; i < el.length; i++) {
-        el[i].addEventListener('touchstart', touchStart, false);
-    }
 
-    $('#article-links li').each(function() {
-        $(this).prepend('<b class="ss-icon">&#x1F517;</b>');
-    });
+	//gives tactile feedback for read-more button on touch interfaces
+	$('.read-more').bind('mousedown mouseup', function () {
+		$(this).toggleClass('active');
+	});
 
-    $('.post-438').append('<a href="https://github.com/grayghostvisuals/WP-Flex"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>');
-    $('.post-921').append('<a href="https://github.com/grayghostvisuals/WP-Flex"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>');
-    $('.post-1414').append('<a href="https://github.com/grayghostvisuals/WP-Flex"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>');
+
+	$('#article-links li').each(function() {
+		$(this).prepend('<b class="ss-icon">&#x1F517;</b>');
+	});
 });//end document.ready

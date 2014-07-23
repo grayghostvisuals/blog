@@ -1,0 +1,22 @@
+.branding {
+	@extend %flexbox;
+	@include align-items(center);
+	@include flex-direction(column);
+	@include justify-content(center);
+
+	.bg-feat & {
+		height: $header-height;
+		@include breakpoint((max-width: 799.9px)) {
+			background: $no-feat-bg url(http://subtlepatterns.com/patterns/cartographer.png) top left repeat !important;
+		}
+	}
+
+	.no-feat-bg & {
+		height: $header-height;
+		background: $no-feat-bg url(http://subtlepatterns.com/patterns/cartographer.png) top left repeat;
+	}
+
+	.index & {
+		height: 100%;
+	}
+}

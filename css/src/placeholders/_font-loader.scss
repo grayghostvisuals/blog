@@ -1,0 +1,28 @@
+// ==========================================================================
+// $Font Kit Size = 0K
+// ==========================================================================
+
+// Replace '%font-family-name' with your custom name
+
+// @example
+// %adelleLight {...}
+
+// @use
+// .button--primary { @extend %adelle-light; }
+
+%font-family-name {
+
+    // Loading Class
+    .wf-loading & {
+        visibility: hidden; // hide on load to control FOUT
+    }
+
+    // Active/No-JS Class
+    .no-js,
+    .wf-active & {
+        font-family: "",sans-serif; // replace your font-family here
+        font-style: normal; // replace your font-family style here
+        font-weight: 700; // replace your font-family weight here
+        visibility: visible; // show the font gracefully for FOUT
+    }
+}
