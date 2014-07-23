@@ -66,7 +66,7 @@
 
 		<h1 class="blogname">
 			<a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark">
-				<img src="http://static.grayghostvisuals.com/imgblog/blogbadge.png" class="logo" alt="">
+				<img src="http://static.grayghostvisuals.com/imgblog/blogbadge.png" class="logo" alt="<?php esc_attr( bloginfo( 'name' ) ); ?>">
 			</a>
 		</h1>
 

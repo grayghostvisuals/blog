@@ -46,10 +46,12 @@
 <?php endif; ?>
 
 <script async>
-	//var _gaq=[ ['_setAccount','UA-27240293-1'],['_trackPageview'],['_trackPageLoadTime'],['_setSiteSpeedSampleRate', 100]];
-	//(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-	//g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-	//s.parentNode.insertBefore(g,s)}(document,'script'));
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+	e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+	e.src='//www.google-analytics.com/analytics.js';
+	r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+	ga('create','UA-27240293-1');ga('send','pageview');
 </script>
 <?php wp_footer(); ?>
 </body>
