@@ -41,11 +41,10 @@ pre[class*="language-"],
 /* Code blocks */
 pre[class*="language-"] {
 	padding: 1em;
-	margin: .5em 0;
+	// margin: .5em 0;
 	overflow: auto;
-	border: .3em solid hsl(30,20%,40%);
-	border-radius: .5em;
-	box-shadow: 1px 1px .5em black inset;
+	border: 0.3em solid #DBDBDB;
+	border-radius: 6px;
 }
 
 /* Inline code */
