@@ -14,11 +14,8 @@
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 						$image = $image[0];
 					?>
-					<div class="featimg--bg featimg--lg" style="background-image: url('<?php echo $image; ?>')"></div>
-
-					<?php $image = get_field('small_feature_image'); ?>
-					<div class="featimg--small">
-						<img src="<?php echo $image; ?>" alt="">
+					<div class="featimg--lg">
+						<div class="featimg--bg" style="background-image: url('<?php echo $image; ?>')"></div>
 					</div>
 					<?php endif; ?>
 
@@ -31,11 +28,11 @@
 
 				<div class="single-pagination">
 					<span class="prev">
-						<?php previous_post_link( '%link', '<span>Previous Category Post</span>', TRUE ); ?>
+						<?php previous_post_link( '%link', '<span>« Previous Category Post</span>', TRUE ); ?>
 					</span>
 
 					<span class="nxt">
-						<?php next_post_link( '%link', '<span>Next Category Post</span>', TRUE ); ?>
+						<?php next_post_link( '%link', '<span>Next Category Post »</span>', TRUE ); ?>
 					</span>
 				</div>
 			<?php endwhile; ?>

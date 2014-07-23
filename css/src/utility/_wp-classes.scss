@@ -368,6 +368,11 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 		text-align: center;
 		text-decoration: none;
 		padding: 24px 36px;
+		background: rgb(255, 63, 63);
+		color: white;
+		&:hover {
+			background: scale-lightness(rgb(255, 63, 63), -10%);
+		}
 	}
 }
 
@@ -466,7 +471,7 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 // ==========================================================================
 
 .entries__item {
-	margin: 54px 0;
+	padding-bottom: 48.667px; // 54 - 5.333 0;
 }
 
 

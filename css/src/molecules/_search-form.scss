@@ -1,6 +1,5 @@
 #search-form {
     @extend %flexbox;
-    @include flex(1);
     @include align-items(center);
 
     @include breakpoint($utility-nav-columns) {
@@ -10,6 +9,7 @@
 
     @include breakpoint($utility-nav-rows) {
         @include flex-direction(row);
+        @include flex(1);
     }
 
     label {
@@ -19,6 +19,7 @@
         }
     }
 }
+
 
 input[type="search"] {
     display: inline-block;

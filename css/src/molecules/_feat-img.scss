@@ -30,10 +30,3 @@
         display: block;
     }
 }
-
-.featimg--small {
-    margin-bottom: 14px;
-    @include breakpoint(800px) {
-        display: none;
-    }
-}

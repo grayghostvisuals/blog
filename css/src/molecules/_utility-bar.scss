@@ -4,16 +4,22 @@
 	left: 0;
 	color: white;
 	width: 100%;
-	@include transition(transform .3s ease-in-out);
-	@include transform(translateY(-100%));
 	z-index: 1;
 
 	@include breakpoint($utility-nav-rows) {
 		background: rgba(255, 255, 255, 0.13);
+		@include transition(transform .3s ease-in-out);
+		@include transform(translateY(-100%));
+	}
+
+	@include breakpoint($utility-nav-columns) {
+		height: 100%;
 	}
 
 	&.active {
-		@include transform(translateY(0));
+		@include breakpoint($utility-nav-rows) {
+			@include transform(translateY(0));
+		}
 	}
 }
 
@@ -23,13 +29,27 @@
 	@include flex-direction(column);
 	padding: 12px;
 
-	a {
-		font-size: 24px;
-		color: white;
+	@include breakpoint($utility-nav-columns) {
+		@include transform(translateX(-100%));
+		@include transition(transform .3s ease-in-out);
+		height: 100%;
+		padding-top: 54px;
+		background: rgba(0,0,0,0.95);
 	}
 
 	@include breakpoint($utility-nav-rows) {
 		@include flex-direction(row);
+	}
+
+	&.active {
+		@include breakpoint($utility-nav-columns) {
+			@include transform(translateX(0));
+		}
+	}
+
+	a {
+		font-size: 24px;
+		color: white;
 	}
 }
 
@@ -39,6 +59,10 @@
 	padding: 12px;
 	position: absolute;
 	font-size: 21.555px;
+
+	@include breakpoint($utility-nav-columns) {
+		top: 0;
+	}
 
 	.ss-icon {
 		display: table-cell;

@@ -6,13 +6,8 @@ $(document).ready(function () {
 
 	$('.utility-bar__toggle').bind('click', function(event) {
 		event.preventDefault();
-		$(this).parent().toggleClass('active');
-		$('body').toggleClass('active');
-	});
-
-	$('a[href="#info"]').bind('click', function(event) {
-		$('.utility-bar__toggle').parent().removeClass('active');
-		$('body').removeClass('active');
+		$('.utility-bar').toggleClass('active');
+		$('.utility-bar__items').toggleClass('active');
 	});
 
 
