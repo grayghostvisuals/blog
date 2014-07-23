@@ -118,15 +118,13 @@
 					'post_status' => 'publish' // Comma-separated list of all post status types to return. For example: 'publish,private'
 				);?>
 
-				<ol class="page-nav">
-					<?php
-						if ( wp_list_pages( $wpflex_nav ) ) :
-							while ( wp_list_pages( $wpflex_nav ) ) :
-								wp_list_pages( $wpflex_nav );
-							endwhile;
-						endif;
-					?>
-				</ol>
+				<?php
+					if ( wp_list_pages( $wpflex_nav ) ) :
+						while ( wp_list_pages( $wpflex_nav ) ) :
+							wp_list_pages( $wpflex_nav );
+						endwhile;
+					endif;
+				?>
 		<?php } // end wp_nav_fallback
 
 			wpflex_custom_nav();
