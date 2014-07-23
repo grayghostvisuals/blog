@@ -12,7 +12,7 @@
 
 							<?php get_template_part( 'inc/meta' ); ?>
 
-							<div class="entry__content">
+							<div class="entry-content">
 								<?php the_content( '<span class="read-more">Read More →</span>' ); ?>
 							</div>
 						</article>

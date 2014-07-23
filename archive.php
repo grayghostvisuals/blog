@@ -36,7 +36,9 @@ rewind_posts();
 
 							<?php get_template_part( 'inc/meta' ); ?>
 
-							<?php the_content( '<span class="read-more">Read More →</span>' ); ?>
+							<div class="entry-content">
+								<?php the_content( '<span class="read-more">Read More →</span>' ); ?>
+							</div>
 						</article>
 					</li>
 					<?php endwhile; ?>
