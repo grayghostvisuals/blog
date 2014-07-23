@@ -486,9 +486,7 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 // WP-Flex Custom Styles
 // ==========================================================================
 
-.pagination {
-	text-align: center;
-}
+// .pagination {}
 
 .single-pagination {
 	@extend %flexbox;
