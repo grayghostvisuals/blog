@@ -190,9 +190,10 @@ module.exports = function(grunt) {
             basic_and_extras: {
                 files: {
                     // Destiniation 'string' : Source [array]
-                    'js/minified/main.min.js' : [
-                        'js/plugins/jquery.plugins.js',
-                        'js/src/globals.js'
+                    'js/minified/scripts.min.js' : [
+                        'js/plugins.js',
+                        'js/prism.js',
+                        'js/script.js'
                     ]
                 }
             }
@@ -205,7 +206,7 @@ module.exports = function(grunt) {
 
             my_target: {
                 files: {
-                    'js/minified/main.min.js' : ['js/minified/main.min.js'] // Destiniation 'string' : Source [array]
+                    'js/minified/scripts.min.js' : ['js/minified/scripts.min.js'] // Destiniation 'string' : Source [array]
                 }
             }
         },
@@ -217,7 +218,7 @@ module.exports = function(grunt) {
                 files: [
                     {
                         // Destiniation 'string' : Source [array]
-                        '<%= project.buildDir %>/index.html': ['index.html']
+                        '<%= project.buildDir %>/footer.php': ['footer.php']
                     }
                 ]
             }
@@ -239,7 +240,7 @@ module.exports = function(grunt) {
                 files: [
                     {
                         // Destiniation 'string' : Source [array]
-                        '<%= project.buildDir %>/index.html': ['<%= project.buildDir %>/index.html']
+                        '<%= project.buildDir %>/header.php': ['<%= project.buildDir %>/header.php']
                     }
                 ]
             }

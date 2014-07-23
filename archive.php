@@ -32,7 +32,7 @@ rewind_posts();
 					<?php if( have_posts() ) : while( have_posts() ) : the_post()?>
 					<li class="entries__item" id="post-<?php the_ID(); ?>">
 						<article <?php post_class('entry'); ?>>
-							<h1 class="entry-title"><?php the_title(); ?></h1>
+							<h1 class="entry__title"><?php the_title(); ?></h1>
 
 							<?php get_template_part( 'inc/meta' ); ?>
 

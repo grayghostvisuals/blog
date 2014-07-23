@@ -17,9 +17,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery.min.js"><\/script>')</script>
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/prism.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/minified/scripts.min.js"></script>
 
 <?php if ( is_single() ) : ?>
 <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>

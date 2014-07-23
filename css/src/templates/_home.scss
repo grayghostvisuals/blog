@@ -2,5 +2,8 @@
     background: url(http://subtlepatterns.com/patterns/cartographer.png) top left repeat;
     .post {
         padding-bottom: 48.667px; // 54 - 5.333
+        &:last-child {
+            padding-bottom: 0;
+        }
     }
 }

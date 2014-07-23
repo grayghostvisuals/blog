@@ -38,16 +38,13 @@
 	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); esc_attr( bloginfo( 'description' ) ) ?>">
 	<?php endif; ?>
 
-	<!-- Mobile viewport optimized: h5bp.com/viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="msapplication-tap-highlight" content="no">
 
-	<link href="https://get.gridsetapp.com/17266/" rel="stylesheet">
 	<link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet" media="all">
-
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo( 'rss2_url' ); ?>">
 
@@ -56,7 +53,6 @@
 	<?php if ( is_singular() ) { wp_enqueue_script( 'comment-reply' ); } ?>
 	<?php wp_head(); ?>
 </head>
-
 <body class="<?php if(is_front_page()) : ?>index <?php endif; ?><?php if ( has_post_thumbnail() && is_single() ) : ?>bg-feat<?php else : ?>no-feat-bg<?php endif; ?>" id="<?php if( is_single() ) : echo strtolower(preg_replace('/\s+/', '-', get_the_title($ID))); else : echo "page"; endif; ?>">
 	<header class="branding<?php if ( ! has_post_thumbnail() ) : ?> bg-feat--none<?php endif; ?>" role="banner">
 		<?php $header = get_header_image(); ?>
@@ -70,7 +66,6 @@
 
 		<h1 class="blogname">
 			<a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark">
-				<?php //esc_attr( bloginfo( 'name' ) ); ?>
 				<img src="http://static.grayghostvisuals.com/imgblog/blogbadge.png" class="logo" alt="">
 			</a>
 		</h1>
