@@ -5,7 +5,7 @@
 			<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 				<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 					<header>
-						<h1 class="entry__title"><?php the_title(); ?></h1>
+						<h1 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
 						<?php get_template_part( 'inc/meta' ); ?>
 					</header>
 
@@ -13,10 +13,6 @@
 						<?php str_replace('<p></p>', '', the_content('<span class="read-more">Read More →</span>')); ?>
 					</div>
 				</article>
-				<?php
-					// $withcomments = "0"; // Display comments on front page
-					// comments_template();
-				?>
 			<?php endwhile; ?>
 
 			<?php else : ?>
