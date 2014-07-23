@@ -13,7 +13,7 @@
 							<?php get_template_part( 'inc/meta' ); ?>
 
 							<div class="entry-content">
-								<?php the_content( '<span class="read-more">Read More →</span>' ); ?>
+								<?php str_replace('<p></p>', '', the_content('<span class="read-more">Read More →</span>')); ?>
 							</div>
 						</article>
 					</li>

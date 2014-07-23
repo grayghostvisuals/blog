@@ -1,4 +1,3 @@
-<?php global $more; ?>
 <?php get_header(); ?>
 <div class="grid">
 	<div class="col-6-4 col-9-3 col-5-1">
@@ -11,8 +10,7 @@
 					</header>
 
 					<div class="entry-content">
-						<?php $more = 0;// truncate posts ?>
-						<?php the_content('<span class="read-more">Read More →</span>'); ?>
+						<?php str_replace('<p></p>', '', the_content('<span class="read-more">Read More →</span>')); ?>
 					</div>
 				</article>
 				<?php

@@ -20,7 +20,7 @@
 					<?php endif; ?>
 
 					<div class="entry-content">
-						<?php the_content(); ?>
+						<?php str_replace('<p></p>', '', the_content()); ?>
 					</div>
 
 					<?php get_template_part( 'inc/entry-footer' ); ?>
