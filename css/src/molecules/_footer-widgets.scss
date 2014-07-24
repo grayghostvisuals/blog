@@ -1,15 +1,25 @@
 .widgets-wrap {
     @extend %flexbox;
-    @include align-items(center);
+    @include flex-direction(column);
     @include justify-content(center);
+
+    @include breakpoint($widget-row) {
+        @include flex-direction(row);
+        @include align-items(center);
+    }
 }
 
+
 .fwidget {
-    @include flex(1);
     padding: 12px;
+    @include breakpoint($widget-row) {
+        @include flex(1);
+    }
+
     &.widget_categories {
         padding-right: 12px;
     }
+
     &.widget_archive {
         padding-left: 12px;
     }

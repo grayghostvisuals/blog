@@ -1,13 +1,16 @@
 blockquote {
+    // @include blockquote("-");
     border-left: 38px solid rgb(231, 231, 231);
     padding-left: 20px;
-    margin-top: 54px;
+    margin: 54px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 54px;
     background: snow;
     padding: 36px;
 
     @include breakpoint($grid-9-3) {
-        margin-left: 0;
+        margin-left: -54px;
         width: 100%;
     } 
 }
