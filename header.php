@@ -53,7 +53,7 @@
 	<?php if ( is_singular() ) { wp_enqueue_script( 'comment-reply' ); } ?>
 	<?php wp_head(); ?>
 </head>
-<body class="<?php if(is_front_page()) : ?>index <?php endif; ?><?php if ( has_post_thumbnail() && is_single() ) : ?>bg-feat<?php else : ?>no-feat-bg<?php endif; ?>" id="<?php if( is_single() ) : echo strtolower(preg_replace('/\s+/', '-', get_the_title($ID))); else : echo "page"; endif; ?>">
+<body class="<?php if(is_front_page()) : ?>index <?php endif; ?><?php if ( has_post_thumbnail() && is_single() ) : ?>bg-feat<?php else : ?>no-feat-bg<?php endif; ?>" id="<?php if( is_single() ) : echo strtolower(preg_replace('/\s+/', '-', get_the_title($ID))); else : echo "page"; endif; ?>" data-development-grid="hide">
 	<header class="branding<?php if ( ! has_post_thumbnail() ) : ?> bg-feat--none<?php endif; ?>" role="banner">
 		<?php $header = get_header_image(); ?>
 		<?php if ( $header ) : ?>
