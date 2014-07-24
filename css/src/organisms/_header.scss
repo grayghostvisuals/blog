@@ -7,13 +7,15 @@
 	.bg-feat & {
 		height: $header-height;
 		@include breakpoint((max-width: 799.9px)) {
-			background: $no-feat-bg url(http://subtlepatterns.com/patterns/cartographer.png) top left repeat !important;
+			background: $no-feat-bg image-url("cartographer.png") top left repeat !important;
+			@include image-2x($image: 'cartographer_@2X.png', $width: 500px, $height: 499px);
 		}
 	}
 
 	.no-feat-bg & {
 		height: $header-height;
-		background: $no-feat-bg url(http://subtlepatterns.com/patterns/cartographer.png) top left repeat;
+		background: $no-feat-bg image-url("cartographer.png") top left repeat;
+		@include image-2x($image: 'cartographer_@2X.png', $width: 500px, $height: 499px);
 	}
 
 	.index & {

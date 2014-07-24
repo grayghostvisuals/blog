@@ -41,7 +41,7 @@ $post-palm: $palm + $viewport-increment;
 // Container
 // --------------------------------------------------------
 
-$container-max-width: 1024px;
+$container-max-width: 1500px;
 
 
 // --------------------------------------------------------
@@ -56,12 +56,12 @@ $comments-caret-width: 25px;
 // Colors
 // --------------------------------------------------------
 
+// socials svcs.
 $twitter: #55ACEE;
 $github: black;
 $dribbble: #EA4C89;
 $facebook: #46629E;
 $gplus: #DD4B39;
-
 
 // palette
 $mine-shaft: #201F1F;
@@ -69,13 +69,15 @@ $chablis: #FFF0F0;
 $tundora: #4D4D4D;
 $alabaster: #F9F9F9;
 $silver-chalice: #A7A1A1;
+$guardsman-red: #c80000;
+$red: #ff0000;
 
 // links
-$global-anchor-color: rgb(200,0,0);
-$global-anchor-color-hover: rgb(255,0,0);
+$global-anchor-color: $guardsman-red;
+$global-anchor-color-hover: $red;
 
 // backgrounds
-$no-feat-bg: #252525;
+$no-feat-bg: $mine-shaft;
 
 // comments
 $comment-body-bg: $mine-shaft;

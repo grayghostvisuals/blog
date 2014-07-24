@@ -11,16 +11,14 @@
 
 
 .fwidget {
-    padding: 12px;
+    padding: 12px 0;
     @include breakpoint($widget-row) {
         @include flex(1);
     }
 
-    &.widget_categories {
-        padding-right: 12px;
-    }
-
     &.widget_archive {
-        padding-left: 12px;
+        @include breakpoint($widget-row) {
+            padding-left: 4%;
+        }
     }
 }

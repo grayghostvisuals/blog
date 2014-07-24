@@ -14,19 +14,13 @@
 
 @include sgs-change('debug', true);
 
-// Grid Toggle
-// 1. compass install singularitygs/grid-toggle
-// 2. @include grid-toggle;
-// 3. <body data-development-grid="show">
-
 [data-development-grid="show"] {
-    // @extend .clearfix;
+    @extend .clearfix;
 	@include background-grid($color: $bg-grid-color);
 }
 
 .grid {
-    // @extend .clearfix;
-    // @include background-grid($color: $bg-grid-color);
+    max-width: $container-max-width; // temporary
 }
 
 .col-5-1 {

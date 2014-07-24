@@ -8,8 +8,8 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         project: {
-            devDir: 'src',
-            buildDir: 'dist',
+            devDir: '.',
+            buildDir: '.',
             development: '<%= project.devDir %>',
             production: '<%= project.buildDir %>'
         },
@@ -240,7 +240,7 @@ module.exports = function(grunt) {
                 files: [
                     {
                         // Destiniation 'string' : Source [array]
-                        '<%= project.buildDir %>/header.php': ['<%= project.buildDir %>/header.php']
+                        '<%= project.buildDir %>/footer.php': ['<%= project.buildDir %>/footer.php']
                     }
                 ]
             }

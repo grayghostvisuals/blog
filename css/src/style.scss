@@ -175,6 +175,14 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // $Atoms
 // ==========================================================================
 
+// 1. Blockquote
+// 2. Definition Lists
+// 3. Figcaption
+// 4. Input
+// 5. Ordered Lists
+// 6. Unordered Lists
+// 7. Select Menus
+
 @import "atoms/**/*";
 
 
@@ -182,12 +190,30 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // $Molecules
 // ==========================================================================
 
+// 1.  Article Links
+// 2.  Copyright
+// 3.  Entry Title
+// 4.  Feature Image
+// 5.  Footer Widgets
+// 6.  Logo
+// 7.  Post Meta
+// 8.  Profile
+// 9.  Results Headline
+// 10. RSS
+// 11. Search Form
+// 12. Socials
+// 13. Tagline
+// 14. Utility Bar
+
 @import "molecules/**/*";
 
 
 // ==========================================================================
 // $Organisms
 // ==========================================================================
+
+// 1.  Header
+// 2.  Footer
 
 @import "organisms/**/*";
 

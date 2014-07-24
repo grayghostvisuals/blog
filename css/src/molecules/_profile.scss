@@ -1,13 +1,10 @@
 .profile {
     background: snow;
-    // background: #FFF0F0;
     padding: 24px;
     position: relative;
     margin: 54px 0 24px;
+
     &__avatar {
         margin-bottom: 24px;
-        // img {
-        //     @include filter(sepia(50%));
-        // }
     }
 }

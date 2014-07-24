@@ -22,53 +22,14 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/prism.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
-<script>
-(function() {
-	window.onload = function() {
-		var body = document.body;
-
-		body.onkeypress = function(e) {
-			if (e.keyCode == 103 || e.charCode == 103) {
-				var dev = body.getAttribute('data-development-grid');
-
-				if (dev === null || dev == 'hide') {
-					body.setAttribute('data-development-grid', 'show');
-				} else {
-					body.setAttribute('data-development-grid', 'hide');
-				}
-			}
-		}
-	}
-})();
-</script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/grid-toggle.js"></script>
 <?php else : ?>
-<script src="<?php echo get_template_directory_uri(); ?>/js/minified/scripts.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/minified/scripts.1406240724855369080.min.js"></script>
 <?php endif; ?>
 
 <?php if ( is_single() ) : ?>
 <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js" async></script>
-<script async>
-	// @reference
-	// http://www.ivanthevariable.com/wordpress-comment-live-preview
-	$('p[class*="comment-form"] > input').each(function() {
-		$(this).val('');
-	});
-
-	$('p[class*="comment-form"] > input').change(function() {
-		var author = $('#author').val(),
-				email = CryptoJS.MD5( $('#email').val().toLowerCase().trim() ),
-				url = $('#url').val();
-
-		$('.preview-url').text(author);
-		$('.commentPreview .avatar').attr('src','http://gravatar.com/avatar/' + email);
-		$('.preview-url').attr('href',url);
-	});
-
-	$('textarea#comment').keyup(function() {
-		var comment = $(this).val();
-		$('.preview-text').html(comment);
-	});
-</script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/comment-preview.1406240724855369080.js" async></script>
 <?php endif; ?>
 
 <?php $ip = $_SERVER['REMOTE_ADDR']; ?>
