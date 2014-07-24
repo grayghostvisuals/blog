@@ -72,7 +72,7 @@
 <?php endif; ?>
 
 <?php $ip = $_SERVER['REMOTE_ADDR']; ?>
-<?php if ( $ip == '127.0.0.1' ) : ?>
+<?php if ( ! $ip == '127.0.0.1' ) : ?>
 <script async>
 (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
 	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
