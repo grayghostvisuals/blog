@@ -24,12 +24,12 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/grid-toggle.js"></script>
 <?php else : ?>
-<script src="<?php echo get_template_directory_uri(); ?>/js/minified/scripts.1406240724855369080.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/minified/scripts.min.js"></script>
 <?php endif; ?>
 
 <?php if ( is_single() ) : ?>
 <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js" async></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/comment-preview.1406240724855369080.js" async></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/comment-preview.js" async></script>
 <?php endif; ?>
 
 <?php $ip = $_SERVER['REMOTE_ADDR']; ?>
