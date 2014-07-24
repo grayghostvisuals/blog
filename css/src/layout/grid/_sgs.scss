@@ -19,10 +19,6 @@
 	@include background-grid($color: $bg-grid-color);
 }
 
-.grid {
-    max-width: $container-max-width; // temporary
-}
-
 .col-5-1 {
 	@include grid-span(5, 1); // span 5 columns, start at 1st column.
 }
