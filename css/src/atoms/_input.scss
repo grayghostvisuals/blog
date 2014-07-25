@@ -1,4 +1,4 @@
-input,
+input:not([type="checkbox"]),
 textarea {
     display: block;
     @include appearance(none);
