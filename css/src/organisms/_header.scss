@@ -18,7 +18,7 @@
 		@include image-2x($image: 'cartographer_@2X.png', $width: 500px, $height: 499px);
 	}
 
-	.index & {
-		height: 100%;
-	}
+	// .index & {
+	// 	height: 100%;
+	// }
 }
