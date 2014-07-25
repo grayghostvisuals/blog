@@ -4,25 +4,33 @@ $(document).ready(function () {
 	$('.flex-video').fitVids();
 
 
-	$('.utility-bar__toggle').bind('click', function(event) {
+	// Utility Menu
+	var $utility_toggle = $('.utility-bar'),
+		state = 'active';
+
+	function navToggle(event, cname) {
 		event.preventDefault();
-		$('.utility-bar').toggleClass('active');
-		$('.utility-bar__items').toggleClass('active');
+		$(this).toggleClass(cname);
+		$('.utility-bar__items').toggleClass(cname);
+	}
+
+	$utility_toggle.on('click', function() {
+		navToggle.call(this, event, state);
+	});
+
+	$utility_toggle.on('touchstart', function() {
+		navToggle.call(this, event, state);
 	});
 
 
+	// Comment Formatting Toggle
 	$('.formatting-toggle').bind('click', function(event) {
 		event.preventDefault();
 		$(this).next().toggleClass('active');
 	});
 
 
-	//gives tactile feedback for read-more button on touch interfaces
-	$('.read-more').bind('mousedown mouseup', function () {
-		$(this).toggleClass('active');
-	});
-
-
+	// Article Links Icon
 	$('#article-links li').each(function() {
 		$(this).prepend('<b class="ss-icon">&#x1F517;</b>');
 	});
