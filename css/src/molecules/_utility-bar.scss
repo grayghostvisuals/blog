@@ -58,6 +58,10 @@
 	display: table;
 	padding: 12px;
 	position: absolute;
+	// goldenrod
+	// ghostwhite
+	// lightsalmon
+	@include link-colors(grey, grey, grey, grey, grey);
 	font-size: 21.555px;
 
 	@include breakpoint($utility-nav-columns) {
