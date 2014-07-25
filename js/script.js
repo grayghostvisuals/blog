@@ -5,12 +5,12 @@ $(document).ready(function () {
 
 
 	// Utility Menu
-	var $utility_toggle = $('.utility-bar'),
+	var $utility_toggle = $('.utility-bar__toggle'),
 		state = 'active';
 
 	function navToggle(event, cname) {
 		event.preventDefault();
-		$(this).toggleClass(cname);
+		$('.utility-bar').toggleClass(cname);
 		$('.utility-bar__items').toggleClass(cname);
 	}
 
