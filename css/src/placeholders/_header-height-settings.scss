@@ -1,0 +1,6 @@
+%header_height_settings {
+    height: $header-height - 120;
+    @include breakpoint($header) {
+    height: $header-height;
+    }
+}

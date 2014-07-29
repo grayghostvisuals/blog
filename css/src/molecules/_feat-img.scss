@@ -1,5 +1,5 @@
 .featimg--bg {
-    height: $header-height;
+    @extend %header_height_settings;
     position: absolute;
     top: 0;
     left: 0;

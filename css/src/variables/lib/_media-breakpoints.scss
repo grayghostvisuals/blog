@@ -26,8 +26,10 @@ $ipad2: (min-device-width 768px) (max-device-width 1024px) (-webkit-min-device-p
 $galaxyS4: 1080px; // 1080 x 1920 pixels. 441 ppi
 
 // Menus
-$utility-nav-rows: 700px;
+$utility-nav-rows: 600px;
 $utility-nav-columns: (max-width: $utility-nav-rows - $viewport-increment);
+
+$header: (min-height: 700px);
 
 // Comments
 $comments-avatar-side: 1086px;
