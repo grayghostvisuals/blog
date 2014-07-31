@@ -47,7 +47,7 @@
 	<!-- OG -->
 	<meta property="og:title" content="Gray Ghost Visuals Press">
 	<meta property="og:type" content="">
-	<meta property="og:url" content="<?php the_permalink(); ?>">
+	<meta property="og:url" content="">
 	<meta property="og:image" content="">
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
