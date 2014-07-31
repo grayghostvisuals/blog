@@ -27,15 +27,15 @@
 	<?php endif; ?>
 
 	<?php if ( is_home() ) : ?>
-	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); esc_attr( bloginfo( 'description' ) ); ?>">
+	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); echo ' » ' . strip_tags( html_entity_decode( esc_attr(get_bloginfo( 'description' )))); ?>">
 	<?php elseif ( is_single() ) : ?>
 	<meta name="description" content="<?php esc_attr( wp_title() ) ?>">
 	<?php elseif ( is_archive() ) : ?>
-	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); esc_attr( bloginfo( 'description' ) ) ?>-Archives of blog entries on front-end web development and design">
+	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); ?> » Archives of blog entries on front-end web development and design">
 	<?php elseif ( is_search() ) : ?>
 	<meta name="" content="<?php wp_specialchars( $s ) ?>">
 	<?php else : ?>
-	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); esc_attr( bloginfo( 'description' ) ) ?>">
+	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); echo ' » ' . strip_tags( html_entity_decode( esc_attr(get_bloginfo( 'description' )))); ?>">
 	<?php endif; ?>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
@@ -43,6 +43,12 @@
 	<meta name="MobileOptimized" content="320">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="msapplication-tap-highlight" content="no">
+
+	<!-- OG -->
+	<meta property="og:title" content="Gray Ghost Visuals Press">
+	<meta property="og:type" content="">
+	<meta property="og:url" content="<?php the_permalink(); ?>">
+	<meta property="og:image" content="">
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo( 'rss2_url' ); ?>">
