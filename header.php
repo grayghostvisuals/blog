@@ -51,7 +51,7 @@
 	<meta property="og:title" content="Gray Ghost Visuals Press">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="<?php if( is_single() ) : ?><? the_permalink(); ?><?php else : ?><?php bloginfo('url'); ?><?php endif; ?>">
-	<meta property="og:image" content="http://static.grayghostvisuals.com/imgblog/blogbadge-grayscale.png">
+	<meta property="og:image" content="http://static.grayghostvisuals.com/imgblog/og-logo.png">
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
