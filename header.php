@@ -19,13 +19,15 @@
 	</script>
 
 	<title><?php wp_title( '&raquo;', true, 'left' ); ?></title>
-
+	
+	<!-- google bot -->
 	<?php if ( is_search() || is_404() ) : ?>
 	<meta name="robots" content="noindex, nofollow">
 	<?php else: ?>
 	<meta name="robots" content="all">
 	<?php endif; ?>
-
+	
+	<!-- seo -->
 	<?php if ( is_home() ) : ?>
 	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); echo ' » ' . strip_tags( html_entity_decode( esc_attr(get_bloginfo( 'description' )))); ?>">
 	<?php elseif ( is_single() ) : ?>
@@ -38,19 +40,22 @@
 	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); echo ' » ' . strip_tags( html_entity_decode( esc_attr(get_bloginfo( 'description' )))); ?>">
 	<?php endif; ?>
 
+	<!-- mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="msapplication-tap-highlight" content="no">
 
-	<!-- OG -->
+	<!-- open graph protocol: http://ogp.me -->
 	<meta property="og:title" content="Gray Ghost Visuals Press">
-	<meta property="og:type" content="">
-	<meta property="og:url" content="">
-	<meta property="og:image" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="<?php if( is_single() ) : ?><? the_permalink(); ?><?php else : ?><?php bloginfo('url'); ?><?php endif; ?>">
+	<meta property="og:image" content="//static.grayghostvisuals.com/imgblog/blogbadge-grayscale.svg">
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+	<!-- rss -->
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo( 'rss2_url' ); ?>">
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr.js"></script>
