@@ -49,6 +49,7 @@
 
 	<!-- open graph protocol: http://ogp.me -->
 	<meta property="og:title" content="Gray Ghost Visuals Press">
+	<meta property="og:description" content="Exploring front-end web development and design. A place to discover and learn about browser native technologies such as HTML, CSS and JavaScript with a dash of WordPress.">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="<?php if( is_single() ) : ?><? the_permalink(); ?><?php else : ?><?php bloginfo('url'); ?><?php endif; ?>">
 	<meta property="og:image" content="http://static.grayghostvisuals.com/imgblog/og-logo.png">
