@@ -19,13 +19,23 @@
 	@include background-grid($color: $bg-grid-color);
 }
 
+.grid {
+    @media screen and (max-width: 799.9px) {
+        display: flex !important;
+        flex-direction: column-reverse;
+    }
+}
+
 .col-5-1 {
 	@include grid-span(5, 1); // span 5 columns, start at 1st column.
+    float: none;
+    width: auto;
+    margin: 0 2.5%;
 }
 
 .col-9-3 {
 	@include breakpoint($grid-9-3) {
-		@include grid-span(8, 3); // span 9 columns, start at 3rd column.
+		@include grid-span(9, 3); // span 9 columns, start at 3rd column.
 	}
 }
 
@@ -33,4 +43,13 @@
 	@include breakpoint($grid-6-4) {
 		@include grid-span(6, 4); // span 6 columns, start at 4th column.
 	}
+}
+
+.col-10-2 {
+    @include breakpoint($grid-9-3) {
+        @include grid-span(2, 1);
+    }
+    @include breakpoint($grid-6-4) {
+        @include grid-span(1, 10);
+    }
 }

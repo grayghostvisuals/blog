@@ -2,6 +2,8 @@
 // $Keyframes
 // ============================================================
 
+// @include keyframes('fade') {}
+
 @mixin keyframes($name) {
 
 	@-webkit-keyframes #{$name} {
