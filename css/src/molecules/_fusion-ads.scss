@@ -5,10 +5,11 @@
     }
     .cssanimations & {
         opacity: 0;
-        @include vendor-prefix('animation', '.3s forwards fadeIn ease');
+        @include animation(.3s forwards fadeIn ease);
     }
 }
-@include keyframes('fadeIn') {
+
+@include keyframes(fadeIn) {
     to { opacity: 1; }
 }
 
