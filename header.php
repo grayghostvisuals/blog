@@ -29,7 +29,7 @@
 	
 	<!-- seo -->
 	<?php if ( is_home() ) : ?>
-	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); echo ' » ' . strip_tags( html_entity_decode( esc_attr(get_bloginfo( 'description' )))); ?>">
+	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); echo ' » ' . strip_tags( html_entity_decode( esc_attr( get_bloginfo( 'description' ) ) ) ); ?>">
 	<?php elseif ( is_single() ) : ?>
 	<meta name="description" content="<?php esc_attr( wp_title() ) ?>">
 	<?php elseif ( is_archive() ) : ?>
@@ -37,7 +37,7 @@
 	<?php elseif ( is_search() ) : ?>
 	<meta name="" content="<?php wp_specialchars( $s ) ?>">
 	<?php else : ?>
-	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); echo ' » ' . strip_tags( html_entity_decode( esc_attr(get_bloginfo( 'description' )))); ?>">
+	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); echo ' » ' . strip_tags( html_entity_decode( esc_attr( get_bloginfo( 'description' ) ) ) ); ?>">
 	<?php endif; ?>
 
 	<!-- mobile -->
@@ -62,6 +62,8 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr.js"></script>
 
 	<?php if ( is_singular() ) { wp_enqueue_script( 'comment-reply' ); } ?>
+
+	<!-- start wphead -->
 	<?php wp_head(); ?>
 </head>
 <body class="<?php if(is_front_page()) : ?>index <?php endif; ?><?php if ( has_post_thumbnail() && is_single() ) : ?>bg-feat<?php else : ?>no-feat-bg<?php endif; ?>" id="<?php if( is_single() ) : echo strtolower(preg_replace('/\s+/', '-', get_the_title($ID))); else : echo "page"; endif; ?>" <?php $ip = $_SERVER['REMOTE_ADDR']; if ( $ip == '127.0.0.1' ) : ?>data-development-grid="show"<?php endif; ?>>
@@ -76,12 +78,12 @@
 		<?php endif; ?>
 
 		<h1 class="blogname">
-			<a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark">
+			<a href="<?php echo home_url();  ?>" class="blog-uri" title="gray ghost visuals press" rel="bookmark">
 				<?php include('img/blogbadge-grayscale.svg'); ?>
 			</a>
 		</h1>
 
-		<h2 class="tagline"><?php echo html_entity_decode(get_bloginfo('description')); ?></h2>
+		<h2 class="tagline"><?php echo html_entity_decode( get_bloginfo('description') ); ?></h2>
 
 		<div class="utility-bar" id="utility-bar">
 			<?php
