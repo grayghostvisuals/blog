@@ -76,12 +76,12 @@
 					'comment_notes_after' => '<a href="#formatting-examples" class="formatting-toggle">show formatting examples</a>
 
 					<div id="formatting-examples">
-					<pre><code class="language-markup">&lt;pre&gt;&lt;code class=&quot;language-[markup | sass | css | php | javascript | ruby | clike | bash]&quot;&gt;
+					<pre class="language-markup"><code>&lt;pre class=&quot;language-[markup | sass | css | php | javascript | ruby | clike | bash]&quot;&gt;&lt;code&gt;
 …code example goes here…
 &lt;/code&gt;&lt;/pre&gt;
 </code></pre>
 
-					<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:<pre><code class="language-markup">&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;strike&gt; &lt;strong&gt;</code></pre></p>
+					<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:<pre class="language-markup"><code>&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;strike&gt; &lt;strong&gt;</code></pre></p>
 					</div>');
 		?>
 
