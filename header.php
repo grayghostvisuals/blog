@@ -1,3 +1,4 @@
+<? ob_start("ob_gzhandler"); ?>
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
@@ -19,15 +20,13 @@
 	</script>
 
 	<title><?php wp_title( '&raquo;', true, 'left' ); ?></title>
-	
-	<!-- google bot -->
+
 	<?php if ( is_search() || is_404() ) : ?>
 	<meta name="robots" content="noindex, nofollow">
 	<?php else: ?>
 	<meta name="robots" content="all">
 	<?php endif; ?>
-	
-	<!-- seo -->
+
 	<?php if ( is_home() ) : ?>
 	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); echo ' » ' . strip_tags( html_entity_decode( esc_attr( get_bloginfo( 'description' ) ) ) ); ?>">
 	<?php elseif ( is_single() ) : ?>
@@ -40,14 +39,12 @@
 	<meta name="description" content="<?php esc_attr( bloginfo( 'name' ) ); echo ' » ' . strip_tags( html_entity_decode( esc_attr( get_bloginfo( 'description' ) ) ) ); ?>">
 	<?php endif; ?>
 
-	<!-- mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="msapplication-tap-highlight" content="no">
 
-	<!-- open graph protocol: http://ogp.me -->
 	<meta property="og:title" content="Gray Ghost Visuals Press">
 	<meta property="og:description" content="Exploring front-end web development and design. A place to discover and learn about browser native technologies such as HTML, CSS and JavaScript with a dash of WordPress.">
 	<meta property="og:type" content="website">
@@ -55,15 +52,10 @@
 	<meta property="og:image" content="http://static.grayghostvisuals.com/imgblog/og-logo.png">
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-	<!-- rss -->
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo( 'rss2_url' ); ?>">
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr.js"></script>
-
 	<?php if ( is_singular() ) { wp_enqueue_script( 'comment-reply' ); } ?>
-
-	<!-- start wphead -->
 	<?php wp_head(); ?>
 </head>
 <body class="<?php if(is_front_page()) : ?>index <?php endif; ?><?php if ( has_post_thumbnail() && is_single() ) : ?>bg-feat<?php else : ?>no-feat-bg<?php endif; ?>" id="<?php if( is_single() ) : echo strtolower(preg_replace('/\s+/', '-', get_the_title($ID))); else : echo "page"; endif; ?>" <?php $ip = $_SERVER['REMOTE_ADDR']; if ( $ip == '127.0.0.1' ) : ?>data-development-grid="show"<?php endif; ?>>

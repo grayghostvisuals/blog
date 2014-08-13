@@ -12,7 +12,7 @@
 @include add-gutter-style('split');
 @include add-gutter-style('opposite' at $grid-9-3);
 
-@include sgs-change('debug', true);
+@include sgs-change('debug', false);
 
 [data-development-grid="show"] {
     @extend .clearfix;
