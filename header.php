@@ -1,4 +1,3 @@
-<? ob_start("ob_gzhandler"); ?>
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
