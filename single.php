@@ -45,7 +45,7 @@
 				</p>
 			<?php endif; ?>
 		</main>
-		<?php //comments_template(); ?>
+		<?php comments_template(); ?>
 		<?php get_footer(); ?>
 	</div>
 

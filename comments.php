@@ -29,9 +29,8 @@
 				</span>
 			</div>
 		<?php endif; ?>
-	</div><!-- end comment count -->
+	</div>
 
-	<!-- comment list -->
 	<ol class="commentlist">
 		<?php
 		$wpflex_comment_array = array(
@@ -51,9 +50,10 @@
 								); ?>
 
 		<?php wp_list_comments( $wpflex_comment_array ); ?>
-	</ol><!-- end comment list -->
+	</ol>
 
-	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
+	<?php // Are there comments to navigate through? ?>
+	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 		<div class="pagination comment-pagination">
 			<span class="prev-comments-link">
 				<?php previous_comments_link( '<span>&larr; older comments</span>' ); ?>
@@ -61,7 +61,7 @@
 			<span class="nxt-comments-link">
 				<?php next_comments_link( '<span>newer comments &rarr;</span>' ); ?>
 			</span>
-		</div><!-- end/ div.comment-pagination -->
+		</div>
 	<?php endif; ?>
 
 	<?php else :
@@ -89,4 +89,3 @@
 		<?php get_template_part('inc/comment-preview'); ?>
 	<?php endif; ?>
 </div>
-<!-- end /section.comments -->
