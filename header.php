@@ -7,15 +7,14 @@
 	<link rel="dns-prefetch" href="//ajax.googleapis.com">
 	<link rel="dns-prefetch" href="//use.typekit.net">
 	<link rel="dns-prefetch" href="//www.google-analytics.com">
+	<link rel="dns-prefetch" href="//cdn.buysellads.com">
+	<link rel="dns-prefetch" href="//srv.buysellads.com">
+	<link rel="dns-prefetch" href="//assets.servedby-buysellads.com">
+	<link rel="dns-prefetch" href="//cdn.fusionads.net">
+	<link rel="dns-prefetch" href="//s3-us-west-2.amazonaws.com">
 
 	<script>
-	(function(d) {
-		var config = {
-			kitId: 'moj0xwf',
-			scriptTimeout: 3000
-		},
-		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-	})(document);
+	!function(e){var t,a={kitId:"moj0xwf",scriptTimeout:3e3},c=e.documentElement,i=setTimeout(function(){c.className=c.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},a.scriptTimeout),n=e.createElement("script"),o=!1,s=e.getElementsByTagName("script")[0];c.className+=" wf-loading",n.src="//use.typekit.net/"+a.kitId+".js",n.async=!0,n.onload=n.onreadystatechange=function(){if(t=this.readyState,!(o||t&&"complete"!=t&&"loaded"!=t)){o=!0,clearTimeout(i);try{Typekit.load(a)}catch(e){}}},s.parentNode.insertBefore(n,s)}(document);
 	</script>
 
 	<title><?php wp_title( '&raquo;', true, 'left' ); ?></title>
