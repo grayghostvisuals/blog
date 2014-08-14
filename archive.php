@@ -64,3 +64,5 @@ rewind_posts();
 		<?php include('inc/fusion-ads.php'); ?>
 	</div>
 </div>
+
+<?php include('inc/scripts.php') ?>

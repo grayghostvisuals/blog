@@ -1,3 +1,7 @@
+<?php
+$ip = $_SERVER['REMOTE_ADDR'];
+$ip_address = '127.0.0.1';
+?>
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
@@ -48,6 +52,8 @@
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="<?php if( is_single() ) : ?><? the_permalink(); ?><?php else : ?><?php bloginfo('url'); ?><?php endif; ?>">
 	<meta property="og:image" content="http://static.grayghostvisuals.com/imgblog/og-logo.png">
+
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.081414207.css">
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo( 'rss2_url' ); ?>">

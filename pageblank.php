@@ -92,3 +92,5 @@ $btn.on('animationend', function() {
 	<?php get_footer(); ?>
 	</div>
 </div>
+
+<?php include('inc/scripts.php') ?>
