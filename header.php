@@ -1,4 +1,6 @@
 <?php
+global $ip;
+global $ip_address;
 $ip = $_SERVER['REMOTE_ADDR'];
 $ip_address = '127.0.0.1';
 ?>
