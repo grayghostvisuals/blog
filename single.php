@@ -48,10 +48,10 @@
 		<?php comments_template(); ?>
 		<?php get_footer(); ?>
 	</div>
-</div>
 
-<div class="col-10-2 col-5-1">
-	<?php include('inc/fusion-ads.php') ?>
+	<div class="col-10-2 col-5-1">
+		<?php include('inc/fusion-ads.php') ?>
+	</div>
 </div>
 
 <?php include('inc/scripts.php') ?>
