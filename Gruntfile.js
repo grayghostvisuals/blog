@@ -194,6 +194,10 @@ module.exports = function(grunt) {
                         'js/prism.js',
                         'js/plugins.js',
                         'js/script.js'
+                    ],
+                    'js/minified/comment-preview.min.js' : [
+                        'js/libs/crypto.js',
+                        'js/comment-preview.js'
                     ]
                 }
             }
@@ -206,7 +210,9 @@ module.exports = function(grunt) {
 
             my_target: {
                 files: {
-                    'js/minified/scripts.min.js' : ['js/minified/scripts.min.js'] // Destiniation 'string' : Source [array]
+                    // Destiniation 'string' : Source [array]
+                    'js/minified/scripts.min.js' : ['js/minified/scripts.min.js'],
+                    'js/minified/comment-preview.min.js' : ['js/minified/comment-preview.min.js']
                 }
             }
         },

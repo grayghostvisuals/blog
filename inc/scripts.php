@@ -11,8 +11,12 @@
 <?php endif; ?>
 
 <?php if ( is_single() ) : ?>
-<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js" async></script>
+<?php if ( $ip == $ip_address ) : ?>
+<script src="<?php echo get_template_directory_uri(); ?>/js/libs/crypto.js" async></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/comment-preview.js" async></script>
+<?php else : ?>
+<script src="<?php echo get_template_directory_uri(); ?>/js/minified/comment-preview.min.js" async></script>
+<?php endif; ?>
 <?php endif; ?>
 
 <?php if ( $ip !== $ip_address ) : ?>
