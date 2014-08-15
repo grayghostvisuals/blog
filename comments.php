@@ -18,8 +18,9 @@
 					<?php comments_number( '0', '1', '%' ); ?> Comments
 				</a>
 			</h3>
-
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // if comments exist ?>
+		
+		<?php // if comments exist ?>
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 			<div class="pagination comment-pagination">
 				<span class="prev-comments-link">
 					<?php previous_comments_link( '<span>&larr; older comments</span>' ); ?>
