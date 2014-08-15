@@ -7,7 +7,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/grid-toggle.js"></script>
 <?php else : ?>
-<script src="<?php echo get_template_directory_uri(); ?>/js/minified/scripts.min.js" async></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/minified/scripts.min.js"></script>
 <?php endif; ?>
 
 <?php if ( is_single() ) : ?>

@@ -1,9 +1,7 @@
 /* http://prismjs.com/download.html?themes=prism-dark&languages=markup+css+css-extras+clike+javascript+php+php-extras+scss+bash+c+cpp+http+ruby */
-self = (typeof window !== 'undefined')
-    ? window   // if in browser
+self = (typeof window !== 'undefined') ? window   // if in browser
     : (
-        (typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope)
-        ? self // if in worker
+        (typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope) ? self // if in worker
         : {}   // if in node js
     );
 
@@ -178,7 +176,7 @@ var _ = self.Prism = {
             }));
         }
         else {
-            env.highlightedCode = _.highlight(env.code, env.grammar, env.language)
+            env.highlightedCode = _.highlight(env.code, env.grammar, env.language);
 
             _.hooks.run('before-insert', env);
 
@@ -383,7 +381,7 @@ return self.Prism;
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = Prism;
 }
-;
+
 Prism.languages.markup = {
     'comment': /<!--[\w\W]*?-->/g,
     'prolog': /<\?.+?\?>/,
@@ -456,7 +454,7 @@ if (Prism.languages.markup) {
             }
         }
     });
-};
+}
 Prism.languages.css.selector = {
     pattern: /[^\{\}\s][^\{\}]*(?=\s*\{)/g,
     inside: {
@@ -471,7 +469,7 @@ Prism.languages.insertBefore('css', 'ignore', {
     'hexcode': /#[\da-f]{3,6}/gi,
     'entity': /\\[\da-f]{1,8}/gi,
     'number': /[\d%\.]+/g
-});;
+});
 Prism.languages.clike = {
     'comment': [
         {
@@ -504,7 +502,6 @@ Prism.languages.clike = {
     'ignore': /&(lt|gt|amp);/gi,
     'punctuation': /[{}[\];(),.:]/g
 };
-;
 Prism.languages.javascript = Prism.languages.extend('clike', {
     'keyword': /\b(break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|false|finally|for|function|get|if|implements|import|in|instanceof|interface|let|new|null|package|private|protected|public|return|set|static|super|switch|this|throw|true|try|typeof|var|void|while|with|yield)\b/g,
     'number': /\b-?(0x[\dA-Fa-f]+|\d*\.?\d+([Ee]-?\d+)?|NaN|-?Infinity)\b/g
@@ -531,7 +528,6 @@ if (Prism.languages.markup) {
         }
     });
 }
-;
 /**
  * Original by Aaron Harun: http://aahacreative.com/2012/07/31/php-syntax-highlighting-prism/
  * Modified by Miles Johnson: http://milesj.me
@@ -622,7 +618,6 @@ if (Prism.languages.markup) {
         'php': /\{\{\{PHP[0-9]+\}\}\}/g
     });
 }
-;
 Prism.languages.insertBefore('php', 'variable', {
     'this': /\$this/g,
     'global': /\$_?(GLOBALS|SERVER|GET|POST|FILES|REQUEST|SESSION|ENV|COOKIE|HTTP_RAW_POST_DATA|argc|argv|php_errormsg|http_response_header)/g,
@@ -633,7 +628,7 @@ Prism.languages.insertBefore('php', 'variable', {
             punctuation: /(::|\\)/
         }
     }
-});;
+});
 Prism.languages.scss = Prism.languages.extend('css', {
     'comment': {
         pattern: /(^|[^\\])(\/\*[\w\W]*?\*\/|\/\/.*?(\r?\n|$))/g,
@@ -670,7 +665,7 @@ Prism.languages.insertBefore('scss', 'ignore', {
     'null': /\b(null)\b/g,
     'operator': /\s+([-+]{1,2}|={1,2}|!=|\|?\||\?|\*|\/|\%)\s+/g
 });
-;
+
 Prism.languages.bash = Prism.languages.extend('clike', {
     'comment': {
         pattern: /(^|[^"{\\])(#.*?(\r?\n|$))/g,
@@ -691,11 +686,12 @@ Prism.languages.insertBefore('bash', 'keyword', {
     //'property' class reused for bash variables
     'property': /\$([a-zA-Z0-9_#\?\-\*!@]+|\{[^}]+\})/g
 });
+
 Prism.languages.insertBefore('bash', 'comment', {
     //shebang must be before comment, 'important' class from css reused
     'important': /(^#!\s*\/bin\/bash)|(^#!\s*\/bin\/sh)/g
 });
-;
+
 Prism.languages.c = Prism.languages.extend('clike', {
     // allow for c multiline strings
     'string': /("|')([^\n\\\1]|\\.|\\\r*\n)*?\1/g,
@@ -721,7 +717,7 @@ Prism.languages.insertBefore('c', 'string', {
 });
 
 delete Prism.languages.c['class-name'];
-delete Prism.languages.c['boolean'];;
+delete Prism.languages.c['boolean'];
 Prism.languages.cpp = Prism.languages.extend('c', {
     'keyword': /\b(alignas|alignof|asm|auto|bool|break|case|catch|char|char16_t|char32_t|class|compl|const|constexpr|const_cast|continue|decltype|default|delete|delete\[\]|do|double|dynamic_cast|else|enum|explicit|export|extern|float|for|friend|goto|if|inline|int|long|mutable|namespace|new|new\[\]|noexcept|nullptr|operator|private|protected|public|register|reinterpret_cast|return|short|signed|sizeof|static|static_assert|static_cast|struct|switch|template|this|thread_local|throw|try|typedef|typeid|typename|union|unsigned|using|virtual|void|volatile|wchar_t|while)\b/g,
     'boolean': /\b(true|false)\b/g,
@@ -733,7 +729,7 @@ Prism.languages.insertBefore('cpp', 'keyword', {
         pattern: /(class\s+)[a-z0-9_]+/ig,
         lookbehind: true,
     },
-});;
+});
 Prism.languages.http = {
     'request-line': {
         pattern: /^(POST|GET|PUT|DELETE|OPTIONS|PATCH|TRACE|CONNECT)\b\shttps?:\/\/\S+\sHTTP\/[0-9.]+/g,
@@ -778,7 +774,7 @@ for (var contentType in httpLanguages) {
         Prism.languages.insertBefore('http', 'keyword', options);
     }
 }
-;
+
 /**
  * Original by Samuel Flores
  *
@@ -800,4 +796,3 @@ Prism.languages.insertBefore('ruby', 'keyword', {
     'variable': /[@$]+\b[a-zA-Z_][a-zA-Z_0-9]*[?!]?\b/g,
     'symbol': /:\b[a-zA-Z_][a-zA-Z_0-9]*[?!]?\b/g
 });
-;

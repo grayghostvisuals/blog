@@ -191,8 +191,8 @@ module.exports = function(grunt) {
                 files: {
                     // Destiniation 'string' : Source [array]
                     'js/minified/scripts.min.js' : [
-                        'js/plugins.js',
                         'js/prism.js',
+                        'js/plugins.js',
                         'js/script.js'
                     ]
                 }
