@@ -23,7 +23,6 @@
 }
 
 .fusion-wrap {
-    background: #f2f2f2;
     display: table;
     width: 100%;
     margin-bottom: 0.5rem;
@@ -41,6 +40,10 @@
     line-height: 1.4;
     font-weight: 400;
     text-align: center;
+    // $normal, $hover, $active, $visited, $focus
+    @include link-colors(#7a7a7a, #7a7a7a, #7a7a7a, #7a7a7a, #7a7a7a);
+    background: #f2f2f2;
+
     @media screen and (min-width: $grid-9-3) {
         display: block;
         width: 100%;

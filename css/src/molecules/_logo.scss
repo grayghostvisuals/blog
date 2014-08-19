@@ -1,6 +1,10 @@
-// .logo {
-//     @include filter(
-//         drop-shadow(0 -1px 0 rgba(255,255,255,0.3))
-//         drop-shadow(0 1px 4px rgba(0,0,0,0.8))
-//     );
-// }
+#svgbadge--outer-circle {
+    @include animation(1s forwards spin infinite);
+    @include transform-origin(center, center);
+}
+
+@include keyframes(spin) {
+    to {
+        transform: rotate(360deg);
+    }
+}
