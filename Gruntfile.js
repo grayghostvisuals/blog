@@ -1,7 +1,10 @@
 module.exports = function(grunt) {
 
-    // Load NPM Tasks
+    // Load ALL NPM Tasks
     require('jit-grunt')(grunt);
+
+    // Display the elapsed execution time of tasks
+    require('time-grunt')(grunt);
 
     grunt.initConfig({
 
@@ -35,8 +38,8 @@ module.exports = function(grunt) {
         watch: {
             html: {
                 files: [
-                    '**/*.html',
-                    '**/*.php',
+                    '*.php',
+                    'inc/**/*.php',
                     'img/**/*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
             },
@@ -56,8 +59,8 @@ module.exports = function(grunt) {
 
             livereload: {
                 files: [
-                    '**/*.html',
-                    '**/*.php',
+                    '*.php',
+                    'inc/**/*.php',
                     'css/**/*.css',
                     'js/**/*.js',
                     'img/**/*.{png,jpg,jpeg,gif,webp,svg}'
