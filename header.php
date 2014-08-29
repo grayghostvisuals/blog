@@ -55,7 +55,9 @@ $ip_address = '192.168.22.1';
 	<meta property="og:url" content="<?php if( is_single() ) : ?><? the_permalink(); ?><?php else : ?><?php bloginfo('url'); ?><?php endif; ?>">
 	<meta property="og:image" content="http://static.grayghostvisuals.com/imgblog/og-logo.png">
 
+	<!--[if gte IE 9]><!-->
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+	<!--<![endif]-->
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo( 'rss2_url' ); ?>">
