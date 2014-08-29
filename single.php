@@ -24,17 +24,19 @@
 					</div>
 
 					<?php get_template_part( 'inc/entry-footer' ); ?>
+
+					<div class="single-pagination">
+						<span class="prev">
+							<?php previous_post_link( '%link', '<span>« Previous Category Post</span>', TRUE ); ?>
+						</span>
+
+						<span class="nxt">
+							<?php next_post_link( '%link', '<span>Next Category Post »</span>', TRUE ); ?>
+						</span>
+					</div>
+
+					<div><?php comments_template(); ?></div>
 				</article>
-
-				<div class="single-pagination">
-					<span class="prev">
-						<?php previous_post_link( '%link', '<span>« Previous Category Post</span>', TRUE ); ?>
-					</span>
-
-					<span class="nxt">
-						<?php next_post_link( '%link', '<span>Next Category Post »</span>', TRUE ); ?>
-					</span>
-				</div>
 			<?php endwhile; ?>
 
 			<?php else : ?>
@@ -44,8 +46,6 @@
 					?>
 				</p>
 			<?php endif; ?>
-
-			<?php comments_template(); ?>
 		</main>
 
 		<?php get_footer(); ?>
