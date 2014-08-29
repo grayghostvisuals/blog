@@ -1,10 +1,10 @@
 <footer role="contentinfo">
-	<ul id="info" class="socials">
-		<li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social-circle" aria-hidden="true">twitter</a></li>
-		<li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social-circle" aria-hidden="true">github</a></li>
-		<li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social-circle" aria-hidden="true">dribbble</a></li>
-		<li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social-circle" aria-hidden="true">facebook</a></li>
-		<li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social-circle" aria-hidden="true">googleplus</a></li>
+	<ul id="info" class="footer-icons">
+		<li class="twitter"><a href="//twitter.com/#!/gryghostvisuals" class="ss-icon ss-social-circle">&#xF611;</a></li>
+		<li class="github"><a href="//github.com/grayghostvisuals" class="ss-icon ss-social-circle" aria-hidden="true">&#xF671;</a></li>
+		<li class="dribbble"><a href="//dribbble.com/grayghostvisuals" class="ss-icon ss-social-circle" aria-hidden="true">&#xF660;</a></li>
+		<li class="facebook"><a href="//facebook.com/grayghostvisuals" class="ss-icon ss-social-circle" aria-hidden="true">&#xF610;</a></li>
+		<li class="gplus"><a href="//plus.google.com/u/0/109644357599758733825/about" class="ss-icon ss-social-circle" aria-hidden="true">&#xF613;</a></li>
 	</ul>
 
 	<div class="widgets-wrap">

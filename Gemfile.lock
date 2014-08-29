@@ -37,6 +37,5 @@ PLATFORMS
 DEPENDENCIES
   breakpoint (~> 2.4.2)
   compass (~> 1.0.0.alpha)
-  sass (~> 3.3.10)
   sass-globbing (~> 1.1.1)
   singularitygs (~> 1.2.1)

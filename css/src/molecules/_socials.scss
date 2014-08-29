@@ -1,5 +1,7 @@
-.socials {
-    @extend %flexbox;
+.footer-icons {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     @include align-items(center);
     @include justify-content(center);
     @include flex-direction(row);

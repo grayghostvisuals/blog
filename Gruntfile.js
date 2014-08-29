@@ -73,8 +73,7 @@ module.exports = function(grunt) {
         compass: {
             dist: {
                 options: {
-                    config: 'config.rb',
-                    sourcemap: true
+                    config: 'config.rb'
                 }
             }
         },
@@ -85,7 +84,7 @@ module.exports = function(grunt) {
                     port: 9001,
                     protocol: 'http',
                     hostname: 'localhost',
-                    base: '.',  // '.' operates from the root of your Gruntfile, otherwise -> 'Users/user-name/www-directory/website-directory'
+                    base: '.',
                     keepalive: false, // set to false to work side by side w/watch task.
                     livereload: true,
                     open: true
@@ -327,23 +326,23 @@ module.exports = function(grunt) {
 
     // Development
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('hint', ['jshint']);
-    grunt.registerTask('test', ['qunit']);
+    grunt.registerTask('hint', ['newer:jshint']);
+    grunt.registerTask('test', ['newer:qunit']);
 
     // Build
     grunt.registerTask('svgicon', ['grunticon:icons']);
     grunt.registerTask('svgsprite', ['svgstore:default']);
-    grunt.registerTask('imgmin', ['imagemin']);
+    grunt.registerTask('imgmin', ['newer:imagemin']);
     grunt.registerTask('build', [
         'copy',
-        'concat',
-        'uglify',
-        'useminPrepare',
-        'usemin',
-        'replace'
+        'newer:concat',
+        'newer:uglify',
+        'newer:useminPrepare',
+        'newer:usemin',
+        'newer:replace'
     ]);
-    grunt.registerTask('cachebust', ['asset_cachebuster']);
-    grunt.registerTask('filerev', ['rev']);
+    grunt.registerTask('cachebust', ['newer:asset_cachebuster']);
+    grunt.registerTask('filerev', ['newer:rev']);
 
     // Maintenance
     grunt.registerTask('update', ['devUpdate']);
