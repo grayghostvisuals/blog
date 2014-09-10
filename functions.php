@@ -7,6 +7,7 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 		// require_once locate_template('/inc/functions/autop-filter.php');
 		require_once locate_template('/inc/functions/title.php');
 		require_once locate_template('/inc/functions/nav-menu.php');
+		require_once locate_template('/inc/functions/custom-avatar.php');
 		require_once locate_template('/inc/functions/comment-reply.php');
 		require_once locate_template('/inc/functions/theme-support.php');
 		require_once locate_template('/inc/functions/editor-style.php');
