@@ -19,13 +19,17 @@ rewind_posts();
 		<main class="clearfix" id="content" role="main">
 			<section>
 				<h1 class="results-headline">
-					<?php if ( is_day() ) : ?> <?php printf( 'Daily Archives: <span class="archive-title">%s</span>', get_the_date() ); ?>
+					<?php if ( is_day() ) : ?>
+					<?php printf( 'Daily Archives: <span class="archive-title">%s</span>', get_the_date() ); ?>
 					<?php elseif ( is_month() ) : ?>
-						<?php printf( 'Monthly Archives: <span>%s</span>', get_the_date( 'F Y' ) ); ?>
+					<?php printf( 'Monthly Archives: <span class="archive-title">%s</span>', get_the_date( 'F Y' ) ); ?>
 					<?php elseif ( is_year() ) : ?>
-						<?php printf( 'Yearly Archives: <span>%s</span>', get_the_date( 'Y' ) ); ?>
-					<?php elseif ( is_tag() ) : ?><?php printf( single_tag_title( 'Tag Archives : ' ) . ' ' . '<span>%s</span>', get_the_date( 'F Y' ) ); ?>
-					<?php else : ?><?php echo ( 'The Archives' ); ?><?php endif; //end initial if ?>
+					<?php printf( 'Yearly Archives: <span class="archive-title">%s</span>', get_the_date( 'Y' ) ); ?>
+					<?php elseif ( is_tag() ) : ?>
+					<?php printf( single_tag_title( 'Tag Archives : ' ) . ' ' . '<span class="archive-title">%s</span>', get_the_date( 'F Y' ) ); ?>
+					<?php else : ?>
+					<?php echo ( 'The Archives' ); ?>
+					<?php endif; ?>
 				</h1>
 
 				<ul class="entries list-reset">
@@ -45,18 +49,13 @@ rewind_posts();
 				</ul>
 
 				<?php else : ?>
-					<p>
-						<?php 
-							echo "Holy smokes! This is totally crazy. No posts match anything even remotely close to that in our database. Sorry Mon Frere, try again";
-						?>
-					</p>
+				<?php get_template_part( 'inc/error-msg' ); ?>
 				<?php endif; ?>
 			</section>
 
-			<div class="pagination">
-				<p><?php posts_nav_link( '&#8734;', '&laquo; Go Forward In Time', 'Go Back In Time &raquo;' ); ?></p>
-			</div>
+			<?php get_template_part( 'inc/pagination-posts' ); ?>
 		</main>
+
 		<?php get_footer(); ?>
 	</div>
 

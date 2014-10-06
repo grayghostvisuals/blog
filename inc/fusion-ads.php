@@ -1,1 +1,1 @@
-<script src="https://cdn.fusionads.net/fusion.js?zoneid=1332&serve=C6SDP2Y&placement=grayghostvisuals" id="_fusionads_js" async></script>
+<script src="//cdn.fusionads.net/fusion.js?zoneid=1332&serve=C6SDP2Y&placement=grayghostvisuals" id="_fusionads_js" async></script>

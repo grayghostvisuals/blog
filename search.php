@@ -1,11 +1,18 @@
+<?php
+	global $wp_query;
+	$big = 999999999;
+?>
+
 <?php get_header(); ?>
+
 <div class="grid">
 	<div class="col-6-4 col-9-3 col-5-1">
 		<main class="clearfix" id="content" role="main">
 			<header>
-				<h1 class="results-headline">Search Results</h1>
+				<h1 class="results-headline"><?php printf( __( 'Search Results: %s', '' ), '<span class="page-title__query-term">' . get_search_query() . '</span>' ); ?></h1>
 			</header>
-
+			
+			<?php if (  have_posts() ) : ?>
 			<ul class="entries list-reset">
 				<?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
 					<li class="entries__item" id="post-<?php the_ID(); ?>">
@@ -20,33 +27,35 @@
 					</li>
 				<?php endwhile; ?>
 			</ul>
+			<?php endif; ?>
+
 			<?php else : ?>
 				<p><?php echo ( 'Sorry dude &ndash;or&ndash; dudette but your search term(s) didn\'t result in any matches from our sweet, sweet database of knowledge. Please do try refining your search term and/or query again won\'t you pretty please?' ); ?></p>
 			<?php endif; ?>
 
+			<?php if (  $wp_query->max_num_pages > 1 ) : ?>
 			<div class="pagination">
 				<?php
-					global $wp_query;
-					$big = 999999999;
-
 					echo paginate_links( array(
 						'base'         => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
 						'format'       => '?paged=%#%',
-						'total'        => $wp_query -> max_num_pages,
+						'total'        => $wp_query->max_num_pages,
 						'current'      => max( 1, get_query_var( 'paged' ) ),
 						'show_all'     => False,
 						'end_size'     => 1,
 						'mid_size'     => 2,
 						'prev_next'    => True,
-						'prev_text'    => '&laquo; Previous',
-						'next_text'    => 'Next &raquo;',
+						'prev_text'    => __('<span id="prev">&laquo; Previous</span>'),
+						'next_text'    => __('<span id="nxt">Next &raquo;</span>'),
 						'type'         => 'plain',
 						'add_args'     => False,
 						'add_fragment' => ''
 					));
 				?>
 			</div>
+			<?php endif; ?>
 		</main>
+
 		<?php get_footer(); ?>
 	</div>
 

@@ -11,7 +11,6 @@ if ( ! function_exists( 'wpflex_setup' ) ) :
 		require_once locate_template('/inc/functions/editor-style.php');
 		require_once locate_template('/inc/functions/post-thumbnail.php');
 		require_once locate_template('/inc/functions/content-width.php');
-		require_once locate_template('/inc/functions/read-more.php');
 		require_once locate_template('/inc/functions/comments.php');
 		require_once locate_template('/inc/functions/widgets.php');
 		require_once locate_template('/inc/functions/custom-admin.php');

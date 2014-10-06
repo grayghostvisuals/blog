@@ -41,7 +41,7 @@
 									'callback'          => 'wpflex_comments',
 									'end-callback'      => null,
 									'type'              => 'all',
-									'reply_text'        => 'Enlighten Me',
+									'reply_text'        => 'Reply to my comment',
 									'page'              => '',
 									'per_page'          => '',
 									'avatar_size'       => 96,

@@ -1,6 +1,7 @@
 input:not([type="checkbox"]),
 textarea {
     display: block;
+    @include css-hyphens(none);
     @include appearance(none);
     border: none;
     padding: (12/$typl8-font-base)+rem; //12px;

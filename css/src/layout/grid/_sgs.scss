@@ -53,3 +53,9 @@
         @include grid-span(1, 10);
     }
 }
+
+.col-fusion {
+    .js & {
+        min-height: 192px;
+    }
+}

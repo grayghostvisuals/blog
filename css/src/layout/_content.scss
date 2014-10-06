@@ -1,5 +1,9 @@
 main[role="main"] {
-    @media screen and (min-width: $grid-9-3) {
-        padding-top: 60px;
-    }
+	.no-js & {
+		padding-top: 30px;
+	}
+
+	@media screen and (min-width: $grid-9-3) {
+		padding-top: 60px;
+	}
 }

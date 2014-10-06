@@ -1,0 +1,16 @@
+.post-pagination {
+	@extend %flexbox;
+	flex: 1;
+	li {
+		@extend %flexbox;
+		flex: 1;
+	}
+}
+
+.post-pagination__prev {
+	@include justify-content(flex-start);
+}
+
+.post-pagination__nxt {
+	@include justify-content(flex-end);
+}

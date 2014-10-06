@@ -153,7 +153,7 @@ module.exports = function(grunt) {
             },
             default: {
                 files: {
-                    'img/svg/sprite.svg' : ['img/svg/icons/*.svg']
+                    'img/icons/sprite.svg' : ['img/icons/*.svg']
                 }
             }
         },

@@ -63,7 +63,7 @@ $ip_address = '192.168.22.1';
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo( 'rss2_url' ); ?>">
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr.js"></script>
-	<?php if ( is_singular() ) { wp_enqueue_script( 'comment-reply' ); } ?>
+	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 	<?php wp_head(); ?>
 </head>
 <body class="<?php if(is_front_page()) : ?>index <?php endif; ?><?php if ( has_post_thumbnail() && is_single() ) : ?>bg-feat<?php else : ?>no-feat-bg<?php endif; ?>" id="<?php if( is_single() ) : echo strtolower(preg_replace('/\s+/', '-', get_the_title($ID))); else : echo "page"; endif; ?>" <?php $ip = $_SERVER['REMOTE_ADDR']; if ( $ip == '127.0.0.1' ) : ?>data-development-grid="show"<?php endif; ?>>
@@ -140,7 +140,7 @@ $ip_address = '192.168.22.1';
 					endwhile;
 				endif;
 			?>
-			<?php } // end wp_nav_fallback
+			<?php }
 				wpflex_custom_nav();
 			?>
 
@@ -148,12 +148,12 @@ $ip_address = '192.168.22.1';
 				<?php get_search_form(); ?>
 
 				<article id="rss">
-					<a href="<?php bloginfo('rss2_url') ?>" class="ss-icon">RSS</a>
+					<a href="<?php bloginfo('rss2_url') ?>">RSS</a>
 				</article>
 
-				<a href="#info" class="ss-icon">Info</a>
+				<a href="#info">Info</a>
 			</div>
 
-			<a href="#utility-bar" class="utility-bar__toggle"><span class="ss-icon" aria-hidden="true">list</span> Menu</a>
+			<a href="#utility-bar" class="utility-bar__toggle"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M81.653 28.71c0 .9-.73 1.63-1.63 1.63H9.977c-.9 0-1.63-.73-1.63-1.63V17.307c0-.9.73-1.63 1.63-1.63h70.048c.9 0 1.63.73 1.63 1.63V28.71zM81.653 50.702c0 .9-.73 1.63-1.63 1.63H9.977c-.9 0-1.63-.73-1.63-1.63V39.298c0-.9.73-1.63 1.63-1.63h70.048c.9 0 1.63.73 1.63 1.63v11.404zM81.653 72.693c0 .9-.73 1.63-1.63 1.63H9.977c-.9 0-1.63-.73-1.63-1.63V61.29c0-.9.73-1.63 1.63-1.63h70.048c.9 0 1.63.73 1.63 1.63v11.403z"/></svg></a>
 		</div>
 	</header>

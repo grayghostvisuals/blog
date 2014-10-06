@@ -1,19 +1,29 @@
 #article-links {
-    list-style-type: none;
-    padding-left: 0;
+	list-style-type: none;
+	padding-left: 0;
 
-    li {
-        display: table;
-        a {
-            display: table-cell;
-            vertical-align: middle;
-            padding-right: 6px;
-        }
-    }
+	li {
+		display: table;
 
-    .ss-icon {
-        display: table-cell;
-        vertical-align: middle;
-        padding-right: 6px;
-    }
+		a {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		&:before {
+			border: 2px solid lightgrey;
+			border-radius: 4px;
+			content: " ";
+			display: block;
+			margin-right: 6px;
+			width: 24px;
+			height: 24px;
+			background: #FFF9F9 image-url("icon_link.svg") center center;
+			background-size: 20px 20px;
+		}
+
+		.ss-icon {
+			display: none;
+		}
+	}
 }

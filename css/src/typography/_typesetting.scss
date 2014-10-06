@@ -172,6 +172,20 @@ label {
     font-style: italic;
 }
 
-.footer-icons {
-    font-size: 36px;
+.custom-icon {
+    width: 50px;
+    height: 50px;
+    transition: .3s fill ease-in-out;
+}
+.custom-icon circle {
+    fill: black;
+}
+.custom-icon path {
+    fill: white !important;
+}
+.custom-icon:hover path {
+    fill: black !important;
+}
+.custom-icon:hover circle {
+    fill: white;
 }

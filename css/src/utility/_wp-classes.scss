@@ -226,6 +226,10 @@ img.size-full {
 		background: $comment-body-bg;
 		color: text-contrast($comment-body-bg);
 
+		p code {
+			color: #F2FCBF;
+		}
+
 		&:before {
 			content: "";
 			display: block;
@@ -293,6 +297,11 @@ img.size-full {
 	> .comment-body {
 		background: $comment-body-author-bg;
 		color: $comment-body-author-txt;
+
+		p code {
+			color: #B9B545;
+		}
+
 		&:before {
 			content: "";
 			@include caret(top, $comments-caret-width, $comment-body-author-bg);
@@ -332,8 +341,7 @@ img.size-full {
 			width: 2rem;
 			line-height: 2;
 			text-align: center;
-			background: rgb(70, 85, 74);
-			color: white;
+			color: #222222;
 		}
 	}
 }

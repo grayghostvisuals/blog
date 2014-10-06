@@ -1,7 +1,9 @@
 #fusionads {
-    padding: 60px 0;
+    padding: 40px 0 30px;
+
     @media screen and (min-width: $grid-9-3) {
         width: 130px;
+        padding: 60px 0;
     }
     .cssanimations & {
         opacity: 0;

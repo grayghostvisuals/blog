@@ -48,8 +48,23 @@
 	}
 
 	a {
-		font-size: 24px;
+		font-size: 18px;
 		color: white;
+
+		&:after {
+			@include breakpoint($utility-nav-rows) {
+				content: "/";
+				margin-left: 10px;
+			}
+		}
+	}
+
+	a[href="#info"] {
+		&:after {
+			@include breakpoint($utility-nav-rows) {
+				content: "";
+			}
+		}
 	}
 }
 
@@ -58,9 +73,6 @@
 	display: table;
 	padding: 12px;
 	position: absolute;
-	// goldenrod
-	// ghostwhite
-	// lightsalmon
 	@include link-colors(grey, grey, grey, grey, grey);
 	font-size: 21.555px;
 
@@ -68,11 +80,12 @@
 		top: 0;
 	}
 
-	.ss-icon {
+	svg {
+		width: 42px;
+		height: 42px;
 		display: table-cell;
 		vertical-align: middle;
-		padding-right: 5.333px;
-		color: #E9D0CA;
+		fill: white;
 	}
 }
 

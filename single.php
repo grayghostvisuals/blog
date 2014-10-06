@@ -23,28 +23,19 @@
 						<?php str_replace('<p></p>', '', the_content()); ?>
 					</div>
 
+					<?php get_template_part( 'inc/edit-post-link' ); ?>
 					<?php get_template_part( 'inc/entry-footer' ); ?>
+					<?php get_template_part( 'inc/profile' ); ?>
 
-					<div class="single-pagination">
-						<span class="prev">
-							<?php previous_post_link( '%link', '<span>« Previous Category Post</span>', TRUE ); ?>
-						</span>
-
-						<span class="nxt">
-							<?php next_post_link( '%link', '<span>Next Category Post »</span>', TRUE ); ?>
-						</span>
-					</div>
-
-					<div><?php comments_template(); ?></div>
+					<?php
+						if ( comments_open() || '0' != get_comments_number() ) :
+						comments_template();
+						endif;
+					?>
 				</article>
 			<?php endwhile; ?>
-
 			<?php else : ?>
-				<p>
-					<?php 
-						echo "Holy smokes! This is totally crazy. No posts match anything even remotely close to that in our database. Sorry Mon Frere, try again";
-					?>
-				</p>
+			<?php get_template_part( 'inc/error-msg' ); ?>
 			<?php endif; ?>
 		</main>
 
