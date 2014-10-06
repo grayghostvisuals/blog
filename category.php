@@ -28,7 +28,7 @@
 		<?php get_footer(); ?>
 	</div>
 
-	<div class="col-10-2 col-5-1">
+	<div class="col-10-2 col-5-1 col-fusion">
 		<?php include('inc/fusion-ads.php'); ?>
 	</div>
 </div>
