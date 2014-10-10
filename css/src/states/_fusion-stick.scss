@@ -1,0 +1,9 @@
+#fusionads {
+	@include transform(translateZ(0));
+
+	&.is-fixed {
+		padding-top: 0;
+		position: fixed;
+		top: 0;
+	}
+}
