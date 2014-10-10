@@ -25,9 +25,10 @@ $(document).ready(function () {
 		}
 
 		function stickyAd() {
+			var fusion_ad       = $('#fusionads');
+
 			if($(window).width() >= sticky_width) {
-				var fusion_ad       = $('#fusionads'),
-						content_offset  = $('#content').offset().top,
+				var content_offset  = $('#content').offset().top,
 						scroll_top      = $(window).scrollTop();
 
 				if(scroll_top >= content_offset) {
@@ -41,8 +42,11 @@ $(document).ready(function () {
 		}
 
 		function stickyResize() {
+			var fusion_ad       = $('#fusionads');
 			if($(window).width() < sticky_width) {
-				fusion_ad.removeClass(fix_class);
+				if(fusion_ad.hasClass(fix_class)) {
+					fusion_ad.removeClass(fix_class);
+				}
 			}
 			if($(window).width() >= sticky_width) {
 				$(window).on('scroll', stickyAd);
