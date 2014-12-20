@@ -19,7 +19,7 @@
 	<?php wp_link_pages( array( $wpflex_post_pages ) ); ?>
 
 	<?php if ($posttags || $postcats) : ?>
-	<ul class="taxonomy list-reset">
+	<ul class="taxonomy list-reset visuallyhidden">
 		<?php if ($posttags) : ?>
 		<li class="taxonomy__item">
 			<?php echo ( 'Tagged:' ); ?>
