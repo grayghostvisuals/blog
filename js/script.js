@@ -8,11 +8,11 @@ $(document).ready(function () {
 		// ==============================================================================
 
 		var $utility_toggle = $('.utility-bar__toggle'),
-				state           = 'active',
 				hero_height     = $('.branding').height(),
 				content_pad     = $('#content').css('padding-top').split('px')[0],
 				sticky_trigger  = +hero_height + +content_pad,
 				sticky_width    = 1180,
+				state           = 'active',
 				fix_class       = 'is-fixed';
 
 		// Methods
@@ -20,9 +20,11 @@ $(document).ready(function () {
 
 		function navToggle(event, cname) {
 			event.preventDefault();
+
 			$('.utility-bar').toggleClass(cname);
 			$('.utility-bar__items').toggleClass(cname);
 		}
+
 
 		function stickyAd() {
 			var fusion_ad       = $('#fusionads');
@@ -41,6 +43,7 @@ $(document).ready(function () {
 			}
 		}
 
+
 		function stickyResize() {
 			var fusion_ad       = $('#fusionads');
 			if($(window).width() < sticky_width) {
@@ -53,12 +56,13 @@ $(document).ready(function () {
 			}
 		}
 
-		function lemanzSimpleLink(event) {
-			$("html, body").animate({
-				scrollTop: $($.attr(this, 'href')).offset().top
-			}, 1200);
 
+		function lemanzSimpleLink(event) {
 			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $( $.attr(this, 'href') ).offset().top
+			}, 900);
 		}
 
 
@@ -80,7 +84,6 @@ $(document).ready(function () {
 			navToggle.call(this, event, state);
 		});
 
-
 		$utility_toggle.on('touchstart', function(event) {
 			navToggle.call(this, event, state);
 		});
@@ -88,7 +91,7 @@ $(document).ready(function () {
 
 		$('.formatting-toggle').bind('click', function(event) {
 			event.preventDefault();
-			$(this).next().toggleClass('active');
+			$(this).next().toggleClass(state);
 		});
 
 		$('.lemanz-sl').on('click', lemanzSimpleLink);
