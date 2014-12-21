@@ -1,0 +1,16 @@
+.utility-bar {
+  &.active {
+    @include breakpoint($utility-nav-rows) {
+      @include transform(translateY(0));
+    }
+  }
+}
+
+
+.utility-bar__items {
+  &.active {
+    @include breakpoint($utility-nav-columns) {
+      @include transform(translateX(0));
+    }
+  }
+}

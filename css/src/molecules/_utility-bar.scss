@@ -15,12 +15,6 @@
 	@include breakpoint($utility-nav-columns) {
 		height: 100%;
 	}
-
-	&.active {
-		@include breakpoint($utility-nav-rows) {
-			@include transform(translateY(0));
-		}
-	}
 }
 
 
@@ -39,12 +33,6 @@
 
 	@include breakpoint($utility-nav-rows) {
 		@include flex-direction(row);
-	}
-
-	&.active {
-		@include breakpoint($utility-nav-columns) {
-			@include transform(translateX(0));
-		}
 	}
 
 	a {
