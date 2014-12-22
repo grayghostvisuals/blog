@@ -5,13 +5,15 @@
   // Selectors
   // ==============================================================================
 
-  var $utility_toggle = $('.utility-bar__toggle'),
-      hero_height     = $('.branding').height(),
-      content_pad     = $('#content').css('padding-top').split('px')[0],
-      sticky_trigger  = +hero_height + +content_pad,
-      sticky_width    = 1180,
-      state           = 'active',
-      fix_class       = 'is-fixed';
+  var $utility_bar       = $('.utility-bar'),
+      $utility_toggle    = $('.utility-bar__toggle'),
+      $utility_bar_items = $('.utility-bar__items'),
+      hero_height        = $('.branding').height(),
+      content_pad        = $('#content').css('padding-top').split('px')[0],
+      sticky_trigger     = +hero_height + +content_pad,
+      sticky_width       = 1180,
+      state              = 'active',
+      fix_class          = 'is-fixed';
 
 
   // Methods
@@ -63,6 +65,48 @@
   }
 
 
+  function a11ySetup() {
+    $utility_bar.attr({
+      'aria-expanded' : 'false'
+    });
+
+    $utility_bar_items.attr({
+      'aria-hidden' : 'true'
+    });
+
+    $utility_toggle.attr({
+      'aria-hidden' : 'false',
+      'tabindex' : '1',
+      'aria-pressed' : 'false'
+    });
+  }
+
+
+  function a11yState(class_state) {
+    if($utility_bar_items.hasClass(class_state)) {
+      $(this).attr({
+        'aria-pressed' : 'true'
+      });
+      $utility_bar.attr({
+        'aria-expanded' : 'true'
+      });
+      $utility_bar_items.attr({
+        'aria-hidden' : 'false'
+      });
+    } else {
+      $(this).attr({
+        'aria-pressed' : 'false'
+      });
+      $utility_bar.attr({
+        'aria-expanded' : 'false'
+      });
+      $utility_bar_items.attr({
+        'aria-hidden' : 'true'
+      });
+    }
+  }
+
+
   // Event Handlers
   // ==============================================================================
   
@@ -74,12 +118,16 @@
 
   $('.flex-video').fitVids();
 
+  a11ySetup();
+
   $utility_toggle.on('click', function(event) {
     navToggle.call(this, event, state);
+    a11yState(state);
   });
 
   $utility_toggle.on('touchstart', function(event) {
     navToggle.call(this, event, state);
+    a11yState(state);
   });
 
   $('.formatting-toggle').bind('click', function(event) {

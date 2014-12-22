@@ -78,7 +78,7 @@ $ip_address = '192.168.22.1';
 		<?php endif; ?>
 
 		<h1 class="blogname">
-			<a href="<?php echo home_url();  ?>" class="blog-uri" title="gray ghost visuals press" rel="bookmark">
+			<a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark">
 				<?php include('img/blogbadge-grayscale.svg'); ?>
 			</a>
 		</h1>
@@ -154,6 +154,6 @@ $ip_address = '192.168.22.1';
 				<a href="#info" class="lemanz-sl">Info</a>
 			</div>
 
-			<a href="#utility-bar" class="utility-bar__toggle"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M81.653 28.71c0 .9-.73 1.63-1.63 1.63H9.977c-.9 0-1.63-.73-1.63-1.63V17.307c0-.9.73-1.63 1.63-1.63h70.048c.9 0 1.63.73 1.63 1.63V28.71zM81.653 50.702c0 .9-.73 1.63-1.63 1.63H9.977c-.9 0-1.63-.73-1.63-1.63V39.298c0-.9.73-1.63 1.63-1.63h70.048c.9 0 1.63.73 1.63 1.63v11.404zM81.653 72.693c0 .9-.73 1.63-1.63 1.63H9.977c-.9 0-1.63-.73-1.63-1.63V61.29c0-.9.73-1.63 1.63-1.63h70.048c.9 0 1.63.73 1.63 1.63v11.403z"/></svg></a>
+			<a href="#utility-bar" class="utility-bar__toggle" aria-label="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M81.653 28.71c0 .9-.73 1.63-1.63 1.63H9.977c-.9 0-1.63-.73-1.63-1.63V17.307c0-.9.73-1.63 1.63-1.63h70.048c.9 0 1.63.73 1.63 1.63V28.71zM81.653 50.702c0 .9-.73 1.63-1.63 1.63H9.977c-.9 0-1.63-.73-1.63-1.63V39.298c0-.9.73-1.63 1.63-1.63h70.048c.9 0 1.63.73 1.63 1.63v11.404zM81.653 72.693c0 .9-.73 1.63-1.63 1.63H9.977c-.9 0-1.63-.73-1.63-1.63V61.29c0-.9.73-1.63 1.63-1.63h70.048c.9 0 1.63.73 1.63 1.63v11.403z"/></svg></a>
 		</div>
 	</header>

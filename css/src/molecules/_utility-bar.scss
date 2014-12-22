@@ -10,10 +10,22 @@
 		background: rgba(255, 255, 255, 0.13);
 		@include transition(transform .3s ease-in-out);
 		@include transform(translateY(-100%));
+
+		// JS OFF
+		&:target {
+			@include transform(translateY(0));
+		}
 	}
 
 	@include breakpoint($utility-nav-columns) {
 		height: 100%;
+
+		// JS OFF
+		&:target {
+			.utility-bar__items {
+				@include transform(translateX(0));
+			}
+		}
 	}
 }
 
