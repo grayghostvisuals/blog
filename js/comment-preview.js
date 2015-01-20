@@ -4,6 +4,7 @@ $('p[class*="comment-form"] > input').each(function() {
     $(this).val('');
 });
 
+
 $('p[class*="comment-form"] > input').change(function() {
     var author = $('#author').val(),
         email = CryptoJS.MD5( $('#email').val().toLowerCase().trim() ),
@@ -14,7 +15,9 @@ $('p[class*="comment-form"] > input').change(function() {
     $('.preview-url').attr('href',url);
 });
 
+
 $('textarea#comment').keyup(function() {
     var comment = $(this).val();
     $('.preview-text').html(comment);
+    Prism.highlightAll(true);
 });
