@@ -279,20 +279,9 @@ img.size-full {
 	}
 }
 
-.comment-author-admin {
-	> .comment-vcard:before {
-		background: #FBFFEC;
-	}
-}
 
 .comment-author-admin,
 .comment.bypostauthor {
-
-	> .comment-vcard {
-		.avatar {
-			@include filter(sepia(50%));
-		}
-	}
 
 	> .comment-body {
 		background: $comment-body-author-bg;
@@ -324,8 +313,6 @@ img.size-full {
 	margin-bottom: 3em;
 }
 
-// ol.commentlist li.comment.even {}
-// ol.commentlist li.comment.odd {}
 
 .comment {
 	.children {
@@ -345,10 +332,6 @@ img.size-full {
 		}
 	}
 }
-
-// .comment.thread-alt {}
-// .comment.thread-even {}
-// .comment.thread-odd {}
 
 ol.commentlist li.comment ul.children li.depth-1 {
 	background: red;

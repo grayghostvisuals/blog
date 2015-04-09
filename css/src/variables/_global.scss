@@ -74,16 +74,16 @@ $red: #ff0000;
 $electric-violet: #B800FF;
 
 // links
-$global-anchor-color: $guardsman-red;
-$global-anchor-color-hover: $red;
+$global-anchor-color: #61A4C5;
+$global-anchor-color-hover: #B8D4E3;
 
 // backgrounds
-$no-feat-bg: $mine-shaft;
+$no-feat-bg: #01395F;
 
 // comments
-$comment-body-bg: #700000;
-$comment-body-author-bg: #FBFFEC;
-$comment-body-author-txt: $tundora;
+$comment-body-bg: #97BDD5;
+$comment-body-author-bg: #01395F;
+$comment-body-author-txt: #B8D4E3;
 
 // code
 $code-color: $electric-violet;
@@ -91,4 +91,4 @@ $code-color: $electric-violet;
 // inputs
 $inputs-bg: $alabaster;
 $search-input-bg: rgba(255, 255, 255, 0.1);
-$search-input-color: $silver-chalice;
+$search-input-color: #61A4C5;

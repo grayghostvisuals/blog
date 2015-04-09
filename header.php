@@ -79,7 +79,7 @@ $ip_address = '192.168.22.1';
 
 		<h1 class="blogname">
 			<a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark">
-				<?php include('img/blogbadge-grayscale.svg'); ?>
+				<?php include('img/logo.svg'); ?>
 			</a>
 		</h1>
 

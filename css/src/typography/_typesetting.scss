@@ -178,13 +178,13 @@ label {
     transition: .3s fill ease-in-out;
 }
 .custom-icon circle {
-    fill: black;
+    fill: #1877A3;
 }
 .custom-icon path {
     fill: white !important;
 }
 .custom-icon:hover path {
-    fill: black !important;
+    fill: #1877A3 !important;
 }
 .custom-icon:hover circle {
     fill: white;

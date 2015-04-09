@@ -82,6 +82,19 @@ body {
 	padding: 0;
 }
 
+::-webkit-input-placeholder {
+  color: #6DA3C5;
+}
+::-moz-placeholder {
+  color: #6DA3C5;
+}
+:-ms-input-placeholder {
+  color: #6DA3C5;
+}
+::placeholder {
+  color: #6DA3C5;
+}
+
 img,
 embed,
 object,

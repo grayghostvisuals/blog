@@ -4,7 +4,7 @@
   margin: 54px 0 24px;
 	padding: 24px;
 	position: relative;
-  background: snow;
+  background: rgba(1, 57, 95, 0.03);
 
   @include breakpoint($avatar-column) {
     @include flex-direction(row);

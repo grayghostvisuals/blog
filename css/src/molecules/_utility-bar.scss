@@ -40,7 +40,7 @@
 		@include transition(transform .3s ease-in-out);
 		height: 100%;
 		padding-top: 54px;
-		background: rgba(0,0,0,0.95);
+		background: rgba(#004069,0.95);
 	}
 
 	@include breakpoint($utility-nav-rows) {
@@ -73,7 +73,6 @@
 	display: table;
 	padding: 12px;
 	position: absolute;
-	@include link-colors(grey, grey, grey, grey, grey);
 	font-size: 21.555px;
 
 	@include breakpoint($utility-nav-columns) {
