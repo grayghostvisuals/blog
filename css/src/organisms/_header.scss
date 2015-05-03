@@ -4,7 +4,5 @@
 	@include flex-direction(column);
 	@include justify-content(center);
 	@extend %header_height_settings;
-	.no-feat-bg & {
-    background-color: #FAFBF7;
-	}
+	background-color: rgba(250, 251, 247, 0.94);
 }

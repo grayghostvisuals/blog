@@ -63,23 +63,16 @@ $ip_address = '192.168.22.1';
 	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 	<?php wp_head(); ?>
 </head>
-<body class="<?php if(is_front_page()) : ?>index <?php endif; ?><?php if ( has_post_thumbnail() && is_single() ) : ?>bg-feat<?php else : ?>no-feat-bg<?php endif; ?>" id="<?php if( is_single() ) : echo strtolower(preg_replace('/\s+/', '-', get_the_title($ID))); else : echo "page"; endif; ?>" <?php $ip = $_SERVER['REMOTE_ADDR']; if ( $ip == '127.0.0.1' ) : ?>data-development-grid="show"<?php endif; ?>>
+<body class="<?php if(is_front_page()) : ?>index <?php endif; ?>" id="<?php if( is_single() ) : echo strtolower(preg_replace('/\s+/', '-', get_the_title($ID))); else : echo "page"; endif; ?>" <?php $ip = $_SERVER['REMOTE_ADDR']; if ( $ip == '127.0.0.1' ) : ?>data-development-grid="show"<?php endif; ?>>
 	<header class="branding<?php if ( ! has_post_thumbnail() ) : ?> bg-feat--none<?php endif; ?>" role="banner">
 		<?php $header = get_header_image(); ?>
 		<?php if ( $header ) : ?>
 		<div id="header-image">
-			<a href="<?php echo home_url() ?>">
-				<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="">
-			</a>
+			<a href="<?php echo home_url() ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt=""></a>
 		</div>
 		<?php endif; ?>
 
-		<h1 class="blogname">
-			<a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark">
-				<?php include('img/logo.svg'); ?>
-			</a>
-		</h1>
-
+		<h1 class="blogname"><a href="<?php echo home_url();  ?>" class="blog-uri" rel="bookmark"><?php include('img/logo.svg'); ?></a></h1>
 		<h2 class="tagline"><?php echo html_entity_decode( get_bloginfo('description') ); ?></h2>
 
 		<div class="utility-bar" id="utility-bar">
