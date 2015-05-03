@@ -61,7 +61,10 @@ src:url("fonts/74b4dd68-6d32-47cc-84de-23e5a5ed0b33.eot?#iefix") format("eot"),u
 
 @for $i from 1 through 6 {
     h#{$i} {
-        font-family: 'Ciutadella W04 Bold';
+        font-family: 'Ciutadella W04 Bold', "Helvetica Neue", Helvetica, sans-serif;
+        .no-js & {
+            font-weight: 600;
+        }
     }
 }
 
@@ -184,6 +187,14 @@ label {
     font-size: smaller;
 }
 
+.entry__title a {
+    font-family: 'Ciutadella W04 Bold', "Helvetica Neue", Helvetica, sans-serif;
+
+    .no-js & {
+        font-weight: 600;
+    }
+}
+
 
 
 // ================================================================================= //
@@ -198,7 +209,7 @@ label {
 
 .copyright {
     display: block;
-    font-family:'Avenir LT W01_35 Light';
+    font-family:'Avenir LT W01_35 Light', "Helvetica Neue", Helvetica, sans-serif;
     text-align: center;
 }
 

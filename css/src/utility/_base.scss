@@ -104,7 +104,7 @@ video {
 }
 
 a {
-	font-family: 'Avenir LT W01_65 Medium';
+	font-family: 'Avenir LT W01_65 Medium', sans-serif;
 	text-decoration: none;
 	// Compass Helper
 	// link-colors($normal, $hover, $active, $visited, $focus)
@@ -115,9 +115,6 @@ a {
 		$global-anchor-color,
 		$global-anchor-color
 	);
-}
-.entry__title a {
-	font-family: 'Ciutadella W04 Bold';
 }
 
 code {
