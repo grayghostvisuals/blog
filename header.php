@@ -11,17 +11,12 @@ $ip_address = '192.168.22.1';
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<link rel="dns-prefetch" href="//ajax.googleapis.com">
-	<link rel="dns-prefetch" href="//use.typekit.net">
 	<link rel="dns-prefetch" href="//www.google-analytics.com">
 	<link rel="dns-prefetch" href="//cdn.buysellads.com">
 	<link rel="dns-prefetch" href="//srv.buysellads.com">
 	<link rel="dns-prefetch" href="//assets.servedby-buysellads.com">
 	<link rel="dns-prefetch" href="//cdn.fusionads.net">
 	<link rel="dns-prefetch" href="//s3-us-west-2.amazonaws.com">
-
-	<script>
-	!function(e){var t,a={kitId:"moj0xwf",scriptTimeout:3e3},c=e.documentElement,i=setTimeout(function(){c.className=c.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},a.scriptTimeout),n=e.createElement("script"),o=!1,s=e.getElementsByTagName("script")[0];c.className+=" wf-loading",n.src="//use.typekit.net/"+a.kitId+".js",n.async=!0,n.onload=n.onreadystatechange=function(){if(t=this.readyState,!(o||t&&"complete"!=t&&"loaded"!=t)){o=!0,clearTimeout(i);try{Typekit.load(a)}catch(e){}}},s.parentNode.insertBefore(n,s)}(document);
-	</script>
 
 	<title><?php wp_title( '&raquo;', true, 'left' ); ?></title>
 
@@ -56,6 +51,7 @@ $ip_address = '192.168.22.1';
 	<meta property="og:image" content="http://static.grayghostvisuals.com/imgblog/og-logo.png">
 
 	<!--[if gte IE 9]><!-->
+	<link rel="stylesheet" href="http://fast.fonts.net/cssapi/f45fd2d4-83d8-4e75-a894-43effb040b1c.css">
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 	<!--<![endif]-->
 

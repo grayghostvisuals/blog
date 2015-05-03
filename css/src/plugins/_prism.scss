@@ -3,8 +3,8 @@
 code[class*="language-"],
 pre[class*="language-"] {
 	color: white;
-	text-shadow: 0 -.1em .2em black;
-	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	text-shadow: none;
+	font-family: Monaco, 'Andale Mono', monospace;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -27,7 +27,7 @@ pre[class*="language-"] {
 }
 
 pre[class*="language-"] {
-	background: #021321;
+	background: #073769;
 }
 
 /* Code blocks */
@@ -43,7 +43,7 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: #444;
+	color: #00A69B;
 }
 
 .token.punctuation {
@@ -60,14 +60,14 @@ pre[class*="language-"] {
 .token.number,
 .token.constant,
 .token.symbol {
-	color: #5e8cba;
+	color: #00BBE3;
 }
 
 .token.selector,
 .token.attr-name,
 .token.string,
 .token.builtin {
-	color: #f95165;
+	color: #9ACAE3;
 }
 
 .token.operator,
@@ -82,7 +82,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	color: #708284;
+	color: #FFD800;
 }
 
 .token.regex,
@@ -124,7 +124,7 @@ pre[class*='language-'] > code[data-language]::before {
 
 .language-scss {
 	.token.variable {
-		color: #A78F8F;
+		color: #FB7D00;
 	}
 	.token.statement {
 		color: #FF1000;

@@ -2,12 +2,11 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	color: white;
 	width: 100%;
 	z-index: 1;
 
 	@include breakpoint($utility-nav-rows) {
-		background: rgba(255, 255, 255, 0.13);
+		background: rgba(17, 76, 115, 0.02);
 		@include transition(transform .3s ease-in-out);
 		@include transform(translateY(-100%));
 
@@ -48,8 +47,7 @@
 	}
 
 	a {
-		font-size: 18px;
-		color: white;
+		font-size: 16px;
 
 		&:after {
 			@include breakpoint($utility-nav-rows) {
@@ -84,7 +82,7 @@
 		height: 42px;
 		display: table-cell;
 		vertical-align: middle;
-		fill: white;
+		fill: #EB8315;
 	}
 }
 

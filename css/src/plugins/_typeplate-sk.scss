@@ -11,8 +11,8 @@
 // $typl8-font-base                 converts % base value to a px value (16 * (112.5/100) = 18)
 // $typl8-font-family               non-font-face stack
 
-$typl8-serif-boolean: true !default;
-$typl8-custom-font: false !default;
+$typl8-serif-boolean: false !default;
+$typl8-custom-font: 'Avenir LT W01_45 Book', 'Helvetica Neue', Helvetica !default;
 $typl8-font-family: if($typl8-serif-boolean, serif, sans-serif) !default;
 $typl8-font-weight: normal !default;
 $typl8-line-height: 1.65 !default;
@@ -42,8 +42,8 @@ $typl8-small-print-size: 65% !default;
 // $Base-Colors
 // -------------------------------------//
 
-$typl8-heading-color: #222 !default;
-$typl8-copy-color: #444 !default;
+$typl8-heading-color: #003461 !default;
+$typl8-copy-color: #003461 !default;
 
 
 // $Ampersands
@@ -115,8 +115,8 @@ $typl8-cite-font-size: inherit !default;
 // $Small-Caps
 // -------------------------------------//
 
-$typl8-smcps-color: gray !default;
-$typl8-smcps-weight: 600 !default;
+$typl8-smcps-color: inherit !default;
+$typl8-smcps-weight: inherit !default;
 
 
 // $DropCap

@@ -1,33 +1,32 @@
+// ================================================================================= //
+// $Fonts.com
+// ================================================================================= //
 // $Modular Scale
 // http://modularscale.com/scale/?px1=18&px2=16&ra1=1.5&ra2=0
 
+// Avenir and Ciutadella via Fonts.com
+// font-family:'Avenir LT W01_35 Light';
+// font-family:'Avenir LT W01_45 Book';
+// font-family:'AvenirLTW01-45BookObliq';
+// font-family:'Avenir LT W01_65 Medium';
+// font-family:'AvenirLTW01-65MediumObl';
+// font-family:'Ciutadella W04 Medium';
+// font-family:'Ciutadella W04 SmBold';
+// font-family:'Ciutadella W04 Bold';
 
-// ================================================================================= //
-// $Typekit
-// ================================================================================= //
-
-body {
-    .wf-loading & {
-        font-family: serif;
-        font-weight: normal;
-        visibility: hidden;
-    }
-    .wf-active & {
-        font-family: "ff-meta-serif-web-pro", serif;
-        font-weight: 400;
-        visibility: visible;
-    }
-}
+// body {
+//     .wf-loading & {
+//         visibility: hidden;
+//     }
+//     .wf-active & {
+//         visibility: visible;
+//     }
+// }
 
 
 @for $i from 1 through 6 {
     h#{$i} {
-        .wf-loading & {
-            font-weight: bold;
-        }
-        .wf-active & {
-            font-weight: 700;
-        }
+        font-family:'Ciutadella W04 Bold';
     }
 }
 
@@ -156,9 +155,7 @@ label {
 // $Molecules
 // ================================================================================= //
 
-.more-link {
-    font-style: italic;
-}
+// .more-link {}
 
 #search-form {
     label {
@@ -167,9 +164,9 @@ label {
 }
 
 .copyright {
-    text-align: center;
     display: block;
-    font-style: italic;
+    font-family:'Avenir LT W01_35 Light';
+    text-align: center;
 }
 
 .custom-icon {
@@ -178,14 +175,14 @@ label {
     transition: .3s fill ease-in-out;
 }
 .custom-icon circle {
-    fill: #1877A3;
+    fill: #FB7D00;
 }
 .custom-icon path {
     fill: white !important;
 }
 .custom-icon:hover path {
-    fill: #1877A3 !important;
+    fill: white !important;
 }
 .custom-icon:hover circle {
-    fill: white;
+    fill: #BB5600;
 }

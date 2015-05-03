@@ -1,14 +1,18 @@
 .tagline {
-    padding: 0 6px;
     font-size: 30.6667px;
     line-height: 1.333;
     text-align: center;
-    color: white;
+    color: #4592B8;
+
+    .bg-feat & {
+        color: white;
+        span {
+            color: #79A9C8;
+        }
+    }
 
     span {
-        font-style: italic;
+        font-family: 'Ciutadella W04 Medium';
         font-size: 27px;
-        font-weight: 300;
-        color: #4592B8;
     }
 }

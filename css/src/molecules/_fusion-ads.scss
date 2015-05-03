@@ -40,7 +40,6 @@
     font-size: .70rem;
     color: #7a7a7a;
     line-height: 1.4;
-    font-weight: 400;
     text-align: center;
     // $normal, $hover, $active, $visited, $focus
     @include link-colors(#7a7a7a, #7a7a7a, #7a7a7a, #7a7a7a, #7a7a7a);
@@ -60,7 +59,6 @@
     display: block !important;
     width: 100%;
     font-size: .6rem;
-    font-style: italic;
     line-height: 1.25;
     text-align: left;
     @media screen and (min-width: $grid-9-3) {

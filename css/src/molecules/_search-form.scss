@@ -14,6 +14,8 @@
 
     label {
         margin-right: 6px;
+        font-family: 'Avenir LT W01_35 Light';
+        color: #8BB6D0;
         &:after {
             content: ": ";
         }
@@ -25,12 +27,11 @@ input[type="search"] {
     display: inline-block;
     padding: 6px 12px;
     width: auto;
-    text-shadow: 0 -1px 0 rgba(5, 5, 5, 1);
-    background: transparent;
+    font-size: smaller;
+    background: $search-input-bg;
     color: $search-input-color;
 
     &:focus {
         outline: none;
-        background: $search-input-bg;
     }
 }
