@@ -183,6 +183,9 @@ Gray Ghost Visuals Press Copyright ©2012 Gray Ghost Visuals LLC
 // 7. Select Menus
 
 @import "atoms/**/*";
+.screen-reader-text {
+  @extend .visuallyhidden;
+}
 
 
 // ==========================================================================
