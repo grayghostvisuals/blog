@@ -1,9 +1,10 @@
 .tagline {
+    @extend .visuallyhidden;
     font-size: 30.6667px;
     line-height: 1.333;
     text-align: center;
     color: #FB7D00;
-    color: rgba(#FB7D00, 0.22);
+    color: rgba(#FB7D00, 0.52);
 
     .bg-feat & {
         color: white;

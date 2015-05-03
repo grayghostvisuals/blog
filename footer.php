@@ -67,5 +67,5 @@
 		<?php get_sidebar('footer'); ?>
 	</div>
 
-	<small class="copyright">Gray Ghost Visuals Press &bull; Exploring Front&ndash;end Web Development &amp; Design Since <time datetime="2009">2009</time></small>
+	<small class="copyright"><a href="/">Gray Ghost Visuals Press</a> &bull; Exploring Front&ndash;end Web Development &amp; Design Since <time datetime="2009">2009</time>. <a href="http://www.fonts.com/font/emtype-foundry/ciutadella">Ciutadella</a> and <a href="http://www.fonts.com/font/linotype/avenir">Avenir</a> provided by <a href="http://www.fonts.com">fonts.com</a></small>
 </footer>
