@@ -28,10 +28,11 @@ input[type="search"] {
     padding: 6px 12px;
     width: auto;
     font-size: smaller;
-    background: $search-input-bg;
+    background: transparent;
     color: $search-input-color;
 
     &:focus {
+        background: $search-input-bg;
         outline: none;
     }
 }
