@@ -11,6 +11,7 @@ $ip_address = '192.168.22.1';
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<link rel="dns-prefetch" href="//ajax.googleapis.com">
+	<link rel="dns-prefetch" href="//fast.fonts.net">
 	<link rel="dns-prefetch" href="//www.google-analytics.com">
 	<link rel="dns-prefetch" href="//cdn.buysellads.com">
 	<link rel="dns-prefetch" href="//srv.buysellads.com">
@@ -51,7 +52,6 @@ $ip_address = '192.168.22.1';
 	<meta property="og:image" content="http://static.grayghostvisuals.com/imgblog/og-logo.png">
 
 	<!--[if gte IE 9]><!-->
-	<link rel="stylesheet" href="http://fast.fonts.net/cssapi/f45fd2d4-83d8-4e75-a894-43effb040b1c.css">
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 	<!--<![endif]-->
 
@@ -59,6 +59,7 @@ $ip_address = '192.168.22.1';
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo( 'rss2_url' ); ?>">
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr.js"></script>
+	<script>var MTIProjectId="f45fd2d4-83d8-4e75-a894-43effb040b1c";!function(){var t=document.createElement("script");t.async="true",t.src=("https:"==document.location.protocol?"https:":"http:")+"//fast.fonts.net/t/trackingCode.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(t)}();</script>
 	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 	<?php wp_head(); ?>
 </head>
