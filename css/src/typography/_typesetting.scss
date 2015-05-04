@@ -61,9 +61,9 @@ src:url("fonts/74b4dd68-6d32-47cc-84de-23e5a5ed0b33.eot?#iefix") format("eot"),u
 
 @for $i from 1 through 6 {
     h#{$i} {
-        font-family: 'Ciutadella W04 Bold', "Helvetica Neue", Helvetica, sans-serif;
+        font-family: 'Ciutadella W04 Medium', "Helvetica Neue", Helvetica, sans-serif;
         .no-js & {
-            font-weight: 600;
+            font-weight: 500;
         }
     }
 }
@@ -198,10 +198,10 @@ cite {
 }
 
 .entry__title a {
-    font-family: 'Ciutadella W04 Bold', "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Ciutadella W04 Medium', "Helvetica Neue", Helvetica, sans-serif;
 
     .no-js & {
-        font-weight: 600;
+        font-weight: 500;
     }
 }
 

@@ -82,8 +82,8 @@ $typl8-icon-fonts: null !default;
 $typl8-tera: 81 !default;
 $typl8-giga: 60 !default;
 $typl8-mega: 54 !default;
-$typl8-alpha: 40.5 !default;
-$typl8-beta: 36 !default;
+$typl8-alpha: 36 !default;
+$typl8-beta: 32 !default;
 $typl8-gamma: 27 !default;
 $typl8-delta: 24 !default;
 $typl8-epsilon: 18 !default;
@@ -553,7 +553,7 @@ body {
 }
 
 small {
-    font-size: $typl8-small-print-size;
+    font-size: 63%;
 }
 
 
