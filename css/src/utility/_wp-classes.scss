@@ -326,7 +326,7 @@ img.size-full {
 			height: 2rem;
 			margin: #{$typl8-line-height/2}rem auto;
 			width: 2rem;
-			line-height: 1.675;
+			line-height: 1.6;
 			text-align: center;
 			color: #222222;
 		}
@@ -429,9 +429,6 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 	text-transform: capitalize;
 }
 
-.logged-in-as {
-	font-style: italic;
-}
 
 #comments-title {
 	margin-top: 36px;
@@ -478,8 +475,6 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 // WP-Flex Custom Styles
 // ==========================================================================
 
-// .pagination {}
-
 .single-pagination {
 	@extend %flexbox;
 	padding: 24px 0;
@@ -488,19 +483,3 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 .prev {
 	@include flex(1);
 }
-
-// .blogname {}
-// .tagline {}
-// .menu {}
-// .page-title{}
-// .entry-title {}
-// .meta {}
-// .entry-footer {}
-// .comments-count {}
-// .comments-count-number {}
-// .entry-taxonomies {}
-// .entry-tags-list {}
-// .entry-tags {}
-// .entry-categories-list {}
-// .entry-categories {}
-// #sidebar {}

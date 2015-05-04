@@ -1,7 +1,7 @@
 <?php
 function custom_avatar($avatar_defaults) {
-	$myavatar = 'http://api.adorable.io/avatar/285/abott@adorable.io.png';
-	$avatar_defaults[$myavatar] = "Adorable Creature";
+	$myavatar = 'http://static.grayghostvisuals.com/imgblog/blank-avatar.png';
+	$avatar_defaults[$myavatar] = "GrayGhost";
 	return $avatar_defaults;
 }
 
