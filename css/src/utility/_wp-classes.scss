@@ -475,6 +475,12 @@ ol.commentlist li.comment ul.children li.depth-5 {}
 // WP-Flex Custom Styles
 // ==========================================================================
 
+// #intro-deck {
+// 	font-size: 1.5em;
+//   line-height: 1.375;
+//   color: #343434;
+// }
+
 .single-pagination {
 	@extend %flexbox;
 	padding: 24px 0;
