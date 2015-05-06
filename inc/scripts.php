@@ -1,5 +1,23 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+<script>
+var tmax_tl          = new TimelineMax({ delay: 0.1675, repeat: -1 }),
+    globe_continents = [$('#globe #middle g path'), $('#globe #left g path')],
+    globe_speed      = 1;
+
+var map_from = {
+  x: 0
+};
+
+var map_to = {
+  x: 150,
+  ease: Linear.easeOut
+};
+
+tmax_tl.fromTo(globe_continents, globe_speed, map_from, map_to, 0);
+tmax_tl.timeScale(0.75);
+</script>
 
 <?php if ( $ip == $ip_address ) : ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
