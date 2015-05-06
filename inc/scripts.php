@@ -16,7 +16,7 @@ var map_to = {
 };
 
 tmax_tl.fromTo(globe_continents, globe_speed, map_from, map_to, 0);
-tmax_tl.timeScale(0.75);
+tmax_tl.timeScale(0.25);
 </script>
 
 <?php if ( $ip == $ip_address ) : ?>
