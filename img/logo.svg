@@ -129,7 +129,7 @@
 
   <g id="logo">
     <g id="globe">
-      <ellipse fill="#A4CAE1" cx="239.5" cy="139.2" rx="64.6" ry="62.5"/>
+      <use xlink:href="#ellipseClip" fill="#A4CAE1" overflow="visible"/>
 
       <g id="continents">
         <clipPath id="clipPath"><use xlink:href="#ellipseClip"  overflow="visible"/></clipPath>
