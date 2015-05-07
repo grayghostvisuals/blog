@@ -1,6 +1,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="0 0 484.4 261.7">
   <defs>
     <ellipse id="ellipseClip" cx="239.7" cy="139.2" rx="65" ry="62.5"/>
+    <clipPath id="clipPath"><use xlink:href="#ellipseClip"  overflow="visible"/></clipPath>
 
     <linearGradient id="shadow_7_" gradientUnits="userSpaceOnUse" x1="271.264" y1="82.4088" x2="262.7236" y2="89.4421">
       <stop  offset="0" style="stop-color:#145E8D"/>
@@ -132,8 +133,6 @@
       <use xlink:href="#ellipseClip" fill="#A4CAE1" overflow="visible"/>
 
       <g id="continents">
-        <clipPath id="clipPath"><use xlink:href="#ellipseClip"  overflow="visible"/></clipPath>
-
         <g id="middle" clip-path="url(#clipPath)">
           <g fill="white">
             <path d="M263.1,107.1c-0.6,0-1.2,0-1.8-0.1c-1.5,0.8-3,1.6-4.3,2.5c0.4,0.3,0.8,0.8,0.9,1.2
@@ -404,7 +403,7 @@
         </g>
       </g>
 
-      <ellipse id="shadow_4_" opacity="0.82" fill="url(#shadow_5_)" cx="239.5" cy="139.2" rx="64.6" ry="62.5"/>
+      <use xlink:href="#ellipseClip" opacity="0.82" fill="url(#shadow_5_)"/>
     </g>
 
     <g id="salmon">
