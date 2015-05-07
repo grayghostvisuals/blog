@@ -5,3 +5,14 @@
     height: auto;
   }
 }
+
+.blogname {
+  margin: 0;
+}
+
+svg g#logo g#text {
+  display: none;
+  @media screen and (min-width: 600px) and (min-height: 600px) {
+    display: block;
+  }
+}

@@ -1,3 +1,7 @@
 %header_height_settings {
-    height: $header-height - 200;
+  height: 180px;
+
+  @media screen and (min-width: 600px) and (min-height: 600px) {
+    height: $header-height - 240;
+  }
 }
