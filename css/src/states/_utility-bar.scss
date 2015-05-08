@@ -10,7 +10,7 @@
 .utility-bar__items {
   &.active {
     @include breakpoint($utility-nav-columns) {
-      @include transform(translateX(0));
+      @include transform(translateX(100%));
     }
   }
 }
