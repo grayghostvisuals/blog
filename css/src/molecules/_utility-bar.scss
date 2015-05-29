@@ -54,6 +54,7 @@
 			@include breakpoint($utility-nav-rows) {
 				content: "/";
 				margin-left: 10px;
+				margin-right: 10px;
 			}
 		}
 	}
@@ -91,9 +92,7 @@
 
 a[href*="#info"] {
 	@extend %flexbox;
-	@include align-items(center);
 	@include justify-content(center);
-	padding-left: 12px;
 	text-transform: capitalize;
 
 	@include breakpoint($utility-nav-columns) {
