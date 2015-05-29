@@ -30,8 +30,12 @@ input[type="search"] {
     background: transparent;
     color: $search-input-color;
 
+    @include breakpoint($utility-nav-columns) {
+        text-align: center;
+    }
+
     &:focus {
-        background: $search-input-bg;
+        background: rgba(0, 75, 118, 0.03);
         outline: none;
     }
 }
