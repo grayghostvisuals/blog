@@ -27,14 +27,8 @@ input[type="search"] {
     display: inline-block;
     padding: 6px 12px;
     width: auto;
-    font-size: smaller;
     background: transparent;
     color: $search-input-color;
-
-    @include breakpoint($utility-nav-columns) {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
 
     &:focus {
         background: $search-input-bg;
