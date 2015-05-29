@@ -33,9 +33,4 @@ input[type="search"] {
     @include breakpoint($utility-nav-columns) {
         text-align: center;
     }
-
-    &:focus {
-        background: rgba(0, 75, 118, 0.03);
-        outline: none;
-    }
 }
