@@ -4,7 +4,7 @@
 <script>
 var tmax_tl          = new TimelineMax({ delay: 0.1675, repeat: -1 }),
     globe_continents = [$('#globe #middle g path'), $('#globe #left g path')],
-    globe_speed      = 1;
+    globe_speed      = 10;
 
 var map_from = {
   x: 0
@@ -16,7 +16,6 @@ var map_to = {
 };
 
 tmax_tl.fromTo(globe_continents, globe_speed, map_from, map_to, 0);
-tmax_tl.timeScale(0.25);
 </script>
 
 <?php if ( $ip == $ip_address ) : ?>
