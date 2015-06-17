@@ -1,4 +1,4 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="0 0 484.4 261.7">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484.4 261.7">
   <defs>
     <ellipse id="ellipseClip" cx="239.7" cy="139.2" rx="65" ry="62.5"/>
     <clipPath id="clipPath"><use xlink:href="#ellipseClip"  overflow="visible"/></clipPath>
@@ -130,7 +130,7 @@
 
   <g id="logo">
     <g id="globe">
-      <use xlink:href="#ellipseClip" fill="#A4CAE1" overflow="visible"/>
+      <use xlink:href="#ellipseClip" fill="#A4CAE1"/>
 
       <g id="continents">
         <g id="middle" clip-path="url(#clipPath)">
@@ -403,7 +403,7 @@
         </g>
       </g>
 
-      <use xlink:href="#ellipseClip" opacity="0.82" fill="url(#shadow_5_)"/>
+      <use xlink:href="#ellipseClip" opacity="0.82" stroke="#03324F" stroke-width="2" fill="url(#shadow_5_)"/>
     </g>
 
     <g id="salmon">

@@ -83,16 +83,20 @@ body {
 }
 
 ::-webkit-input-placeholder {
-  color: #6DA3C5;
+	font-weight: 100;
+  color: darken(#6DA3C5, 20%);
 }
 ::-moz-placeholder {
-  color: #6DA3C5;
+	font-weight: 100;
+  color: darken(#6DA3C5, 20%);
 }
 :-ms-input-placeholder {
-  color: #6DA3C5;
+	font-weight: 100;
+  color: darken(#6DA3C5, 20%);
 }
 ::placeholder {
-  color: #6DA3C5;
+	font-weight: 100;
+  color: darken(#6DA3C5, 20%);
 }
 
 img,

@@ -24,13 +24,18 @@
 
 
 input[type="search"] {
+    border-radius: 100px;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.22), 1px 1px 1px rgba(255, 255, 255, 0.13);
     display: inline-block;
-    padding: 6px 12px;
+    padding: 6px 24px;
     width: auto;
     background: transparent;
     color: $search-input-color;
 
     @include breakpoint($utility-nav-columns) {
+        margin-bottom: 24px;
         text-align: center;
+        width: 94%;
+        padding: 12px;
     }
 }
