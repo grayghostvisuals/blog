@@ -10,6 +10,11 @@
     margin-bottom: 0;
     padding: 0;
 
+    a[href*="ghost"] {
+        display: inline-block;
+        height: 50px;
+    }
+
     li {
         padding: 0 6px;
     }
