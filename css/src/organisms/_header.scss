@@ -4,8 +4,6 @@
 	@include flex-direction(column);
 	@include justify-content(center);
 	@extend %header_height_settings;
-	// background-color: rgba(250, 251, 247, 0.94);
-  // background-color: #03324F;
   background-color: #0E4062;
-  background-image: linear-gradient(to bottom, #0B3554,#0e4062);
+  background-image: linear-gradient(to top, #0B3554,#0e4062);
 }
