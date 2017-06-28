@@ -1,4 +1,4 @@
-[![](https://dl.dropboxusercontent.com/u/41114960/github/ggv/blog.png)](http://blog.grayghostvisuals.com)
+[![](https://s3-us-west-2.amazonaws.com/s.cdpn.io/392/readme-blog.png)](http://blog.grayghostvisuals.com)
 
 ## Installation & Development
 
